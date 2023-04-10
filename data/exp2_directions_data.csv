@@ -1,0 +1,523 @@
+subject_id,story,relationship,repeating,alternating,none,understood,pass_attention
+80a6d26a911a2682be70c318a6fab73d,concerts,less,4,1,3,yes,TRUE
+80a6d26a911a2682be70c318a6fab73d,babysitting,equal,5,5,1,yes,TRUE
+80a6d26a911a2682be70c318a6fab73d,fundraising,equal,4,3,0,yes,TRUE
+80a6d26a911a2682be70c318a6fab73d,coffee,less,4,3,2,yes,TRUE
+80a6d26a911a2682be70c318a6fab73d,housemates,less,3,3,3,yes,TRUE
+80a6d26a911a2682be70c318a6fab73d,restaurant,more,1,5,1,yes,TRUE
+80a6d26a911a2682be70c318a6fab73d,group project,more,5,2,0,yes,TRUE
+80a6d26a911a2682be70c318a6fab73d,weekend,equal,3,3,0,yes,TRUE
+80a6d26a911a2682be70c318a6fab73d,police,less,4,3,0,yes,TRUE
+80a6d26a911a2682be70c318a6fab73d,conversation,equal,3,3,0,yes,TRUE
+80a6d26a911a2682be70c318a6fab73d,architects,more,5,4,1,yes,TRUE
+80a6d26a911a2682be70c318a6fab73d,gifts,less,4,4,0,yes,TRUE
+80a6d26a911a2682be70c318a6fab73d,groceries,equal,4,4,0,yes,TRUE
+80a6d26a911a2682be70c318a6fab73d,feedback,more,5,4,1,yes,TRUE
+80a6d26a911a2682be70c318a6fab73d,scheduling,equal,3,3,0,yes,TRUE
+80a6d26a911a2682be70c318a6fab73d,family meals,less,3,3,0,yes,TRUE
+80a6d26a911a2682be70c318a6fab73d,meeting prep,more,4,3,0,yes,TRUE
+80a6d26a911a2682be70c318a6fab73d,meeting location,more,3,3,0,yes,TRUE
+bd768272685d0f33a5de3d2dbe6d9c4a,architects,less,6,1,0,yes,TRUE
+bd768272685d0f33a5de3d2dbe6d9c4a,meeting prep,more,6,0,0,yes,TRUE
+bd768272685d0f33a5de3d2dbe6d9c4a,gifts,equal,3,2,2,yes,TRUE
+bd768272685d0f33a5de3d2dbe6d9c4a,weekend,more,2,4,3,yes,TRUE
+bd768272685d0f33a5de3d2dbe6d9c4a,restaurant,more,2,4,3,yes,TRUE
+bd768272685d0f33a5de3d2dbe6d9c4a,scheduling,equal,3,3,3,yes,TRUE
+bd768272685d0f33a5de3d2dbe6d9c4a,babysitting,equal,5,4,3,yes,TRUE
+bd768272685d0f33a5de3d2dbe6d9c4a,police,less,5,1,0,yes,TRUE
+bd768272685d0f33a5de3d2dbe6d9c4a,family meals,less,6,3,0,yes,TRUE
+bd768272685d0f33a5de3d2dbe6d9c4a,meeting location,more,4,3,0,yes,TRUE
+bd768272685d0f33a5de3d2dbe6d9c4a,concerts,less,3,3,3,yes,TRUE
+bd768272685d0f33a5de3d2dbe6d9c4a,conversation,equal,5,3,0,yes,TRUE
+bd768272685d0f33a5de3d2dbe6d9c4a,coffee,equal,4,4,2,yes,TRUE
+bd768272685d0f33a5de3d2dbe6d9c4a,housemates,less,4,1,3,yes,TRUE
+bd768272685d0f33a5de3d2dbe6d9c4a,feedback,less,5,5,1,yes,TRUE
+bd768272685d0f33a5de3d2dbe6d9c4a,group project,more,1,6,0,yes,TRUE
+bd768272685d0f33a5de3d2dbe6d9c4a,fundraising,equal,3,3,2,yes,TRUE
+bd768272685d0f33a5de3d2dbe6d9c4a,groceries,more,3,1,1,yes,TRUE
+a38504979abe4a68dbc0e316c68bd3ac,group project,equal,5,1,3,yes,TRUE
+a38504979abe4a68dbc0e316c68bd3ac,concerts,equal,1,3,2,yes,TRUE
+a38504979abe4a68dbc0e316c68bd3ac,groceries,less,1,3,5,yes,TRUE
+a38504979abe4a68dbc0e316c68bd3ac,weekend,less,3,3,4,yes,TRUE
+a38504979abe4a68dbc0e316c68bd3ac,fundraising,less,4,2,0,yes,TRUE
+a38504979abe4a68dbc0e316c68bd3ac,scheduling,less,3,3,2,yes,TRUE
+a38504979abe4a68dbc0e316c68bd3ac,gifts,more,1,0,1,yes,TRUE
+a38504979abe4a68dbc0e316c68bd3ac,babysitting,less,1,3,3,yes,TRUE
+a38504979abe4a68dbc0e316c68bd3ac,meeting location,equal,3,3,1,yes,TRUE
+a38504979abe4a68dbc0e316c68bd3ac,coffee,more,3,3,1,yes,TRUE
+a38504979abe4a68dbc0e316c68bd3ac,feedback,equal,4,5,0,yes,TRUE
+a38504979abe4a68dbc0e316c68bd3ac,conversation,more,4,3,1,yes,TRUE
+a38504979abe4a68dbc0e316c68bd3ac,restaurant,less,4,3,2,yes,TRUE
+a38504979abe4a68dbc0e316c68bd3ac,meeting prep,equal,3,3,0,yes,TRUE
+a38504979abe4a68dbc0e316c68bd3ac,family meals,more,5,2,0,yes,TRUE
+a38504979abe4a68dbc0e316c68bd3ac,architects,equal,5,1,1,yes,TRUE
+a38504979abe4a68dbc0e316c68bd3ac,housemates,more,4,2,0,yes,TRUE
+a38504979abe4a68dbc0e316c68bd3ac,police,more,2,3,0,yes,TRUE
+fb88a38c823fbd58655681651c3ce663,family meals,less,4,2,3,yes,TRUE
+fb88a38c823fbd58655681651c3ce663,meeting prep,more,6,1,1,yes,TRUE
+fb88a38c823fbd58655681651c3ce663,restaurant,more,5,2,1,yes,TRUE
+fb88a38c823fbd58655681651c3ce663,babysitting,less,2,4,1,yes,TRUE
+fb88a38c823fbd58655681651c3ce663,police,more,4,2,0,yes,TRUE
+fb88a38c823fbd58655681651c3ce663,housemates,equal,4,2,0,yes,TRUE
+fb88a38c823fbd58655681651c3ce663,concerts,less,2,4,3,yes,TRUE
+fb88a38c823fbd58655681651c3ce663,conversation,less,4,2,1,yes,TRUE
+fb88a38c823fbd58655681651c3ce663,groceries,equal,3,3,3,yes,TRUE
+fb88a38c823fbd58655681651c3ce663,coffee,more,2,4,0,yes,TRUE
+fb88a38c823fbd58655681651c3ce663,weekend,more,2,2,5,yes,TRUE
+fb88a38c823fbd58655681651c3ce663,feedback,less,5,5,0,yes,TRUE
+fb88a38c823fbd58655681651c3ce663,scheduling,equal,5,3,0,yes,TRUE
+fb88a38c823fbd58655681651c3ce663,gifts,equal,1,5,1,yes,TRUE
+fb88a38c823fbd58655681651c3ce663,fundraising,equal,5,1,0,yes,TRUE
+fb88a38c823fbd58655681651c3ce663,meeting location,equal,3,3,0,yes,TRUE
+fb88a38c823fbd58655681651c3ce663,architects,more,5,4,1,yes,TRUE
+fb88a38c823fbd58655681651c3ce663,group project,less,2,5,0,yes,TRUE
+bcc02370fd866aef385a2914751c8a17,feedback,equal,4,5,1,yes,TRUE
+bcc02370fd866aef385a2914751c8a17,fundraising,more,5,2,1,yes,TRUE
+bcc02370fd866aef385a2914751c8a17,groceries,more,2,5,1,yes,TRUE
+bcc02370fd866aef385a2914751c8a17,meeting location,more,2,4,0,yes,TRUE
+bcc02370fd866aef385a2914751c8a17,group project,equal,3,4,0,yes,TRUE
+bcc02370fd866aef385a2914751c8a17,family meals,equal,2,4,0,yes,TRUE
+bcc02370fd866aef385a2914751c8a17,babysitting,equal,1,5,1,yes,TRUE
+bcc02370fd866aef385a2914751c8a17,architects,less,5,2,0,yes,TRUE
+bcc02370fd866aef385a2914751c8a17,coffee,less,4,3,1,yes,TRUE
+bcc02370fd866aef385a2914751c8a17,conversation,equal,3,3,0,yes,TRUE
+bcc02370fd866aef385a2914751c8a17,police,less,4,2,0,yes,TRUE
+bcc02370fd866aef385a2914751c8a17,meeting prep,less,5,2,0,yes,TRUE
+bcc02370fd866aef385a2914751c8a17,weekend,less,3,2,1,yes,TRUE
+bcc02370fd866aef385a2914751c8a17,scheduling,more,1,5,0,yes,TRUE
+bcc02370fd866aef385a2914751c8a17,gifts,more,4,2,1,yes,TRUE
+bcc02370fd866aef385a2914751c8a17,restaurant,less,4,2,0,yes,TRUE
+bcc02370fd866aef385a2914751c8a17,housemates,more,2,4,1,yes,TRUE
+bcc02370fd866aef385a2914751c8a17,concerts,equal,1,5,0,yes,TRUE
+3247dd670cc193d59d0f3f0a73c044bb,groceries,less,4,5,2,yes,TRUE
+3247dd670cc193d59d0f3f0a73c044bb,concerts,less,1,4,1,yes,TRUE
+3247dd670cc193d59d0f3f0a73c044bb,fundraising,less,5,4,1,yes,TRUE
+3247dd670cc193d59d0f3f0a73c044bb,group project,less,4,2,0,yes,TRUE
+3247dd670cc193d59d0f3f0a73c044bb,meeting prep,equal,4,4,0,yes,TRUE
+3247dd670cc193d59d0f3f0a73c044bb,restaurant,equal,2,5,1,yes,TRUE
+3247dd670cc193d59d0f3f0a73c044bb,police,more,1,4,0,yes,TRUE
+3247dd670cc193d59d0f3f0a73c044bb,family meals,more,4,4,0,yes,TRUE
+3247dd670cc193d59d0f3f0a73c044bb,conversation,more,4,4,0,yes,TRUE
+3247dd670cc193d59d0f3f0a73c044bb,architects,more,5,2,0,yes,TRUE
+3247dd670cc193d59d0f3f0a73c044bb,scheduling,less,4,4,1,yes,TRUE
+3247dd670cc193d59d0f3f0a73c044bb,gifts,equal,4,4,1,yes,TRUE
+3247dd670cc193d59d0f3f0a73c044bb,housemates,less,4,4,4,yes,TRUE
+3247dd670cc193d59d0f3f0a73c044bb,meeting location,equal,5,5,0,yes,TRUE
+3247dd670cc193d59d0f3f0a73c044bb,feedback,more,5,5,1,yes,TRUE
+3247dd670cc193d59d0f3f0a73c044bb,coffee,equal,4,5,1,yes,TRUE
+3247dd670cc193d59d0f3f0a73c044bb,babysitting,more,2,5,1,yes,TRUE
+3247dd670cc193d59d0f3f0a73c044bb,weekend,equal,4,5,1,yes,TRUE
+eb90e248b2ca91ee84c371589e27441e,housemates,less,4,1,1,yes,TRUE
+eb90e248b2ca91ee84c371589e27441e,group project,more,5,2,0,yes,TRUE
+eb90e248b2ca91ee84c371589e27441e,concerts,less,1,4,3,yes,TRUE
+eb90e248b2ca91ee84c371589e27441e,conversation,equal,3,5,0,yes,TRUE
+eb90e248b2ca91ee84c371589e27441e,architects,less,5,2,0,yes,TRUE
+eb90e248b2ca91ee84c371589e27441e,fundraising,equal,4,4,0,yes,TRUE
+eb90e248b2ca91ee84c371589e27441e,groceries,more,1,1,3,yes,TRUE
+eb90e248b2ca91ee84c371589e27441e,meeting prep,more,5,1,0,yes,TRUE
+eb90e248b2ca91ee84c371589e27441e,family meals,less,1,3,0,yes,TRUE
+eb90e248b2ca91ee84c371589e27441e,restaurant,more,1,5,0,yes,TRUE
+eb90e248b2ca91ee84c371589e27441e,coffee,equal,3,4,1,yes,TRUE
+eb90e248b2ca91ee84c371589e27441e,scheduling,equal,1,5,1,yes,TRUE
+eb90e248b2ca91ee84c371589e27441e,police,less,3,1,0,yes,TRUE
+eb90e248b2ca91ee84c371589e27441e,weekend,equal,3,3,3,yes,TRUE
+eb90e248b2ca91ee84c371589e27441e,gifts,less,3,4,3,yes,TRUE
+eb90e248b2ca91ee84c371589e27441e,feedback,more,4,4,0,yes,TRUE
+eb90e248b2ca91ee84c371589e27441e,meeting location,more,3,3,0,yes,TRUE
+eb90e248b2ca91ee84c371589e27441e,babysitting,equal,5,3,3,yes,TRUE
+aa3d6fdfe13fab42f5728835a9c959b5,housemates,more,2,4,0,yes,TRUE
+aa3d6fdfe13fab42f5728835a9c959b5,meeting prep,equal,4,2,0,yes,TRUE
+aa3d6fdfe13fab42f5728835a9c959b5,restaurant,equal,5,1,0,yes,TRUE
+aa3d6fdfe13fab42f5728835a9c959b5,architects,more,5,1,0,yes,TRUE
+aa3d6fdfe13fab42f5728835a9c959b5,concerts,more,5,1,0,yes,TRUE
+aa3d6fdfe13fab42f5728835a9c959b5,fundraising,less,2,4,0,yes,TRUE
+aa3d6fdfe13fab42f5728835a9c959b5,police,more,2,4,0,yes,TRUE
+aa3d6fdfe13fab42f5728835a9c959b5,gifts,more,5,1,0,yes,TRUE
+aa3d6fdfe13fab42f5728835a9c959b5,conversation,less,5,1,0,yes,TRUE
+aa3d6fdfe13fab42f5728835a9c959b5,scheduling,less,4,1,0,yes,TRUE
+aa3d6fdfe13fab42f5728835a9c959b5,weekend,less,5,2,0,yes,TRUE
+aa3d6fdfe13fab42f5728835a9c959b5,group project,equal,4,4,0,yes,TRUE
+aa3d6fdfe13fab42f5728835a9c959b5,family meals,more,2,5,0,yes,TRUE
+aa3d6fdfe13fab42f5728835a9c959b5,feedback,equal,4,4,0,yes,TRUE
+aa3d6fdfe13fab42f5728835a9c959b5,groceries,equal,5,5,0,yes,TRUE
+aa3d6fdfe13fab42f5728835a9c959b5,babysitting,less,5,1,0,yes,TRUE
+aa3d6fdfe13fab42f5728835a9c959b5,coffee,less,5,1,0,yes,TRUE
+aa3d6fdfe13fab42f5728835a9c959b5,meeting location,equal,5,5,0,yes,TRUE
+a79baa084507a24c75c8a071f3aa6f8b,group project,less,2,4,0,yes,TRUE
+a79baa084507a24c75c8a071f3aa6f8b,housemates,equal,1,2,1,yes,TRUE
+a79baa084507a24c75c8a071f3aa6f8b,fundraising,equal,4,4,2,yes,TRUE
+a79baa084507a24c75c8a071f3aa6f8b,groceries,equal,6,6,0,yes,TRUE
+a79baa084507a24c75c8a071f3aa6f8b,family meals,more,5,4,0,yes,TRUE
+a79baa084507a24c75c8a071f3aa6f8b,coffee,more,4,5,1,yes,TRUE
+a79baa084507a24c75c8a071f3aa6f8b,meeting location,equal,4,4,0,yes,TRUE
+a79baa084507a24c75c8a071f3aa6f8b,babysitting,less,2,5,2,yes,TRUE
+a79baa084507a24c75c8a071f3aa6f8b,conversation,less,5,1,0,yes,TRUE
+a79baa084507a24c75c8a071f3aa6f8b,scheduling,less,3,4,2,yes,TRUE
+a79baa084507a24c75c8a071f3aa6f8b,feedback,less,6,4,0,yes,TRUE
+a79baa084507a24c75c8a071f3aa6f8b,architects,more,5,4,1,yes,TRUE
+a79baa084507a24c75c8a071f3aa6f8b,meeting prep,more,6,2,0,yes,TRUE
+a79baa084507a24c75c8a071f3aa6f8b,restaurant,more,2,5,1,yes,TRUE
+a79baa084507a24c75c8a071f3aa6f8b,concerts,less,1,5,1,yes,TRUE
+a79baa084507a24c75c8a071f3aa6f8b,police,more,4,3,0,yes,TRUE
+a79baa084507a24c75c8a071f3aa6f8b,gifts,equal,4,0,0,yes,TRUE
+a79baa084507a24c75c8a071f3aa6f8b,weekend,equal,3,1,1,yes,TRUE
+9a854d311a78caadeb81e6464e6a46a3,meeting prep,equal,5,1,3,yes,TRUE
+9a854d311a78caadeb81e6464e6a46a3,restaurant,equal,6,0,1,yes,TRUE
+9a854d311a78caadeb81e6464e6a46a3,housemates,less,5,1,3,yes,TRUE
+9a854d311a78caadeb81e6464e6a46a3,family meals,more,4,1,0,yes,TRUE
+9a854d311a78caadeb81e6464e6a46a3,groceries,equal,5,5,1,yes,TRUE
+9a854d311a78caadeb81e6464e6a46a3,police,more,1,3,1,yes,TRUE
+9a854d311a78caadeb81e6464e6a46a3,scheduling,equal,1,5,0,yes,TRUE
+9a854d311a78caadeb81e6464e6a46a3,babysitting,less,1,5,1,yes,TRUE
+9a854d311a78caadeb81e6464e6a46a3,weekend,equal,1,6,1,yes,TRUE
+9a854d311a78caadeb81e6464e6a46a3,coffee,less,1,4,1,yes,TRUE
+9a854d311a78caadeb81e6464e6a46a3,gifts,less,1,5,3,yes,TRUE
+9a854d311a78caadeb81e6464e6a46a3,meeting location,more,1,5,3,yes,TRUE
+9a854d311a78caadeb81e6464e6a46a3,group project,equal,4,4,3,yes,TRUE
+9a854d311a78caadeb81e6464e6a46a3,fundraising,less,4,4,3,yes,TRUE
+9a854d311a78caadeb81e6464e6a46a3,conversation,less,6,1,4,yes,TRUE
+9a854d311a78caadeb81e6464e6a46a3,architects,more,6,0,3,yes,TRUE
+9a854d311a78caadeb81e6464e6a46a3,concerts,more,1,5,0,yes,TRUE
+9a854d311a78caadeb81e6464e6a46a3,feedback,more,5,4,1,yes,TRUE
+b16d2e97c285899585097769a85a1736,meeting location,equal,3,3,3,yes,TRUE
+b16d2e97c285899585097769a85a1736,concerts,more,4,3,3,yes,TRUE
+b16d2e97c285899585097769a85a1736,feedback,more,4,4,3,yes,TRUE
+b16d2e97c285899585097769a85a1736,babysitting,less,3,3,3,yes,TRUE
+b16d2e97c285899585097769a85a1736,scheduling,less,3,4,3,yes,TRUE
+b16d2e97c285899585097769a85a1736,coffee,less,3,3,3,yes,TRUE
+b16d2e97c285899585097769a85a1736,restaurant,equal,3,4,3,yes,TRUE
+b16d2e97c285899585097769a85a1736,architects,more,4,3,3,yes,TRUE
+b16d2e97c285899585097769a85a1736,family meals,more,3,4,3,yes,TRUE
+b16d2e97c285899585097769a85a1736,meeting prep,equal,3,4,3,yes,TRUE
+b16d2e97c285899585097769a85a1736,conversation,less,4,3,2,yes,TRUE
+b16d2e97c285899585097769a85a1736,police,more,3,3,2,yes,TRUE
+b16d2e97c285899585097769a85a1736,weekend,equal,3,4,3,yes,TRUE
+b16d2e97c285899585097769a85a1736,group project,equal,3,3,3,yes,TRUE
+b16d2e97c285899585097769a85a1736,housemates,more,4,3,0,yes,TRUE
+b16d2e97c285899585097769a85a1736,fundraising,less,3,3,3,yes,TRUE
+b16d2e97c285899585097769a85a1736,groceries,equal,4,4,1,yes,TRUE
+b16d2e97c285899585097769a85a1736,gifts,less,3,3,3,yes,TRUE
+7e78d9ad4021fa5c03731b9b692065f5,meeting prep,less,5,2,1,yes,TRUE
+7e78d9ad4021fa5c03731b9b692065f5,police,equal,2,1,0,yes,TRUE
+7e78d9ad4021fa5c03731b9b692065f5,scheduling,more,2,4,1,yes,TRUE
+7e78d9ad4021fa5c03731b9b692065f5,groceries,less,0,2,4,yes,TRUE
+7e78d9ad4021fa5c03731b9b692065f5,fundraising,more,4,2,1,yes,TRUE
+7e78d9ad4021fa5c03731b9b692065f5,housemates,more,5,2,0,yes,TRUE
+7e78d9ad4021fa5c03731b9b692065f5,weekend,less,1,2,5,yes,TRUE
+7e78d9ad4021fa5c03731b9b692065f5,gifts,less,4,2,2,yes,TRUE
+7e78d9ad4021fa5c03731b9b692065f5,feedback,equal,5,4,2,yes,TRUE
+7e78d9ad4021fa5c03731b9b692065f5,family meals,equal,2,4,1,yes,TRUE
+7e78d9ad4021fa5c03731b9b692065f5,conversation,more,4,2,1,yes,TRUE
+7e78d9ad4021fa5c03731b9b692065f5,concerts,more,2,1,5,yes,TRUE
+7e78d9ad4021fa5c03731b9b692065f5,coffee,equal,2,4,4,yes,TRUE
+7e78d9ad4021fa5c03731b9b692065f5,babysitting,equal,2,5,1,yes,TRUE
+7e78d9ad4021fa5c03731b9b692065f5,group project,more,5,1,1,yes,TRUE
+7e78d9ad4021fa5c03731b9b692065f5,architects,equal,5,1,1,yes,TRUE
+7e78d9ad4021fa5c03731b9b692065f5,restaurant,less,4,2,1,yes,TRUE
+7e78d9ad4021fa5c03731b9b692065f5,meeting location,less,5,2,1,yes,TRUE
+f8362a59c4ee58cdde56379e1ccbaebd,group project,equal,6,1,1,yes,TRUE
+f8362a59c4ee58cdde56379e1ccbaebd,architects,equal,6,4,4,yes,TRUE
+f8362a59c4ee58cdde56379e1ccbaebd,scheduling,less,5,2,1,yes,TRUE
+f8362a59c4ee58cdde56379e1ccbaebd,family meals,more,5,5,0,yes,TRUE
+f8362a59c4ee58cdde56379e1ccbaebd,meeting prep,equal,5,4,1,yes,TRUE
+f8362a59c4ee58cdde56379e1ccbaebd,weekend,less,4,4,1,yes,TRUE
+f8362a59c4ee58cdde56379e1ccbaebd,housemates,more,5,4,3,yes,TRUE
+f8362a59c4ee58cdde56379e1ccbaebd,concerts,more,1,4,1,yes,TRUE
+f8362a59c4ee58cdde56379e1ccbaebd,conversation,less,5,2,4,yes,TRUE
+f8362a59c4ee58cdde56379e1ccbaebd,babysitting,less,4,4,0,yes,TRUE
+f8362a59c4ee58cdde56379e1ccbaebd,feedback,equal,6,6,0,yes,TRUE
+f8362a59c4ee58cdde56379e1ccbaebd,coffee,more,5,5,0,yes,TRUE
+f8362a59c4ee58cdde56379e1ccbaebd,police,more,5,2,0,yes,TRUE
+f8362a59c4ee58cdde56379e1ccbaebd,fundraising,less,4,4,1,yes,TRUE
+f8362a59c4ee58cdde56379e1ccbaebd,restaurant,equal,5,5,0,yes,TRUE
+f8362a59c4ee58cdde56379e1ccbaebd,groceries,less,5,5,1,yes,TRUE
+f8362a59c4ee58cdde56379e1ccbaebd,gifts,more,5,6,0,yes,TRUE
+f8362a59c4ee58cdde56379e1ccbaebd,meeting location,equal,5,5,0,yes,TRUE
+34f82bd7a29a361e43c3d8fbabceb58c,meeting prep,more,5,2,0,yes,FALSE
+34f82bd7a29a361e43c3d8fbabceb58c,police,less,5,1,0,yes,FALSE
+34f82bd7a29a361e43c3d8fbabceb58c,group project,equal,4,3,0,yes,FALSE
+34f82bd7a29a361e43c3d8fbabceb58c,meeting location,more,3,3,0,yes,FALSE
+34f82bd7a29a361e43c3d8fbabceb58c,groceries,equal,3,3,3,yes,FALSE
+34f82bd7a29a361e43c3d8fbabceb58c,fundraising,equal,4,2,2,yes,FALSE
+34f82bd7a29a361e43c3d8fbabceb58c,architects,less,5,1,0,yes,FALSE
+34f82bd7a29a361e43c3d8fbabceb58c,feedback,less,4,3,2,yes,FALSE
+34f82bd7a29a361e43c3d8fbabceb58c,concerts,equal,3,3,2,yes,FALSE
+34f82bd7a29a361e43c3d8fbabceb58c,babysitting,less,4,2,3,yes,FALSE
+34f82bd7a29a361e43c3d8fbabceb58c,coffee,more,3,3,3,yes,FALSE
+34f82bd7a29a361e43c3d8fbabceb58c,conversation,less,5,1,0,yes,FALSE
+34f82bd7a29a361e43c3d8fbabceb58c,family meals,less,4,2,0,yes,FALSE
+34f82bd7a29a361e43c3d8fbabceb58c,restaurant,more,2,5,1,yes,FALSE
+34f82bd7a29a361e43c3d8fbabceb58c,housemates,equal,3,3,0,yes,FALSE
+34f82bd7a29a361e43c3d8fbabceb58c,weekend,more,2,3,1,yes,FALSE
+34f82bd7a29a361e43c3d8fbabceb58c,scheduling,equal,3,4,1,yes,FALSE
+34f82bd7a29a361e43c3d8fbabceb58c,gifts,more,3,2,3,yes,FALSE
+e811398b42b6c07b72a2abce302fb4f7,meeting location,more,4,5,1,yes,TRUE
+e811398b42b6c07b72a2abce302fb4f7,conversation,equal,5,2,1,yes,TRUE
+e811398b42b6c07b72a2abce302fb4f7,gifts,more,4,1,3,yes,TRUE
+e811398b42b6c07b72a2abce302fb4f7,babysitting,equal,3,4,1,yes,TRUE
+e811398b42b6c07b72a2abce302fb4f7,weekend,more,3,3,2,yes,TRUE
+e811398b42b6c07b72a2abce302fb4f7,meeting prep,less,4,3,1,yes,TRUE
+e811398b42b6c07b72a2abce302fb4f7,coffee,less,4,4,1,yes,TRUE
+e811398b42b6c07b72a2abce302fb4f7,concerts,equal,4,4,2,yes,TRUE
+e811398b42b6c07b72a2abce302fb4f7,architects,less,4,2,1,yes,TRUE
+e811398b42b6c07b72a2abce302fb4f7,feedback,equal,4,4,1,yes,TRUE
+e811398b42b6c07b72a2abce302fb4f7,restaurant,less,4,4,3,yes,TRUE
+e811398b42b6c07b72a2abce302fb4f7,scheduling,equal,4,4,2,yes,TRUE
+e811398b42b6c07b72a2abce302fb4f7,group project,equal,4,3,1,yes,TRUE
+e811398b42b6c07b72a2abce302fb4f7,groceries,more,4,4,2,yes,TRUE
+e811398b42b6c07b72a2abce302fb4f7,family meals,less,4,3,0,yes,TRUE
+e811398b42b6c07b72a2abce302fb4f7,police,less,4,1,0,yes,TRUE
+e811398b42b6c07b72a2abce302fb4f7,fundraising,more,4,3,2,yes,TRUE
+e811398b42b6c07b72a2abce302fb4f7,housemates,more,4,3,0,yes,TRUE
+e59ee8f9344ff48bd0d5187014baf1fb,feedback,less,4,4,2,yes,TRUE
+e59ee8f9344ff48bd0d5187014baf1fb,weekend,more,1,1,5,yes,TRUE
+e59ee8f9344ff48bd0d5187014baf1fb,groceries,more,2,4,4,yes,TRUE
+e59ee8f9344ff48bd0d5187014baf1fb,restaurant,more,1,5,2,yes,TRUE
+e59ee8f9344ff48bd0d5187014baf1fb,concerts,less,1,2,4,yes,TRUE
+e59ee8f9344ff48bd0d5187014baf1fb,fundraising,equal,5,1,1,yes,TRUE
+e59ee8f9344ff48bd0d5187014baf1fb,family meals,equal,6,1,1,yes,TRUE
+e59ee8f9344ff48bd0d5187014baf1fb,police,less,6,0,0,yes,TRUE
+e59ee8f9344ff48bd0d5187014baf1fb,meeting prep,more,5,1,0,yes,TRUE
+e59ee8f9344ff48bd0d5187014baf1fb,babysitting,more,4,4,1,yes,TRUE
+e59ee8f9344ff48bd0d5187014baf1fb,housemates,equal,5,1,0,yes,TRUE
+e59ee8f9344ff48bd0d5187014baf1fb,meeting location,less,5,1,0,yes,TRUE
+e59ee8f9344ff48bd0d5187014baf1fb,group project,less,5,1,0,yes,TRUE
+e59ee8f9344ff48bd0d5187014baf1fb,conversation,equal,5,1,0,yes,TRUE
+e59ee8f9344ff48bd0d5187014baf1fb,scheduling,more,1,5,0,yes,TRUE
+e59ee8f9344ff48bd0d5187014baf1fb,gifts,equal,4,4,0,yes,TRUE
+e59ee8f9344ff48bd0d5187014baf1fb,architects,less,5,1,0,yes,TRUE
+e59ee8f9344ff48bd0d5187014baf1fb,coffee,equal,4,4,0,yes,TRUE
+bf13b8cef6cabf4b3f08f3c12dedfb92,coffee,less,2,4,3,yes,FALSE
+bf13b8cef6cabf4b3f08f3c12dedfb92,family meals,equal,2,3,2,yes,FALSE
+bf13b8cef6cabf4b3f08f3c12dedfb92,housemates,more,4,4,3,yes,FALSE
+bf13b8cef6cabf4b3f08f3c12dedfb92,gifts,less,3,2,4,yes,FALSE
+bf13b8cef6cabf4b3f08f3c12dedfb92,meeting location,more,2,3,2,yes,FALSE
+bf13b8cef6cabf4b3f08f3c12dedfb92,fundraising,more,2,3,2,yes,FALSE
+bf13b8cef6cabf4b3f08f3c12dedfb92,babysitting,equal,2,3,2,yes,FALSE
+bf13b8cef6cabf4b3f08f3c12dedfb92,concerts,equal,4,4,1,yes,FALSE
+bf13b8cef6cabf4b3f08f3c12dedfb92,weekend,less,2,3,4,yes,FALSE
+bf13b8cef6cabf4b3f08f3c12dedfb92,feedback,equal,3,4,4,yes,FALSE
+bf13b8cef6cabf4b3f08f3c12dedfb92,group project,more,4,4,4,yes,FALSE
+bf13b8cef6cabf4b3f08f3c12dedfb92,restaurant,less,2,3,3,yes,FALSE
+bf13b8cef6cabf4b3f08f3c12dedfb92,police,less,3,4,3,yes,FALSE
+bf13b8cef6cabf4b3f08f3c12dedfb92,groceries,more,4,3,3,yes,FALSE
+bf13b8cef6cabf4b3f08f3c12dedfb92,architects,equal,3,2,3,yes,FALSE
+bf13b8cef6cabf4b3f08f3c12dedfb92,meeting prep,less,4,3,2,yes,FALSE
+bf13b8cef6cabf4b3f08f3c12dedfb92,conversation,equal,3,4,2,yes,FALSE
+bf13b8cef6cabf4b3f08f3c12dedfb92,scheduling,more,2,3,2,yes,FALSE
+c60ceeea86598281177a39a6a90fafa3,concerts,equal,1,5,3,yes,TRUE
+c60ceeea86598281177a39a6a90fafa3,family meals,equal,4,2,1,yes,TRUE
+c60ceeea86598281177a39a6a90fafa3,group project,less,2,4,2,yes,TRUE
+c60ceeea86598281177a39a6a90fafa3,police,equal,2,4,1,yes,TRUE
+c60ceeea86598281177a39a6a90fafa3,scheduling,more,2,4,1,yes,TRUE
+c60ceeea86598281177a39a6a90fafa3,conversation,more,4,1,0,yes,TRUE
+c60ceeea86598281177a39a6a90fafa3,groceries,less,2,4,2,yes,TRUE
+c60ceeea86598281177a39a6a90fafa3,architects,equal,5,3,0,yes,TRUE
+c60ceeea86598281177a39a6a90fafa3,fundraising,more,5,2,1,yes,TRUE
+c60ceeea86598281177a39a6a90fafa3,meeting prep,less,5,2,2,yes,TRUE
+c60ceeea86598281177a39a6a90fafa3,restaurant,less,3,4,1,yes,TRUE
+c60ceeea86598281177a39a6a90fafa3,weekend,less,2,5,0,yes,TRUE
+c60ceeea86598281177a39a6a90fafa3,meeting location,less,5,1,1,yes,TRUE
+c60ceeea86598281177a39a6a90fafa3,babysitting,more,4,2,3,yes,TRUE
+c60ceeea86598281177a39a6a90fafa3,coffee,more,NA,4,2,yes,TRUE
+c60ceeea86598281177a39a6a90fafa3,gifts,more,4,2,1,yes,TRUE
+c60ceeea86598281177a39a6a90fafa3,housemates,equal,2,5,3,yes,TRUE
+c60ceeea86598281177a39a6a90fafa3,feedback,equal,4,4,2,yes,TRUE
+5682d8f20646ae3eb15c20d9459b296d,coffee,more,5,2,0,yes,TRUE
+5682d8f20646ae3eb15c20d9459b296d,police,more,6,1,0,yes,TRUE
+5682d8f20646ae3eb15c20d9459b296d,meeting prep,more,6,0,0,yes,TRUE
+5682d8f20646ae3eb15c20d9459b296d,gifts,more,6,4,1,yes,TRUE
+5682d8f20646ae3eb15c20d9459b296d,housemates,equal,2,4,1,yes,TRUE
+5682d8f20646ae3eb15c20d9459b296d,restaurant,more,0,5,0,yes,TRUE
+5682d8f20646ae3eb15c20d9459b296d,meeting location,equal,3,4,0,yes,TRUE
+5682d8f20646ae3eb15c20d9459b296d,weekend,more,2,4,0,yes,TRUE
+5682d8f20646ae3eb15c20d9459b296d,fundraising,equal,2,5,1,yes,TRUE
+5682d8f20646ae3eb15c20d9459b296d,scheduling,equal,2,4,0,yes,TRUE
+5682d8f20646ae3eb15c20d9459b296d,babysitting,less,5,2,1,yes,TRUE
+5682d8f20646ae3eb15c20d9459b296d,groceries,equal,4,4,1,yes,TRUE
+5682d8f20646ae3eb15c20d9459b296d,family meals,less,5,1,0,yes,TRUE
+5682d8f20646ae3eb15c20d9459b296d,conversation,less,6,0,0,yes,TRUE
+5682d8f20646ae3eb15c20d9459b296d,group project,equal,5,2,0,yes,TRUE
+5682d8f20646ae3eb15c20d9459b296d,concerts,less,1,6,2,yes,TRUE
+5682d8f20646ae3eb15c20d9459b296d,architects,less,6,4,0,yes,TRUE
+5682d8f20646ae3eb15c20d9459b296d,feedback,less,4,4,2,yes,TRUE
+d2e93fc709dc7b67bd96edbd1b629e65,feedback,less,4,4,5,yes,TRUE
+d2e93fc709dc7b67bd96edbd1b629e65,concerts,equal,1,5,1,yes,TRUE
+d2e93fc709dc7b67bd96edbd1b629e65,meeting location,less,5,2,1,yes,TRUE
+d2e93fc709dc7b67bd96edbd1b629e65,housemates,equal,4,4,1,yes,TRUE
+d2e93fc709dc7b67bd96edbd1b629e65,architects,equal,5,4,0,yes,TRUE
+d2e93fc709dc7b67bd96edbd1b629e65,scheduling,more,1,5,2,yes,TRUE
+d2e93fc709dc7b67bd96edbd1b629e65,groceries,less,4,4,1,yes,TRUE
+d2e93fc709dc7b67bd96edbd1b629e65,meeting prep,less,5,1,0,yes,TRUE
+d2e93fc709dc7b67bd96edbd1b629e65,police,equal,1,4,0,yes,TRUE
+d2e93fc709dc7b67bd96edbd1b629e65,group project,less,2,3,0,yes,TRUE
+d2e93fc709dc7b67bd96edbd1b629e65,gifts,equal,2,0,1,yes,TRUE
+d2e93fc709dc7b67bd96edbd1b629e65,babysitting,more,2,5,0,yes,TRUE
+d2e93fc709dc7b67bd96edbd1b629e65,coffee,more,5,4,1,yes,TRUE
+d2e93fc709dc7b67bd96edbd1b629e65,family meals,equal,0,5,0,yes,TRUE
+d2e93fc709dc7b67bd96edbd1b629e65,fundraising,more,4,4,1,yes,TRUE
+d2e93fc709dc7b67bd96edbd1b629e65,restaurant,less,2,5,1,yes,TRUE
+d2e93fc709dc7b67bd96edbd1b629e65,weekend,more,2,4,3,yes,TRUE
+d2e93fc709dc7b67bd96edbd1b629e65,conversation,more,4,2,1,yes,TRUE
+9b25bb62f95b812c64e70bea7602bba8,police,more,3,3,1,yes,TRUE
+9b25bb62f95b812c64e70bea7602bba8,babysitting,equal,5,4,2,yes,TRUE
+9b25bb62f95b812c64e70bea7602bba8,feedback,more,4,1,4,yes,TRUE
+9b25bb62f95b812c64e70bea7602bba8,weekend,equal,2,2,4,yes,TRUE
+9b25bb62f95b812c64e70bea7602bba8,concerts,more,4,2,2,yes,TRUE
+9b25bb62f95b812c64e70bea7602bba8,scheduling,equal,4,3,2,yes,TRUE
+9b25bb62f95b812c64e70bea7602bba8,restaurant,equal,4,5,1,yes,TRUE
+9b25bb62f95b812c64e70bea7602bba8,meeting location,more,5,1,0,yes,TRUE
+9b25bb62f95b812c64e70bea7602bba8,gifts,less,6,0,0,yes,TRUE
+9b25bb62f95b812c64e70bea7602bba8,family meals,less,6,1,0,yes,TRUE
+9b25bb62f95b812c64e70bea7602bba8,housemates,less,6,0,3,yes,TRUE
+9b25bb62f95b812c64e70bea7602bba8,fundraising,less,6,0,2,yes,TRUE
+9b25bb62f95b812c64e70bea7602bba8,coffee,less,6,0,1,yes,TRUE
+9b25bb62f95b812c64e70bea7602bba8,groceries,equal,4,4,3,yes,TRUE
+9b25bb62f95b812c64e70bea7602bba8,group project,more,6,0,1,yes,TRUE
+9b25bb62f95b812c64e70bea7602bba8,conversation,less,6,0,1,yes,TRUE
+9b25bb62f95b812c64e70bea7602bba8,meeting prep,equal,4,3,2,yes,TRUE
+9b25bb62f95b812c64e70bea7602bba8,architects,more,5,1,1,yes,TRUE
+05cd43e83840daf7a8997e1e5c7c7524,coffee,more,4,4,2,yes,TRUE
+05cd43e83840daf7a8997e1e5c7c7524,gifts,more,5,3,1,yes,TRUE
+05cd43e83840daf7a8997e1e5c7c7524,architects,equal,5,5,1,yes,TRUE
+05cd43e83840daf7a8997e1e5c7c7524,family meals,equal,4,4,0,yes,TRUE
+05cd43e83840daf7a8997e1e5c7c7524,scheduling,less,3,3,1,yes,TRUE
+05cd43e83840daf7a8997e1e5c7c7524,concerts,equal,4,3,1,yes,TRUE
+05cd43e83840daf7a8997e1e5c7c7524,feedback,equal,4,5,1,yes,TRUE
+05cd43e83840daf7a8997e1e5c7c7524,housemates,more,4,5,0,yes,TRUE
+05cd43e83840daf7a8997e1e5c7c7524,police,equal,5,4,0,yes,TRUE
+05cd43e83840daf7a8997e1e5c7c7524,meeting location,equal,5,3,1,yes,TRUE
+05cd43e83840daf7a8997e1e5c7c7524,group project,less,4,3,0,yes,TRUE
+05cd43e83840daf7a8997e1e5c7c7524,weekend,less,5,3,0,yes,TRUE
+05cd43e83840daf7a8997e1e5c7c7524,babysitting,more,5,4,1,yes,TRUE
+05cd43e83840daf7a8997e1e5c7c7524,meeting prep,less,4,4,2,yes,TRUE
+05cd43e83840daf7a8997e1e5c7c7524,restaurant,less,3,5,0,yes,TRUE
+05cd43e83840daf7a8997e1e5c7c7524,groceries,less,5,5,3,yes,TRUE
+05cd43e83840daf7a8997e1e5c7c7524,fundraising,more,6,3,2,yes,TRUE
+05cd43e83840daf7a8997e1e5c7c7524,conversation,more,5,3,1,yes,TRUE
+34ed565104998d4fd69c6fbe18330d75,babysitting,more,5,4,1,yes,TRUE
+34ed565104998d4fd69c6fbe18330d75,meeting location,equal,4,3,2,yes,TRUE
+34ed565104998d4fd69c6fbe18330d75,restaurant,equal,4,4,2,yes,TRUE
+34ed565104998d4fd69c6fbe18330d75,feedback,more,4,4,1,yes,TRUE
+34ed565104998d4fd69c6fbe18330d75,concerts,less,5,4,1,yes,TRUE
+34ed565104998d4fd69c6fbe18330d75,architects,more,6,4,0,yes,TRUE
+34ed565104998d4fd69c6fbe18330d75,fundraising,less,5,3,1,yes,TRUE
+34ed565104998d4fd69c6fbe18330d75,gifts,equal,2,2,1,yes,TRUE
+34ed565104998d4fd69c6fbe18330d75,police,more,4,5,0,yes,TRUE
+34ed565104998d4fd69c6fbe18330d75,family meals,more,5,3,1,yes,TRUE
+34ed565104998d4fd69c6fbe18330d75,housemates,less,4,2,0,yes,TRUE
+34ed565104998d4fd69c6fbe18330d75,conversation,less,5,2,2,yes,TRUE
+34ed565104998d4fd69c6fbe18330d75,groceries,equal,4,4,1,yes,TRUE
+34ed565104998d4fd69c6fbe18330d75,group project,less,4,3,1,yes,TRUE
+34ed565104998d4fd69c6fbe18330d75,meeting prep,equal,5,3,2,yes,TRUE
+34ed565104998d4fd69c6fbe18330d75,coffee,more,4,3,3,yes,TRUE
+34ed565104998d4fd69c6fbe18330d75,scheduling,less,5,3,2,yes,TRUE
+34ed565104998d4fd69c6fbe18330d75,weekend,equal,2,2,1,yes,TRUE
+c586fcd92c2d0b22bb84371896be28f2,groceries,more,1,4,3,yes,TRUE
+c586fcd92c2d0b22bb84371896be28f2,housemates,equal,4,2,1,yes,TRUE
+c586fcd92c2d0b22bb84371896be28f2,meeting location,less,4,0,1,yes,TRUE
+c586fcd92c2d0b22bb84371896be28f2,babysitting,more,1,6,2,yes,TRUE
+c586fcd92c2d0b22bb84371896be28f2,feedback,less,4,4,2,yes,TRUE
+c586fcd92c2d0b22bb84371896be28f2,fundraising,more,6,1,3,yes,TRUE
+c586fcd92c2d0b22bb84371896be28f2,coffee,equal,2,4,3,yes,TRUE
+c586fcd92c2d0b22bb84371896be28f2,restaurant,less,4,1,2,yes,TRUE
+c586fcd92c2d0b22bb84371896be28f2,family meals,equal,5,2,0,yes,TRUE
+c586fcd92c2d0b22bb84371896be28f2,gifts,equal,1,2,1,yes,TRUE
+c586fcd92c2d0b22bb84371896be28f2,meeting prep,less,6,1,1,yes,TRUE
+c586fcd92c2d0b22bb84371896be28f2,police,equal,1,5,0,yes,TRUE
+c586fcd92c2d0b22bb84371896be28f2,weekend,more,1,1,6,yes,TRUE
+c586fcd92c2d0b22bb84371896be28f2,concerts,equal,2,4,2,yes,TRUE
+c586fcd92c2d0b22bb84371896be28f2,architects,less,6,3,0,yes,TRUE
+c586fcd92c2d0b22bb84371896be28f2,group project,less,1,5,0,yes,TRUE
+c586fcd92c2d0b22bb84371896be28f2,scheduling,more,1,5,1,yes,TRUE
+c586fcd92c2d0b22bb84371896be28f2,conversation,more,6,1,1,yes,TRUE
+10d5fcd0377769b9f26bd5854393fde6,fundraising,more,5,2,1,yes,FALSE
+10d5fcd0377769b9f26bd5854393fde6,conversation,equal,5,2,4,yes,FALSE
+10d5fcd0377769b9f26bd5854393fde6,babysitting,equal,5,3,2,yes,FALSE
+10d5fcd0377769b9f26bd5854393fde6,police,less,3,4,1,yes,FALSE
+10d5fcd0377769b9f26bd5854393fde6,scheduling,equal,2,4,2,yes,FALSE
+10d5fcd0377769b9f26bd5854393fde6,meeting prep,less,3,4,2,yes,FALSE
+10d5fcd0377769b9f26bd5854393fde6,gifts,more,4,4,1,yes,FALSE
+10d5fcd0377769b9f26bd5854393fde6,weekend,more,4,5,1,yes,FALSE
+10d5fcd0377769b9f26bd5854393fde6,housemates,equal,3,4,2,yes,FALSE
+10d5fcd0377769b9f26bd5854393fde6,meeting location,more,4,4,1,yes,FALSE
+10d5fcd0377769b9f26bd5854393fde6,coffee,less,4,3,1,yes,FALSE
+10d5fcd0377769b9f26bd5854393fde6,feedback,less,4,5,3,yes,FALSE
+10d5fcd0377769b9f26bd5854393fde6,group project,equal,4,5,2,yes,FALSE
+10d5fcd0377769b9f26bd5854393fde6,architects,less,4,4,3,yes,FALSE
+10d5fcd0377769b9f26bd5854393fde6,restaurant,more,3,4,2,yes,FALSE
+10d5fcd0377769b9f26bd5854393fde6,groceries,more,4,3,2,yes,FALSE
+10d5fcd0377769b9f26bd5854393fde6,concerts,equal,3,4,3,yes,FALSE
+10d5fcd0377769b9f26bd5854393fde6,family meals,less,4,4,1,yes,FALSE
+41fcac3b38af50694df77f52e8d39d68,architects,equal,4,3,1,yes,TRUE
+41fcac3b38af50694df77f52e8d39d68,meeting prep,less,6,1,2,yes,TRUE
+41fcac3b38af50694df77f52e8d39d68,meeting location,equal,4,2,2,yes,TRUE
+41fcac3b38af50694df77f52e8d39d68,family meals,more,3,3,0,yes,TRUE
+41fcac3b38af50694df77f52e8d39d68,fundraising,more,5,1,3,yes,TRUE
+41fcac3b38af50694df77f52e8d39d68,groceries,less,3,3,1,yes,TRUE
+41fcac3b38af50694df77f52e8d39d68,housemates,more,4,4,3,yes,TRUE
+41fcac3b38af50694df77f52e8d39d68,concerts,equal,3,4,1,yes,TRUE
+41fcac3b38af50694df77f52e8d39d68,restaurant,less,4,4,1,yes,TRUE
+41fcac3b38af50694df77f52e8d39d68,babysitting,less,3,3,1,yes,TRUE
+41fcac3b38af50694df77f52e8d39d68,coffee,more,2,3,2,yes,TRUE
+41fcac3b38af50694df77f52e8d39d68,scheduling,less,3,3,1,yes,TRUE
+41fcac3b38af50694df77f52e8d39d68,conversation,more,3,3,1,yes,TRUE
+41fcac3b38af50694df77f52e8d39d68,gifts,more,2,4,1,yes,TRUE
+41fcac3b38af50694df77f52e8d39d68,weekend,less,2,4,1,yes,TRUE
+41fcac3b38af50694df77f52e8d39d68,group project,equal,4,2,2,yes,TRUE
+41fcac3b38af50694df77f52e8d39d68,feedback,equal,4,4,2,yes,TRUE
+41fcac3b38af50694df77f52e8d39d68,police,equal,3,4,1,yes,TRUE
+7118d96e7561d9c08740c45631c0a474,architects,equal,2,4,0,yes,TRUE
+7118d96e7561d9c08740c45631c0a474,family meals,equal,4,4,0,yes,TRUE
+7118d96e7561d9c08740c45631c0a474,babysitting,equal,1,5,1,yes,TRUE
+7118d96e7561d9c08740c45631c0a474,group project,more,5,2,2,yes,TRUE
+7118d96e7561d9c08740c45631c0a474,housemates,more,4,2,0,yes,TRUE
+7118d96e7561d9c08740c45631c0a474,feedback,equal,4,5,1,yes,TRUE
+7118d96e7561d9c08740c45631c0a474,fundraising,more,5,4,1,yes,TRUE
+7118d96e7561d9c08740c45631c0a474,gifts,less,4,1,2,yes,TRUE
+7118d96e7561d9c08740c45631c0a474,groceries,more,5,6,0,yes,TRUE
+7118d96e7561d9c08740c45631c0a474,meeting prep,less,4,4,1,yes,TRUE
+7118d96e7561d9c08740c45631c0a474,concerts,more,2,4,1,yes,TRUE
+7118d96e7561d9c08740c45631c0a474,weekend,less,2,5,1,yes,TRUE
+7118d96e7561d9c08740c45631c0a474,meeting location,less,5,2,1,yes,TRUE
+7118d96e7561d9c08740c45631c0a474,restaurant,less,2,4,4,yes,TRUE
+7118d96e7561d9c08740c45631c0a474,scheduling,more,4,4,1,yes,TRUE
+7118d96e7561d9c08740c45631c0a474,coffee,less,2,2,4,yes,TRUE
+7118d96e7561d9c08740c45631c0a474,conversation,equal,2,4,1,yes,TRUE
+7118d96e7561d9c08740c45631c0a474,police,equal,2,4,1,yes,TRUE
+c706c7b82b710f1ad4ff1d0b08e20c0f,coffee,more,4,2,5,yes,TRUE
+c706c7b82b710f1ad4ff1d0b08e20c0f,family meals,more,1,1,1,yes,TRUE
+c706c7b82b710f1ad4ff1d0b08e20c0f,architects,more,1,1,1,yes,TRUE
+c706c7b82b710f1ad4ff1d0b08e20c0f,conversation,less,5,1,1,yes,TRUE
+c706c7b82b710f1ad4ff1d0b08e20c0f,feedback,more,1,1,1,yes,TRUE
+c706c7b82b710f1ad4ff1d0b08e20c0f,group project,less,4,2,1,yes,TRUE
+c706c7b82b710f1ad4ff1d0b08e20c0f,weekend,equal,1,5,5,yes,TRUE
+c706c7b82b710f1ad4ff1d0b08e20c0f,meeting prep,more,5,1,1,yes,TRUE
+c706c7b82b710f1ad4ff1d0b08e20c0f,meeting location,equal,5,1,1,yes,TRUE
+c706c7b82b710f1ad4ff1d0b08e20c0f,babysitting,less,1,1,2,yes,TRUE
+c706c7b82b710f1ad4ff1d0b08e20c0f,groceries,equal,0,0,1,yes,TRUE
+c706c7b82b710f1ad4ff1d0b08e20c0f,concerts,less,1,5,1,yes,TRUE
+c706c7b82b710f1ad4ff1d0b08e20c0f,fundraising,equal,4,1,1,yes,TRUE
+c706c7b82b710f1ad4ff1d0b08e20c0f,gifts,equal,1,4,1,yes,TRUE
+c706c7b82b710f1ad4ff1d0b08e20c0f,restaurant,equal,1,5,1,yes,TRUE
+c706c7b82b710f1ad4ff1d0b08e20c0f,police,more,2,2,1,yes,TRUE
+c706c7b82b710f1ad4ff1d0b08e20c0f,scheduling,less,1,5,1,yes,TRUE
+c706c7b82b710f1ad4ff1d0b08e20c0f,housemates,less,1,5,0,yes,TRUE
+bc23ddb4d9fe0710c442a83aad57a640,scheduling,equal,2,4,1,yes,TRUE
+bc23ddb4d9fe0710c442a83aad57a640,babysitting,equal,1,5,1,yes,TRUE
+bc23ddb4d9fe0710c442a83aad57a640,feedback,more,5,1,2,yes,TRUE
+bc23ddb4d9fe0710c442a83aad57a640,architects,more,5,1,1,yes,TRUE
+bc23ddb4d9fe0710c442a83aad57a640,meeting prep,more,6,0,1,yes,TRUE
+bc23ddb4d9fe0710c442a83aad57a640,restaurant,equal,2,4,1,yes,TRUE
+bc23ddb4d9fe0710c442a83aad57a640,gifts,less,5,2,1,yes,TRUE
+bc23ddb4d9fe0710c442a83aad57a640,coffee,less,4,4,1,yes,TRUE
+bc23ddb4d9fe0710c442a83aad57a640,housemates,less,5,1,0,yes,TRUE
+bc23ddb4d9fe0710c442a83aad57a640,groceries,equal,2,4,1,yes,TRUE
+bc23ddb4d9fe0710c442a83aad57a640,weekend,equal,2,5,1,yes,TRUE
+bc23ddb4d9fe0710c442a83aad57a640,family meals,less,5,2,1,yes,TRUE
+bc23ddb4d9fe0710c442a83aad57a640,meeting location,more,5,2,1,yes,TRUE
+bc23ddb4d9fe0710c442a83aad57a640,conversation,less,6,0,0,yes,TRUE
+bc23ddb4d9fe0710c442a83aad57a640,concerts,more,5,2,1,yes,TRUE
+bc23ddb4d9fe0710c442a83aad57a640,fundraising,equal,4,4,1,yes,TRUE
+bc23ddb4d9fe0710c442a83aad57a640,police,less,5,1,1,yes,TRUE
+bc23ddb4d9fe0710c442a83aad57a640,group project,more,5,0,1,yes,TRUE
