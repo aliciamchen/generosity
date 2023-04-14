@@ -1,0 +1,61 @@
+subject_id,time_elapsed,gender,age,understood,pass_attention,comments
+f2ef57c3f9c16cb0d0e0d280585a41da,393388,male,39,yes,TRUE,NA
+461e8162cda1b8708f743138818b372a,534975,male,40,yes,TRUE,None.
+2ec7dc6272e27ba957b43e6082240645,835177,female,42,yes,TRUE,NA
+2881d159e40a329d92f48b32ca38daaf,354761,male,25,yes,TRUE,"None at this time, thanks :)"
+3c032e04574cd756fabbacbaafd0efab,529145,male,27,yes,TRUE,Nope! Thank you :)
+4557aa987611b5a056dbde803efe6767,495795,female,39,yes,TRUE,NA
+c10fdee9fa36d430fec8129d3fd95de1,1838130,female,26,yes,TRUE,NA
+fab4d0f2967afc90892bed501ad091cc,544571,female,71,yes,TRUE,none that I can think of
+3010999ce217b0dcd950dbcf1dbab198,640184,male,33,yes,TRUE,NA
+d20119f932e60aa4010c070432a4e3df,993004,female,52,yes,TRUE,NA
+0119204bcb7793033be83b0f2de5b7e1,537042,female,30,yes,TRUE,NA
+105b0e33dd1a30586b0919769a54920e,1274860,female,40,yes,TRUE,NA
+4c3c78cfe1fab5ccf4bdb179b12a5e8c,1928859,male,38,yes,TRUE,NA
+36b9eb539986f6e45c75798e0512a5a7,514192,female,29,yes,TRUE,"was fine, thanks"
+7a68aae8d21f93d72db557db5fe5c4ff,581776,male,32,yes,TRUE,NA
+1291ba47a51cb6806167274f7e870321,468336,female,48,yes,TRUE,NA
+ae246676ca169a2e31a74c8e2c0efc40,532764,male,39,yes,TRUE,NA
+a0a88f8d5174f10a04e91324ca5a105b,663046,male,42,yes,TRUE,NA
+61b17a4c858116a19d55fc815b49bcb7,380635,male,29,yes,TRUE,NA
+f3ba90a2d15351ff1872d86a9bcfd097,539182,female,43,yes,TRUE,none
+b336f01efeb791a3fbb2068ae7382ef6,408567,male,45,yes,TRUE,NA
+051246651d8d4b1e57e5cee4b1264827,2310339,female,27,yes,TRUE,NA
+9ef87fbdf75a8144c12435273ae6564e,251922,male,21,yes,TRUE,NA
+9410cd0ac5beeb2f3cbc781339930cda,290484,female,23,yes,TRUE,NA
+e6c9578b63f348e637fe5895bee048e1,1702413,male,24,yes,TRUE,NA
+62eb537a6776a541137f6bd48918f911,794906,male,64,yes,TRUE,"Very interesting
+GL with your research! ☺️"
+3d1306a60e7506b2050cce140c4d2e14,1425924,female,22,yes,TRUE,No
+b1b6020956044f50cae6a349ee84d178,920628,female,33,yes,TRUE,"None, thank you!"
+3d36936f0911254ff693443fbf1414ce,841235,male,30,yes,TRUE,I think too many of the questions were blatantly equal among the two people at least with the information given
+15847a52cf8684bca63c1245bcf93a7d,884646,female,35,yes,TRUE,The study is really interesting.
+3cd44841a03e69901a8daddf7b3cab8f,1784836,male,29,yes,TRUE,NA
+95defe90f88c4bf25042aecf8c188652,373932,male,56,yes,TRUE,NA
+f7c575b1d5e5fb536f26fad7f651be14,1393787,male,34,yes,TRUE,NA
+c56de537344ff6c66c6fd36adc25e002,2026392,female,51,yes,TRUE,NA
+5a46aa2a28bb12883d5604c23d20ee32,1380568,female,32,yes,TRUE,NA
+8cdb80434c548c089851fa52b1d147ba,396406,female,21,yes,TRUE,NA
+ebe7d5cf2056fb7ac3bd0a30ac5bbd99,410770,female,26,yes,TRUE,none
+e60e756c4f54d3e03de19a78c8c9e1c7,855612,female,23,yes,TRUE,NA
+1d69b8be57df97d37c13df19be9dfdbe,474726,male,31,yes,TRUE,NA
+5f86cfee08af34e8295942e4dcd4de44,708782,nonconforming,25,yes,TRUE,NA
+e6108780636e99394ca663d13633dd32,553570,female,23,yes,TRUE,NA
+5c279a83348c237a0eb792556331fa61,451453,female,37,yes,TRUE,NA
+6bd1ded99a3151393ec9b0a2a1411b69,503203,female,22,yes,FALSE,NA
+23b193dde3de3899fefbe4022e1bd602,887511,female,29,yes,TRUE,NA
+2cf95ba26e4ef9951ea81949da8c5b21,560818,male,26,yes,TRUE,None
+42b0968aee0b7d1c2a80c8f55760b68c,608642,female,40,yes,TRUE,NA
+d7e8d6034f934bc0ef05c391db73a717,473573,female,39,yes,TRUE,NA
+c2ea55550fa0d0671749cfbfa66db630,547463,male,19,yes,TRUE,NA
+320b03a16a8739b76ad3493fdc696c66,749383,male,32,yes,TRUE,could see both sides of the different power dynamic in the scenarios
+80f4efab563d4fce24927fdb0d199ea0,683277,male,27,yes,TRUE,NA
+86557443de655d7b069178a8d6531549,1134304,female,59,yes,TRUE,NA
+d1939f3e97b8551d05c26af50d17ce2f,1040455,male,34,yes,TRUE,None
+2238934ac2c4271cd3a2b789a86a5cbf,878967,female,24,yes,TRUE,NA
+a7b64e1e15316c45d623399b642ddc31,1086872,male,49,yes,TRUE,NA
+e88b844a75216c2f4f999185c5db9cce,717954,male,30,yes,TRUE,NA
+20fad95ed8819ecb1c7ea3e87f02ad5b,341951,male,31,yes,TRUE,NA
+19b908071688521d9737e767ea8d4727,622756,male,23,yes,TRUE,NA
+831b2dcb5c88b4f877f4aecfc63d91e5,478811,male,32,yes,TRUE,NA
+c52ac2b8b9f3d2ecd4591142abbb7b5f,551588,female,55,yes,TRUE,NA

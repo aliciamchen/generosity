@@ -1,0 +1,442 @@
+[
+  {
+    "story": "",
+    "social_interaction": "attention",
+    "vignette": "Thank you for contributing to this study! This page is an attention check so we can make sure you're not a bot and can award you your pay when you complete the study.",
+    "less": "Please select \"extremely likely\" for this question.",
+    "more": "Please select \"extremely unlikely\" for this question.",
+    "equal": "Please select \"extremely likely\" for this question."
+  },
+  {
+    "story": "conversation",
+    "social_interaction": "precedent",
+    "vignette": "Consider Alice and Angela, who work at the same company. They meet weekly. Every time they meet, Alice spends most of the one-hour meeting talking, while Angela spends most of the one-hour meeting listening and asking questions. How likely is it that",
+    "less": "Angela and Alice are in a relationship where Angela has less power, status, or influence than Alice.",
+    "more": "Angela and Alice are in a relationship where Angela has more power, status, or influence than Alice.",
+    "equal": "Angela and Alice are in a relationship where they have equal power, status, or influence."
+  },
+  {
+    "story": "conversation",
+    "social_interaction": "reciprocity",
+    "vignette": "Consider Alice and Angela, who work at the same company. They meet weekly. Alice and Angela alternate spending most of the one-hour meeting talking, and listening and asking questions.",
+    "less": "Angela and Alice are in a relationship where Angela has less power, status, or influence than Alice.",
+    "more": "Angela and Alice are in a relationship where Angela has more power, status, or influence than Alice.",
+    "equal": "Angela and Alice are in a relationship where they have equal power, status, or influence."
+  },
+  {
+    "story": "conversation",
+    "social_interaction": "no_interaction",
+    "vignette": "Consider Alice and Angela, who work at the same company. Alice has a one-hour weekly meeting with Cathy, where Alice spends most of the meeting listening and asking questions. Angela has a one-hour weekly meeting with Emily, where Angela spends most of the one-hour meeting listening and asking questions. How likely is it that",
+    "less": "Angela and Alice are in a relationship where Angela has less power, status, or influence than Alice.",
+    "more": "Angela and Alice are in a relationship where Angela has more power, status, or influence than Alice.",
+    "equal": "Angela and Alice are in a relationship where they have equal power, status, or influence."
+  },
+  {
+    "story": "coffee",
+    "social_interaction": "precedent",
+    "vignette": "Consider Andrew and Bob, who work in the same field. They meet once a week for coffee. Every week, Bob buys and brings coffee to the meeting for both of them. How likely is it that",
+    "less": "Bob and Andrew are in a relationship where Bob has less power, status, or influence than Andrew.",
+    "more": "Bob and Andrew are in a relationship where Bob has more power, status, influence than Andrew.",
+    "equal": "Bob and Andrew are in a relationship where they have equal power, status, or influence."
+  },
+  {
+    "story": "coffee",
+    "social_interaction": "reciprocity",
+    "vignette": "Consider Andrew and Bob, who work in the same field. They meet once a week for coffee. Every week, Bob and Andrew alternate who buys and brings coffee to the meeting for both of them. How likely is it that",
+    "less": "Bob and Andrew are in a relationship where Bob has less power, status, or influence than Andrew.",
+    "more": "Bob and Andrew are in a relationship where Bob has more power, status, influence than Andrew.",
+    "equal": "Bob and Andrew have equal power, status, or influence."
+  },
+  {
+    "story": "coffee",
+    "social_interaction": "no_interaction",
+    "vignette": "Consider Andrew and Bob, who work in the same field, and frequent the same coffee shop. Andrew buys coffee for himself once a week before heading into work. Bob buys coffee for himself once a week before heading into work. How likely is it that",
+    "less": "Bob and Andrew are in a relationship where Bob has less power, status, or influence than Andrew.",
+    "more": "Bob and Andrew are in a relationship where Bob has more power, status, influence than Andrew.",
+    "equal": "Bob and Andrew have equal power, status, or influence."
+  },
+  {
+    "story": "gifts",
+    "social_interaction": "precedent",
+    "vignette": "Consider two families, the Lee family and the Min family. Every year, each member of the Lee family gives the Min family a precious and expensive gift. How likely is it that",
+    "less": "The Lee family and the Min family are in a relationship where the Lee family has less power, status, or influence than the Min family.",
+    "more": "The Lee family and the Min family are in a relationship where the Lee family has more power, status, or influence than the Min family.",
+    "equal": "The Lee family and the Min family are in a relationship where they have equal power, status, or influence."
+  },
+  {
+    "story": "gifts",
+    "social_interaction": "reciprocity",
+    "vignette": "Consider two families, the Lee family and the Min family. Every year, they alternate giving the other family similarly precious gifts. How likely is it that",
+    "less": "The Lee family and the Min family are in a relationship where the Lee family has less power, status, or influence than the Min family.",
+    "more": "The Lee family and the Min family are in a relationship where the Lee family has more power, status, or influence than the Min family.",
+    "equal": "The Lee family and the Min family are in a relationship where they have equal power, status, or influence."
+  },
+  {
+    "story": "gifts",
+    "social_interaction": "no_interaction",
+    "vignette": "Consider two families, the Lee family and the Min family. Every year, the Lee family gives the Wong family a precious and expensive gift. Every year, the Min family gives the Chen familly a precious and expensive gift. How likely is it that",
+    "less": "The Lee family and the Min family are in a relationship where the Lee family has less power, status, or influence than the Min family.",
+    "more": "The Lee family and the Min family are in a relationship where the Lee family has more power, status, or influence than the Min family.",
+    "equal": "The Lee family and the Min family are in a relationship where they have equal power, status, or influence."
+  },
+  {
+    "story": "housemates",
+    "social_interaction": "precedent",
+    "vignette": "Consider Sarah and Anne, who both live in the same old building. Any time Sarah notices something damaged or missing or needed for the house, like pipes or wires or detergent or batteries, she writes it on a list. Each week, Anne completes all of the tasks on the list. How likely is it that",
+    "less": "Anne and Sarah are in a relationship where Anne has less power, status, or influence than Sarah.",
+    "more": "Anne and Sarah are in a relationship where Anne has more power, status, or influence than Sarah.",
+    "equal": "Anne and Sarah are in a relationship where they have equal power, status, or influence."
+  },
+  {
+    "story": "housemates",
+    "social_interaction": "reciprocity",
+    "vignette": "Consider Sarah and Anne, who both live in the same old building. Any time Sarah notices something damaged or missing or needed for the house, like pipes or wires or detergent or batteries, she writes it on a list. Each week, they alternate turns completing the tasks on the list. How likely is it that",
+    "less": "Anne and Sarah are in a relationship where Anne has less power, status, or influence than Sarah.",
+    "more": "Anne and Sarah are in a relationship where Anne has more power, status, or influence than Sarah.",
+    "equal": "Anne and Sarah are in a relationship where they have equal power, status, or influence."
+  },
+  {
+    "story": "housemates",
+    "social_interaction": "no_interaction",
+    "vignette": "Consider Sarah and Anne, who both live in the same old building. Sarah noticed that some pipes and wires were damaged. Anne noticed that the shared facilities needed detergent and batteries. They each wrote a list and gave it to the building superintendent. How likely is it that",
+    "less": "Anne and Sarah are in a relationship where Anne has less power, status, or influence than Sarah.",
+    "more": "Anne and Sarah are in a relationship where Anne has more power, status, or influence than Sarah.",
+    "equal": "Anne and Sarah are in a relationship where they have equal power, status, or influence."
+  },
+  {
+    "story": "family meals",
+    "social_interaction": "precedent",
+    "vignette": "Consider Sue and Martha, who are part of the same family. Four times a year, the whole family gets together for key religious holidays. Every time, the family gathers at Sue’s house. Sue cooks all the food, serves it, and then cleans up after dinner. Martha is very appreciative, and gives Sue a big hug and a warm thank you. How likely is it that",
+    "less": "Sue and Martha are in a relationship where Sue has less power, status, or influence than Martha.",
+    "more": "Sue and Martha are in a relationship where Sue has more power, status, or influence than Martha.",
+    "equal": "Sue and Martha are in a relationship where they have equal power, status, or influence."
+  },
+  {
+    "story": "family meals",
+    "social_interaction": "reciprocity",
+    "vignette": "Consider Sue and Martha, who are part of the same family. Four times a year, the whole family gets together for key religious holidays. Two times, the family gathers at Sue’s house where Sue cooks all the food, serves it, and then cleans up after dinner. The other two times, the family gathers at Martha’s house, and Martha does all the cooking and cleaning. How likely is it that",
+    "less": "Sue and Martha are in a relationship where Sue has less power, status, or influence than Martha.",
+    "more": "Sue and Martha are in a relationship where Sue has more power, status, or influence than Martha.",
+    "equal": "Sue and Martha are in a relationship where they have equal power, status, or influence."
+  },
+  {
+    "story": "family meals",
+    "social_interaction": "no_interaction",
+    "vignette": "Consider Sue and Martha, who each are parts of large families. Sue’s family gets together for key religious holidays four times a year, gathering at Sue’s house where Sue cooks all the food, serves it, and then cleans up after dinner. Martha's family gets together for key religious holidays four times a year, gathering at Martha's house where Martha cooks all the food, serves it, and then cleans up after dinner.",
+    "less": "Sue and Martha are in a relationship where Sue has less power, status, or influence than Martha.",
+    "more": "Sue and Martha are in a relationship where Sue has more power, status, or influence than Martha.",
+    "equal": "Sue and Martha are in a relationship where they have equal power, status, or influence."
+  },
+  {
+    "story": "police",
+    "social_interaction": "precedent",
+    "vignette": "Consider Justin and Jarred, who are police officers on the same beat.  Each day, Justin goes to the office at 6am to do the day's paperwork, so that Jarred can arrive later and go straight to their shared patrol car. How likely is it that",
+    "less": "Justin and Jarred are in a relationship where Justin has less power, status, or influence than Jarred.",
+    "more": "Justin and Jarred are in a relationship where Justin has more power, status, or influence than Jarred.",
+    "equal": "Justin and Jarred are in a relationship where they have equal power, status, or influence."
+  },
+  {
+    "story": "police",
+    "social_interaction": "reciprocity",
+    "vignette": "Consider Justin and Jarred, who are police officers on the same beat.  Justin and Jarred take turns going to the office at 6am to do the day's paperwork, so that the other one can arrive later and go straight to their shared patrol car. How likely is it that",
+    "less": "Justin and Jarred are in a relationship where Justin has less power, status, or influence than Jarred.",
+    "more": "Justin and Jarred are in a relationship where Justin has more power, status, or influence than Jarred.",
+    "equal": "Justin and Jarred are in a relationship where they have equal power, status, or influence."
+  },
+  {
+    "story": "police",
+    "social_interaction": "no_interaction",
+    "vignette": "Consider Justin and Jarred, who are both police officers in the same city. Each day, Justin goes to the office at 6am to do the day's paperwork. The first thing Jarred does every day is go straight to his patrol car. How likely is it that",
+    "less": "Justin and Jarred are in a relationship where Justin has less power, status, or influence than Jarred.",
+    "more": "Justin and Jarred are in a relationship where Justin has more power, status, or influence than Jarred.",
+    "equal": "Justin and Jarred are in a relationship where they have equal power, status, or influence."
+  },
+  {
+    "story": "concerts",
+    "social_interaction": "precedent",
+    "vignette": "Consider Kevin and Allen, who frequently go to concerts together. Whenever they go to a concert together, Kevin always pays for the tickets. How likely is it that",
+    "less": "Kevin and Allen are in a relationship where Kevin has less power, status, or influence than Allen.",
+    "more": "Kevin and Allen are in a relationship where Kevin has more power, status, or influence than Allen.",
+    "equal": "Kevin and Allen are in a relationship where they have equal power, status, or influence."
+  },
+  {
+    "story": "concerts",
+    "social_interaction": "reciprocity",
+    "vignette": "Consider Kevin and Allen, who frequently go to concerts together. Whenever they go to a concert together, Kevin and Allen alternate paying for the tickets. How likely is it that",
+    "less": "Kevin and Allen are in a relationship where Kevin has less power, status, or influence than Allen.",
+    "more": "Kevin and Allen are in a relationship where Kevin has more power, status, or influence than Allen.",
+    "equal": "Kevin and Allen are in a relationship where they have equal power, status, or influence."
+  },
+  {
+    "story": "concerts",
+    "social_interaction": "no_interaction",
+    "vignette": "Consider Kevin and Allen, who frequently go to concerts. Kevin buys tickets for and goes to concerts alone. Allen buys tickets for and goes to concerts alone.",
+    "less": "Kevin and Allen are in a relationship where Kevin has less power, status, or influence than Allen.",
+    "more": "Kevin and Allen are in a relationship where Kevin has more power, status, or influence than Allen.",
+    "equal": "Kevin and Allen are in a relationship where they have equal power, status, or influence."
+  },
+  {
+    "story": "architects",
+    "social_interaction": "precedent",
+    "vignette": "Consider Sonia and Liana, who work as architects at the same company. They work on the same team, where they work together on their designs. Sonia always meticulously double-checks their finished designs before they send them out. How likely is it that",
+    "less": "Sonia and Liana are in a relationship where Sonia has less power, status, or influence than Liana.",
+    "more": "Sonia and Liana are in a relationship where Sonia has more power, status, or influence than Liana.",
+    "equal": "Sonia and Liana are in a relationship where they have equal power, status, or influence."
+  },
+  {
+    "story": "architects",
+    "social_interaction": "reciprocity",
+    "vignette": "Consider Sonia and Liana, who work as architects at the same company. They work on the same team, where they work together on their designs. Sonia and Liana alternate meticulously double-checking their finished designs before they send them out. How likely is it that",
+    "less": "Sonia and Liana are in a relationship where Sonia has less power, status, or influence than Liana.",
+    "more": "Sonia and Liana are in a relationship where Sonia has more power, status, or influence than Liana.",
+    "equal": "Sonia and Liana are in a relationship where they have equal power, status, or influence."
+  },
+  {
+    "story": "architects",
+    "social_interaction": "no_interaction",
+    "vignette": "Consider Sonia and Liana, who work as architects at the same company, but on different teams. Each of them has a system of meticulously double-checking their own designs before they send them out. How likely is it that",
+    "less": "Sonia and Liana are in a relationship where Sonia has less power, status, or influence than Liana.",
+    "more": "Sonia and Liana are in a relationship where Sonia has more power, status, or influence than Liana.",
+    "equal": "Sonia and Liana are in a relationship where they have equal power, status, or influence."
+  },
+  {
+    "story": "feedback",
+    "social_interaction": "precedent",
+    "vignette": "Consider Taylor and Samantha, who are both fiction writers living in the same city. They frequently attend the same group writing workshops. Samantha often shares work in progress, and Taylor gives her feedback on it.",
+    "less": "Taylor and Samantha are in a relationship where Taylor has less power, status, or influence than Samantha.",
+    "more": "Taylor and Samantha are in a relationship where Taylor has more power, status, or influence than Samantha.",
+    "equal": "Taylor and Samantha are in a relationship where they have equal power, status, or influence."
+  },
+  {
+    "story": "feedback",
+    "social_interaction": "reciprocity",
+    "vignette": "Consider Taylor and Samantha, who are both fiction writers living in the same city. They frequently attend the same group writing workshops. Taylor and Samantha alternate giving each other feedback on their work. How likely is it that",
+    "less": "Taylor and Samantha are in a relationship where Taylor has less power, status, or influence than Samantha.",
+    "more": "Taylor and Samantha are in a relationship where Taylor has more power, status, or influence than Samantha.",
+    "equal": "Taylor and Samantha are in a relationship where they have equal power, status, or influence."
+  },
+  {
+    "story": "feedback",
+    "social_interaction": "no_interaction",
+    "vignette": "Consider Taylor and Samantha, who are both fiction writers living in the same city, and frequently attend the same group writing workshops. Taylor generally gives Roberta feedback on her work, while Samantha gives Alexandra feedback on her work. How likely is it that",
+    "less": "Taylor and Samantha are in a relationship where Taylor has less power, status, or influence than Samantha.",
+    "more": "Taylor and Samantha are in a relationship where Taylor has more power, status, or influence than Samantha.",
+    "equal": "Taylor and Samantha are in a relationship where they have equal power, status, or influence."
+  },
+  {
+    "story": "meeting location",
+    "social_interaction": "precedent",
+    "vignette": "Consider Ethan and Benjamin, who work at the same Boston-area nonprofit. They meet once a week. Every week, Ethan walks to Benjamin’s office, where they have the meeting. How likely is it that",
+    "less": "Ethan and Benjamin are in a relationship where Ethan has less power, status, or influence than Benjamin.",
+    "more": "Ethan and Benjamin are in a relationship where Ethan has more power, status, or influence than Benjamin.",
+    "equal": "Ethan and Benjamin are in a relationship where they have equal power, status, or influence."
+  },
+  {
+    "story": "meeting location",
+    "social_interaction": "reciprocity",
+    "vignette": "Consider Ethan and Benjamin, who work at the same Boston-area nonprofit. They meet once a week. Every week, they alternate meeting in Ethan's office and in Benjamin's office. How likely is it that",
+    "less": "Ethan and Benjamin are in a relationship where Ethan has less power, status, or influence than Benjamin.",
+    "more": "Ethan and Benjamin are in a relationship where Ethan has more power, status, or influence than Benjamin.",
+    "equal": "Ethan and Benjamin are in a relationship where they have equal power, status, or influence."
+  },
+  {
+    "story": "meeting location",
+    "social_interaction": "no_interaction",
+    "vignette": "Consider Ethan and Benjamin, who both work at Boston-area nonprofits. Ethan meets with James in Ethan's office once a week. Benjamin meets with Charlie in Benjamin's office once a week. How likely is it that",
+    "less": "Ethan and Benjamin are in a relationship where Ethan has less power, status, or influence than Benjamin.",
+    "more": "Ethan and Benjamin are in a relationship where Ethan has more power, status, or influence than Benjamin.",
+    "equal": "Ethan and Benjamin are in a relationship where they have equal power, status, or influence."
+  },
+  {
+    "story": "group project",
+    "social_interaction": "precedent",
+    "vignette": "Consider Maxwell and Ralph, two people at the same company who are assigned to work together on the same project. Maxwell contributes most of the ideas, and also delegates tasks to Ralph. Each time they meet, Maxwell decides what to do next. How likely is it that",
+    "less": "Maxwell and Ralph are in a relationship where Maxwell has less power, status, or influence than Ralph.",
+    "more": "Maxwell and Ralph are in a relationship where Maxwell has more power, status, or influence than Ralph.",
+    "equal": "Maxwell and Ralph are in a relationship where they have equal power, status, or influence."
+  },
+  {
+    "story": "group project",
+    "social_interaction": "reciprocity",
+    "vignette": "Consider Maxwell and Ralph, two people at the same company who are assigned to work together on the same project. Each time they meet, they take turns delegating tasks, contributing ideas, and proposing what to do next. How likely is it that",
+    "less": "Maxwell and Ralph are in a relationship where Maxwell has less power, status, or influence than Ralph.",
+    "more": "Maxwell and Ralph are in a relationship where Maxwell has more power, status, or influence than Ralph.",
+    "equal": "Maxwell and Ralph are in a relationship where they have equal power, status, or influence."
+  },
+  {
+    "story": "group project",
+    "social_interaction": "no_interaction",
+    "vignette": "Consider Maxwell and Ralph, two people in the same company who are assigned to work on separate projects. Maxwell contributes most of the ideas and delegates most of the tasks when he meets with Sam. Ralph contributes most of the ideas and delegates most of the tasks when he meets with Liam. How likely is it that",
+    "less": "Maxwell and Ralph are in a relationship where Maxwell has less power, status, or influence than Ralph.",
+    "more": "Maxwell and Ralph are in a relationship where Maxwell has more power, status, or influence than Ralph.",
+    "equal": "Maxwell and Ralph are in a relationship where they have equal power, status, or influence."
+  },
+  {
+    "story": "meeting prep",
+    "social_interaction": "precedent",
+    "vignette": "Consider Chloe and Victoria, who work at the same news station. They meet once a week. Chloe always prepares the agenda for each meeting and books the meeting room. How likely is it that",
+    "less": "Chloe and Victoria are in a relationship where Chloe has less power, status, or influence than Victoria.",
+    "more": "Chloe and Victoria are in a relationship where Chloe has more power, status, or influence than Victoria.",
+    "equal": "Chloe and Victoria are in a relationship where they have equal power, status, or influence."
+  },
+  {
+    "story": "meeting prep",
+    "social_interaction": "reciprocity",
+    "vignette": "Consider Chloe and Victoria, who work at the same news station. They meet once a week. Chloe and Victoria alternate preparing the agenda for each meeting and booking the meeting room. How likely is it that",
+    "less": "Chloe and Victoria are in a relationship where Chloe has less power, status, or influence than Victoria.",
+    "more": "Chloe and Victoria are in a relationship where Chloe has more power, status, or influence than Victoria.",
+    "equal": "Chloe and Victoria are in a relationship where they have equal power, status, or influence."
+  },
+  {
+    "story": "meeting prep",
+    "social_interaction": "no_interaction",
+    "vignette": "Consider Chloe and Victoria, who work at the same news station. Chloe prepares the agenda for and books the meeting room for her weekly meeting with Ellie. Victoria prepares the agenda for and books the meeting room for her weekly meeting with Lillian. How likely is it that",
+    "less": "Chloe and Victoria are in a relationship where Chloe has less power, status, or influence than Victoria.",
+    "more": "Chloe and Victoria are in a relationship where Chloe has more power, status, or influence than Victoria.",
+    "equal": "Chloe and Victoria are in a relationship where they have equal power, status, or influence."
+  },
+  {
+    "story": "restaurant",
+    "social_interaction": "precedent",
+    "vignette": "Consider Avery and Grace, who go out to eat together every Thursday after work. There are two restaurants near their work: a Chinese restaurant, and an Indian restaurant. Avery prefers the Chinese restaurant, while Grace prefers the Indian restaurant. They go to the Chinese restaurant every week. How likely is it that",
+    "less": "Grace and Avery are in a relationship where Grace has less power, status, or influence than Avery.",
+    "more": "Grace and Avery are in a relationship where Grace has more power, status, or influence than Avery.",
+    "equal": "Grace and Avery are in a relationship where they have equal power, status, or influence."
+  },
+  {
+    "story": "restaurant",
+    "social_interaction": "reciprocity",
+    "vignette": "Consider Avery and Grace, who go out to eat together every Thursday after work. There are two restaurants near their work: a Chinese restaurant, and an Indian restaurant. Avery prefers the Chinese restaurant, while Grace prefers the Indian restaurant. Each week, they alternate going to the Chinese restaurant and going to the Indian restaurant. How likely is it that",
+    "less": "Grace and Avery are in a relationship where Grace has less power, status, or influence than Avery.",
+    "more": "Grace and Avery are in a relationship where Grace has more power, status, or influence than Avery.",
+    "equal": "Grace and Avery are in a relationship where they have equal power, status, or influence."
+  },
+  {
+    "story": "restaurant",
+    "social_interaction": "no_interaction",
+    "vignette": "Consider Avery and Grace, who both like to go out to eat every Thursday after work. There are two restaurants near their work: a Chinese restaurant, and an Indian restaurant. Avery prefers the Chinese restaurant, while Grace prefers the Indian restaurant. Avery always goes to the Chinese restaurant. Grace always goes to the Indian restaurant. How likely is it that",
+    "less": "Grace and Avery are in a relationship where Grace has less power, status, or influence than Avery.",
+    "more": "Grace and Avery are in a relationship where Grace has more power, status, or influence than Avery.",
+    "equal": "Grace and Avery are in a relationship where they have equal power, status, or influence."
+  },
+  {
+    "story": "groceries",
+    "social_interaction": "precedent",
+    "vignette": "Consider Dylan and Caleb, who live on the 5th floor of a walkup in Manhattan, with a steep narrow staircase. Each of them comes home from the grocery store with many heavy bags about once a week, and Caleb always helps carry Dylan's groceries up the stairs. How likely is it that",
+    "less": "Caleb and Dylan are in a relationship where Caleb has less power, status, or influence than Dylan.",
+    "more": "Caleb are in a relationship where Caleb has more power, status, or influence than Dylan.",
+    "equal": "Caleb and Dylan are in a relationship where they have equal power, status, or influence."
+  },
+  {
+    "story": "groceries",
+    "social_interaction": "reciprocity",
+    "vignette": "Consider Dylan and Caleb, who live on the 5th floor of a walkup in Manhattan, with a steep narrow staircase. Each of them comes home from the grocery store about once a week, and take turns helping each other carry the groceries up the stairs. How likely is it that",
+    "less": "Caleb and Dylan are in a relationship where Caleb has less power, status, or influence than Dylan.",
+    "more": "Caleb are in a relationship where Caleb has more power, status, or influence than Dylan.",
+    "equal": "Caleb and Dylan are in a relationship where they have equal power, status, or influence."
+  },
+  {
+    "story": "groceries",
+    "social_interaction": "no_interaction",
+    "vignette": "Consider Dylan and Caleb, who live on the 5th floor of a walkup in Manhattan, with a steep narrow staircase. Dylan carries his own groceries up the stairs. Caleb carries his own groceries up the stairs. How likely is it that",
+    "less": "Caleb and Dylan are in a relationship where Caleb has less power, status, or influence than Dylan.",
+    "more": "Caleb are in a relationship where Caleb has more power, status, or influence than Dylan.",
+    "equal": "Caleb and Dylan are in a relationship where they have equal power, status, or influence."
+  },
+  {
+    "story": "weekend",
+    "social_interaction": "precedent",
+    "vignette": "Consider Abby and Evelyn, who want to spend time together during weekends. Abby prefers waking up early to do intense outdoor activities, while Evelyn prefers sleeping in, getting brunch, and walking around the city. Every weekend, Abby and Evelyn wake up early both days to do intense outdoor activities. How likely is it that",
+    "less": "Evelyn and Abby are in a relationship where Evelyn has less power, status, or influence than Abby.",
+    "more": "Evelyn and Abby are in a relationship where Evelyn has more power, status, or influence than Abby.",
+    "equal": "Evelyn and Abby are in a relationship where they have equal power, status, or influence."
+  },
+  {
+    "story": "weekend",
+    "social_interaction": "reciprocity",
+    "vignette": "Consider Abby and Evelyn, who want to spend time together during weekends. Abby prefers waking up early to do intense outdoor activities, while Evelyn prefers sleeping in, getting brunch, and walking around the city. Every weekend, Abby and Evelyn alternate waking up early to do intense outdoor activities, and getting brunch and walking around the city. How likely is it that",
+    "less": "Evelyn and Abby are in a relationship where Evelyn has less power, status, or influence than Abby.",
+    "more": "Evelyn and Abby are in a relationship where Evelyn has more power, status, or influence than Abby.",
+    "equal": "Evelyn and Abby are in a relationship where they have equal power, status, or influence."
+  },
+  {
+    "story": "weekend",
+    "social_interaction": "no_interaction",
+    "vignette": "Consider Abby and Evelyn, who have different preferences for the activities they do during weekends. Every weekend, Abby wakes up early to do intense outdoor activities. Evelyn sleeps in, gets brunch, and walks around the city. How likely is it that",
+    "less": "Evelyn and Abby are in a relationship where Evelyn has less power, status, or influence than Abby.",
+    "more": "Evelyn and Abby are in a relationship where Evelyn has more power, status, or influence than Abby.",
+    "equal": "Evelyn and Abby are in a relationship where they have equal power, status, or influence."
+  },
+  {
+    "story": "scheduling",
+    "social_interaction": "precedent",
+    "vignette": "Consider Matt and William, who want to have a weekly joint meal at an Italian restaurant near their workplace. Matt prefers lunches, because Matt likes to have a free schedule after work. William prefers dinners because William prefers not to break up the work day by traveling somewhere after lunch. They get dinner every Wednesday at 7pm. How likely is it that",
+    "less": "Matt and William are in a relationship where Matt has less power, status, or influence than William.",
+    "more": "Matt and William are in a relationship where Matt has more power, status, or influence than William.",
+    "equal": "Matt and William are in a relationship where they have equal power, status, or influence."
+  },
+  {
+    "story": "scheduling",
+    "social_interaction": "reciprocity",
+    "vignette": "Consider Matt and William, who want to have a weekly joint meal at an Italian restaurant near their workplace. Matt prefers lunches, because Matt likes to have a free schedule after work. William prefers dinners because William prefers not to break up the work day by traveling somewhere after lunch. They alternate between getting lunch Tuesdays at noon, and getting dinner Wednesdays at 7pm. How likely is it that",
+    "less": "Matt and William are in a relationship where Matt has less power, status, or influence than William.",
+    "more": "Matt and William are in a relationship where Matt has more power, status, or influence than William.",
+    "equal": "Matt and William are in a relationship where they have equal power, status, or influence."
+  },
+  {
+    "story": "scheduling",
+    "social_interaction": "no_interaction",
+    "vignette": "Consider Matt and William, who both like going to an Italian restaurant near their workplace. Matt gets lunch there Tuesdays at noon, and William gets dinner there Wednesdays at 7pm. How likely is it that",
+    "less": "Matt and William are in a relationship where Matt has less power, status, or influence than William.",
+    "more": "Matt and William are in a relationship where Matt has more power, status, or influence than William.",
+    "equal": "Matt and William are in a relationship where they have equal power, status, or influence."
+  },
+  {
+    "story": "babysitting",
+    "social_interaction": "precedent",
+    "vignette": "Consider Ryan and John, who both have two children under 10 years old. Every week, Ryan drops their children off John's house, where John volunteers to watch Ryan's children so Ryan can have a date night. How likely is it that",
+    "less": "John and Ryan are in a relationship where John has less power, status, or influence than Ryan.",
+    "more": "John and Ryan are in a relationship where John has more power, status, or influence than Ryan.",
+    "equal": "John and Ryan are in a relationship where they have equal power, status, or influence."
+  },
+  {
+    "story": "babysitting",
+    "social_interaction": "reciprocity",
+    "vignette": "Consider Ryan and John, who both have two children under 10 years old. Every week, Ryan and John alternate volunteering to watch each other's children, so each of them can have a date night. How likely is it that",
+    "less": "John and Ryan are in a relationship where John has less power, status, or influence than Ryan.",
+    "more": "John and Ryan are in a relationship where John has more power, status, or influence than Ryan.",
+    "equal": "John and Ryan are in a relationship where they have equal power, status, or influence."
+  },
+  {
+    "story": "babysitting",
+    "social_interaction": "no_interaction",
+    "vignette": "Consider Ryan and John, who both have two children under 10 years old. Every week, Ryan volunteers to watch his children, so his partner Elliot can have some focused time to work. John volunteers to watch his children, so his partner Cody can have some focused time to work.",
+    "less": "John and Ryan are in a relationship where John has less power, status, or influence than Ryan.",
+    "more": "John and Ryan are in a relationship where John has more power, status, or influence than Ryan.",
+    "equal": "John and Ryan are in a relationship where they have equal power, status, or influence."
+  },
+  {
+    "story": "fundraising",
+    "social_interaction": "precedent",
+    "vignette": "Consider Caroline and Bella, who both frequently run for charity, as a team. They have to raise money for their charity to enter the race. Each time they enter a race, Caroline takes the lead on the advertising and fundraising, contacting and following up with her friends to ask them if they would like to donate to their charity. How likely is it that",
+    "less": "Caroline and Bella are in a relationship where Caroline has less power, status, or influence than Bella.",
+    "more": "Caroline and Bella are in a relationship where Caroline has more power, status, or influence than Bella.",
+    "equal": "Caroline and Bella are in a relationship where they have equal power, status, or influence."
+  },
+  {
+    "story": "fundraising",
+    "social_interaction": "reciprocity",
+    "vignette": "Consider Caroline and Bella, who both frequently run for charity, as a team. They have to raise money for their charity to enter the race. Each time they enter a race, Caroline and Bella alternate taking care of the advertising and fundraising, contacting their friends to ask them if they would like to donate to their charity. How likely is it that",
+    "less": "Caroline and Bella are in a relationship where Caroline has less power, status, or influence than Bella.",
+    "more": "Caroline and Bella are in a relationship where Caroline has more power, status, or influence than Bella.",
+    "equal": "Caroline and Bella have equal power, status, or influence."
+  },
+  {
+    "story": "fundraising",
+    "social_interaction": "no_interaction",
+    "vignette": "Consider Caroline and Bella, who both frequently run for charity. Each of them has to raise money for their charity to enter the race. Whenever Caroline enters a charity race, she asks her friends to donate money to her charity. Whenever Bella enters a charity race, she asks her friends to donate to her charity. How likely is it that",
+    "less": "Caroline and Bella are in a relationship where Caroline has less power, status, or influence than Bella.",
+    "more": "Caroline and Bella are in a relationship where Caroline has more power, status, or influence than Bella.",
+    "equal": "Caroline and Bella have equal power, status, or influence."
+  }
+]

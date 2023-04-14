@@ -238,3 +238,166 @@ ggplot(data = d %>% filter(relationship == "no_info"),
   facet_wrap(~story) + 
   labs(title = "exp2 no relationship info condition")
 
+
+## Experiment 3
+
+d <-
+  read.csv(here('data/exp3_data.csv')) %>% filter(pass_attention == T, understood == 'yes') %>%
+  pivot_longer(
+    cols = c("more", "equal", "less"),
+    names_to = "relationship",
+    values_to = "likert_rating"
+  ) %>%
+  mutate(likert_rating = likert_rating + 1) %>%
+  select(-c("understood", "pass_attention")) %>%
+  mutate(
+    social_interaction = fct_relevel(social_interaction,
+                                     "precedent", "reciprocity", "no_interaction"),
+    relationship = fct_relevel(relationship,
+                               "more", "equal", "less")
+  )
+
+d.means.all <-
+  d %>% drop_na() %>%
+  group_by(relationship, social_interaction, story) %>%
+  tidyboot_mean(likert_rating, na.rm = TRUE) %>%
+  rename(likert_rating = empirical_stat)
+
+
+# Violins
+ggplot(data = d,
+       aes(x = social_interaction, y = likert_rating, fill = relationship)) +
+  geom_violin(width = 1.4,
+              bw = 0.43,
+              position = position_dodge(width = 0.8)) +
+  geom_point(
+    d.means.all,
+    mapping = aes(x = social_interaction, y = likert_rating),
+    size = 1.5,
+    alpha = 1,
+    position = position_dodge(width = 0.8)
+  ) +
+  geom_errorbar(
+    d.means.all,
+    mapping = aes(x = social_interaction, ymin = ci_lower, ymax = ci_upper),
+    position = position_dodge(width = 0.8),
+    size = 1,
+    width = 0.15
+  ) +
+  scale_fill_manual(
+    values = wes_palette(n = 3, name = "Darjeeling1"),
+    name = "power/status of altruistic person",
+    breaks = c("more", "equal", "less")
+  ) +
+  scale_x_discrete(
+    limits = c("precedent", "reciprocity", "no_interaction"),
+    labels = c("precedent", "reciprocity", "none")
+  ) +
+  scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
+                     limits = c(0.8, 7.2)) +
+  labs(x = "interaction sequence", y = "how likely?", fill = "power/status of altruistic person") +
+  theme(legend.position = "bottom") +
+  facet_wrap(~story) + 
+  labs(title = "exp3 - inferring relationship from behavior")
+
+# Individual points
+
+
+ggplot(data = d %>% filter(social_interaction == "precedent"),
+       aes(x = relationship, y = likert_rating, group = subject_id))  + 
+  geom_point(position = position_dodge(width = 0.3), alpha = 0.4) +
+  geom_line(position = position_dodge(width = 0.3), alpha = 0.1) + 
+  scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
+                     limits = c(0.8, 7.2)) +
+  facet_wrap(~story) + 
+  labs(title = "exp3 behavior -> relationship precedent condition", x = "power/status of altruistic person")
+
+
+## Experiment 4
+
+d <-
+  read.csv(here('data/exp4_data.csv')) %>% filter(pass_attention == T, understood == 'yes') %>%
+  pivot_longer(
+    cols = c("repeating", "alternating", "none"),
+    names_to = "next_interaction",
+    values_to = "likert_rating"
+  ) %>%
+  mutate(likert_rating = likert_rating + 1) %>%
+  select(-c("understood", "pass_attention")) %>%
+  mutate(
+    next_interaction = fct_relevel(next_interaction,
+                                   "repeating", "alternating", "none"),
+    relationship = fct_relevel(relationship,
+                               "more", "equal", "less")
+  )
+
+d.means.all <-
+  d %>% drop_na() %>%
+  group_by(relationship, next_interaction, story) %>%
+  tidyboot_mean(likert_rating, na.rm = TRUE) %>%
+  rename(likert_rating = empirical_stat) %>%
+  mutate(next_interaction = fct_relevel(next_interaction,
+                                        "repeating", "alternating", "none"))
+
+ggplot(data = d,
+       aes(x = relationship, y = likert_rating, fill = next_interaction)) +
+  geom_violin(width = 1.16,
+              bw = 0.43,
+              position = position_dodge(width = 0.8)) +
+  geom_point(
+    d.means.all,
+    mapping = aes(x = relationship, y = likert_rating),
+    size = 1.5,
+    alpha = 1,
+    position = position_dodge(width = 0.8)
+  ) +
+  geom_errorbar(
+    d.means.all,
+    mapping = aes(x = relationship, ymin = ci_lower, ymax = ci_upper),
+    position = position_dodge(width = 0.8),
+    size = 1,
+    width = 0.15
+  ) +
+  scale_fill_manual(
+    values = wes_palette(n = 3, name = "FantasticFox1"),
+    name = "next interaction",
+    breaks = c("repeating", "alternating", "none")
+  ) +
+  scale_x_discrete(limits = c("more", "equal", "less")) +
+  scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
+                     limits = c(0.8, 7.2)) +
+  labs(x = "relationship", y = "how likely?", fill = "next interaction") +
+  theme(legend.position = "bottom") + 
+  facet_wrap(~story) + 
+  labs(title = "exp 4 inferring behavior from relationship")
+
+
+# Individual points
+
+ggplot(data = d %>% filter(relationship == "more"),
+       aes(x = next_interaction, y = likert_rating, group = subject_id))  + 
+  geom_point(position = position_dodge(width = 0.3), alpha = 0.4) +
+  geom_line(position = position_dodge(width = 0.3), alpha = 0.1) + 
+  scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
+                     limits = c(0.8, 7.2)) +
+  facet_wrap(~story) + 
+  labs(title = "exp4 altruistic person more power/status")
+
+ggplot(data = d %>% filter(relationship == "equal"),
+       aes(x = next_interaction, y = likert_rating, group = subject_id))  + 
+  geom_point(position = position_dodge(width = 0.3), alpha = 0.4) +
+  geom_line(position = position_dodge(width = 0.3), alpha = 0.1) + 
+  scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
+                     limits = c(0.8, 7.2)) +
+  facet_wrap(~story) + 
+  labs(title = "exp4 altruistic person equal power/status")
+
+ggplot(data = d %>% filter(relationship == "less"),
+       aes(x = next_interaction, y = likert_rating, group = subject_id))  + 
+  geom_point(position = position_dodge(width = 0.3), alpha = 0.4) +
+  geom_line(position = position_dodge(width = 0.3), alpha = 0.1) + 
+  scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
+                     limits = c(0.8, 7.2)) +
+  facet_wrap(~story) + 
+  labs(title = "exp4 altruistic person less power/status")
+

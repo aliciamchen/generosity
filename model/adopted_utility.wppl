@@ -1,0 +1,64 @@
+var params = {
+    alpha: 1
+}
+
+/*
+'A' corresponds to Person A's preferred action
+'B' corresponds to Person B's preferred action
+So 'B_A' corresponds to the payoffs
+of A doing B's preferred action and B doing A's preferred action
+*/
+
+var scenario_payoffs = {
+    'restaurant': {
+        'A_A': {'A': 10, 'B': 7},
+        'A_B': {'A': 2, 'B': 2}, // each person gets some reward for doing their preferred action (but not as much as if they did it together)
+        'B_B': {'A': 7, 'B': 10},
+        'B_A': {'A': 0, 'B': 0},
+        'exit': {'A': 0, 'B': 0}
+    }
+}
+
+var observer = function(payoffs, action_sequence) {
+    return Infer({method: 'MCMC', samples: 5000}, function () {
+
+        // start with uniform priors on weights
+        var weights = {
+            'w_AB': beta({a: 1, b: 1}), // how much B weighs A's utility
+            'w_BA': beta({a: 1, b: 1}) // how much A weighs B's utility
+        }
+
+        var U_A_base = function(action) {
+            var R_A = payoffs[action]['A']
+            var R_B = payoffs[action]['B']
+            return R_A + weights['w_BA'] * R_B
+        }
+
+        var U_B_base = function(action) {
+            var R_A = payoffs[action]['A']
+            var R_B = payoffs[action]['B']
+            return R_B + weights['w_AB'] * R_A
+        }
+
+        // var U_A = function(action) {
+        //     var R_A = payoffs[action]['A']
+        //     return R_A + weights['w_BA'] * U_B_base(action)
+        // }
+
+        // var U_B = function(action) {
+        //     var R_B = payoffs[action]['B']
+        //     return R_B + weights['w_AB'] * U_A_base(action)
+        // }
+
+        var obsFn = function(datum){
+            // assumption that both agents want to maximize their utility over action sequence
+            factor(params.alpha * U_A(datum))
+            factor(params.alpha * U_B(datum))
+        }
+
+        mapData({data: action_sequence}, obsFn)
+
+        return weights
+    })
+}
+
