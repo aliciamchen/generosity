@@ -27,6 +27,8 @@ d <-
                                "more", "equal", "less")
   )
 
+write.csv(d, here('data/exp3_tidy_data.csv'), row.names=FALSE)
+
 d.demographics <- read.csv(here('data/exp3_demographics.csv'))
 d.demographics %>% count(gender)
 d.demographics %>% summarize(mean_age = mean(age), sd_age = sd(age))
@@ -103,82 +105,3 @@ emm <-
 
 emmeans(emm, pairwise ~ relationship_symmetry | social_interaction)
 
-
-
-##################################################
-
-## Repeat all analyses with normalized values
-
-d <-
-  read.csv(here('data/exp2_data.csv')) %>% filter(pass_attention == T, understood == 'yes') %>%
-  mutate(newSum = select_if(., is.numeric) %>%
-           reduce(`+`)) %>%
-  mutate_if(is.numeric, list( ~ . / newSum)) %>%
-  select(-newSum) %>%
-  pivot_longer(
-    cols = c("repeating", "alternating", "none"),
-    names_to = "next_interaction",
-    values_to = "likert_rating"
-  ) %>%
-  select(-c("understood", "pass_attention")) %>%
-  mutate(
-    next_interaction = fct_relevel(next_interaction,
-                                   "repeating", "alternating", "none"),
-    relationship = fct_relevel(relationship,
-                               "symmetric", "asymmetric", "no_info")
-  )
-
-
-
-d.means.all <-
-  d %>% drop_na() %>%
-  group_by(relationship, next_interaction) %>%
-  tidyboot_mean(likert_rating, na.rm = TRUE) %>%
-  rename(likert_rating = empirical_stat) %>%
-  mutate(next_interaction = fct_relevel(next_interaction,
-                                        "repeating", "alternating", "none"))
-
-# Without all levels
-d_filtered <- d %>%
-  filter(next_interaction != "none" & relationship != "no_info")
-
-mod <- lmer(likert_rating ~ next_interaction * relationship + (1 |
-                                                                 story) + (1 | subject_id),
-            data = d_filtered)
-
-summary(mod)
-
-# With all levels
-mod <- lmer(likert_rating ~ 1 + next_interaction * relationship + (1 |
-                                                                     story) + (1 | subject_id),
-            data = d)
-
-summary(mod)
-
-emm_options(lmerTest.limit = 3179)
-emm_options(pbkrtest.limit = 3179)
-
-emm <- mod %>% emmeans(pairwise ~ relationship * next_interaction)
-emm
-
-
-emm <-
-  mod %>% emmeans(pairwise ~ relationship * next_interaction) %>%
-  add_grouping("interaction_present",
-               "next_interaction",
-               c("yes", "yes", "no")) %>%
-  add_grouping("relationship_present", "relationship", c("yes", "yes", "no"))
-
-
-emmeans(emm, pairwise ~ relationship_present | interaction_present)
-emmeans(emm, pairwise ~ interaction_present | relationship_present)
-
-
-emm <-
-  mod %>% emmeans(pairwise ~ relationship * next_interaction) %>%
-  add_grouping("interaction_present",
-               "next_interaction",
-               c("yes", "yes", "no")) %>%
-  add_grouping("all_relationships", "relationship", c("yes", "yes", "yes"))
-
-emmeans(emm, pairwise ~ interaction_present | all_relationships)

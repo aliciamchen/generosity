@@ -37,6 +37,8 @@ d <-
     )
   )
 
+write.csv(d, here('data/exp1_tidy_data.csv'), row.names=FALSE)
+
 d.demographics <- read.csv(here('data/exp1_demographics.csv'))
 
 d.demographics %>% count(gender)

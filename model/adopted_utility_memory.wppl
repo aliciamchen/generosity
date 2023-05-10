@@ -1,0 +1,130 @@
+var params = {
+    alpha: 1
+}
+
+var round = function (num, precision) {
+    Number.parseFloat(num.toFixed(precision));
+};
+
+var Beta_disc = cache(function (hypers) {
+    return Infer({ method: 'enumerate' }, function () {
+        var n = uniformDraw(_.range(0, 1, 0.01));
+        var bta = Beta({
+            a: hypers.a == 0 ? 1 : hypers.a,
+            b: hypers.b == 0 ? 1 : hypers.b
+        });
+        factor(bta.score(n));
+        return round(n, 2);
+    })
+});
+
+var scenario_payoffs = {
+    'restaurant': { // sample scenario
+        'A': {'A': 5, 'B': 3}, // the action that benefits A
+        'B': {'A': 3, 'B': 5} // the action that benefits B
+    }
+}
+
+// exp 1 stuff
+var observer = function(payoffs, action_sequence) {
+    return Infer({method: 'enumerate'}, function () {
+
+      var first_weight = sample(Beta_disc({a: 1, b: 1}))
+      var weights = {
+        'w_A': first_weight,
+        'w_B': 1 - first_weight
+      }
+
+        var U_A = function(action) {
+            var R_A = payoffs[action]['A']
+            var R_B = payoffs[action]['B']
+            return R_A + weights['w_B'] * R_B
+        }
+
+        var U_B = function(action) {
+            var R_A = payoffs[action]['A']
+            var R_B = payoffs[action]['B']
+            return R_B + weights['w_A'] * R_A
+        }
+
+        var asymmetry = Math.abs((weights['w_A'] - weights['w_B']))
+
+        var obsFn = function(datum){
+            factor(params.alpha * U_A(datum))
+            factor(params.alpha * U_B(datum))
+        }
+
+        mapData({data: action_sequence}, obsFn)
+
+        return {
+          'w_A': weights['w_A'],
+          'w_B': weights['w_B'],
+          'asymmetry': asymmetry
+        }
+    })
+}
+
+// exp 2 stuff
+
+var actor = function(payoffs, weights) {
+    return Infer({method: 'enumerate'}, function () {
+        var action = flip(0.5) ? 'A' : 'B' // only two possible actions here: the action that benefits A, and the one that benefits B
+        var R_A = payoffs[action]['A']
+        var R_B = payoffs[action]['B']
+        var U_A = (1 - weights['w_B']) * R_A + weights['w_B'] * R_B
+        var U_B = (1 - weights['w_A']) * R_B + weights['w_A'] * R_A
+        factor(params.alpha * U_A)
+        factor(params.alpha * U_B)
+        return action
+    })
+}
+
+var update_posterior = function(payoffs, first_action, asymmetry) {
+    return Infer({method: 'enumerate'}, function() {
+      var first_weight = asymmetry == false ? 0.5 : sample(Beta_disc({a: 1, b: 1}))
+      var weights = {
+        'w_A': first_weight,
+        'w_B': 1 - first_weight
+      }
+
+      var U_A = function(action) {
+            var R_A = payoffs[action]['A']
+            var R_B = payoffs[action]['B']
+            return R_A + weights['w_B'] * R_B
+        }
+
+     var U_B = function(action) {
+            var R_A = payoffs[action]['A']
+            var R_B = payoffs[action]['B']
+            return R_B + weights['w_A'] * R_A
+        }
+
+      factor(params.alpha * U_A(first_action))
+      factor(params.alpha * U_B(first_action))
+
+    return weights
+    })
+
+  }
+
+var next_action = function(payoffs, first_action, asymmetry) {
+  return Infer({method: 'enumerate'}, function() {
+      var weights = sample(update_posterior(payoffs, first_action, asymmetry))
+      var next_action = sample(actor(payoffs, weights))
+
+      return next_action
+  })
+}
+
+// experiment 1 — from action sequence, infer weights and amount of asymmetry
+
+viz.marginals(observer(scenario_payoffs['restaurant'], ['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A'])) // precedent
+viz.marginals(observer(scenario_payoffs['restaurant'], ['B', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B', 'B','B'])) // precedent
+viz.marginals(observer(scenario_payoffs['restaurant'], ['A', 'B', 'A', 'B', 'A', 'B', 'A', 'B', 'A', 'B', 'A', 'B', 'A', 'B'])) // reciprocity
+
+// experiment 2 - from relationship symmetry, and one action, infer next action
+
+viz(next_action(scenario_payoffs['restaurant'], 'A', true)) // asymmetric
+viz(next_action(scenario_payoffs['restaurant'], 'B', true)) // asymmetric
+viz(next_action(scenario_payoffs['restaurant'], 'A', false)) // symmetric
+

@@ -26,6 +26,8 @@ d <-
                                "more", "equal", "less")
   )
 
+write.csv(d, here('data/exp4_tidy_data.csv'), row.names=FALSE)
+
 d.demographics <- read.csv(here('data/exp4_demographics.csv'))
 d.demographics %>% count(gender)
 d.demographics %>% summarize(mean_age = mean(age), sd_age = sd(age))

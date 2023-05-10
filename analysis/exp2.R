@@ -26,6 +26,8 @@ d <-
                                "symmetric", "asymmetric", "no_info")
   )
 
+write.csv(d, here('data/exp2_tidy_data.csv'), row.names=FALSE)
+
 d.demographics <- read.csv(here('data/exp2_demographics.csv'))
 d.demographics %>% count(gender)
 d.demographics %>% summarize(mean_age = mean(age), sd_age = sd(age))
