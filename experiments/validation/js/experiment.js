@@ -13,18 +13,11 @@ $(function () {
         auto_update_progress_bar: false
     });
 
-    console.log(nCombinations)
-
     var subject_id = local_testing || jsPsych.data.getURLVariable('PROLIFIC_PID') == ""
                     ? jsPsych.randomization.randomID(12)
                     : jsPsych.data.getURLVariable('PROLIFIC_PID');
     var study_id = jsPsych.data.getURLVariable('STUDY_ID');
     var session_id = jsPsych.data.getURLVariable('SESSION_ID');
-    const participant_id = jsPsych.data.getURLVariable('participant') == undefined ? 1 : jsPsych.data.getURLVariable('participant')
-    const condition_number = participant_id % nCombinations;
-    if (condition_number == 0) {
-        condition_number = nCombinations;
-    }
 
     jsPsych.data.addProperties({
         subject_id: subject_id,
@@ -59,9 +52,9 @@ $(function () {
     var timeline = [];
 
     timeline.push(intro(params));
-    timeline.push(instructions(condition_number, params));
+    timeline.push(instructions(params));
     timeline.push(beginning(jsPsych));
-    timeline.push(makeTrials(condition_number, jsPsych))
+    timeline.push(makeTrials(jsPsych))
     timeline.push(exitSurvey(jsPsych))
 
     if (!local_testing) {

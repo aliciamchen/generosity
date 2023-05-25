@@ -1,16 +1,4 @@
-var nCombinations = null;
-
-$.ajax({
-  async: false,
-  global: false,
-  url: "json/full_counterbalancing.json",
-  dataType: "json",
-  success: function (data) {
-    nCombinations = data.length;
-  },
-});
-
-function fetchTrialParams(condition_number) {
+function fetchTrialParams() {
   var trials = null;
 
   $.ajax({
