@@ -1,0 +1,30 @@
+subject_id,time_elapsed,gender,age,understood,pass_attention,comments
+b0f8dfb154bc2309604fca4628bfc3ea,560873,female,60,yes,TRUE,NA
+c12e79a52fa9ec26f4be4bd5d108100f,864117,female,36,yes,TRUE,Thank you
+8cc62e0189bb1ce9be242197aba3ed1e,394264,male,35,yes,TRUE,NA
+d9f910127a7040d8dc0a8f4f3a4a2bb4,766015,female,61,yes,TRUE,NA
+9c054a5711bf29a87d9b376239662dd3,930207,female,26,yes,TRUE,NA
+af7ecc30c96be3ee8f5c8276291ba949,671496,female,50,yes,TRUE,NA
+fe830ac48cad5f9d7d66f3c41c23a9f0,392603,male,31,yes,TRUE,None
+a2769e845301ae390e2955d4ca8c60c7,584194,nonconforming,25,no,TRUE,No comments
+19ec2ea2a9b77705762f80f4670f3bd6,1469558,abstain,24,yes,TRUE,NA
+740afc3256dbbd429562b15a3acf41ab,1110246,female,64,yes,TRUE,"By selflessly giving of your time or gifts, you get something in return. Give for the sake of giving, not to get something in return."
+d21e76abf41797df52718913c99bf41a,371419,nonconforming,18,yes,TRUE,N/A
+135d4e7dfd7c9a4b7f1d527768776308,456565,female,59,yes,TRUE,NA
+ab3c0f9ff65d3046b0a8cb738147d5d2,736239,male,20,yes,TRUE,NA
+4316d74281eee014b478495c8c55d78d,584716,male,30,yes,TRUE,NA
+7d27eec2944024b3f7996179f6c978f7,638235,female,33,yes,TRUE,NA
+f7e026fd862420b427cdb47b4debfc7d,695511,male,21,yes,TRUE,NA
+2db6000f3ce003fb9c3231204b584c4d,1260484,female,25,yes,TRUE,NA
+67179a45078698dd27905cf761a0cde8,296237,female,23,yes,TRUE,NA
+875aa2150a8ded5b46bc6cb18fd765c6,457050,male,29,yes,TRUE,NA
+72da4e15ba267d9ff5b535634b16d99a,829451,female,35,yes,TRUE,NA
+5870d2fc3b7650081479760443f2b5f1,509205,female,21,yes,TRUE,NA
+87ecabfd4ed3b4f02a64abec0d09f26f,1293396,male,36,yes,TRUE,early on in the study I accidentally tapped submit without making a selection. Wasn't intentional - sensitive trackpad.
+9d3672b97337fc1e46c9e796c3802834,872432,male,32,yes,TRUE,NA
+9d5dcc57029b3a17631b01b407b63a87,380727,nonconforming,31,yes,TRUE,NA
+4a7804119f856e1c865cd7b64255f6e1,445222,male,33,yes,TRUE,NA
+7a6a15eff233df83790f23e7a376a860,198858,male,20,yes,TRUE,no
+0232b9d57f53d287eb910bb39d984613,515564,male,36,yes,TRUE,NA
+08052639359f5b30db862b3c462eec73,435618,female,46,yes,TRUE,No comments or suggestions.
+d96883fc0b9cf678e1d67e5613946662,632291,male,27,yes,TRUE,"This was an interesting study, and I do wonder what the results of it will be."

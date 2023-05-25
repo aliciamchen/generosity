@@ -42,16 +42,14 @@ def main(args):
         }, index=[0])
 
         # Make data dataframe
-        cols = ['subject_id', 'story', 'social_interaction', 'asymmetric', 'symmetric', 'no_relationship']
+        cols = ['subject_id', 'story', 'expected_high_benefit', 'expected_low_benefit']
         df_data = pd.DataFrame(columns=cols)
 
         for i, trial in enumerate(data):
             df_data.loc[i, 'subject_id'] = trial['subject_id']
             df_data.loc[i, 'story'] = trial['story']
-            df_data.loc[i, 'social_interaction'] = trial['social_interaction']
-            df_data.loc[i, 'asymmetric'] = trial['response']['asymmmetric'] # spelling error lol
-            df_data.loc[i, 'symmetric'] = trial['response']['symmetric']
-            df_data.loc[i, 'no_relationship'] = trial['response']['no_relationship']
+            df_data.loc[i, 'expected_high_benefit'] = trial['response']['expected_high_benefit'] # spelling error lol
+            df_data.loc[i, 'expected_low_benefit'] = trial['response']['expected_low_benefit']
 
         # Add bonus info and understood instructions (for exclusion criteria)
         df_data['understood'] = demographics['response']['understood']

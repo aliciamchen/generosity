@@ -1,0 +1,116 @@
+[
+  {
+    "story": "attention",
+    "vignette": "Thank you for contributing to this study! This page is an attention check so we can make sure you're not a bot and can award you your pay when you complete the study.",
+    "expected_high_benefit": "Please select \"extremely\" for this question.",
+    "expected_low_benefit": "Please select \"not at all\" for this question."
+  },
+  {
+    "story": "conversation",
+    "vignette": "Consider Alice and Angela, who work at the same company. They have a one-hour meeting. Alice spends most of the one-hour meeting talking, while Angela spends most of the one-hour meeting listening and asking questions.",
+    "expected_high_benefit": "How much does Alice benefit from this interaction, compared to if they don't interact?",
+    "expected_low_benefit": "How much does Angela benefit from this interaction, compared to if they don't interact?"
+  },
+  {
+    "story": "coffee",
+    "vignette": "Consider Andrew and Bob, who work in the same field. They meet for coffee. Bob buys and brings coffee to the meeting for both of them.",
+    "expected_high_benefit": "How much does Andrew benefit from this interaction, compared to if they don't interact?",
+    "expected_low_benefit": "How much does Bob benefit from this interaction, compared to if they don't interact?"
+  },
+  {
+    "story": "gifts",
+    "vignette": "Consider two families, the Lee family and the Min family. Each member of the Lee family gives the Min family a precious and expensive gift.",
+    "expected_high_benefit": "How much does the Min family benefit from this interaction, compared to if they don't interact?",
+    "expected_low_benefit": "How much does the Lee family benefit from this interaction, compared to if they don't interact?"
+  },
+  {
+    "story": "housemates",
+    "vignette": "Consider Sarah and Anne, who both live in the same old building. Sarah notices something damaged or missing or needed for the house and writes it on a list. Anne completes all of the tasks on the list.",
+    "expected_high_benefit": "How much does Sarah benefit from this interaction, compared to if they don't interact?",
+    "expected_low_benefit": "How much does Anne benefit from this interaction, compared to if they don't interact?"
+  },
+  {
+    "story": "family meals",
+    "vignette": "Consider Sue and Martha, who are part of the same family. The whole family gets together for a religious holiday, and gathers at Sue’s house. Sue cooks all the food, serves it, and then cleans up after dinner. Martha is very appreciative, and gives Sue a big hug and a warm thank you.",
+    "expected_high_benefit": "How much does Martha benefit from this interaction, compared to if they don't interact?",
+    "expected_low_benefit": "How much does Sue benefit from this interaction, compared to if they don't interact?"
+  },
+  {
+    "story": "police",
+    "vignette": "Consider Justin and Jarred, who are police officers on the same beat. Justin goes to the office at 6am to do the day's paperwork, so that Jarred can arrive later and go straight to their shared patrol car.",
+    "expected_high_benefit": "How much does Jarred benefit from this interaction, compared to if they don't interact?",
+    "expected_low_benefit": "How much does Justin benefit from this interaction, compared to if they don't interact?"
+  },
+  {
+    "story": "concerts",
+    "vignette": "Consider Kevin and Allen. They go to a concert together, and Kevin pays for the tickets.",
+    "expected_high_benefit": "How much does Allen benefit from this interaction, compared to if they don't interact?",
+    "expected_low_benefit": "How much does Kevin benefit from this interaction, compared to if they don't interact?"
+  },
+  {
+    "story": "architects",
+    "vignette": "Consider Sonia and Liana, who work as architects at the same company. They work on the same team, where they work together on their designs. Sonia meticulously double-checks finished designs before they send them out.",
+    "expected_high_benefit": "How much does Liana benefit from this interaction, compared to if they don't interact?",
+    "expected_low_benefit": "How much does Sonia benefit from this interaction, compared to if they don't interact?"
+  },
+  {
+    "story": "feedback",
+    "vignette": "Consider Taylor and Samantha, who are both fiction writers living in the same city. They frequently attend the same group writing workshops. Samantha shares work in progress, and Taylor gives her feedback on it.",
+    "expected_high_benefit": "How much does Samantha benefit from this interaction, compared to if they don't interact?",
+    "expected_low_benefit": "How much does Taylor benefit from this interaction, compared to if they don't interact?"
+  },
+  {
+    "story": "meeting location",
+    "vignette": "Consider Ethan and Benjamin, who work at the same Boston-area nonprofit. Ethan walks to Benjamin's office, where they have a meeting.",
+    "expected_high_benefit": "How much does Benjamin benefit from this interaction, compared to if they don't interact?",
+    "expected_low_benefit": "How much does Ethan benefit from this interaction, compared to if they don't interact?"
+  },
+  {
+    "story": "group project",
+    "vignette": "Consider Maxwell and Ralph, two people at the same company who are assigned to work together on the same project. They have a meeting where Maxwell contributes most of the ideas, delegates tasks to Ralph, and decides what to do next.",
+    "expected_high_benefit": "How much does Ralph benefit from this interaction, compared to if they don't interact?",
+    "expected_low_benefit": "How much does Maxwell benefit from this interaction, compared to if they don't interact?"
+  },
+  {
+    "story": "meeting prep",
+    "vignette": "Consider Chloe and Victoria, who work at the same news station. They have a meeting where Chloe prepares the agenda, and books the meeting room.",
+    "expected_high_benefit": "How much does Victoria benefit from this interaction, compared to if they don't interact?",
+    "expected_low_benefit": "How much does Chloe benefit from this interaction, compared to if they don't interact?"
+  },
+  {
+    "story": "restaurant",
+    "vignette": "Consider Avery and Grace, who want to go out to eat. There are two restaurants near their work: a Chinese restaurant, and an Indian restaurant. Avery prefers the Chinese restaurant, while Grace prefers the Indian restaurant. They go to the Chinese restaurant.",
+    "expected_high_benefit": "How much does Avery benefit from this interaction, compared to if they don't interact?",
+    "expected_low_benefit": "How much does Grace benefit from this interaction, compared to if they don't interact?"
+  },
+  {
+    "story": "groceries",
+    "vignette": "Consider Dylan and Caleb, who live on the 5th floor of a walkup in Manhattan, with a steep narrow staircase. Each of them comes home from the grocery store with many heavy bags. Caleb helps carry Dylan's groceries up the stairs.",
+    "expected_high_benefit": "How much does Dylan benefit from this interaction, compared to if they don't interact?",
+    "expected_low_benefit": "How much does Caleb benefit from this interaction, compared to if they don't interact?"
+  },
+  {
+    "story": "weekend",
+    "vignette": "Consider Abby and Evelyn, who want to spend time together during weekends. Abby prefers waking up early to do intense outdoor activities, while Evelyn prefers sleeping in, getting brunch, and walking around the city. This weekend, Abby and Evelyn wake up early both days to do intense outdoor activities.",
+    "expected_high_benefit": "How much does Abby benefit from this interaction, compared to if they don't interact?",
+    "expected_low_benefit": "How much does Evelyn benefit from this interaction, compared to if they don't interact?"
+  },
+  {
+    "story": "scheduling",
+    "vignette": "Consider Matt and William, who want to have a joint meal at an Italian restaurant near their workplace. Matt prefers lunches, because Matt likes to have a free schedule after work. William prefers dinners because William prefers not to break up the work day by traveling somewhere after lunch. They get dinner on Wednesday at 7pm.",
+    "expected_high_benefit": "How much does William benefit from this interaction, compared to if they don't interact?",
+    "expected_low_benefit": "How much does Matt benefit from this interaction, compared to if they don't interact?"
+  },
+  {
+    "story": "babysitting",
+    "vignette": "Consider Ryan and John, who both have two children under 10 years old. This week, Ryan drops their children off John's house, where John volunteers to watch Ryan's children so Ryan can have a date night.",
+    "expected_high_benefit": "How much does Ryan benefit from this interaction, compared to if they don't interact?",
+    "expected_low_benefit": "How much does John benefit from this interaction, compared to if they don't interact?"
+  },
+  {
+    "story": "fundraising",
+    "vignette": "Consider Caroline and Bella, who both frequently run for charity. They run a race together and have to raise money for their charity to enter the race. Caroline takes the lead on the advertising and fundraising, contacting and following up with her friends to ask them if they would like to donate to their charity.",
+    "expected_high_benefit": "How much does Bella benefit from this interaction, compared to if they don't interact?",
+    "expected_low_benefit": "How much does Caroline benefit from this interaction, compared to if they don't interact?"
+  }
+]
