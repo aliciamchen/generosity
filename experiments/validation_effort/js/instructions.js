@@ -2,7 +2,7 @@ function instructions() {
     return {
         type: jsPsychInstructions,
         pages: [
-            instructionsPage1(condition_number),
+            instructionsPage1(),
             instructionsPage2()
         ],
         show_clickable_nav: true,
@@ -14,8 +14,8 @@ function instructionsPage1() {
     return `
     <h2>Instructions</h2>
     <p>
-    In this study we are interested in how people think about who benefits in social interactions. \
-    We will describe a social interaction between two people, and then ask you how much each of the people benefits from the social interaction, compared to if the social interaction doesn't happen at all.
+    In this study we are interested in how people think about who puts in effort in social interactions. \
+    We will describe a social interaction between two people, and then ask you how much each of the people puts in effort in the social interaction.
     </p>
     <p>
     You will read about <strong>${fetchTrialParams().length}</strong> total scenarios in this survey.
@@ -27,7 +27,7 @@ function instructionsPage2() {
     return `
     <h2>Instructions</h2>
     <p>
-    You will be asked to rate how much each of the people benefits in the social interaction, compared to <strong>if they don't interact</strong>.
+    You will be asked to rate how much effort each of the people puts in, in the social interaction.
     </p>
     <p>
     You will receive $${params.basePay} if you successfully complete this study.

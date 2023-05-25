@@ -1,4 +1,4 @@
-function makeTrials(condition_number, jsPsych) {
+function makeTrials(jsPsych) {
   var regularTrials = {
     timeline: [
       {
