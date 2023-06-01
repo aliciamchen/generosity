@@ -1,0 +1,4478 @@
+[
+  [
+    {
+      "story": "conversation",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    { "story": "gifts", "altruistic_status": "less", "first_meeting": "alice" },
+    {
+      "story": "housemates",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    { "story": "police", "altruistic_status": "less", "first_meeting": "bob" },
+    {
+      "story": "concerts",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "architects",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "meeting location",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "group project",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    }
+  ],
+  [
+    {
+      "story": "coffee",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "gifts",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    { "story": "police", "altruistic_status": "equal", "first_meeting": "bob" },
+    {
+      "story": "concerts",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "architects",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "meeting location",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "group project",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "conversation",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    }
+  ],
+  [
+    { "story": "gifts", "altruistic_status": "more", "first_meeting": "alice" },
+    {
+      "story": "housemates",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    { "story": "police", "altruistic_status": "more", "first_meeting": "bob" },
+    {
+      "story": "concerts",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "architects",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "meeting location",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "group project",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "conversation",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    { "story": "coffee", "altruistic_status": "less", "first_meeting": "bob" }
+  ],
+  [
+    {
+      "story": "housemates",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "police",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "architects",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "meeting location",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "group project",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    { "story": "weekend", "altruistic_status": "less", "first_meeting": "bob" },
+    {
+      "story": "scheduling",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "conversation",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    { "story": "coffee", "altruistic_status": "equal", "first_meeting": "bob" },
+    { "story": "gifts", "altruistic_status": "less", "first_meeting": "bob" }
+  ],
+  [
+    {
+      "story": "family meals",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "police",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "architects",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "meeting location",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "group project",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "conversation",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    { "story": "coffee", "altruistic_status": "more", "first_meeting": "bob" },
+    { "story": "gifts", "altruistic_status": "equal", "first_meeting": "bob" },
+    {
+      "story": "housemates",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    }
+  ],
+  [
+    {
+      "story": "police",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "architects",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "meeting location",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "group project",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    { "story": "weekend", "altruistic_status": "more", "first_meeting": "bob" },
+    {
+      "story": "scheduling",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "conversation",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    { "story": "gifts", "altruistic_status": "more", "first_meeting": "bob" },
+    {
+      "story": "housemates",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    }
+  ],
+  [
+    {
+      "story": "concerts",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "architects",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "meeting location",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "group project",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "conversation",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    { "story": "gifts", "altruistic_status": "less", "first_meeting": "alice" },
+    {
+      "story": "housemates",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    { "story": "police", "altruistic_status": "less", "first_meeting": "bob" }
+  ],
+  [
+    {
+      "story": "architects",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "meeting location",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "group project",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "conversation",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "gifts",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    { "story": "police", "altruistic_status": "equal", "first_meeting": "bob" },
+    { "story": "concerts", "altruistic_status": "less", "first_meeting": "bob" }
+  ],
+  [
+    {
+      "story": "feedback",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "meeting location",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "group project",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "conversation",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    { "story": "coffee", "altruistic_status": "less", "first_meeting": "bob" },
+    { "story": "gifts", "altruistic_status": "more", "first_meeting": "alice" },
+    {
+      "story": "housemates",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    { "story": "police", "altruistic_status": "more", "first_meeting": "bob" },
+    {
+      "story": "concerts",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "architects",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    }
+  ],
+  [
+    {
+      "story": "meeting location",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "group project",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    { "story": "weekend", "altruistic_status": "less", "first_meeting": "bob" },
+    {
+      "story": "scheduling",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "conversation",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    { "story": "coffee", "altruistic_status": "equal", "first_meeting": "bob" },
+    { "story": "gifts", "altruistic_status": "less", "first_meeting": "bob" },
+    {
+      "story": "housemates",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "police",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "architects",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    { "story": "feedback", "altruistic_status": "less", "first_meeting": "bob" }
+  ],
+  [
+    {
+      "story": "group project",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "conversation",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    { "story": "coffee", "altruistic_status": "more", "first_meeting": "bob" },
+    { "story": "gifts", "altruistic_status": "equal", "first_meeting": "bob" },
+    {
+      "story": "housemates",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "police",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "architects",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "meeting location",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    }
+  ],
+  [
+    {
+      "story": "meeting prep",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    { "story": "weekend", "altruistic_status": "more", "first_meeting": "bob" },
+    {
+      "story": "scheduling",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "conversation",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    { "story": "gifts", "altruistic_status": "more", "first_meeting": "bob" },
+    {
+      "story": "housemates",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "police",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "architects",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "meeting location",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "group project",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    }
+  ],
+  [
+    {
+      "story": "restaurant",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "conversation",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    { "story": "gifts", "altruistic_status": "less", "first_meeting": "alice" },
+    {
+      "story": "housemates",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    { "story": "police", "altruistic_status": "less", "first_meeting": "bob" },
+    {
+      "story": "concerts",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "architects",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "meeting location",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "group project",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    }
+  ],
+  [
+    {
+      "story": "groceries",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "conversation",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "gifts",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    { "story": "police", "altruistic_status": "equal", "first_meeting": "bob" },
+    {
+      "story": "concerts",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "architects",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "meeting location",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "group project",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    }
+  ],
+  [
+    {
+      "story": "weekend",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "conversation",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    { "story": "coffee", "altruistic_status": "less", "first_meeting": "bob" },
+    { "story": "gifts", "altruistic_status": "more", "first_meeting": "alice" },
+    {
+      "story": "housemates",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    { "story": "police", "altruistic_status": "more", "first_meeting": "bob" },
+    {
+      "story": "concerts",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "architects",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "meeting location",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "group project",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    }
+  ],
+  [
+    {
+      "story": "scheduling",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "conversation",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    { "story": "coffee", "altruistic_status": "equal", "first_meeting": "bob" },
+    { "story": "gifts", "altruistic_status": "less", "first_meeting": "bob" },
+    {
+      "story": "housemates",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "police",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "architects",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "meeting location",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "group project",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    { "story": "weekend", "altruistic_status": "less", "first_meeting": "bob" }
+  ],
+  [
+    {
+      "story": "babysitting",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "conversation",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    { "story": "coffee", "altruistic_status": "more", "first_meeting": "bob" },
+    { "story": "gifts", "altruistic_status": "equal", "first_meeting": "bob" },
+    {
+      "story": "housemates",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "police",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "architects",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "meeting location",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "group project",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    }
+  ],
+  [
+    {
+      "story": "fundraising",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "conversation",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    { "story": "gifts", "altruistic_status": "more", "first_meeting": "bob" },
+    {
+      "story": "housemates",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "police",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "architects",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "meeting location",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "group project",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    { "story": "weekend", "altruistic_status": "more", "first_meeting": "bob" },
+    {
+      "story": "scheduling",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    }
+  ],
+  [
+    {
+      "story": "conversation",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "architects",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    { "story": "police", "altruistic_status": "less", "first_meeting": "bob" },
+    {
+      "story": "coffee",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    { "story": "weekend", "altruistic_status": "more", "first_meeting": "bob" },
+    { "story": "gifts", "altruistic_status": "equal", "first_meeting": "bob" },
+    {
+      "story": "meeting location",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "group project",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    { "story": "concerts", "altruistic_status": "less", "first_meeting": "bob" }
+  ],
+  [
+    {
+      "story": "babysitting",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "architects",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    { "story": "police", "altruistic_status": "equal", "first_meeting": "bob" },
+    { "story": "coffee", "altruistic_status": "less", "first_meeting": "bob" },
+    {
+      "story": "meeting prep",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    { "story": "gifts", "altruistic_status": "more", "first_meeting": "bob" },
+    {
+      "story": "meeting location",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "group project",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "conversation",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    }
+  ],
+  [
+    {
+      "story": "feedback",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "architects",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    { "story": "police", "altruistic_status": "more", "first_meeting": "bob" },
+    { "story": "coffee", "altruistic_status": "equal", "first_meeting": "bob" },
+    {
+      "story": "meeting prep",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    { "story": "gifts", "altruistic_status": "less", "first_meeting": "alice" },
+    {
+      "story": "meeting location",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "group project",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "conversation",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    }
+  ],
+  [
+    {
+      "story": "family meals",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "architects",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "police",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    { "story": "coffee", "altruistic_status": "more", "first_meeting": "bob" },
+    {
+      "story": "meeting prep",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "gifts",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "meeting location",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "group project",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "conversation",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    { "story": "feedback", "altruistic_status": "less", "first_meeting": "bob" }
+  ],
+  [
+    {
+      "story": "architects",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "police",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    { "story": "weekend", "altruistic_status": "less", "first_meeting": "bob" },
+    { "story": "gifts", "altruistic_status": "more", "first_meeting": "alice" },
+    {
+      "story": "meeting location",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "group project",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "conversation",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    }
+  ],
+  [
+    {
+      "story": "police",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    { "story": "gifts", "altruistic_status": "less", "first_meeting": "bob" },
+    {
+      "story": "meeting location",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "group project",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "conversation",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "architects",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    }
+  ],
+  [
+    {
+      "story": "coffee",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    { "story": "weekend", "altruistic_status": "more", "first_meeting": "bob" },
+    { "story": "gifts", "altruistic_status": "equal", "first_meeting": "bob" },
+    {
+      "story": "meeting location",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "group project",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "conversation",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "architects",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    { "story": "police", "altruistic_status": "less", "first_meeting": "bob" }
+  ],
+  [
+    {
+      "story": "meeting prep",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    { "story": "gifts", "altruistic_status": "more", "first_meeting": "bob" },
+    {
+      "story": "meeting location",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "group project",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "conversation",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "architects",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    { "story": "police", "altruistic_status": "equal", "first_meeting": "bob" },
+    { "story": "coffee", "altruistic_status": "less", "first_meeting": "bob" }
+  ],
+  [
+    {
+      "story": "restaurant",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    { "story": "gifts", "altruistic_status": "less", "first_meeting": "alice" },
+    {
+      "story": "meeting location",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "group project",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "conversation",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "architects",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    { "story": "police", "altruistic_status": "more", "first_meeting": "bob" },
+    { "story": "coffee", "altruistic_status": "equal", "first_meeting": "bob" },
+    {
+      "story": "meeting prep",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    }
+  ],
+  [
+    {
+      "story": "weekend",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "gifts",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "meeting location",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "group project",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "conversation",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "architects",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "police",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    { "story": "coffee", "altruistic_status": "more", "first_meeting": "bob" },
+    {
+      "story": "meeting prep",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    }
+  ],
+  [
+    { "story": "gifts", "altruistic_status": "more", "first_meeting": "alice" },
+    {
+      "story": "meeting location",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "group project",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "conversation",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "architects",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "police",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    { "story": "weekend", "altruistic_status": "less", "first_meeting": "bob" }
+  ],
+  [
+    {
+      "story": "meeting location",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "group project",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "conversation",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "architects",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "police",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    { "story": "gifts", "altruistic_status": "less", "first_meeting": "bob" }
+  ],
+  [
+    {
+      "story": "groceries",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "group project",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "conversation",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "architects",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    { "story": "police", "altruistic_status": "less", "first_meeting": "bob" },
+    {
+      "story": "coffee",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    { "story": "weekend", "altruistic_status": "more", "first_meeting": "bob" },
+    { "story": "gifts", "altruistic_status": "equal", "first_meeting": "bob" },
+    {
+      "story": "meeting location",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    }
+  ],
+  [
+    {
+      "story": "fundraising",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "group project",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "conversation",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "architects",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    { "story": "police", "altruistic_status": "equal", "first_meeting": "bob" },
+    { "story": "coffee", "altruistic_status": "less", "first_meeting": "bob" },
+    {
+      "story": "meeting prep",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    { "story": "gifts", "altruistic_status": "more", "first_meeting": "bob" },
+    {
+      "story": "meeting location",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    }
+  ],
+  [
+    {
+      "story": "housemates",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "group project",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "conversation",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "architects",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    { "story": "police", "altruistic_status": "more", "first_meeting": "bob" },
+    { "story": "coffee", "altruistic_status": "equal", "first_meeting": "bob" },
+    {
+      "story": "meeting prep",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    { "story": "gifts", "altruistic_status": "less", "first_meeting": "alice" },
+    {
+      "story": "meeting location",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    }
+  ],
+  [
+    {
+      "story": "scheduling",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "group project",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "conversation",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "architects",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "police",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    { "story": "coffee", "altruistic_status": "more", "first_meeting": "bob" },
+    {
+      "story": "meeting prep",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "gifts",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "meeting location",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    }
+  ],
+  [
+    {
+      "story": "group project",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "conversation",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "architects",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "police",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    { "story": "weekend", "altruistic_status": "less", "first_meeting": "bob" },
+    { "story": "gifts", "altruistic_status": "more", "first_meeting": "alice" },
+    {
+      "story": "meeting location",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    }
+  ],
+  [
+    {
+      "story": "concerts",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "conversation",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "architects",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "police",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    { "story": "gifts", "altruistic_status": "less", "first_meeting": "bob" },
+    {
+      "story": "meeting location",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "group project",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    }
+  ],
+  [
+    {
+      "story": "feedback",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "architects",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    { "story": "weekend", "altruistic_status": "less", "first_meeting": "bob" },
+    {
+      "story": "fundraising",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    { "story": "gifts", "altruistic_status": "equal", "first_meeting": "bob" },
+    { "story": "police", "altruistic_status": "less", "first_meeting": "bob" },
+    {
+      "story": "conversation",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "group project",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "meeting location",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    }
+  ],
+  [
+    {
+      "story": "scheduling",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "architects",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    { "story": "gifts", "altruistic_status": "more", "first_meeting": "bob" },
+    { "story": "police", "altruistic_status": "equal", "first_meeting": "bob" },
+    {
+      "story": "conversation",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "group project",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "meeting location",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    { "story": "feedback", "altruistic_status": "less", "first_meeting": "bob" }
+  ],
+  [
+    {
+      "story": "babysitting",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "architects",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    { "story": "weekend", "altruistic_status": "more", "first_meeting": "bob" },
+    {
+      "story": "fundraising",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    { "story": "coffee", "altruistic_status": "less", "first_meeting": "bob" },
+    {
+      "story": "housemates",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    { "story": "gifts", "altruistic_status": "less", "first_meeting": "alice" },
+    { "story": "police", "altruistic_status": "more", "first_meeting": "bob" },
+    {
+      "story": "conversation",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "group project",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "meeting location",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    }
+  ],
+  [
+    {
+      "story": "restaurant",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "architects",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    { "story": "coffee", "altruistic_status": "equal", "first_meeting": "bob" },
+    {
+      "story": "housemates",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "gifts",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "police",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "conversation",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "group project",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "meeting location",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    }
+  ],
+  [
+    {
+      "story": "architects",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    { "story": "coffee", "altruistic_status": "more", "first_meeting": "bob" },
+    {
+      "story": "housemates",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    { "story": "gifts", "altruistic_status": "more", "first_meeting": "alice" },
+    {
+      "story": "police",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "conversation",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "group project",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "meeting location",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    }
+  ],
+  [
+    {
+      "story": "weekend",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    { "story": "gifts", "altruistic_status": "less", "first_meeting": "bob" },
+    {
+      "story": "police",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "conversation",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "group project",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "meeting location",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "architects",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    }
+  ],
+  [
+    {
+      "story": "fundraising",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    { "story": "gifts", "altruistic_status": "equal", "first_meeting": "bob" },
+    { "story": "police", "altruistic_status": "less", "first_meeting": "bob" },
+    {
+      "story": "conversation",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "group project",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "meeting location",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "architects",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    { "story": "weekend", "altruistic_status": "less", "first_meeting": "bob" }
+  ],
+  [
+    {
+      "story": "coffee",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    { "story": "gifts", "altruistic_status": "more", "first_meeting": "bob" },
+    { "story": "police", "altruistic_status": "equal", "first_meeting": "bob" },
+    {
+      "story": "conversation",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "group project",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "meeting location",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "architects",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    }
+  ],
+  [
+    {
+      "story": "housemates",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    { "story": "gifts", "altruistic_status": "less", "first_meeting": "alice" },
+    { "story": "police", "altruistic_status": "more", "first_meeting": "bob" },
+    {
+      "story": "conversation",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "group project",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "meeting location",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "architects",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    { "story": "weekend", "altruistic_status": "more", "first_meeting": "bob" },
+    {
+      "story": "fundraising",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    { "story": "coffee", "altruistic_status": "less", "first_meeting": "bob" }
+  ],
+  [
+    {
+      "story": "family meals",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "gifts",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "police",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "conversation",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "group project",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "meeting location",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "architects",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    { "story": "coffee", "altruistic_status": "equal", "first_meeting": "bob" },
+    {
+      "story": "housemates",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    }
+  ],
+  [
+    { "story": "gifts", "altruistic_status": "more", "first_meeting": "alice" },
+    {
+      "story": "police",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "conversation",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "group project",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "meeting location",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "architects",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    { "story": "coffee", "altruistic_status": "more", "first_meeting": "bob" },
+    {
+      "story": "housemates",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    }
+  ],
+  [
+    {
+      "story": "police",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "conversation",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "group project",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "meeting location",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "architects",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    { "story": "gifts", "altruistic_status": "less", "first_meeting": "bob" }
+  ],
+  [
+    {
+      "story": "conversation",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "group project",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "meeting location",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "architects",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    { "story": "weekend", "altruistic_status": "less", "first_meeting": "bob" },
+    {
+      "story": "fundraising",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    { "story": "gifts", "altruistic_status": "equal", "first_meeting": "bob" },
+    { "story": "police", "altruistic_status": "less", "first_meeting": "bob" }
+  ],
+  [
+    {
+      "story": "concerts",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "group project",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "meeting location",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "architects",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    { "story": "gifts", "altruistic_status": "more", "first_meeting": "bob" },
+    { "story": "police", "altruistic_status": "equal", "first_meeting": "bob" },
+    {
+      "story": "conversation",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    }
+  ],
+  [
+    {
+      "story": "group project",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "meeting location",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "architects",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    { "story": "weekend", "altruistic_status": "more", "first_meeting": "bob" },
+    {
+      "story": "fundraising",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    { "story": "coffee", "altruistic_status": "less", "first_meeting": "bob" },
+    {
+      "story": "housemates",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    { "story": "gifts", "altruistic_status": "less", "first_meeting": "alice" },
+    { "story": "police", "altruistic_status": "more", "first_meeting": "bob" },
+    {
+      "story": "conversation",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    { "story": "concerts", "altruistic_status": "less", "first_meeting": "bob" }
+  ],
+  [
+    {
+      "story": "meeting location",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "architects",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    { "story": "coffee", "altruistic_status": "equal", "first_meeting": "bob" },
+    {
+      "story": "housemates",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "gifts",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "police",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "conversation",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "group project",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    }
+  ],
+  [
+    {
+      "story": "meeting prep",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "architects",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    { "story": "coffee", "altruistic_status": "more", "first_meeting": "bob" },
+    {
+      "story": "housemates",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    { "story": "gifts", "altruistic_status": "more", "first_meeting": "alice" },
+    {
+      "story": "police",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "conversation",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "group project",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "meeting location",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    }
+  ],
+  [
+    {
+      "story": "groceries",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "architects",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    { "story": "gifts", "altruistic_status": "less", "first_meeting": "bob" },
+    {
+      "story": "police",
+      "altruistic_status": "more",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "conversation",
+      "altruistic_status": "equal",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status": "less",
+      "first_meeting": "alice"
+    },
+    {
+      "story": "group project",
+      "altruistic_status": "more",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "meeting location",
+      "altruistic_status": "equal",
+      "first_meeting": "bob"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status": "less",
+      "first_meeting": "bob"
+    }
+  ]
+]

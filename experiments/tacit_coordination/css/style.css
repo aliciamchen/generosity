@@ -30,8 +30,9 @@ h3 {
 
 ul {
   text-align: left;
-  display: grid;
+  display: inline-block;
   gap: 10px;
+  width: 70%;
 }
 
 hr {
@@ -63,7 +64,7 @@ hr {
 }
 
   .jspsych-survey-multi-choice-option {
-    display: inline-block;
+    /* display: inline-block; */
     max-width: 350px; /* adjust this value as per your needs */
     white-space: normal;
 }

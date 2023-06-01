@@ -43,8 +43,23 @@ function makeTrials(condition_number, jsPsych) {
           },
         },
         on_finish: function (data) {
-          data.correct = jsPsych.timelineVariable("first_meeting") === data.response.first_q
-          console.log(data)
+          data.response.answer = data.response.first_q == jsPsych.timelineVariable("alice") ? "alice" : "bob"
+          data.correct = jsPsych.timelineVariable("first_meeting") == data.response.answer
+
+          var response_status = function() {
+            if (data.correct === true) {
+              return jsPsych.timelineVariable("altruistic_status")
+            } else if (jsPsych.timelineVariable("altruistic_status") === "equal") {
+              return jsPsych.timelineVariable("altruistic_status")
+            } else {
+              const statuses = ["more", "less"]
+              const result = statuses.filter(elt => elt !== jsPsych.timelineVariable("altruistic_status"))[0]
+              return result
+            }
+          }
+
+          data.response.status = response_status()
+          // console.log(data)
         },
         button_label: "Submit",
       },
@@ -80,6 +95,7 @@ function makeTrials(condition_number, jsPsych) {
           var html = `<h2>Second time</h2>\
           <p><span class="vignette">${jsPsych.timelineVariable("vignette")}</span></p>\
           <p>The <strong>first time</strong>, ${jsPsych.timelineVariable("first_actual")}</p>
+          <p><strong>Now that you know what happened the first time, what do you think happened the second time?</strong></p>
           <hr>`
           return html;
         },
@@ -120,7 +136,22 @@ function makeTrials(condition_number, jsPsych) {
               1 / fetchTrialParams(condition_number).length
           );
           data.strategy = jsPsych.data.get().last(4).values()[0].response.first_q === data.response.second_q ? "repeating" : "alternating"
-          console.log(data)
+          data.response.answer = data.response.second_q === jsPsych.timelineVariable("alice") ? "alice" : "bob"
+
+          var response_status = function() {
+            if (jsPsych.timelineVariable("first_meeting") == data.response.answer) {
+              return jsPsych.timelineVariable("altruistic_status")
+            } else if (jsPsych.timelineVariable("altruistic_status") === "equal") {
+              return jsPsych.timelineVariable("altruistic_status")
+            } else {
+              const statuses = ["more", "less"]
+              const result = statuses.filter(elt => elt !== jsPsych.timelineVariable("altruistic_status"))[0]
+              return result
+            }
+          }
+
+          data.response_status = response_status()
+          // console.log(data)
         },
       },
 
@@ -136,21 +167,9 @@ function makeTrials(condition_number, jsPsych) {
         },
       },
     ],
-    timeline_variables:   [{
-      story: "conversation",
-      altruistic_status: "more",
-      first_meeting: "alice",
-      vignette: "Consider Angela and Alice, who work at the same company. <strong>Alice and Angela are in a relationship where Angela has less power, status, or influence than Alice.</strong> Alice and Angela meet for one hour every week.",
-      first_actual: "Alice spent most of the time talking, and Angela spent most of the time asking questions.",
-      first_q: "The first time Alice and Angela met, who spent most of the time talking, and who spent most of the time asking questions?",
-      alice: "Alice spent most of the time talking, and Angela spent most of the time asking questions.",
-      bob: "Angela spent most of the time talking, and Alice spent most of the time asking questions.",
-      second_q: "The second time Alice and Angela met, who spent most of the time talking, and who spent most of the time asking questions?"
-    }],// fetchTrialParams(condition_number),
+    timeline_variables: fetchTrialParams(condition_number),
     randomize_order: true,
   };
-
-  // var attentionParams = fetchAttentionTrialParams();
 
   var attentionTrial = {
     timeline: [
@@ -184,7 +203,6 @@ function makeTrials(condition_number, jsPsych) {
         data: {
           type: "attention",
           stage: "first",
-          // correct: jsPsych.timelineVariable("first_meeting") === data.response.first_q,
           story: jsPsych.timelineVariable("story"),
           altruistic_status: jsPsych.timelineVariable("altruistic_status"),
           first_meeting: jsPsych.timelineVariable("first_meeting"),
@@ -197,6 +215,7 @@ function makeTrials(condition_number, jsPsych) {
         },
         on_finish: function (data) {
           data.correct = jsPsych.timelineVariable("first_meeting") === data.response.first_q
+
           console.log(data)
         },
         button_label: "Submit",
@@ -232,6 +251,7 @@ function makeTrials(condition_number, jsPsych) {
         preamble: function() {
           var html = `<h2>Second time</h2>\
           <p><span class="vignette">${jsPsych.timelineVariable("vignette")}</span></p>\
+          <p><strong>Now that you know what happened the first time, what do you think happened the second time?</strong></p>
           <hr>`
           return html;
         },
@@ -252,7 +272,7 @@ function makeTrials(condition_number, jsPsych) {
           },
         ],
         data: {
-          type: "attention",
+          type: "response",
           stage: "second",
           story: jsPsych.timelineVariable("story"),
           altruistic_status: jsPsych.timelineVariable("altruistic_status"),
@@ -288,17 +308,7 @@ function makeTrials(condition_number, jsPsych) {
         },
       },
     ],
-    timeline_variables:   [{
-        story: "attention",
-        altruistic_status: "",
-        first_meeting: "",
-        vignette: "Thank you for contributing to this study! This page is an attention check so we can make sure you're not a bot and can award you your pay when you complete the study.",
-        first_actual: "Please press continue.",
-        first_q: "Please select \"Alice spent most of the time talking...\" for this question.",
-        alice: "Alice spent most of the time talking, and Angela spent most of the time asking questions.",
-        bob: "Angela spent most of the time talking, and Angela spent most of the time asking questions.",
-        second_q: "Please select \"Angela spent most of the time talking...\" for this question."
-    }],// fetchTrialParams(condition_number),
+    timeline_variables: fetchAttentionTrialParams(),
   };
 
   return [regularTrials, attentionTrial];

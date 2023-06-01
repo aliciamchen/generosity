@@ -2,8 +2,8 @@
   {
     "story": "attention",
     "vignette": "Thank you for contributing to this study! This page is an attention check so we can make sure you're not a bot and can award you your pay when you complete the study.",
-    "expected_high_benefit": "Please select \"extremely likely\" for this question.",
-    "expected_low_benefit": "Please select \"extremely unlikely\" for this question."
+    "expected_high_benefit": "Please select \"extremely\" for this question.",
+    "expected_low_benefit": "Please select \"not at all\" for this question."
   },
   {
     "story": "conversation",
