@@ -12,12 +12,12 @@ library(wesanderson)
 
 options(contrasts = c(unordered = "contr.sum", ordered = "contr.poly"))
 
-theme_set(theme_few(base_size = 10))
+theme_set(theme_few(base_size = 15))
 
 ## Plot
 
 d <-
-  read.csv(here('data/validation_data.csv')) %>% filter(pass_attention == T, understood == "yes") %>%
+  read.csv(here('data/validation_effort_data.csv')) %>% filter(pass_attention == T, understood == "yes") %>%
   pivot_longer(
     cols = c("expected_high_benefit", "expected_low_benefit"),
     names_to = "benefit",
@@ -26,9 +26,9 @@ d <-
   mutate(likert_rating = likert_rating + 1) %>%
   select(-c("understood", "pass_attention"))
 
-write.csv(d, here('data/validation_tidy_data.csv'), row.names=FALSE)
+# write.csv(d, here('data/validation_effort_tidy_data.csv'), row.names=FALSE)
 
-d.demographics <- read.csv(here('data/validation_demographics.csv'))
+# d.demographics <- read.csv(here('data/validation_effort_demographics.csv'))
 
 d.demographics %>% count(gender)
 d.demographics %>% summarize(mean_age = mean(age), sd_age = sd(age))
@@ -63,7 +63,7 @@ f = ggplot(data = d,
   ) +
   scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
                      limits = c(0.8, 7.2)) +
-  labs(x = "benefit", y = "how likely?") +
+  labs(x = "benefit", y = "how much effort?") +
   theme(legend.position = "bottom")
 
 f
@@ -96,100 +96,26 @@ f = ggplot(data = d,
   scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
                      limits = c(0.8, 7.2)) +
   scale_x_discrete(labels = c("high", "low")) +
-  labs(x = "expected benefit", y = "perceived benefit") +
+  labs(x = "expected benefit", y = "perceived effort", title = 
+         "how much effort?") +
   theme(legend.position = "bottom") + 
   facet_wrap(~story)
 
 
 f
 
-### 
-
+# Calculate mean differences and save
+# calculate difference in means
 diff <- d %>%
   group_by(story, benefit) %>%
   summarise(mean_rating = mean(likert_rating, na.rm = TRUE)) %>%
   spread(benefit, mean_rating) %>%
-  mutate(diff = expected_high_benefit - expected_low_benefit, 
-         diff = abs(diff))
+  mutate(expected_high_benefit = ifelse(story == "conversation", expected_low_benefit, expected_high_benefit)) %>% 
+  mutate(diff = expected_low_benefit - expected_high_benefit)
 
 diff
-
-write.csv(diff, here("data/validation_benefit_diff.csv"), row.names = FALSE)
-
-
-## Pretty plot
-all.diffs.benefit <- d %>% 
-  group_by(subject_id, story) %>% 
-  spread(benefit, likert_rating) %>% 
-  mutate(diff = expected_high_benefit - expected_low_benefit) %>% 
-  mutate(type = "benefit")
-
-all.diffs.effort <- read.csv(here('data/validation_effort_data.csv')) %>% filter(pass_attention == T, understood == "yes") %>%
-  pivot_longer(
-    cols = c("expected_high_benefit", "expected_low_benefit"),
-    names_to = "benefit",
-    values_to = "likert_rating"
-  ) %>%
-  mutate(likert_rating = likert_rating + 1) %>%
-  select(-c("understood", "pass_attention")) %>% 
-  group_by(subject_id, story) %>% 
-  spread(benefit, likert_rating) %>% 
-  mutate(diff = expected_high_benefit - expected_low_benefit, 
-         type = "effort")
-
-all.diffs.benefit.means <- all.diffs.benefit %>% 
-  group_by(story) %>% 
-  tidyboot_mean(diff, na.rm = TRUE) %>% 
-  mutate(type = "benefit")
-
-all.diffs.effort.means <- all.diffs.effort %>% 
-  group_by(story) %>% 
-  tidyboot_mean(diff, na.rm = TRUE) %>% 
-  mutate(type = "effort")
-
-
-# df.stacked.means <- bind_rows(all.diffs.benefit.means, all.diffs.effort.means)
-df.stacked.all <- bind_rows(all.diffs.benefit, all.diffs.effort) 
-
-df.stacked.means <- df.stacked.all %>% 
-  group_by(story, type) %>% 
-  tidyboot_mean(diff, na.rm = TRUE) %>% 
-  rename(diff = empirical_stat)
-
-# arrange descending
-df.temp <- df.stacked.means %>% 
-  filter(type == "benefit") %>% 
-  arrange(desc(diff)) 
-
-levs <- unique(df.temp$story)
-
-df.stacked.all$story <- factor(df.stacked.all$story, levels=levs)
-
-f <- ggplot(df.stacked.all, aes(x = story, y = diff, fill = type)) + 
-  geom_violin(width = 1.4,
-              bw = 0.43,
-              position = position_dodge(width = 0.4)) +
-  geom_point(
-    data = df.stacked.means,
-    aes(x = story, y = diff),
-    size = 1,
-    alpha = 1,
-    position = position_dodge(width = 0.4)
-  ) +
-  geom_errorbar(
-    data = df.stacked.means,
-    aes(x = story, ymin = ci_lower, ymax = ci_upper),
-    position = position_dodge(width = 0.4),
-    size = 1,
-    width = 0.2
-  ) +
-  labs(x = "story", y = "A minus B", title = 'relative cost/benefit for all scenarios')
-  
-f
-  
-
+write.csv(diff, here("data/validation_effort_diff.csv"), row.names = FALSE)
 ## Analysis
-
 
 
 # Without all levels
@@ -202,6 +128,7 @@ summary(mod)
 
 emm <- mod %>% emmeans(pairwise ~ benefit)
 emm
+
 # With all levels
 mod <- lmer(likert_rating ~ 1 + social_interaction * relationship + (1 |
                                                                        story) + (1 | subject_id),

@@ -1,3 +1,3 @@
-python preprocess_validation.py --in_dir data/validation/raw --out_dir data/validation/non_anonymized --expt_label validation
+python preprocess_validation.py --in_dir data/validation_effort/raw --out_dir data/validation_effort/non_anonymized --expt_label validation_effort
 
 Rscript preprocess_validation.R
