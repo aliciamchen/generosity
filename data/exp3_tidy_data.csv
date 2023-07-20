@@ -1,7 +1,7 @@
 "subject_id","story","social_interaction","relationship","likert_rating"
-"f2ef57c3f9c16cb0d0e0d280585a41da","conversation","precedent","more",3
+"f2ef57c3f9c16cb0d0e0d280585a41da","conversation","precedent","more",5
 "f2ef57c3f9c16cb0d0e0d280585a41da","conversation","precedent","equal",4
-"f2ef57c3f9c16cb0d0e0d280585a41da","conversation","precedent","less",5
+"f2ef57c3f9c16cb0d0e0d280585a41da","conversation","precedent","less",3
 "f2ef57c3f9c16cb0d0e0d280585a41da","groceries","no_interaction","more",4
 "f2ef57c3f9c16cb0d0e0d280585a41da","groceries","no_interaction","equal",6
 "f2ef57c3f9c16cb0d0e0d280585a41da","groceries","no_interaction","less",4
@@ -560,9 +560,9 @@
 "0119204bcb7793033be83b0f2de5b7e1","police","precedent","more",1
 "0119204bcb7793033be83b0f2de5b7e1","police","precedent","equal",1
 "0119204bcb7793033be83b0f2de5b7e1","police","precedent","less",7
-"0119204bcb7793033be83b0f2de5b7e1","conversation","no_interaction","more",4
+"0119204bcb7793033be83b0f2de5b7e1","conversation","no_interaction","more",5
 "0119204bcb7793033be83b0f2de5b7e1","conversation","no_interaction","equal",4
-"0119204bcb7793033be83b0f2de5b7e1","conversation","no_interaction","less",5
+"0119204bcb7793033be83b0f2de5b7e1","conversation","no_interaction","less",4
 "0119204bcb7793033be83b0f2de5b7e1","weekend","precedent","more",4
 "0119204bcb7793033be83b0f2de5b7e1","weekend","precedent","equal",4
 "0119204bcb7793033be83b0f2de5b7e1","weekend","precedent","less",4
@@ -635,9 +635,9 @@
 "105b0e33dd1a30586b0919769a54920e","meeting location","precedent","more",2
 "105b0e33dd1a30586b0919769a54920e","meeting location","precedent","equal",1
 "105b0e33dd1a30586b0919769a54920e","meeting location","precedent","less",5
-"105b0e33dd1a30586b0919769a54920e","conversation","precedent","more",2
+"105b0e33dd1a30586b0919769a54920e","conversation","precedent","more",6
 "105b0e33dd1a30586b0919769a54920e","conversation","precedent","equal",3
-"105b0e33dd1a30586b0919769a54920e","conversation","precedent","less",6
+"105b0e33dd1a30586b0919769a54920e","conversation","precedent","less",2
 "105b0e33dd1a30586b0919769a54920e","police","no_interaction","more",3
 "105b0e33dd1a30586b0919769a54920e","police","no_interaction","equal",5
 "105b0e33dd1a30586b0919769a54920e","police","no_interaction","less",3
@@ -764,9 +764,9 @@
 "7a68aae8d21f93d72db557db5fe5c4ff","groceries","no_interaction","more",2
 "7a68aae8d21f93d72db557db5fe5c4ff","groceries","no_interaction","equal",5
 "7a68aae8d21f93d72db557db5fe5c4ff","groceries","no_interaction","less",2
-"7a68aae8d21f93d72db557db5fe5c4ff","conversation","precedent","more",3
+"7a68aae8d21f93d72db557db5fe5c4ff","conversation","precedent","more",5
 "7a68aae8d21f93d72db557db5fe5c4ff","conversation","precedent","equal",3
-"7a68aae8d21f93d72db557db5fe5c4ff","conversation","precedent","less",5
+"7a68aae8d21f93d72db557db5fe5c4ff","conversation","precedent","less",3
 "7a68aae8d21f93d72db557db5fe5c4ff","scheduling","precedent","more",4
 "7a68aae8d21f93d72db557db5fe5c4ff","scheduling","precedent","equal",5
 "7a68aae8d21f93d72db557db5fe5c4ff","scheduling","precedent","less",5
@@ -962,9 +962,9 @@
 "a0a88f8d5174f10a04e91324ca5a105b","coffee","precedent","more",4
 "a0a88f8d5174f10a04e91324ca5a105b","coffee","precedent","equal",3
 "a0a88f8d5174f10a04e91324ca5a105b","coffee","precedent","less",6
-"a0a88f8d5174f10a04e91324ca5a105b","conversation","no_interaction","more",4
+"a0a88f8d5174f10a04e91324ca5a105b","conversation","no_interaction","more",6
 "a0a88f8d5174f10a04e91324ca5a105b","conversation","no_interaction","equal",2
-"a0a88f8d5174f10a04e91324ca5a105b","conversation","no_interaction","less",6
+"a0a88f8d5174f10a04e91324ca5a105b","conversation","no_interaction","less",4
 "a0a88f8d5174f10a04e91324ca5a105b","housemates","reciprocity","more",4
 "a0a88f8d5174f10a04e91324ca5a105b","housemates","reciprocity","equal",4
 "a0a88f8d5174f10a04e91324ca5a105b","housemates","reciprocity","less",5
@@ -1007,9 +1007,9 @@
 "61b17a4c858116a19d55fc815b49bcb7","scheduling","precedent","more",2
 "61b17a4c858116a19d55fc815b49bcb7","scheduling","precedent","equal",3
 "61b17a4c858116a19d55fc815b49bcb7","scheduling","precedent","less",6
-"61b17a4c858116a19d55fc815b49bcb7","conversation","precedent","more",3
+"61b17a4c858116a19d55fc815b49bcb7","conversation","precedent","more",5
 "61b17a4c858116a19d55fc815b49bcb7","conversation","precedent","equal",3
-"61b17a4c858116a19d55fc815b49bcb7","conversation","precedent","less",5
+"61b17a4c858116a19d55fc815b49bcb7","conversation","precedent","less",3
 "61b17a4c858116a19d55fc815b49bcb7","concerts","precedent","more",6
 "61b17a4c858116a19d55fc815b49bcb7","concerts","precedent","equal",3
 "61b17a4c858116a19d55fc815b49bcb7","concerts","precedent","less",2
@@ -1040,9 +1040,9 @@
 "f3ba90a2d15351ff1872d86a9bcfd097","weekend","precedent","more",2
 "f3ba90a2d15351ff1872d86a9bcfd097","weekend","precedent","equal",2
 "f3ba90a2d15351ff1872d86a9bcfd097","weekend","precedent","less",6
-"f3ba90a2d15351ff1872d86a9bcfd097","conversation","precedent","more",2
+"f3ba90a2d15351ff1872d86a9bcfd097","conversation","precedent","more",6
 "f3ba90a2d15351ff1872d86a9bcfd097","conversation","precedent","equal",2
-"f3ba90a2d15351ff1872d86a9bcfd097","conversation","precedent","less",6
+"f3ba90a2d15351ff1872d86a9bcfd097","conversation","precedent","less",2
 "f3ba90a2d15351ff1872d86a9bcfd097","group project","no_interaction","more",2
 "f3ba90a2d15351ff1872d86a9bcfd097","group project","no_interaction","equal",6
 "f3ba90a2d15351ff1872d86a9bcfd097","group project","no_interaction","less",2
@@ -1154,9 +1154,9 @@
 "051246651d8d4b1e57e5cee4b1264827","groceries","no_interaction","more",1
 "051246651d8d4b1e57e5cee4b1264827","groceries","no_interaction","equal",7
 "051246651d8d4b1e57e5cee4b1264827","groceries","no_interaction","less",1
-"051246651d8d4b1e57e5cee4b1264827","conversation","precedent","more",1
+"051246651d8d4b1e57e5cee4b1264827","conversation","precedent","more",7
 "051246651d8d4b1e57e5cee4b1264827","conversation","precedent","equal",1
-"051246651d8d4b1e57e5cee4b1264827","conversation","precedent","less",7
+"051246651d8d4b1e57e5cee4b1264827","conversation","precedent","less",1
 "051246651d8d4b1e57e5cee4b1264827","feedback","reciprocity","more",1
 "051246651d8d4b1e57e5cee4b1264827","feedback","reciprocity","equal",7
 "051246651d8d4b1e57e5cee4b1264827","feedback","reciprocity","less",1
@@ -1226,7 +1226,7 @@
 "9ef87fbdf75a8144c12435273ae6564e","restaurant","no_interaction","more",4
 "9ef87fbdf75a8144c12435273ae6564e","restaurant","no_interaction","equal",6
 "9ef87fbdf75a8144c12435273ae6564e","restaurant","no_interaction","less",4
-"9ef87fbdf75a8144c12435273ae6564e","conversation","precedent","more",4
+"9ef87fbdf75a8144c12435273ae6564e","conversation","precedent","more",NA
 "9ef87fbdf75a8144c12435273ae6564e","conversation","precedent","equal",6
 "9ef87fbdf75a8144c12435273ae6564e","conversation","precedent","less",NA
 "9ef87fbdf75a8144c12435273ae6564e","feedback","reciprocity","more",4
@@ -1271,9 +1271,9 @@
 "9410cd0ac5beeb2f3cbc781339930cda","weekend","no_interaction","more",5
 "9410cd0ac5beeb2f3cbc781339930cda","weekend","no_interaction","equal",5
 "9410cd0ac5beeb2f3cbc781339930cda","weekend","no_interaction","less",5
-"9410cd0ac5beeb2f3cbc781339930cda","conversation","precedent","more",3
+"9410cd0ac5beeb2f3cbc781339930cda","conversation","precedent","more",5
 "9410cd0ac5beeb2f3cbc781339930cda","conversation","precedent","equal",3
-"9410cd0ac5beeb2f3cbc781339930cda","conversation","precedent","less",5
+"9410cd0ac5beeb2f3cbc781339930cda","conversation","precedent","less",3
 "9410cd0ac5beeb2f3cbc781339930cda","police","precedent","more",3
 "9410cd0ac5beeb2f3cbc781339930cda","police","precedent","equal",5
 "9410cd0ac5beeb2f3cbc781339930cda","police","precedent","less",5
@@ -1553,9 +1553,9 @@
 "3d36936f0911254ff693443fbf1414ce","meeting prep","reciprocity","more",4
 "3d36936f0911254ff693443fbf1414ce","meeting prep","reciprocity","equal",6
 "3d36936f0911254ff693443fbf1414ce","meeting prep","reciprocity","less",4
-"3d36936f0911254ff693443fbf1414ce","conversation","precedent","more",1
+"3d36936f0911254ff693443fbf1414ce","conversation","precedent","more",7
 "3d36936f0911254ff693443fbf1414ce","conversation","precedent","equal",2
-"3d36936f0911254ff693443fbf1414ce","conversation","precedent","less",7
+"3d36936f0911254ff693443fbf1414ce","conversation","precedent","less",1
 "3d36936f0911254ff693443fbf1414ce","feedback","precedent","more",5
 "3d36936f0911254ff693443fbf1414ce","feedback","precedent","equal",5
 "3d36936f0911254ff693443fbf1414ce","feedback","precedent","less",3
@@ -1808,9 +1808,9 @@
 "c56de537344ff6c66c6fd36adc25e002","housemates","no_interaction","more",4
 "c56de537344ff6c66c6fd36adc25e002","housemates","no_interaction","equal",7
 "c56de537344ff6c66c6fd36adc25e002","housemates","no_interaction","less",4
-"c56de537344ff6c66c6fd36adc25e002","conversation","precedent","more",3
+"c56de537344ff6c66c6fd36adc25e002","conversation","precedent","more",5
 "c56de537344ff6c66c6fd36adc25e002","conversation","precedent","equal",3
-"c56de537344ff6c66c6fd36adc25e002","conversation","precedent","less",5
+"c56de537344ff6c66c6fd36adc25e002","conversation","precedent","less",3
 "c56de537344ff6c66c6fd36adc25e002","groceries","reciprocity","more",2
 "c56de537344ff6c66c6fd36adc25e002","groceries","reciprocity","equal",7
 "c56de537344ff6c66c6fd36adc25e002","groceries","reciprocity","less",2
@@ -1937,9 +1937,9 @@
 "8cdb80434c548c089851fa52b1d147ba","fundraising","no_interaction","more",2
 "8cdb80434c548c089851fa52b1d147ba","fundraising","no_interaction","equal",6
 "8cdb80434c548c089851fa52b1d147ba","fundraising","no_interaction","less",2
-"8cdb80434c548c089851fa52b1d147ba","conversation","precedent","more",3
+"8cdb80434c548c089851fa52b1d147ba","conversation","precedent","more",6
 "8cdb80434c548c089851fa52b1d147ba","conversation","precedent","equal",2
-"8cdb80434c548c089851fa52b1d147ba","conversation","precedent","less",6
+"8cdb80434c548c089851fa52b1d147ba","conversation","precedent","less",3
 "8cdb80434c548c089851fa52b1d147ba","groceries","reciprocity","more",2
 "8cdb80434c548c089851fa52b1d147ba","groceries","reciprocity","equal",6
 "8cdb80434c548c089851fa52b1d147ba","groceries","reciprocity","less",2
@@ -2123,9 +2123,9 @@
 "5f86cfee08af34e8295942e4dcd4de44","scheduling","reciprocity","more",1
 "5f86cfee08af34e8295942e4dcd4de44","scheduling","reciprocity","equal",7
 "5f86cfee08af34e8295942e4dcd4de44","scheduling","reciprocity","less",1
-"5f86cfee08af34e8295942e4dcd4de44","conversation","precedent","more",2
+"5f86cfee08af34e8295942e4dcd4de44","conversation","precedent","more",6
 "5f86cfee08af34e8295942e4dcd4de44","conversation","precedent","equal",5
-"5f86cfee08af34e8295942e4dcd4de44","conversation","precedent","less",6
+"5f86cfee08af34e8295942e4dcd4de44","conversation","precedent","less",2
 "5f86cfee08af34e8295942e4dcd4de44","concerts","precedent","more",7
 "5f86cfee08af34e8295942e4dcd4de44","concerts","precedent","equal",2
 "5f86cfee08af34e8295942e4dcd4de44","concerts","precedent","less",1
@@ -2345,9 +2345,9 @@
 "2cf95ba26e4ef9951ea81949da8c5b21","concerts","reciprocity","more",2
 "2cf95ba26e4ef9951ea81949da8c5b21","concerts","reciprocity","equal",6
 "2cf95ba26e4ef9951ea81949da8c5b21","concerts","reciprocity","less",2
-"2cf95ba26e4ef9951ea81949da8c5b21","conversation","precedent","more",2
+"2cf95ba26e4ef9951ea81949da8c5b21","conversation","precedent","more",6
 "2cf95ba26e4ef9951ea81949da8c5b21","conversation","precedent","equal",2
-"2cf95ba26e4ef9951ea81949da8c5b21","conversation","precedent","less",6
+"2cf95ba26e4ef9951ea81949da8c5b21","conversation","precedent","less",2
 "2cf95ba26e4ef9951ea81949da8c5b21","scheduling","precedent","more",3
 "2cf95ba26e4ef9951ea81949da8c5b21","scheduling","precedent","equal",5
 "2cf95ba26e4ef9951ea81949da8c5b21","scheduling","precedent","less",3
@@ -2477,15 +2477,15 @@
 "d7e8d6034f934bc0ef05c391db73a717","babysitting","precedent","more",3
 "d7e8d6034f934bc0ef05c391db73a717","babysitting","precedent","equal",5
 "d7e8d6034f934bc0ef05c391db73a717","babysitting","precedent","less",3
-"d7e8d6034f934bc0ef05c391db73a717","conversation","precedent","more",3
+"d7e8d6034f934bc0ef05c391db73a717","conversation","precedent","more",5
 "d7e8d6034f934bc0ef05c391db73a717","conversation","precedent","equal",3
-"d7e8d6034f934bc0ef05c391db73a717","conversation","precedent","less",5
+"d7e8d6034f934bc0ef05c391db73a717","conversation","precedent","less",3
 "d7e8d6034f934bc0ef05c391db73a717","group project","precedent","more",6
 "d7e8d6034f934bc0ef05c391db73a717","group project","precedent","equal",2
 "d7e8d6034f934bc0ef05c391db73a717","group project","precedent","less",2
-"c2ea55550fa0d0671749cfbfa66db630","conversation","no_interaction","more",3
+"c2ea55550fa0d0671749cfbfa66db630","conversation","no_interaction","more",5
 "c2ea55550fa0d0671749cfbfa66db630","conversation","no_interaction","equal",5
-"c2ea55550fa0d0671749cfbfa66db630","conversation","no_interaction","less",5
+"c2ea55550fa0d0671749cfbfa66db630","conversation","no_interaction","less",3
 "c2ea55550fa0d0671749cfbfa66db630","meeting location","precedent","more",4
 "c2ea55550fa0d0671749cfbfa66db630","meeting location","precedent","equal",4
 "c2ea55550fa0d0671749cfbfa66db630","meeting location","precedent","less",4
@@ -2543,9 +2543,9 @@
 "320b03a16a8739b76ad3493fdc696c66","scheduling","no_interaction","more",2
 "320b03a16a8739b76ad3493fdc696c66","scheduling","no_interaction","equal",6
 "320b03a16a8739b76ad3493fdc696c66","scheduling","no_interaction","less",2
-"320b03a16a8739b76ad3493fdc696c66","conversation","precedent","more",2
+"320b03a16a8739b76ad3493fdc696c66","conversation","precedent","more",6
 "320b03a16a8739b76ad3493fdc696c66","conversation","precedent","equal",2
-"320b03a16a8739b76ad3493fdc696c66","conversation","precedent","less",6
+"320b03a16a8739b76ad3493fdc696c66","conversation","precedent","less",2
 "320b03a16a8739b76ad3493fdc696c66","concerts","reciprocity","more",4
 "320b03a16a8739b76ad3493fdc696c66","concerts","reciprocity","equal",6
 "320b03a16a8739b76ad3493fdc696c66","concerts","reciprocity","less",4
@@ -2591,9 +2591,9 @@
 "320b03a16a8739b76ad3493fdc696c66","gifts","precedent","more",3
 "320b03a16a8739b76ad3493fdc696c66","gifts","precedent","equal",3
 "320b03a16a8739b76ad3493fdc696c66","gifts","precedent","less",5
-"80f4efab563d4fce24927fdb0d199ea0","conversation","reciprocity","more",4
+"80f4efab563d4fce24927fdb0d199ea0","conversation","reciprocity","more",7
 "80f4efab563d4fce24927fdb0d199ea0","conversation","reciprocity","equal",4
-"80f4efab563d4fce24927fdb0d199ea0","conversation","reciprocity","less",7
+"80f4efab563d4fce24927fdb0d199ea0","conversation","reciprocity","less",4
 "80f4efab563d4fce24927fdb0d199ea0","family meals","reciprocity","more",4
 "80f4efab563d4fce24927fdb0d199ea0","family meals","reciprocity","equal",7
 "80f4efab563d4fce24927fdb0d199ea0","family meals","reciprocity","less",4
@@ -2993,9 +2993,9 @@
 "19b908071688521d9737e767ea8d4727","group project","reciprocity","more",1
 "19b908071688521d9737e767ea8d4727","group project","reciprocity","equal",7
 "19b908071688521d9737e767ea8d4727","group project","reciprocity","less",1
-"19b908071688521d9737e767ea8d4727","conversation","precedent","more",2
+"19b908071688521d9737e767ea8d4727","conversation","precedent","more",6
 "19b908071688521d9737e767ea8d4727","conversation","precedent","equal",2
-"19b908071688521d9737e767ea8d4727","conversation","precedent","less",6
+"19b908071688521d9737e767ea8d4727","conversation","precedent","less",2
 "19b908071688521d9737e767ea8d4727","gifts","precedent","more",6
 "19b908071688521d9737e767ea8d4727","gifts","precedent","equal",3
 "19b908071688521d9737e767ea8d4727","gifts","precedent","less",2
@@ -3092,9 +3092,9 @@
 "c52ac2b8b9f3d2ecd4591142abbb7b5f","meeting prep","reciprocity","more",2
 "c52ac2b8b9f3d2ecd4591142abbb7b5f","meeting prep","reciprocity","equal",6
 "c52ac2b8b9f3d2ecd4591142abbb7b5f","meeting prep","reciprocity","less",2
-"c52ac2b8b9f3d2ecd4591142abbb7b5f","conversation","precedent","more",2
+"c52ac2b8b9f3d2ecd4591142abbb7b5f","conversation","precedent","more",6
 "c52ac2b8b9f3d2ecd4591142abbb7b5f","conversation","precedent","equal",3
-"c52ac2b8b9f3d2ecd4591142abbb7b5f","conversation","precedent","less",6
+"c52ac2b8b9f3d2ecd4591142abbb7b5f","conversation","precedent","less",2
 "c52ac2b8b9f3d2ecd4591142abbb7b5f","concerts","reciprocity","more",2
 "c52ac2b8b9f3d2ecd4591142abbb7b5f","concerts","reciprocity","equal",6
 "c52ac2b8b9f3d2ecd4591142abbb7b5f","concerts","reciprocity","less",2

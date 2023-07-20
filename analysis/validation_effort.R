@@ -30,8 +30,8 @@ d <-
 
 # d.demographics <- read.csv(here('data/validation_effort_demographics.csv'))
 
-d.demographics %>% count(gender)
-d.demographics %>% summarize(mean_age = mean(age), sd_age = sd(age))
+# d.demographics %>% count(gender)
+# d.demographics %>% summarize(mean_age = mean(age), sd_age = sd(age))
 
 print(length(unique(d$subject_id)))
 
@@ -110,7 +110,6 @@ diff <- d %>%
   group_by(story, benefit) %>%
   summarise(mean_rating = mean(likert_rating, na.rm = TRUE)) %>%
   spread(benefit, mean_rating) %>%
-  mutate(expected_high_benefit = ifelse(story == "conversation", expected_low_benefit, expected_high_benefit)) %>% 
   mutate(diff = expected_low_benefit - expected_high_benefit)
 
 diff

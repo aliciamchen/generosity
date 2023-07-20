@@ -78,7 +78,7 @@ ggplot(data = d,
   labs(x = "interaction sequence", y = "how likely?", fill = "relationship") +
   theme(legend.position = "bottom") +
   facet_wrap(~story) + 
-  labs(title = "exp1")
+  labs(title = "study 1a")
 
 # Individual points
 ggplot(data = d,
@@ -100,7 +100,7 @@ ggplot(data = d,
   labs(x = "interaction sequence", y = "how likely?", fill = "relationship") +
   theme(legend.position = "bottom") +
   facet_wrap(~story) + 
-  labs(title = "exp1")
+  labs(title = "study 1a")
 
 
 ggplot(data = d %>% filter(social_interaction == "precedent"),
@@ -110,7 +110,7 @@ ggplot(data = d %>% filter(social_interaction == "precedent"),
   scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
                      limits = c(0.8, 7.2)) +
   facet_wrap(~story) + 
-  labs(title = "exp1 precedent condition")
+  labs(title = "study 1a precedent condition")
 
 ggplot(data = d %>% filter(social_interaction == "reciprocity"),
        aes(x = relationship, y = likert_rating, group = subject_id))  + 
@@ -119,7 +119,7 @@ ggplot(data = d %>% filter(social_interaction == "reciprocity"),
   scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
                      limits = c(0.8, 7.2)) +
   facet_wrap(~story) + 
-  labs(title = "exp1 reciprocity condition")
+  labs(title = "study 1a reciprocity condition")
 
 ggplot(data = d %>% filter(social_interaction == "no_interaction"),
        aes(x = relationship, y = likert_rating, group = subject_id))  + 
@@ -128,7 +128,7 @@ ggplot(data = d %>% filter(social_interaction == "no_interaction"),
   scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
                      limits = c(0.8, 7.2)) +
   facet_wrap(~story) + 
-  labs(title = "exp1 no interaction condition")
+  labs(title = "study 1a no interaction condition")
 
 
 ## Exp 2
@@ -188,7 +188,7 @@ ggplot(data = d,
   labs(x = "relationship", y = "how likely?", fill = "next interaction") +
   theme(legend.position = "bottom") + 
   facet_wrap(~story) + 
-  labs(title = "exp2")
+  labs(title = "study 2a")
 
 
 # Individual points
@@ -208,7 +208,7 @@ ggplot(data = d,
   labs(x = "relationship", y = "how likely?", fill = "next interaction") +
   theme(legend.position = "bottom") +
   facet_wrap(~story) + 
-  labs(title = "exp2")
+  labs(title = "study 2a")
 
 
 ggplot(data = d %>% filter(relationship == "asymmetric"),
@@ -218,7 +218,7 @@ ggplot(data = d %>% filter(relationship == "asymmetric"),
   scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
                      limits = c(0.8, 7.2)) +
   facet_wrap(~story) + 
-  labs(title = "exp2 asymmetric condition")
+  labs(title = "study 2a asymmetric condition")
 
 ggplot(data = d %>% filter(relationship == "symmetric"),
        aes(x = next_interaction, y = likert_rating, group = subject_id))  + 
@@ -227,7 +227,7 @@ ggplot(data = d %>% filter(relationship == "symmetric"),
   scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
                      limits = c(0.8, 7.2)) +
   facet_wrap(~story) + 
-  labs(title = "exp2 symmetric condition")
+  labs(title = "study 2a symmetric condition")
 
 ggplot(data = d %>% filter(relationship == "no_info"),
        aes(x = next_interaction, y = likert_rating, group = subject_id))  + 
@@ -236,7 +236,7 @@ ggplot(data = d %>% filter(relationship == "no_info"),
   scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
                      limits = c(0.8, 7.2)) +
   facet_wrap(~story) + 
-  labs(title = "exp2 no relationship info condition")
+  labs(title = "study 2a no relationship info condition")
 
 
 ## Experiment 3
@@ -298,7 +298,7 @@ ggplot(data = d,
   labs(x = "interaction sequence", y = "how likely?", fill = "power/status of altruistic person") +
   theme(legend.position = "bottom") +
   facet_wrap(~story) + 
-  labs(title = "exp3 - inferring relationship from behavior")
+  labs(title = "study 1b - inferring relationship from behavior")
 
 # Individual points
 
@@ -310,7 +310,7 @@ ggplot(data = d %>% filter(social_interaction == "precedent"),
   scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
                      limits = c(0.8, 7.2)) +
   facet_wrap(~story) + 
-  labs(title = "exp3 behavior -> relationship precedent condition", x = "power/status of altruistic person")
+  labs(title = "study 1b behavior -> relationship precedent condition", x = "power/status of altruistic person")
 
 
 ## Experiment 4
@@ -369,7 +369,7 @@ ggplot(data = d,
   labs(x = "relationship", y = "how likely?", fill = "next interaction") +
   theme(legend.position = "bottom") + 
   facet_wrap(~story) + 
-  labs(title = "exp 4 inferring behavior from relationship")
+  labs(title = "study 2b inferring behavior from relationship")
 
 
 # Individual points
@@ -381,7 +381,7 @@ ggplot(data = d %>% filter(relationship == "more"),
   scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
                      limits = c(0.8, 7.2)) +
   facet_wrap(~story) + 
-  labs(title = "exp4 altruistic person more power/status")
+  labs(title = "study 2b altruistic person more power/status")
 
 ggplot(data = d %>% filter(relationship == "equal"),
        aes(x = next_interaction, y = likert_rating, group = subject_id))  + 
@@ -390,7 +390,7 @@ ggplot(data = d %>% filter(relationship == "equal"),
   scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
                      limits = c(0.8, 7.2)) +
   facet_wrap(~story) + 
-  labs(title = "exp4 altruistic person equal power/status")
+  labs(title = "study 2b altruistic person equal power/status")
 
 ggplot(data = d %>% filter(relationship == "less"),
        aes(x = next_interaction, y = likert_rating, group = subject_id))  + 
@@ -399,5 +399,5 @@ ggplot(data = d %>% filter(relationship == "less"),
   scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
                      limits = c(0.8, 7.2)) +
   facet_wrap(~story) + 
-  labs(title = "exp4 altruistic person less power/status")
+  labs(title = "study 2b altruistic person less power/status")
 

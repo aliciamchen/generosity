@@ -15,7 +15,7 @@ function instructionsPage1() {
     <h2>Instructions</h2>
     <p>
     In this study we are interested in how people think about who puts in effort in social interactions. \
-    We will describe a social interaction between two people, and then ask you how much each of the people puts in effort in the social interaction.
+    We will describe a social interaction between two people, and then ask you how much each of the people puts in effort in the social interaction, <strong>compared to if they don't interact.</strong>
     </p>
     <p>
     You will read about <strong>${fetchTrialParams().length}</strong> total scenarios in this survey.

@@ -87,9 +87,9 @@ f = ggplot(data = d,
   theme(legend.position = "bottom")
 
 f
-ggsave(here("figures/exp1_violin.pdf"),
-       width = 8,
-       height = 7.8)
+# ggsave(here("figures/exp1_violin.pdf"),
+#        width = 8,
+#        height = 7.8)
 
 
 ## Analysis

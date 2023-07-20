@@ -12,12 +12,12 @@ library(wesanderson)
 
 options(contrasts = c(unordered = "contr.sum", ordered = "contr.poly"))
 
-theme_set(theme_few(base_size = 10))
+theme_set(theme_classic(base_size = 9))
 
 ## Plot
 
 d <-
-  read.csv(here('data/validation_data.csv')) %>% filter(pass_attention == T, understood == "yes") %>%
+  read.csv(here('data/validation_benefit_data.csv')) %>% filter(pass_attention == T, understood == "yes") %>%
   pivot_longer(
     cols = c("expected_high_benefit", "expected_low_benefit"),
     names_to = "benefit",
@@ -26,9 +26,9 @@ d <-
   mutate(likert_rating = likert_rating + 1) %>%
   select(-c("understood", "pass_attention"))
 
-write.csv(d, here('data/validation_tidy_data.csv'), row.names=FALSE)
+write.csv(d, here('data/validation_benefit_tidy_data.csv'), row.names=FALSE)
 
-d.demographics <- read.csv(here('data/validation_demographics.csv'))
+d.demographics <- read.csv(here('data/validation_benefit_demographics.csv'))
 
 d.demographics %>% count(gender)
 d.demographics %>% summarize(mean_age = mean(age), sd_age = sd(age))
@@ -166,7 +166,7 @@ levs <- unique(df.temp$story)
 df.stacked.all$story <- factor(df.stacked.all$story, levels=levs)
 
 f <- ggplot(df.stacked.all, aes(x = story, y = diff, fill = type)) + 
-  geom_violin(width = 1.4,
+  geom_violin(width = 2.0,
               bw = 0.43,
               position = position_dodge(width = 0.4)) +
   geom_point(
@@ -183,9 +183,13 @@ f <- ggplot(df.stacked.all, aes(x = story, y = diff, fill = type)) +
     size = 1,
     width = 0.2
   ) +
-  labs(x = "story", y = "A minus B", title = 'relative cost/benefit for all scenarios')
+  labs(x = "story", y = "A minus B", title = 'relative cost/benefit for all scenarios') +
+  theme(axis.text.x = element_text(angle = 30, hjust = 1))
   
 f
+
+# ggsave(here("figures/validation_.pdf"), width = 10, height = 3)
+
   
 
 ## Analysis
