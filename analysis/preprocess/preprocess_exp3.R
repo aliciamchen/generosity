@@ -10,6 +10,15 @@ d$subject_id <- sapply(d$subject_id, digest)
 d.dem$subject_id <- sapply(d.dem$subject_id, digest)
 
 d %>%
+  mutate(
+    temp_high = ifelse(story == "conversation" & !is.na(more), less, more),
+    temp_low = ifelse(story == "conversation" & !is.na(less), more, less)
+  ) %>%
+  select(-more, -less) %>%
+  rename(
+    more = temp_high,
+    less = temp_low
+  ) %>%
   write_csv(here('data/exp3_data.csv'))
 
 d.dem %>%
