@@ -10,7 +10,7 @@ library(forcats)
 library(emmeans)
 library(broom.mixed)
 
-theme_set(theme_few(base_size = 15))
+theme_set(theme_classic(base_size = 30))
 
 d.1a <- read.csv(here('data/exp1_tidy_data.csv'))
 d.1b <- read.csv(here('data/exp3_tidy_data.csv'))
@@ -152,3 +152,39 @@ f <- ggplot(d.2b.effort.means, aes(x = effort_diff, y = empirical_stat, color = 
        title = "study 2b (relationship -> behavior) precedent + asymmetric") 
 
 f
+
+
+### For cogsci poster 
+
+# Calculate relative probability of more
+d.2b.prob.benefit <- d.2b.benefit.means %>% 
+  pivot_wider(names_from = relationship, values_from = empirical_stat, id_cols = c(story, benefit_diff)) %>% 
+  mutate(prob_more = more - less)
+
+f <- ggplot(d.2b.prob.benefit, aes(x = benefit_diff, y = prob_more)) +
+  geom_point(size = 5.3, alpha = 0.9, color = "#F8766D") +
+  geom_hline(yintercept = 0, linetype = "dashed") + 
+  scale_x_continuous(limits = c(0, 4))
+  
+
+f
+
+ggsave(here("figures/cogsci_poster/2b_exploratory_benefit.pdf"),
+       width = 8.7,
+       height = 4)
+
+d.2b.prob.effort <- d.2b.effort.means %>% 
+  pivot_wider(names_from = relationship, values_from = empirical_stat, id_cols = c(story, effort_diff)) %>% 
+  mutate(prob_more = more - less)
+
+f <- ggplot(d.2b.prob.effort, aes(x = effort_diff, y = prob_more)) +
+  geom_point(size = 5.3, alpha = 0.9, color = "#00BFC4") +
+  geom_hline(yintercept = 0, linetype = "dashed") +
+  scale_x_continuous(limits = c(0, 4))
+
+f
+
+ggsave(here("figures/cogsci_poster/2b_exploratory_effort.pdf"),
+       width = 8.7,
+       height = 4)
+

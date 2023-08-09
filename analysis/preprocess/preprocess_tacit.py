@@ -52,7 +52,7 @@ def main(args):
             df_data.loc[i, 'altruistic_status'] = trial.get('altruistic_status', None)
             df_data.loc[i, 'first_meeting'] = trial['first_meeting']
             df_data.loc[i, 'stage'] = trial['stage']
-            df_data.loc[i, 'response'] = trial['response']['answer']
+            df_data.loc[i, 'response'] = trial['response'].get('answer', None)
             df_data.loc[i, 'response_status'] = trial.get('response_status', trial.get('response', {}).get('status', None)) # This was because i called it something different stage to stage
             df_data.loc[i, 'strategy'] = trial.get('strategy', None)
 

@@ -7,7 +7,7 @@ library(lmerTest)
 library(wesanderson)
 library(forcats)
 
-theme_set(theme_few(base_size = 30))
+theme_set(theme_classic(base_size = 30))
 options(contrasts = c(unordered = "contr.sum", ordered = "contr.poly"))
 
 d <-
@@ -67,16 +67,232 @@ f = ggplot(data = d,
     name = "next interaction",
     breaks = c("repeating", "alternating", "none")
   ) +
-  # scale_x_discrete(limits = c("symmetric", "asymmetric", "no_info")) +
+  scale_x_discrete(limits = c("more", "less", "equal")) +
   scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
                      limits = c(0.8, 7.2)) +
   labs(x = "status of altruistic person", y = "how likely?", fill = "next interaction") +
   theme(legend.position = "bottom")
 
 f
-# ggsave(here("figures/exp2_violin.pdf"),
+# ggsave(here("figures/exp2b_violin.pdf"),
 #        width = 8,
 #        height = 7.8)
+
+## Cogsci poster
+
+
+f = ggplot(data = d %>% filter(relationship == "more", next_interaction != "none"),
+           aes(x = relationship, y = likert_rating, fill = next_interaction)) +
+  geom_violin(width = 1.16,
+              bw = 0.43,
+              position = position_dodge(width = 0.8)) +
+  geom_point(
+    d.means.all %>% filter(relationship == "more", next_interaction != "none"),
+    mapping = aes(x = relationship, y = likert_rating),
+    size = 2.3,
+    alpha = 1,
+    position = position_dodge(width = 0.8)
+  ) +
+  geom_errorbar(
+    d.means.all %>% filter(relationship == "more", next_interaction != "none"),
+    mapping = aes(x = relationship, ymin = ci_lower, ymax = ci_upper),
+    position = position_dodge(width = 0.8),
+    size = 1.5,
+    width = 0.09
+  ) +
+  scale_fill_manual(
+    values = wes_palette(n = 3, name = "FantasticFox1"),
+    name = "next interaction",
+    breaks = c("repeating", "alternating")
+  ) +
+  scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
+                     limits = c(0.8, 7.2)) +
+  labs(x = "status of altruistic person", y = "how likely?", fill = "next interaction") +
+  theme(legend.position = "bottom")
+
+f
+ggsave(here("figures/cogsci_poster/2b_violin_higher.pdf"),
+       width = 4.5,
+       height = 7.5)
+
+
+f = ggplot(data = d %>% filter(relationship == "equal", next_interaction != "none"),
+           aes(x = relationship, y = likert_rating, fill = next_interaction)) +
+  geom_violin(width = 1.16,
+              bw = 0.43,
+              position = position_dodge(width = 0.8)) +
+  geom_point(
+    d.means.all %>% filter(relationship == "equal", next_interaction != "none"),
+    mapping = aes(x = relationship, y = likert_rating),
+    size = 2.3,
+    alpha = 1,
+    position = position_dodge(width = 0.8)
+  ) +
+  geom_errorbar(
+    d.means.all %>% filter(relationship == "equal", next_interaction != "none"),
+    mapping = aes(x = relationship, ymin = ci_lower, ymax = ci_upper),
+    position = position_dodge(width = 0.8),
+    size = 1.5,
+    width = 0.09
+  ) +
+  scale_fill_manual(
+    values = wes_palette(n = 3, name = "FantasticFox1"),
+    name = "next interaction",
+    breaks = c("repeating", "alternating")
+  ) +
+  scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
+                     limits = c(0.8, 7.2)) +
+  labs(x = "status of altruistic person", y = "how likely?", fill = "next interaction") +
+  theme(legend.position = "bottom")
+
+f
+ggsave(here("figures/cogsci_poster/2b_violin_equal.pdf"),
+       width = 4.5,
+       height = 7.5)
+
+# For talk
+
+f = ggplot(data = d %>% filter(relationship == "less", next_interaction != "none"),
+           aes(x = relationship, y = likert_rating, fill = next_interaction)) +
+  geom_violin(width = 1.16,
+              bw = 0.43,
+              position = position_dodge(width = 0.8)) +
+  geom_point(
+    d.means.all %>% filter(relationship == "less", next_interaction != "none"),
+    mapping = aes(x = relationship, y = likert_rating),
+    size = 2.3,
+    alpha = 1,
+    position = position_dodge(width = 0.8)
+  ) +
+  geom_errorbar(
+    d.means.all %>% filter(relationship == "less", next_interaction != "none"),
+    mapping = aes(x = relationship, ymin = ci_lower, ymax = ci_upper),
+    position = position_dodge(width = 0.8),
+    size = 1.5,
+    width = 0.09
+  ) +
+  scale_fill_manual(
+    values = wes_palette(n = 3, name = "FantasticFox1"),
+    name = "next interaction",
+    breaks = c("repeating", "alternating")
+  ) +
+  scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
+                     limits = c(0.8, 7.2)) +
+  labs(x = "status of altruistic person", y = "how likely?", fill = "next interaction") +
+  theme(legend.position = "bottom")
+
+f
+ggsave(here("figures/cogsci_poster/2b_violin_lower.pdf"),
+       width = 6,
+       height = 7.5)
+
+
+## Extra stuff
+
+
+f = ggplot(data = d %>% filter(relationship == "more"),
+           aes(x = relationship, y = likert_rating, fill = next_interaction)) +
+  geom_violin(width = 1.16,
+              bw = 0.43,
+              position = position_dodge(width = 0.8)) +
+  geom_point(
+    d.means.all %>% filter(relationship == "more"),
+    mapping = aes(x = relationship, y = likert_rating),
+    size = 2.3,
+    alpha = 1,
+    position = position_dodge(width = 0.8)
+  ) +
+  geom_errorbar(
+    d.means.all %>% filter(relationship == "more"),
+    mapping = aes(x = relationship, ymin = ci_lower, ymax = ci_upper),
+    position = position_dodge(width = 0.8),
+    size = 1.5,
+    width = 0.09
+  ) +
+  scale_fill_manual(
+    values = wes_palette(n = 3, name = "FantasticFox1"),
+    name = "next interaction",
+    breaks = c("repeating", "alternating")
+  ) +
+  scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
+                     limits = c(0.8, 7.2)) +
+  labs(x = "status of altruistic person", y = "how likely?", fill = "next interaction") +
+  theme(legend.position = "bottom")
+
+f
+ggsave(here("figures/sloan_talk/1b_violin_higher_cont.pdf"),
+       width = 6,
+       height = 7.5)
+
+
+f = ggplot(data = d %>% filter(relationship == "equal"),
+           aes(x = relationship, y = likert_rating, fill = next_interaction)) +
+  geom_violin(width = 1.16,
+              bw = 0.43,
+              position = position_dodge(width = 0.8)) +
+  geom_point(
+    d.means.all %>% filter(relationship == "equal"),
+    mapping = aes(x = relationship, y = likert_rating),
+    size = 2.3,
+    alpha = 1,
+    position = position_dodge(width = 0.8)
+  ) +
+  geom_errorbar(
+    d.means.all %>% filter(relationship == "equal"),
+    mapping = aes(x = relationship, ymin = ci_lower, ymax = ci_upper),
+    position = position_dodge(width = 0.8),
+    size = 1.5,
+    width = 0.09
+  ) +
+  scale_fill_manual(
+    values = wes_palette(n = 3, name = "FantasticFox1"),
+    name = "next interaction",
+    breaks = c("repeating", "alternating")
+  ) +
+  scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
+                     limits = c(0.8, 7.2)) +
+  labs(x = "status of altruistic person", y = "how likely?", fill = "next interaction") +
+  theme(legend.position = "bottom")
+
+f
+ggsave(here("figures/sloan_talk/1b_violin_equal_cont.pdf"),
+       width = 6,
+       height = 7.5)
+
+
+f = ggplot(data = d %>% filter(relationship == "less"),
+           aes(x = relationship, y = likert_rating, fill = next_interaction)) +
+  geom_violin(width = 1.16,
+              bw = 0.43,
+              position = position_dodge(width = 0.8)) +
+  geom_point(
+    d.means.all %>% filter(relationship == "less"),
+    mapping = aes(x = relationship, y = likert_rating),
+    size = 2.3,
+    alpha = 1,
+    position = position_dodge(width = 0.8)
+  ) +
+  geom_errorbar(
+    d.means.all %>% filter(relationship == "less"),
+    mapping = aes(x = relationship, ymin = ci_lower, ymax = ci_upper),
+    position = position_dodge(width = 0.8),
+    size = 1.5,
+    width = 0.09
+  ) +
+  scale_fill_manual(
+    values = wes_palette(n = 3, name = "FantasticFox1"),
+    name = "next interaction",
+    breaks = c("repeating", "alternating")
+  ) +
+  scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
+                     limits = c(0.8, 7.2)) +
+  labs(x = "status of altruistic person", y = "how likely?", fill = "next interaction") +
+  theme(legend.position = "bottom")
+
+f
+ggsave(here("figures/sloan_talk/1b_violin_lower_cont.pdf"),
+       width = 6,
+       height = 7.5)
 
 
 

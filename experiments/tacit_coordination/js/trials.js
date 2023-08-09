@@ -135,7 +135,7 @@ function makeTrials(condition_number, jsPsych) {
             curr_progress_bar_value +
               1 / fetchTrialParams(condition_number).length
           );
-          data.strategy = jsPsych.data.get().last(4).values()[0].response.first_actual === data.response.second_q ? "repeating" : "alternating"
+          data.strategy = jsPsych.data.get().last(4).values()[0].first_actual === data.response.second_q ? "repeating" : "alternating"
           data.response.answer = data.response.second_q === jsPsych.timelineVariable("alice") ? "alice" : "bob"
 
           var response_status = function() {

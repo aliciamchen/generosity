@@ -12,7 +12,7 @@ library(wesanderson)
 
 options(contrasts = c(unordered = "contr.sum", ordered = "contr.poly"))
 
-theme_set(theme_few(base_size = 30))
+theme_set(theme_classic(base_size = 30))
 
 ## Plot
 
@@ -28,7 +28,7 @@ d <-
   select(-c("understood", "pass_attention")) %>%
   mutate(
     relationship = fct_relevel(relationship,
-                               "symmetric", "asymmetric", "none"),
+                               "asymmetric", "symmetric", "none"),
     social_interaction = fct_relevel(
       social_interaction,
       "precedent",
@@ -52,7 +52,7 @@ d.means.all <-
   tidyboot_mean(likert_rating, na.rm = TRUE) %>%
   rename(likert_rating = empirical_stat)
 
-
+# Plot with all the stuff together
 f = ggplot(data = d,
            aes(x = social_interaction, y = likert_rating, fill = relationship)) +
   geom_violin(width = 1.4,
@@ -87,10 +87,186 @@ f = ggplot(data = d,
   theme(legend.position = "bottom")
 
 f
-# ggsave(here("figures/exp1_violin.pdf"),
+# ggsave(here("figures/exp1a_violin.pdf"),
 #        width = 8,
 #        height = 7.8)
 
+## Plots for cogsci poster
+
+f = ggplot(data = d %>% filter(relationship != "none", social_interaction == "precedent"),
+           aes(x = social_interaction, y = likert_rating, fill = relationship)) +
+  geom_violin(width = 1.4,
+              bw = 0.43,
+              position = position_dodge(width = 0.8)) +
+  geom_point(
+    d.means.all %>% filter(relationship != "none", social_interaction == "precedent"),
+    mapping = aes(x = social_interaction, y = likert_rating),
+    size = 2.3,
+    alpha = 1,
+    position = position_dodge(width = 0.8)
+  ) +
+  geom_errorbar(
+    d.means.all %>% filter(relationship != "none", social_interaction == "precedent"),
+    mapping = aes(x = social_interaction, ymin = ci_lower, ymax = ci_upper),
+    position = position_dodge(width = 0.8),
+    size = 1.5,
+    width = 0.06
+  ) +
+  scale_fill_manual(
+    values = wes_palette(n = 3, name = "Darjeeling1"),
+    name = "relationship"
+  ) +
+  scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
+                     limits = c(0.8, 7.2)) +
+  labs(x = "interaction sequence", y = "how likely?", fill = "relationship") +
+  theme(legend.position = "bottom")  
+
+f
+
+ggsave(here("figures/cogsci_poster/1a_violin_prec.pdf"),
+       width = 4.5,
+       height = 7.5)
+
+
+
+f = ggplot(data = d %>% filter(relationship != "none", social_interaction == "reciprocity"),
+           aes(x = social_interaction, y = likert_rating, fill = relationship)) +
+  geom_violin(width = 1.4,
+              bw = 0.43,
+              position = position_dodge(width = 0.8)) +
+  geom_point(
+    d.means.all %>% filter(relationship != "none", social_interaction == "reciprocity"),
+    mapping = aes(x = social_interaction, y = likert_rating),
+    size = 2.3,
+    alpha = 1,
+    position = position_dodge(width = 0.8)
+  ) +
+  geom_errorbar(
+    d.means.all %>% filter(relationship != "none", social_interaction == "reciprocity"),
+    mapping = aes(x = social_interaction, ymin = ci_lower, ymax = ci_upper),
+    position = position_dodge(width = 0.8),
+    size = 1.5,
+    width = 0.06
+  ) +
+  scale_fill_manual(
+    values = wes_palette(n = 3, name = "Darjeeling1"),
+    name = "relationship"
+  ) +
+  scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
+                     limits = c(0.8, 7.2)) +
+  labs(x = "interaction sequence", y = "how likely?", fill = "relationship") +
+  theme(legend.position = "bottom")  
+
+f
+
+ggsave(here("figures/cogsci_poster/1a_violin_rec.pdf"),
+       width = 4.5,
+       height = 7.5)
+
+# With controls
+
+f = ggplot(data = d %>% filter(social_interaction == "precedent"),
+           aes(x = social_interaction, y = likert_rating, fill = relationship)) +
+  geom_violin(width = 1.4,
+              bw = 0.43,
+              position = position_dodge(width = 0.8)) +
+  geom_point(
+    d.means.all %>% filter(social_interaction == "precedent"),
+    mapping = aes(x = social_interaction, y = likert_rating),
+    size = 2.3,
+    alpha = 1,
+    position = position_dodge(width = 0.8)
+  ) +
+  geom_errorbar(
+    d.means.all %>% filter(social_interaction == "precedent"),
+    mapping = aes(x = social_interaction, ymin = ci_lower, ymax = ci_upper),
+    position = position_dodge(width = 0.8),
+    size = 1.5,
+    width = 0.06
+  ) +
+  scale_fill_manual(
+    values = wes_palette(n = 3, name = "Darjeeling1"),
+    name = "relationship"
+  ) +
+  scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
+                     limits = c(0.8, 7.2)) +
+  labs(x = "interaction sequence", y = "how likely?", fill = "relationship") +
+  theme(legend.position = "bottom")  
+
+f
+
+ggsave(here("figures/sloan_talk/2a_violin_control_prec.pdf"),
+       width = 6,
+       height = 7.5)
+
+
+f = ggplot(data = d %>% filter(social_interaction == "reciprocity"),
+           aes(x = social_interaction, y = likert_rating, fill = relationship)) +
+  geom_violin(width = 1.4,
+              bw = 0.43,
+              position = position_dodge(width = 0.8)) +
+  geom_point(
+    d.means.all %>% filter(social_interaction == "reciprocity"),
+    mapping = aes(x = social_interaction, y = likert_rating),
+    size = 2.3,
+    alpha = 1,
+    position = position_dodge(width = 0.8)
+  ) +
+  geom_errorbar(
+    d.means.all %>% filter(social_interaction == "reciprocity"),
+    mapping = aes(x = social_interaction, ymin = ci_lower, ymax = ci_upper),
+    position = position_dodge(width = 0.8),
+    size = 1.5,
+    width = 0.06
+  ) +
+  scale_fill_manual(
+    values = wes_palette(n = 3, name = "Darjeeling1"),
+    name = "relationship"
+  ) +
+  scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
+                     limits = c(0.8, 7.2)) +
+  labs(x = "interaction sequence", y = "how likely?", fill = "relationship") +
+  theme(legend.position = "bottom")  
+
+f
+
+ggsave(here("figures/sloan_talk/2a_violin_control_rec.pdf"),
+       width = 6,
+       height = 7.5)
+
+f = ggplot(data = d %>% filter(social_interaction == "no_interaction"),
+           aes(x = social_interaction, y = likert_rating, fill = relationship)) +
+  geom_violin(width = 1.4,
+              bw = 0.43,
+              position = position_dodge(width = 0.8)) +
+  geom_point(
+    d.means.all %>% filter(social_interaction == "no_interaction"),
+    mapping = aes(x = social_interaction, y = likert_rating),
+    size = 2.3,
+    alpha = 1,
+    position = position_dodge(width = 0.8)
+  ) +
+  geom_errorbar(
+    d.means.all %>% filter(social_interaction == "no_interaction"),
+    mapping = aes(x = social_interaction, ymin = ci_lower, ymax = ci_upper),
+    position = position_dodge(width = 0.8),
+    size = 1.5,
+    width = 0.06
+  ) +
+  scale_fill_manual(
+    values = wes_palette(n = 3, name = "Darjeeling1"),
+    name = "relationship"
+  ) +
+  scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
+                     limits = c(0.8, 7.2)) +
+  labs(x = "interaction sequence", y = "how likely?", fill = "relationship") +
+  theme(legend.position = "bottom")  
+
+f
+
+ggsave(here("figures/sloan_talk/2a_violin_control.pdf"),
+       width = 6,
+       height = 7.5)
 
 ## Analysis
 

@@ -7,7 +7,7 @@ library(lmerTest)
 library(wesanderson)
 library(forcats)
 
-theme_set(theme_few(base_size = 30))
+theme_set(theme_classic(base_size = 30))
 options(contrasts = c(unordered = "contr.sum", ordered = "contr.poly"))
 
 d <-
@@ -23,7 +23,7 @@ d <-
     next_interaction = fct_relevel(next_interaction,
                                    "repeating", "alternating", "none"),
     relationship = fct_relevel(relationship,
-                               "symmetric", "asymmetric", "no_info")
+                               "asymmetric", "symmetric", "no_info")
   )
 
 write.csv(d, here('data/exp2_tidy_data.csv'), row.names=FALSE)
@@ -67,17 +67,208 @@ f = ggplot(data = d,
     name = "next interaction",
     breaks = c("repeating", "alternating", "none")
   ) +
-  scale_x_discrete(limits = c("symmetric", "asymmetric", "no_info")) +
   scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
                      limits = c(0.8, 7.2)) +
   labs(x = "relationship", y = "how likely?", fill = "next interaction") +
   theme(legend.position = "bottom")
 
 f
-ggsave(here("figures/exp2_violin.pdf"),
-       width = 8,
-       height = 7.8)
+# ggsave(here("figures/exp2a_violin.pdf"),
+#        width = 8,
+#        height = 7.8)
 
+
+## Poster figs
+
+f = ggplot(data = d %>% filter(relationship == "asymmetric", next_interaction != "none"),
+           aes(x = relationship, y = likert_rating, fill = next_interaction)) +
+  geom_violin(width = 1.16,
+              bw = 0.43,
+              position = position_dodge(width = 0.8)) +
+  geom_point(
+    d.means.all %>% filter(relationship == "asymmetric", next_interaction != "none"),
+    mapping = aes(x = relationship, y = likert_rating),
+    size = 2.3,
+    alpha = 1,
+    position = position_dodge(width = 0.8)
+  ) +
+  geom_errorbar(
+    d.means.all %>% filter(relationship == "asymmetric", next_interaction != "none"),
+    mapping = aes(x = relationship, ymin = ci_lower, ymax = ci_upper),
+    position = position_dodge(width = 0.8),
+    size = 1.5,
+    width = 0.09
+  ) +
+  scale_fill_manual(
+    values = wes_palette(n = 3, name = "FantasticFox1"),
+    name = "next interaction",
+    breaks = c("repeating", "alternating", "none")
+  ) +
+  scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
+                     limits = c(0.8, 7.2)) +
+  labs(x = "relationship", y = "how likely?", fill = "next interaction") +
+  theme(legend.position = "bottom")
+
+f
+
+
+ggsave(here("figures/cogsci_poster/2a_violin_asym.pdf"),
+       width = 4.5,
+       height = 7.5)
+
+
+f = ggplot(data = d %>% filter(relationship == "symmetric", next_interaction != "none"),
+           aes(x = relationship, y = likert_rating, fill = next_interaction)) +
+  geom_violin(width = 1.16,
+              bw = 0.43,
+              position = position_dodge(width = 0.8)) +
+  geom_point(
+    d.means.all %>% filter(relationship == "symmetric", next_interaction != "none"),
+    mapping = aes(x = relationship, y = likert_rating),
+    size = 2.3,
+    alpha = 1,
+    position = position_dodge(width = 0.8)
+  ) +
+  geom_errorbar(
+    d.means.all %>% filter(relationship == "symmetric", next_interaction != "none"),
+    mapping = aes(x = relationship, ymin = ci_lower, ymax = ci_upper),
+    position = position_dodge(width = 0.8),
+    size = 1.5,
+    width = 0.09
+  ) +
+  scale_fill_manual(
+    values = wes_palette(n = 3, name = "FantasticFox1"),
+    name = "next interaction",
+    breaks = c("repeating", "alternating", "none")
+  ) +
+  scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
+                     limits = c(0.8, 7.2)) +
+  labs(x = "relationship", y = "how likely?", fill = "next interaction") +
+  theme(legend.position = "bottom")
+
+f
+
+
+
+ggsave(here("figures/cogsci_poster/2a_violin_sym.pdf"),
+       width = 4.5,
+       height = 7.5)
+
+
+
+# Talk figs (these have controls)
+
+
+f = ggplot(data = d %>% filter(relationship == "asymmetric"),
+           aes(x = relationship, y = likert_rating, fill = next_interaction)) +
+  geom_violin(width = 1.16,
+              bw = 0.43,
+              position = position_dodge(width = 0.8)) +
+  geom_point(
+    d.means.all %>% filter(relationship == "asymmetric"),
+    mapping = aes(x = relationship, y = likert_rating),
+    size = 2.3,
+    alpha = 1,
+    position = position_dodge(width = 0.8)
+  ) +
+  geom_errorbar(
+    d.means.all %>% filter(relationship == "asymmetric"),
+    mapping = aes(x = relationship, ymin = ci_lower, ymax = ci_upper),
+    position = position_dodge(width = 0.8),
+    size = 1.5,
+    width = 0.09
+  ) +
+  scale_fill_manual(
+    values = wes_palette(n = 3, name = "FantasticFox1"),
+    name = "next interaction",
+    breaks = c("repeating", "alternating", "none")
+  ) +
+  scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
+                     limits = c(0.8, 7.2)) +
+  labs(x = "relationship", y = "how likely?", fill = "next interaction") +
+  theme(legend.position = "bottom")
+
+f
+
+
+ggsave(here("figures/sloan_talk/1a_violin_asym_cont.pdf"),
+       width = 6,
+       height = 7.5)
+
+
+f = ggplot(data = d %>% filter(relationship == "symmetric"),
+           aes(x = relationship, y = likert_rating, fill = next_interaction)) +
+  geom_violin(width = 1.16,
+              bw = 0.43,
+              position = position_dodge(width = 0.8)) +
+  geom_point(
+    d.means.all %>% filter(relationship == "symmetric"),
+    mapping = aes(x = relationship, y = likert_rating),
+    size = 2.3,
+    alpha = 1,
+    position = position_dodge(width = 0.8)
+  ) +
+  geom_errorbar(
+    d.means.all %>% filter(relationship == "symmetric"),
+    mapping = aes(x = relationship, ymin = ci_lower, ymax = ci_upper),
+    position = position_dodge(width = 0.8),
+    size = 1.5,
+    width = 0.09
+  ) +
+  scale_fill_manual(
+    values = wes_palette(n = 3, name = "FantasticFox1"),
+    name = "next interaction",
+    breaks = c("repeating", "alternating", "none")
+  ) +
+  scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
+                     limits = c(0.8, 7.2)) +
+  labs(x = "relationship", y = "how likely?", fill = "next interaction") +
+  theme(legend.position = "bottom")
+
+f
+
+
+ggsave(here("figures/sloan_talk/1a_violin_sym_cont.pdf"),
+       width = 6,
+       height = 7.5)
+
+
+
+f = ggplot(data = d %>% filter(relationship == "no_info"),
+           aes(x = relationship, y = likert_rating, fill = next_interaction)) +
+  geom_violin(width = 1.16,
+              bw = 0.43,
+              position = position_dodge(width = 0.8)) +
+  geom_point(
+    d.means.all %>% filter(relationship == "no_info"),
+    mapping = aes(x = relationship, y = likert_rating),
+    size = 2.3,
+    alpha = 1,
+    position = position_dodge(width = 0.8)
+  ) +
+  geom_errorbar(
+    d.means.all %>% filter(relationship == "no_info"),
+    mapping = aes(x = relationship, ymin = ci_lower, ymax = ci_upper),
+    position = position_dodge(width = 0.8),
+    size = 1.5,
+    width = 0.09
+  ) +
+  scale_fill_manual(
+    values = wes_palette(n = 3, name = "FantasticFox1"),
+    name = "next interaction",
+    breaks = c("repeating", "alternating", "none")
+  ) +
+  scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
+                     limits = c(0.8, 7.2)) +
+  labs(x = "relationship", y = "how likely?", fill = "next interaction") +
+  theme(legend.position = "bottom")
+
+f
+
+
+ggsave(here("figures/sloan_talk/1a_violin_cont.pdf"),
+       width = 6,
+       height = 7.5)
 
 
 ## Stats
