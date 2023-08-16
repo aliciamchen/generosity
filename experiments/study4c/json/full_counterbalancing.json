@@ -1,0 +1,3938 @@
+[
+  [
+    {
+      "story": "coffee",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "gifts",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "police",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "architects",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    },
+    {
+      "story": "group project",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    }
+  ],
+  [
+    {
+      "story": "gifts",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "police",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "architects",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "group project",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    }
+  ],
+  [
+    {
+      "story": "housemates",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "police",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "architects",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "group project",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "gifts",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    }
+  ],
+  [
+    {
+      "story": "family meals",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "police",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "architects",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "group project",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "gifts",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    }
+  ],
+  [
+    {
+      "story": "police",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "architects",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "group project",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "gifts",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    }
+  ],
+  [
+    {
+      "story": "concerts",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "architects",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "group project",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "gifts",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "police",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    }
+  ],
+  [
+    {
+      "story": "architects",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "group project",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "gifts",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "police",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    }
+  ],
+  [
+    {
+      "story": "feedback",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "group project",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "gifts",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "police",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "architects",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    }
+  ],
+  [
+    {
+      "story": "group project",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "gifts",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "police",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "architects",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    }
+  ],
+  [
+    {
+      "story": "meeting prep",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    },
+    {
+      "story": "gifts",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "police",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "architects",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "group project",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    }
+  ],
+  [
+    {
+      "story": "restaurant",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "gifts",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "police",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "architects",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "group project",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    }
+  ],
+  [
+    {
+      "story": "groceries",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "gifts",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "police",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "architects",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "group project",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    }
+  ],
+  [
+    {
+      "story": "weekend",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "gifts",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    },
+    {
+      "story": "police",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "architects",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "group project",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    }
+  ],
+  [
+    {
+      "story": "scheduling",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "gifts",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "police",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "architects",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "group project",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    }
+  ],
+  [
+    {
+      "story": "babysitting",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "gifts",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "police",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    },
+    {
+      "story": "architects",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "group project",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    }
+  ],
+  [
+    {
+      "story": "fundraising",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "gifts",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "police",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "architects",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "group project",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    }
+  ],
+  [
+    {
+      "story": "group project",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "gifts",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "police",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "architects",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    }
+  ],
+  [
+    {
+      "story": "meeting prep",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "gifts",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "police",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "architects",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "group project",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    }
+  ],
+  [
+    {
+      "story": "coffee",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "gifts",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "police",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "architects",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "group project",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    }
+  ],
+  [
+    {
+      "story": "gifts",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "police",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "architects",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "group project",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    }
+  ],
+  [
+    {
+      "story": "police",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "architects",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "group project",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "gifts",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    }
+  ],
+  [
+    {
+      "story": "weekend",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "architects",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "group project",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "gifts",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "police",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    }
+  ],
+  [
+    {
+      "story": "scheduling",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "architects",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "group project",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "gifts",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "police",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    }
+  ],
+  [
+    {
+      "story": "groceries",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    },
+    {
+      "story": "architects",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "group project",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "gifts",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "police",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    }
+  ],
+  [
+    {
+      "story": "housemates",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "architects",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    },
+    {
+      "story": "group project",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "gifts",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "police",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    }
+  ],
+  [
+    {
+      "story": "restaurant",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "architects",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "group project",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "gifts",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "police",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    }
+  ],
+  [
+    {
+      "story": "fundraising",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "architects",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "group project",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "gifts",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "police",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    }
+  ],
+  [
+    {
+      "story": "family meals",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "architects",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "group project",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    },
+    {
+      "story": "gifts",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "police",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    }
+  ],
+  [
+    {
+      "story": "feedback",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "architects",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "group project",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "gifts",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    },
+    {
+      "story": "police",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    }
+  ],
+  [
+    {
+      "story": "concerts",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "architects",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "group project",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "gifts",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "police",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    }
+  ],
+  [
+    {
+      "story": "babysitting",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "architects",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "group project",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "gifts",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "police",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    }
+  ],
+  [
+    {
+      "story": "architects",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "group project",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "gifts",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "police",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    }
+  ],
+  [
+    {
+      "story": "housemates",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "group project",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "gifts",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "police",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "architects",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    }
+  ],
+  [
+    {
+      "story": "restaurant",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "group project",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    },
+    {
+      "story": "gifts",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "police",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "architects",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    }
+  ],
+  [
+    {
+      "story": "feedback",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "group project",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "gifts",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "police",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "architects",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    }
+  ],
+  [
+    {
+      "story": "meeting prep",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "group project",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "gifts",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    },
+    {
+      "story": "police",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "architects",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    }
+  ],
+  [
+    {
+      "story": "coffee",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "group project",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "gifts",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "police",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "architects",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    }
+  ],
+  [
+    {
+      "story": "group project",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "gifts",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "police",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "architects",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    }
+  ],
+  [
+    {
+      "story": "fundraising",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "gifts",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "police",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    },
+    {
+      "story": "architects",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "group project",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    }
+  ],
+  [
+    {
+      "story": "groceries",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "gifts",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "police",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "architects",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "group project",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    }
+  ],
+  [
+    {
+      "story": "weekend",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "gifts",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "police",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "architects",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "group project",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    }
+  ],
+  [
+    {
+      "story": "gifts",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "police",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "architects",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "group project",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    }
+  ],
+  [
+    {
+      "story": "babysitting",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "police",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "architects",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "group project",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "gifts",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    }
+  ],
+  [
+    {
+      "story": "police",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "architects",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "group project",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "gifts",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    }
+  ],
+  [
+    {
+      "story": "family meals",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "architects",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "group project",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "gifts",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "police",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    }
+  ],
+  [
+    {
+      "story": "scheduling",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "architects",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    },
+    {
+      "story": "group project",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "gifts",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "police",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    }
+  ],
+  [
+    {
+      "story": "architects",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "concerts",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "group project",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "gifts",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "police",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    }
+  ],
+  [
+    {
+      "story": "concerts",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "housemates",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "restaurant",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "feedback",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "meeting prep",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "coffee",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "group project",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "fundraising",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    },
+    {
+      "story": "groceries",
+      "altruistic_status_second": "more",
+      "strategy": "repeating"
+    },
+    {
+      "story": "weekend",
+      "altruistic_status_second": "equal",
+      "strategy": "repeating"
+    },
+    {
+      "story": "gifts",
+      "altruistic_status_second": "less",
+      "strategy": "repeating"
+    },
+    {
+      "story": "babysitting",
+      "altruistic_status_second": "just_met",
+      "strategy": "repeating"
+    },
+    {
+      "story": "police",
+      "altruistic_status_second": "more",
+      "strategy": "alternating"
+    },
+    {
+      "story": "family meals",
+      "altruistic_status_second": "equal",
+      "strategy": "alternating"
+    },
+    {
+      "story": "scheduling",
+      "altruistic_status_second": "less",
+      "strategy": "alternating"
+    },
+    {
+      "story": "architects",
+      "altruistic_status_second": "just_met",
+      "strategy": "alternating"
+    }
+  ]
+]

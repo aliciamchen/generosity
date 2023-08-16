@@ -1,0 +1,1292 @@
+[
+  {
+    "story": "attention",
+    "altruistic_status_second": "",
+    "strategy": "",
+    "vignette": "Thank you for contributing to this study! This page is an attention check so we can make sure you're not a bot and can award you your pay when you complete the study.",
+    "first_actual": "The <strong>first time</strong> they got coffee, Andrew bought and brought coffee to the meeting for both of them.",
+    "second_actual": "The <strong>second time</strong> they got coffee, Andrew bought and brought coffee to the meeting for both of them.",
+    "annoyed": "Please select \"very annoyed\" for this response.",
+    "satisfied": "Please select \"very satisfied\" for this response."
+  },
+  {
+    "story": "coffee",
+    "altruistic_status_second": "more",
+    "strategy": "repeating",
+    "vignette": "Consider Bob and Andrew, who work in the same field. <strong>Bob and Andrew are in a relationship where Andrew has more power, status, or influence than Bob.</strong>",
+    "first_actual": "The <strong>first time</strong> they got coffee, Andrew bought and brought coffee to the meeting for both of them.",
+    "second_actual": "The <strong>second time</strong> they got coffee, Andrew bought and brought coffee to the meeting for both of them.",
+    "annoyed": "After the second time, how annoyed did Andrew feel about the social interaction with Bob?",
+    "satisfied": "After the second time, how satisfied did Andrew feel about the outcome of the social interaction with Bob?"
+  },
+  {
+    "story": "coffee",
+    "altruistic_status_second": "equal",
+    "strategy": "repeating",
+    "vignette": "Consider Bob and Andrew, who work in the same field. <strong>Bob and Andrew are in a relationship where Andrew has equal power, status, or influence as Bob.</strong>",
+    "first_actual": "The <strong>first time</strong> they got coffee, Andrew bought and brought coffee to the meeting for both of them.",
+    "second_actual": "The <strong>second time</strong> they got coffee, Andrew bought and brought coffee to the meeting for both of them.",
+    "annoyed": "After the second time, how annoyed did Andrew feel about the social interaction with Bob?",
+    "satisfied": "After the second time, how satisfied did Andrew feel about the outcome of the social interaction with Bob?"
+  },
+  {
+    "story": "coffee",
+    "altruistic_status_second": "less",
+    "strategy": "repeating",
+    "vignette": "Consider Bob and Andrew, who work in the same field. <strong>Bob and Andrew are in a relationship where Andrew has less power, status, or influence than Bob.</strong>",
+    "first_actual": "The <strong>first time</strong> they got coffee, Andrew bought and brought coffee to the meeting for both of them.",
+    "second_actual": "The <strong>second time</strong> they got coffee, Andrew bought and brought coffee to the meeting for both of them.",
+    "annoyed": "After the second time, how annoyed did Andrew feel about the social interaction with Bob?",
+    "satisfied": "After the second time, how satisfied did Andrew feel about the outcome of the social interaction with Bob?"
+  },
+  {
+    "story": "coffee",
+    "altruistic_status_second": "just_met",
+    "strategy": "repeating",
+    "vignette": "Consider Bob and Andrew, who work in the same field. <strong>Bob and Andrew have just met for the first time.</strong>",
+    "first_actual": "The <strong>first time</strong> they got coffee, Andrew bought and brought coffee to the meeting for both of them.",
+    "second_actual": "The <strong>second time</strong> they got coffee, Andrew bought and brought coffee to the meeting for both of them.",
+    "annoyed": "After the second time, how annoyed did Andrew feel about the social interaction with Bob?",
+    "satisfied": "After the second time, how satisfied did Andrew feel about the outcome of the social interaction with Bob?"
+  },
+  {
+    "story": "coffee",
+    "altruistic_status_second": "more",
+    "strategy": "alternating",
+    "vignette": "Consider Bob and Andrew, who work in the same field. <strong>Bob and Andrew are in a relationship where Andrew has more power, status, or influence than Bob.</strong>",
+    "first_actual": "The <strong>first time</strong> they got coffee, Bob bought and brought coffee to the meeting for both of them.",
+    "second_actual": "The <strong>second time</strong> they got coffee, Andrew bought and brought coffee to the meeting for both of them.",
+    "annoyed": "After the second time, how annoyed did Andrew feel about the social interaction with Bob?",
+    "satisfied": "After the second time, how satisfied did Andrew feel about the outcome of the social interaction with Bob?"
+  },
+  {
+    "story": "coffee",
+    "altruistic_status_second": "equal",
+    "strategy": "alternating",
+    "vignette": "Consider Bob and Andrew, who work in the same field. <strong>Bob and Andrew are in a relationship where Andrew has equal power, status, or influence as Bob.</strong>",
+    "first_actual": "The <strong>first time</strong> they got coffee, Bob bought and brought coffee to the meeting for both of them.",
+    "second_actual": "The <strong>second time</strong> they got coffee, Andrew bought and brought coffee to the meeting for both of them.",
+    "annoyed": "After the second time, how annoyed did Andrew feel about the social interaction with Bob?",
+    "satisfied": "After the second time, how satisfied did Andrew feel about the outcome of the social interaction with Bob?"
+  },
+  {
+    "story": "coffee",
+    "altruistic_status_second": "less",
+    "strategy": "alternating",
+    "vignette": "Consider Bob and Andrew, who work in the same field. <strong>Bob and Andrew are in a relationship where Andrew has less power, status, or influence than Bob.</strong>",
+    "first_actual": "The <strong>first time</strong> they got coffee, Bob bought and brought coffee to the meeting for both of them.",
+    "second_actual": "The <strong>second time</strong> they got coffee, Andrew bought and brought coffee to the meeting for both of them.",
+    "annoyed": "After the second time, how annoyed did Andrew feel about the social interaction with Bob?",
+    "satisfied": "After the second time, how satisfied did Andrew feel about the outcome of the social interaction with Bob?"
+  },
+  {
+    "story": "coffee",
+    "altruistic_status_second": "just_met",
+    "strategy": "alternating",
+    "vignette": "Consider Bob and Andrew, who work in the same field. <strong>Bob and Andrew have just met for the first time.</strong>",
+    "first_actual": "The <strong>first time</strong> they got coffee, Bob bought and brought coffee to the meeting for both of them.",
+    "second_actual": "The <strong>second time</strong> they got coffee, Andrew bought and brought coffee to the meeting for both of them.",
+    "annoyed": "After the second time, how annoyed did Andrew feel about the social interaction with Bob?",
+    "satisfied": "After the second time, how satisfied did Andrew feel about the outcome of the social interaction with Bob?"
+  },
+  {
+    "story": "gifts",
+    "altruistic_status_second": "more",
+    "strategy": "repeating",
+    "vignette": "Consider two families, the Lee family and the Min family. <strong>The Lee family and the Min family are in a relationship where the Lee family has more power, status, or influence than the Min family.</strong>",
+    "first_actual": "The <strong>first time</strong> they exchanged gifts, the Lee family gave the Min family a precious and expensive gift.",
+    "second_actual": "The <strong>second time</strong> they exchanged gifts, the Lee family gave the Min family a precious and expensive gift.",
+    "annoyed": "After the second time, how annoyed did the Lee family feel about the social interaction with the Min family?",
+    "satisfied": "After the second time, how satisfied did the Lee family feel about the outcome of the social interaction with the Min family?"
+  },
+  {
+    "story": "gifts",
+    "altruistic_status_second": "equal",
+    "strategy": "repeating",
+    "vignette": "Consider two families, the Lee family and the Min family. <strong>The Lee family and the Min family are in a relationship where the Lee family has equal power, status, or influence as the Min family.</strong>",
+    "first_actual": "The <strong>first time</strong> they exchanged gifts, the Lee family gave the Min family a precious and expensive gift.",
+    "second_actual": "The <strong>second time</strong> they exchanged gifts, the Lee family gave the Min family a precious and expensive gift.",
+    "annoyed": "After the second time, how annoyed did the Lee family feel about the social interaction with the Min family?",
+    "satisfied": "After the second time, how satisfied did the Lee family feel about the outcome of the social interaction with the Min family?"
+  },
+  {
+    "story": "gifts",
+    "altruistic_status_second": "less",
+    "strategy": "repeating",
+    "vignette": "Consider two families, the Lee family and the Min family. <strong>The Lee family and the Min family are in a relationship where the Lee family has less power, status, or influence than the Min family.</strong>",
+    "first_actual": "The <strong>first time</strong> they exchanged gifts, the Lee family gave the Min family a precious and expensive gift.",
+    "second_actual": "The <strong>second time</strong> they exchanged gifts, the Lee family gave the Min family a precious and expensive gift.",
+    "annoyed": "After the second time, how annoyed did the Lee family feel about the social interaction with the Min family?",
+    "satisfied": "After the second time, how satisfied did the Lee family feel about the outcome of the social interaction with the Min family?"
+  },
+  {
+    "story": "gifts",
+    "altruistic_status_second": "just_met",
+    "strategy": "repeating",
+    "vignette": "Consider two families, the Lee family and the Min family. <strong>The Lee family and the Min family have just met for the first time.</strong>",
+    "first_actual": "The <strong>first time</strong> they exchanged gifts, the Lee family gave the Min family a precious and expensive gift.",
+    "second_actual": "The <strong>second time</strong> they exchanged gifts, the Lee family gave the Min family a precious and expensive gift.",
+    "annoyed": "After the second time, how annoyed did the Lee family feel about the social interaction with the Min family?",
+    "satisfied": "After the second time, how satisfied did the Lee family feel about the outcome of the social interaction with the Min family?"
+  },
+  {
+    "story": "gifts",
+    "altruistic_status_second": "more",
+    "strategy": "alternating",
+    "vignette": "Consider two families, the Lee family and the Min family. <strong>The Lee family and the Min family are in a relationship where the Lee family has more power, status, or influence than the Min family.</strong>",
+    "first_actual": "The <strong>first time</strong> they exchanged gifts, the Min family gave the Lee family a precious and expensive gift.",
+    "second_actual": "The <strong>second time</strong> they exchanged gifts, the Lee family gave the Min family a precious and expensive gift.",
+    "annoyed": "After the second time, how annoyed did the Lee family feel about the social interaction with the Min family?",
+    "satisfied": "After the second time, how satisfied did the Lee family feel about the outcome of the social interaction with the Min family?"
+  },
+  {
+    "story": "gifts",
+    "altruistic_status_second": "equal",
+    "strategy": "alternating",
+    "vignette": "Consider two families, the Lee family and the Min family. <strong>The Lee family and the Min family are in a relationship where the Lee family has equal power, status, or influence as the Min family.</strong>",
+    "first_actual": "The <strong>first time</strong> they exchanged gifts, the Min family gave the Lee family a precious and expensive gift.",
+    "second_actual": "The <strong>second time</strong> they exchanged gifts, the Lee family gave the Min family a precious and expensive gift.",
+    "annoyed": "After the second time, how annoyed did the Lee family feel about the social interaction with the Min family?",
+    "satisfied": "After the second time, how satisfied did the Lee family feel about the outcome of the social interaction with the Min family?"
+  },
+  {
+    "story": "gifts",
+    "altruistic_status_second": "less",
+    "strategy": "alternating",
+    "vignette": "Consider two families, the Lee family and the Min family. <strong>The Lee family and the Min family are in a relationship where the Lee family has less power, status, or influence than the Min family.</strong>",
+    "first_actual": "The <strong>first time</strong> they exchanged gifts, the Min family gave the Lee family a precious and expensive gift.",
+    "second_actual": "The <strong>second time</strong> they exchanged gifts, the Lee family gave the Min family a precious and expensive gift.",
+    "annoyed": "After the second time, how annoyed did the Lee family feel about the social interaction with the Min family?",
+    "satisfied": "After the second time, how satisfied did the Lee family feel about the outcome of the social interaction with the Min family?"
+  },
+  {
+    "story": "gifts",
+    "altruistic_status_second": "just_met",
+    "strategy": "alternating",
+    "vignette": "Consider two families, the Lee family and the Min family. <strong>The Lee family and the Min family have just met for the first time.</strong>",
+    "first_actual": "The <strong>first time</strong> they exchanged gifts, the Min family gave the Lee family a precious and expensive gift.",
+    "second_actual": "The <strong>second time</strong> they exchanged gifts, the Lee family gave the Min family a precious and expensive gift.",
+    "annoyed": "After the second time, how annoyed did the Lee family feel about the social interaction with the Min family?",
+    "satisfied": "After the second time, how satisfied did the Lee family feel about the outcome of the social interaction with the Min family?"
+  },
+  {
+    "story": "housemates",
+    "altruistic_status_second": "more",
+    "strategy": "repeating",
+    "vignette": "Consider Anne and Sarah, who both live in the same old house. <strong>Anne and Sarah are in a relationship where Anne has more power, status, or influence than Sarah.</strong>",
+    "first_actual": "The <strong>first time</strong> either one of them noticed something damaged or missing or needed for the house, like pipes or wires or detergent or batteries, Anne completed all the tasks on the list.",
+    "second_actual": "The <strong>second time</strong> either one of them noticed something damaged or missing or needed for the house, like pipes or wires or detergent or batteries, Anne completed all the tasks on the list.",
+    "annoyed": "After the second time, how annoyed did Anne feel about the social interaction with Sarah?",
+    "satisfied": "After the second time, how satisfied did Anne feel about the outcome of the social interaction with Sarah?"
+  },
+  {
+    "story": "housemates",
+    "altruistic_status_second": "equal",
+    "strategy": "repeating",
+    "vignette": "Consider Anne and Sarah, who both live in the same old house. <strong>Anne and Sarah are in a relationship where Anne has equal power, status, or influence as Sarah.</strong>",
+    "first_actual": "The <strong>first time</strong> either one of them noticed something damaged or missing or needed for the house, like pipes or wires or detergent or batteries, Anne completed all the tasks on the list.",
+    "second_actual": "The <strong>second time</strong> either one of them noticed something damaged or missing or needed for the house, like pipes or wires or detergent or batteries, Anne completed all the tasks on the list.",
+    "annoyed": "After the second time, how annoyed did Anne feel about the social interaction with Sarah?",
+    "satisfied": "After the second time, how satisfied did Anne feel about the outcome of the social interaction with Sarah?"
+  },
+  {
+    "story": "housemates",
+    "altruistic_status_second": "less",
+    "strategy": "repeating",
+    "vignette": "Consider Anne and Sarah, who both live in the same old house. <strong>Anne and Sarah are in a relationship where Anne has less power, status, or influence than Sarah.</strong>",
+    "first_actual": "The <strong>first time</strong> either one of them noticed something damaged or missing or needed for the house, like pipes or wires or detergent or batteries, Anne completed all the tasks on the list.",
+    "second_actual": "The <strong>second time</strong> either one of them noticed something damaged or missing or needed for the house, like pipes or wires or detergent or batteries, Anne completed all the tasks on the list.",
+    "annoyed": "After the second time, how annoyed did Anne feel about the social interaction with Sarah?",
+    "satisfied": "After the second time, how satisfied did Anne feel about the outcome of the social interaction with Sarah?"
+  },
+  {
+    "story": "housemates",
+    "altruistic_status_second": "just_met",
+    "strategy": "repeating",
+    "vignette": "Consider Anne and Sarah, who both live in the same old house. <strong>Anne and Sarah have just met for the first time.</strong>",
+    "first_actual": "The <strong>first time</strong> either one of them noticed something damaged or missing or needed for the house, like pipes or wires or detergent or batteries, Anne completed all the tasks on the list.",
+    "second_actual": "The <strong>second time</strong> either one of them noticed something damaged or missing or needed for the house, like pipes or wires or detergent or batteries, Anne completed all the tasks on the list.",
+    "annoyed": "After the second time, how annoyed did Anne feel about the social interaction with Sarah?",
+    "satisfied": "After the second time, how satisfied did Anne feel about the outcome of the social interaction with Sarah?"
+  },
+  {
+    "story": "housemates",
+    "altruistic_status_second": "more",
+    "strategy": "alternating",
+    "vignette": "Consider Anne and Sarah, who both live in the same old house. <strong>Anne and Sarah are in a relationship where Anne has more power, status, or influence than Sarah.</strong>",
+    "first_actual": "The <strong>first time</strong> either one of them noticed something damaged or missing or needed for the house, like pipes or wires or detergent or batteries, Sarah completed all the tasks on the list.",
+    "second_actual": "The <strong>second time</strong> either one of them noticed something damaged or missing or needed for the house, like pipes or wires or detergent or batteries, Anne completed all the tasks on the list.",
+    "annoyed": "After the second time, how annoyed did Anne feel about the social interaction with Sarah?",
+    "satisfied": "After the second time, how satisfied did Anne feel about the outcome of the social interaction with Sarah?"
+  },
+  {
+    "story": "housemates",
+    "altruistic_status_second": "equal",
+    "strategy": "alternating",
+    "vignette": "Consider Anne and Sarah, who both live in the same old house. <strong>Anne and Sarah are in a relationship where Anne has equal power, status, or influence as Sarah.</strong>",
+    "first_actual": "The <strong>first time</strong> either one of them noticed something damaged or missing or needed for the house, like pipes or wires or detergent or batteries, Sarah completed all the tasks on the list.",
+    "second_actual": "The <strong>second time</strong> either one of them noticed something damaged or missing or needed for the house, like pipes or wires or detergent or batteries, Anne completed all the tasks on the list.",
+    "annoyed": "After the second time, how annoyed did Anne feel about the social interaction with Sarah?",
+    "satisfied": "After the second time, how satisfied did Anne feel about the outcome of the social interaction with Sarah?"
+  },
+  {
+    "story": "housemates",
+    "altruistic_status_second": "less",
+    "strategy": "alternating",
+    "vignette": "Consider Anne and Sarah, who both live in the same old house. <strong>Anne and Sarah are in a relationship where Anne has less power, status, or influence than Sarah.</strong>",
+    "first_actual": "The <strong>first time</strong> either one of them noticed something damaged or missing or needed for the house, like pipes or wires or detergent or batteries, Sarah completed all the tasks on the list.",
+    "second_actual": "The <strong>second time</strong> either one of them noticed something damaged or missing or needed for the house, like pipes or wires or detergent or batteries, Anne completed all the tasks on the list.",
+    "annoyed": "After the second time, how annoyed did Anne feel about the social interaction with Sarah?",
+    "satisfied": "After the second time, how satisfied did Anne feel about the outcome of the social interaction with Sarah?"
+  },
+  {
+    "story": "housemates",
+    "altruistic_status_second": "just_met",
+    "strategy": "alternating",
+    "vignette": "Consider Anne and Sarah, who both live in the same old house. <strong>Anne and Sarah have just met for the first time.</strong>",
+    "first_actual": "The <strong>first time</strong> either one of them noticed something damaged or missing or needed for the house, like pipes or wires or detergent or batteries, Sarah completed all the tasks on the list.",
+    "second_actual": "The <strong>second time</strong> either one of them noticed something damaged or missing or needed for the house, like pipes or wires or detergent or batteries, Anne completed all the tasks on the list.",
+    "annoyed": "After the second time, how annoyed did Anne feel about the social interaction with Sarah?",
+    "satisfied": "After the second time, how satisfied did Anne feel about the outcome of the social interaction with Sarah?"
+  },
+  {
+    "story": "family meals",
+    "altruistic_status_second": "more",
+    "strategy": "repeating",
+    "vignette": "Consider Sue and Martha, who are part of the same family. <strong>Sue and Martha are in a relationship where Sue has more power, status, or influence than Martha.</strong>",
+    "first_actual": "The <strong>first time</strong> the family got together for a key religious holiday, the family gathered at Sue's house, where Sue cooked all the food, served it, and then cleaned up after dinner. Martha was very appreciative, and gave Sue a big hug and a warm thank you.",
+    "second_actual": "The <strong>second time</strong> the family got together for a key religious holiday, the family gathered at Sue's house, where Sue cooked all the food, served it, and then cleaned up after dinner. Martha was very appreciative, and gave Sue a big hug and a warm thank you.",
+    "annoyed": "After the second time, how annoyed did Sue feel about the interaction with Martha?",
+    "satisfied": "After the second time, how satisfied did Sue feel about the outcome of the social interaction with Martha?"
+  },
+  {
+    "story": "family meals",
+    "altruistic_status_second": "equal",
+    "strategy": "repeating",
+    "vignette": "Consider Sue and Martha, who are part of the same family. <strong>Sue and Martha are in a relationship where Sue has equal power, status, or influence as Martha.</strong>",
+    "first_actual": "The <strong>first time</strong> the family got together for a key religious holiday, the family gathered at Sue's house, where Sue cooked all the food, served it, and then cleaned up after dinner. Martha was very appreciative, and gave Sue a big hug and a warm thank you.",
+    "second_actual": "The <strong>second time</strong> the family got together for a key religious holiday, the family gathered at Sue's house, where Sue cooked all the food, served it, and then cleaned up after dinner. Martha was very appreciative, and gave Sue a big hug and a warm thank you.",
+    "annoyed": "After the second time, how annoyed did Sue feel about the interaction with Martha?",
+    "satisfied": "After the second time, how satisfied did Sue feel about the outcome of the social interaction with Martha?"
+  },
+  {
+    "story": "family meals",
+    "altruistic_status_second": "less",
+    "strategy": "repeating",
+    "vignette": "Consider Sue and Martha, who are part of the same family. <strong>Sue and Martha are in a relationship where Sue has less power, status, or influence than Martha.</strong>",
+    "first_actual": "The <strong>first time</strong> the family got together for a key religious holiday, the family gathered at Sue's house, where Sue cooked all the food, served it, and then cleaned up after dinner. Martha was very appreciative, and gave Sue a big hug and a warm thank you.",
+    "second_actual": "The <strong>second time</strong> the family got together for a key religious holiday, the family gathered at Sue's house, where Sue cooked all the food, served it, and then cleaned up after dinner. Martha was very appreciative, and gave Sue a big hug and a warm thank you.",
+    "annoyed": "After the second time, how annoyed did Sue feel about the interaction with Martha?",
+    "satisfied": "After the second time, how satisfied did Sue feel about the outcome of the social interaction with Martha?"
+  },
+  {
+    "story": "family meals",
+    "altruistic_status_second": "just_met",
+    "strategy": "repeating",
+    "vignette": "Consider Sue and Martha, who are part of the same family. <strong>Sue and Martha have just started gathering for religious holidays.</strong>",
+    "first_actual": "The <strong>first time</strong> the family got together for a key religious holiday, the family gathered at Sue's house, where Sue cooked all the food, served it, and then cleaned up after dinner. Martha was very appreciative, and gave Sue a big hug and a warm thank you.",
+    "second_actual": "The <strong>second time</strong> the family got together for a key religious holiday, the family gathered at Sue's house, where Sue cooked all the food, served it, and then cleaned up after dinner. Martha was very appreciative, and gave Sue a big hug and a warm thank you.",
+    "annoyed": "After the second time, how annoyed did Sue feel about the interaction with Martha?",
+    "satisfied": "After the second time, how satisfied did Sue feel about the outcome of the social interaction with Martha?"
+  },
+  {
+    "story": "family meals",
+    "altruistic_status_second": "more",
+    "strategy": "alternating",
+    "vignette": "Consider Sue and Martha, who are part of the same family. <strong>Sue and Martha are in a relationship where Sue has more power, status, or influence than Martha.</strong>",
+    "first_actual": "The <strong>first time</strong> the family got together for a key religious holiday, the family gathered at Martha's house, where Martha cooked all the food, served it, and then cleaned up after dinner. Sue was very appreciative, and gave Martha a big hug and a warm thank you.",
+    "second_actual": "The <strong>second time</strong> the family got together for a key religious holiday, the family gathered at Sue's house, where Sue cooked all the food, served it, and then cleaned up after dinner. Martha was very appreciative, and gave Sue a big hug and a warm thank you.",
+    "annoyed": "After the second time, how annoyed did Sue feel about the interaction with Martha?",
+    "satisfied": "After the second time, how satisfied did Sue feel about the outcome of the social interaction with Martha?"
+  },
+  {
+    "story": "family meals",
+    "altruistic_status_second": "equal",
+    "strategy": "alternating",
+    "vignette": "Consider Sue and Martha, who are part of the same family. <strong>Sue and Martha are in a relationship where Sue has equal power, status, or influence as Martha.</strong>",
+    "first_actual": "The <strong>first time</strong> the family got together for a key religious holiday, the family gathered at Martha's house, where Martha cooked all the food, served it, and then cleaned up after dinner. Sue was very appreciative, and gave Martha a big hug and a warm thank you.",
+    "second_actual": "The <strong>second time</strong> the family got together for a key religious holiday, the family gathered at Sue's house, where Sue cooked all the food, served it, and then cleaned up after dinner. Martha was very appreciative, and gave Sue a big hug and a warm thank you.",
+    "annoyed": "After the second time, how annoyed did Sue feel about the interaction with Martha?",
+    "satisfied": "After the second time, how satisfied did Sue feel about the outcome of the social interaction with Martha?"
+  },
+  {
+    "story": "family meals",
+    "altruistic_status_second": "less",
+    "strategy": "alternating",
+    "vignette": "Consider Sue and Martha, who are part of the same family. <strong>Sue and Martha are in a relationship where Sue has less power, status, or influence than Martha.</strong>",
+    "first_actual": "The <strong>first time</strong> the family got together for a key religious holiday, the family gathered at Martha's house, where Martha cooked all the food, served it, and then cleaned up after dinner. Sue was very appreciative, and gave Martha a big hug and a warm thank you.",
+    "second_actual": "The <strong>second time</strong> the family got together for a key religious holiday, the family gathered at Sue's house, where Sue cooked all the food, served it, and then cleaned up after dinner. Martha was very appreciative, and gave Sue a big hug and a warm thank you.",
+    "annoyed": "After the second time, how annoyed did Sue feel about the interaction with Martha?",
+    "satisfied": "After the second time, how satisfied did Sue feel about the outcome of the social interaction with Martha?"
+  },
+  {
+    "story": "family meals",
+    "altruistic_status_second": "just_met",
+    "strategy": "alternating",
+    "vignette": "Consider Sue and Martha, who are part of the same family. <strong>Sue and Martha have just started gathering for religious holidays.</strong>",
+    "first_actual": "The <strong>first time</strong> the family got together for a key religious holiday, the family gathered at Martha's house, where Martha cooked all the food, served it, and then cleaned up after dinner. Sue was very appreciative, and gave Martha a big hug and a warm thank you.",
+    "second_actual": "The <strong>second time</strong> the family got together for a key religious holiday, the family gathered at Sue's house, where Sue cooked all the food, served it, and then cleaned up after dinner. Martha was very appreciative, and gave Sue a big hug and a warm thank you.",
+    "annoyed": "After the second time, how annoyed did Sue feel about the interaction with Martha?",
+    "satisfied": "After the second time, how satisfied did Sue feel about the outcome of the social interaction with Martha?"
+  },
+  {
+    "story": "police",
+    "altruistic_status_second": "more",
+    "strategy": "repeating",
+    "vignette": "Consider Justin and Jarred, who are police officers on the same beat. <strong>Justin and Jarred are in a relationship where Justin has more power, status, or influence than Jarred.</strong>",
+    "first_actual": "The <strong>first time</strong> they worked together to do paperwork, Justin got to the office at 6am to do the day's paperwork, so that Jarred could arrive later and go straight to their shared patrol car.",
+    "second_actual": "The <strong>second time</strong> they worked together to do paperwork, Justin got to the office at 6am to do the day's paperwork, so that Jarred could arrive later and go straight to their shared patrol car.",
+    "annoyed": "After the second time, how annoyed did Justin feel about the social interaction with Jarred?",
+    "satisfied": "After the second time, how satisfied did Justin feel about the outcome of the social interaction with Jarred?"
+  },
+  {
+    "story": "police",
+    "altruistic_status_second": "equal",
+    "strategy": "repeating",
+    "vignette": "Consider Justin and Jarred, who are police officers on the same beat. <strong>Justin and Jarred are in a relationship where Justin has equal power, status, or influence as Jarred.</strong>",
+    "first_actual": "The <strong>first time</strong> they worked together to do paperwork, Justin got to the office at 6am to do the day's paperwork, so that Jarred could arrive later and go straight to their shared patrol car.",
+    "second_actual": "The <strong>second time</strong> they worked together to do paperwork, Justin got to the office at 6am to do the day's paperwork, so that Jarred could arrive later and go straight to their shared patrol car.",
+    "annoyed": "After the second time, how annoyed did Justin feel about the social interaction with Jarred?",
+    "satisfied": "After the second time, how satisfied did Justin feel about the outcome of the social interaction with Jarred?"
+  },
+  {
+    "story": "police",
+    "altruistic_status_second": "less",
+    "strategy": "repeating",
+    "vignette": "Consider Justin and Jarred, who are police officers on the same beat. <strong>Justin and Jarred are in a relationship where Justin has less power, status, or influence than Jarred.</strong>",
+    "first_actual": "The <strong>first time</strong> they worked together to do paperwork, Justin got to the office at 6am to do the day's paperwork, so that Jarred could arrive later and go straight to their shared patrol car.",
+    "second_actual": "The <strong>second time</strong> they worked together to do paperwork, Justin got to the office at 6am to do the day's paperwork, so that Jarred could arrive later and go straight to their shared patrol car.",
+    "annoyed": "After the second time, how annoyed did Justin feel about the social interaction with Jarred?",
+    "satisfied": "After the second time, how satisfied did Justin feel about the outcome of the social interaction with Jarred?"
+  },
+  {
+    "story": "police",
+    "altruistic_status_second": "just_met",
+    "strategy": "repeating",
+    "vignette": "Consider Justin and Jarred, who are police officers on the same beat. <strong>Justin and Jarred have just met for the first time.</strong>",
+    "first_actual": "The <strong>first time</strong> they worked together to do paperwork, Justin got to the office at 6am to do the day's paperwork, so that Jarred could arrive later and go straight to their shared patrol car.",
+    "second_actual": "The <strong>second time</strong> they worked together to do paperwork, Justin got to the office at 6am to do the day's paperwork, so that Jarred could arrive later and go straight to their shared patrol car.",
+    "annoyed": "After the second time, how annoyed did Justin feel about the social interaction with Jarred?",
+    "satisfied": "After the second time, how satisfied did Justin feel about the outcome of the social interaction with Jarred?"
+  },
+  {
+    "story": "police",
+    "altruistic_status_second": "more",
+    "strategy": "alternating",
+    "vignette": "Consider Justin and Jarred, who are police officers on the same beat. <strong>Justin and Jarred are in a relationship where Justin has more power, status, or influence than Jarred.</strong>",
+    "first_actual": "The <strong>first time</strong> they worked together to do paperwork, Jarred got to the office at 6am to do the day's paperwork, so that Justin could arrive later and go straight to their shared patrol car.",
+    "second_actual": "The <strong>second time</strong> they worked together to do paperwork, Justin got to the office at 6am to do the day's paperwork, so that Jarred could arrive later and go straight to their shared patrol car.",
+    "annoyed": "After the second time, how annoyed did Justin feel about the social interaction with Jarred?",
+    "satisfied": "After the second time, how satisfied did Justin feel about the outcome of the social interaction with Jarred?"
+  },
+  {
+    "story": "police",
+    "altruistic_status_second": "equal",
+    "strategy": "alternating",
+    "vignette": "Consider Justin and Jarred, who are police officers on the same beat. <strong>Justin and Jarred are in a relationship where Justin has equal power, status, or influence as Jarred.</strong>",
+    "first_actual": "The <strong>first time</strong> they worked together to do paperwork, Jarred got to the office at 6am to do the day's paperwork, so that Justin could arrive later and go straight to their shared patrol car.",
+    "second_actual": "The <strong>second time</strong> they worked together to do paperwork, Justin got to the office at 6am to do the day's paperwork, so that Jarred could arrive later and go straight to their shared patrol car.",
+    "annoyed": "After the second time, how annoyed did Justin feel about the social interaction with Jarred?",
+    "satisfied": "After the second time, how satisfied did Justin feel about the outcome of the social interaction with Jarred?"
+  },
+  {
+    "story": "police",
+    "altruistic_status_second": "less",
+    "strategy": "alternating",
+    "vignette": "Consider Justin and Jarred, who are police officers on the same beat. <strong>Justin and Jarred are in a relationship where Justin has less power, status, or influence than Jarred.</strong>",
+    "first_actual": "The <strong>first time</strong> they worked together to do paperwork, Jarred got to the office at 6am to do the day's paperwork, so that Justin could arrive later and go straight to their shared patrol car.",
+    "second_actual": "The <strong>second time</strong> they worked together to do paperwork, Justin got to the office at 6am to do the day's paperwork, so that Jarred could arrive later and go straight to their shared patrol car.",
+    "annoyed": "After the second time, how annoyed did Justin feel about the social interaction with Jarred?",
+    "satisfied": "After the second time, how satisfied did Justin feel about the outcome of the social interaction with Jarred?"
+  },
+  {
+    "story": "police",
+    "altruistic_status_second": "just_met",
+    "strategy": "alternating",
+    "vignette": "Consider Justin and Jarred, who are police officers on the same beat. <strong>Justin and Jarred have just met for the first time.</strong>",
+    "first_actual": "The <strong>first time</strong> they worked together to do paperwork, Jarred got to the office at 6am to do the day's paperwork, so that Justin could arrive later and go straight to their shared patrol car.",
+    "second_actual": "The <strong>second time</strong> they worked together to do paperwork, Justin got to the office at 6am to do the day's paperwork, so that Jarred could arrive later and go straight to their shared patrol car.",
+    "annoyed": "After the second time, how annoyed did Justin feel about the social interaction with Jarred?",
+    "satisfied": "After the second time, how satisfied did Justin feel about the outcome of the social interaction with Jarred?"
+  },
+  {
+    "story": "concerts",
+    "altruistic_status_second": "more",
+    "strategy": "repeating",
+    "vignette": "Consider Kevin and Allen, who like to go to concerts. <strong>Kevin and Allen are in a relationship where Kevin has more power, status, or influence than Allen.</strong>",
+    "first_actual": "The <strong>first time</strong> they went to a concert together, Kevin paid for the tickets.",
+    "second_actual": "The <strong>second time</strong> they went to a concert together, Kevin paid for the tickets.",
+    "annoyed": "After the second time, how annoyed did Kevin feel about the social interaction with Allen?",
+    "satisfied": "After the second time, how satisfied did Kevin feel about the outcome of the social interaction with Allen?"
+  },
+  {
+    "story": "concerts",
+    "altruistic_status_second": "equal",
+    "strategy": "repeating",
+    "vignette": "Consider Kevin and Allen, who like to go to concerts. <strong>Kevin and Allen are in a relationship where Kevin has equal power, status, or influence as Allen.</strong>",
+    "first_actual": "The <strong>first time</strong> they went to a concert together, Kevin paid for the tickets.",
+    "second_actual": "The <strong>second time</strong> they went to a concert together, Kevin paid for the tickets.",
+    "annoyed": "After the second time, how annoyed did Kevin feel about the social interaction with Allen?",
+    "satisfied": "After the second time, how satisfied did Kevin feel about the outcome of the social interaction with Allen?"
+  },
+  {
+    "story": "concerts",
+    "altruistic_status_second": "less",
+    "strategy": "repeating",
+    "vignette": "Consider Kevin and Allen, who like to go to concerts. <strong>Kevin and Allen are in a relationship where Kevin has less power, status, or influence than Allen.</strong>",
+    "first_actual": "The <strong>first time</strong> they went to a concert together, Kevin paid for the tickets.",
+    "second_actual": "The <strong>second time</strong> they went to a concert together, Kevin paid for the tickets.",
+    "annoyed": "After the second time, how annoyed did Kevin feel about the social interaction with Allen?",
+    "satisfied": "After the second time, how satisfied did Kevin feel about the outcome of the social interaction with Allen?"
+  },
+  {
+    "story": "concerts",
+    "altruistic_status_second": "just_met",
+    "strategy": "repeating",
+    "vignette": "Consider Kevin and Allen, who like to go to concerts. <strong>Kevin and Allen have just met for the first time.</strong>",
+    "first_actual": "The <strong>first time</strong> they went to a concert together, Kevin paid for the tickets.",
+    "second_actual": "The <strong>second time</strong> they went to a concert together, Kevin paid for the tickets.",
+    "annoyed": "After the second time, how annoyed did Kevin feel about the social interaction with Allen?",
+    "satisfied": "After the second time, how satisfied did Kevin feel about the outcome of the social interaction with Allen?"
+  },
+  {
+    "story": "concerts",
+    "altruistic_status_second": "more",
+    "strategy": "alternating",
+    "vignette": "Consider Kevin and Allen, who like to go to concerts. <strong>Kevin and Allen are in a relationship where Kevin has more power, status, or influence than Allen.</strong>",
+    "first_actual": "The <strong>first time</strong> they went to a concert together, Allen paid for the tickets.",
+    "second_actual": "The <strong>second time</strong> they went to a concert together, Kevin paid for the tickets.",
+    "annoyed": "After the second time, how annoyed did Kevin feel about the social interaction with Allen?",
+    "satisfied": "After the second time, how satisfied did Kevin feel about the outcome of the social interaction with Allen?"
+  },
+  {
+    "story": "concerts",
+    "altruistic_status_second": "equal",
+    "strategy": "alternating",
+    "vignette": "Consider Kevin and Allen, who like to go to concerts. <strong>Kevin and Allen are in a relationship where Kevin has equal power, status, or influence as Allen.</strong>",
+    "first_actual": "The <strong>first time</strong> they went to a concert together, Allen paid for the tickets.",
+    "second_actual": "The <strong>second time</strong> they went to a concert together, Kevin paid for the tickets.",
+    "annoyed": "After the second time, how annoyed did Kevin feel about the social interaction with Allen?",
+    "satisfied": "After the second time, how satisfied did Kevin feel about the outcome of the social interaction with Allen?"
+  },
+  {
+    "story": "concerts",
+    "altruistic_status_second": "less",
+    "strategy": "alternating",
+    "vignette": "Consider Kevin and Allen, who like to go to concerts. <strong>Kevin and Allen are in a relationship where Kevin has less power, status, or influence than Allen.</strong>",
+    "first_actual": "The <strong>first time</strong> they went to a concert together, Allen paid for the tickets.",
+    "second_actual": "The <strong>second time</strong> they went to a concert together, Kevin paid for the tickets.",
+    "annoyed": "After the second time, how annoyed did Kevin feel about the social interaction with Allen?",
+    "satisfied": "After the second time, how satisfied did Kevin feel about the outcome of the social interaction with Allen?"
+  },
+  {
+    "story": "concerts",
+    "altruistic_status_second": "just_met",
+    "strategy": "alternating",
+    "vignette": "Consider Kevin and Allen, who like to go to concerts. <strong>Kevin and Allen have just met for the first time.</strong>",
+    "first_actual": "The <strong>first time</strong> they went to a concert together, Allen paid for the tickets.",
+    "second_actual": "The <strong>second time</strong> they went to a concert together, Kevin paid for the tickets.",
+    "annoyed": "After the second time, how annoyed did Kevin feel about the social interaction with Allen?",
+    "satisfied": "After the second time, how satisfied did Kevin feel about the outcome of the social interaction with Allen?"
+  },
+  {
+    "story": "architects",
+    "altruistic_status_second": "more",
+    "strategy": "repeating",
+    "vignette": "Consider Sonia and Liana, who work as architects at the same company. <strong>Sonia and Liana are in a relationship where Sonia has more power, status, or influence than Liana.</strong>",
+    "first_actual": "The <strong>first time</strong> they worked together on a design, Sonia meticulously double-checked their finished designs before they sent them out.",
+    "second_actual": "The <strong>second time</strong> they worked together on a design, Sonia meticulously double-checked their finished designs before they sent them out.",
+    "annoyed": "After the second time, how annoyed did Sonia feel about the social interaction with Liana?",
+    "satisfied": "After the second time, how satisfied did Sonia feel about the outcome of the social interaction with Liana?"
+  },
+  {
+    "story": "architects",
+    "altruistic_status_second": "equal",
+    "strategy": "repeating",
+    "vignette": "Consider Sonia and Liana, who work as architects at the same company. <strong>Sonia and Liana are in a relationship where Sonia has equal power, status, or influence as Liana.</strong>",
+    "first_actual": "The <strong>first time</strong> they worked together on a design, Sonia meticulously double-checked their finished designs before they sent them out.",
+    "second_actual": "The <strong>second time</strong> they worked together on a design, Sonia meticulously double-checked their finished designs before they sent them out.",
+    "annoyed": "After the second time, how annoyed did Sonia feel about the social interaction with Liana?",
+    "satisfied": "After the second time, how satisfied did Sonia feel about the outcome of the social interaction with Liana?"
+  },
+  {
+    "story": "architects",
+    "altruistic_status_second": "less",
+    "strategy": "repeating",
+    "vignette": "Consider Sonia and Liana, who work as architects at the same company. <strong>Sonia and Liana are in a relationship where Sonia has less power, status, or influence than Liana.</strong>",
+    "first_actual": "The <strong>first time</strong> they worked together on a design, Sonia meticulously double-checked their finished designs before they sent them out.",
+    "second_actual": "The <strong>second time</strong> they worked together on a design, Sonia meticulously double-checked their finished designs before they sent them out.",
+    "annoyed": "After the second time, how annoyed did Sonia feel about the social interaction with Liana?",
+    "satisfied": "After the second time, how satisfied did Sonia feel about the outcome of the social interaction with Liana?"
+  },
+  {
+    "story": "architects",
+    "altruistic_status_second": "just_met",
+    "strategy": "repeating",
+    "vignette": "Consider Sonia and Liana, who work as architects at the same company. <strong>Sonia and Liana have just met for the first time.</strong>",
+    "first_actual": "The <strong>first time</strong> they worked together on a design, Sonia meticulously double-checked their finished designs before they sent them out.",
+    "second_actual": "The <strong>second time</strong> they worked together on a design, Sonia meticulously double-checked their finished designs before they sent them out.",
+    "annoyed": "After the second time, how annoyed did Sonia feel about the social interaction with Liana?",
+    "satisfied": "After the second time, how satisfied did Sonia feel about the outcome of the social interaction with Liana?"
+  },
+  {
+    "story": "architects",
+    "altruistic_status_second": "more",
+    "strategy": "alternating",
+    "vignette": "Consider Sonia and Liana, who work as architects at the same company. <strong>Sonia and Liana are in a relationship where Sonia has more power, status, or influence than Liana.</strong>",
+    "first_actual": "The <strong>first time</strong> they worked together on a design, Liana meticulously double-checked their finished designs before they sent them out.",
+    "second_actual": "The <strong>second time</strong> they worked together on a design, Sonia meticulously double-checked their finished designs before they sent them out.",
+    "annoyed": "After the second time, how annoyed did Sonia feel about the social interaction with Liana?",
+    "satisfied": "After the second time, how satisfied did Sonia feel about the outcome of the social interaction with Liana?"
+  },
+  {
+    "story": "architects",
+    "altruistic_status_second": "equal",
+    "strategy": "alternating",
+    "vignette": "Consider Sonia and Liana, who work as architects at the same company. <strong>Sonia and Liana are in a relationship where Sonia has equal power, status, or influence as Liana.</strong>",
+    "first_actual": "The <strong>first time</strong> they worked together on a design, Liana meticulously double-checked their finished designs before they sent them out.",
+    "second_actual": "The <strong>second time</strong> they worked together on a design, Sonia meticulously double-checked their finished designs before they sent them out.",
+    "annoyed": "After the second time, how annoyed did Sonia feel about the social interaction with Liana?",
+    "satisfied": "After the second time, how satisfied did Sonia feel about the outcome of the social interaction with Liana?"
+  },
+  {
+    "story": "architects",
+    "altruistic_status_second": "less",
+    "strategy": "alternating",
+    "vignette": "Consider Sonia and Liana, who work as architects at the same company. <strong>Sonia and Liana are in a relationship where Sonia has less power, status, or influence than Liana.</strong>",
+    "first_actual": "The <strong>first time</strong> they worked together on a design, Liana meticulously double-checked their finished designs before they sent them out.",
+    "second_actual": "The <strong>second time</strong> they worked together on a design, Sonia meticulously double-checked their finished designs before they sent them out.",
+    "annoyed": "After the second time, how annoyed did Sonia feel about the social interaction with Liana?",
+    "satisfied": "After the second time, how satisfied did Sonia feel about the outcome of the social interaction with Liana?"
+  },
+  {
+    "story": "architects",
+    "altruistic_status_second": "just_met",
+    "strategy": "alternating",
+    "vignette": "Consider Sonia and Liana, who work as architects at the same company. <strong>Sonia and Liana have just met for the first time.</strong>",
+    "first_actual": "The <strong>first time</strong> they worked together on a design, Liana meticulously double-checked their finished designs before they sent them out.",
+    "second_actual": "The <strong>second time</strong> they worked together on a design, Sonia meticulously double-checked their finished designs before they sent them out.",
+    "annoyed": "After the second time, how annoyed did Sonia feel about the social interaction with Liana?",
+    "satisfied": "After the second time, how satisfied did Sonia feel about the outcome of the social interaction with Liana?"
+  },
+  {
+    "story": "feedback",
+    "altruistic_status_second": "more",
+    "strategy": "repeating",
+    "vignette": "Consider Taylor and Samantha, who are both fiction writers living in the same city. <strong>Taylor and Samantha are in a relationship where Taylor has more power, status, or influence than Samantha.</strong> They frequently attend the same group writing workshops.",
+    "first_actual": "The <strong>first time</strong> one of them gave feedback to the other, Samantha shared her work in progress, and Taylor gave feedback on it.",
+    "second_actual": "The <strong>second time</strong> one of them gave feedback to the other, Samantha shared her work in progress, and Taylor gave feedback on it.",
+    "annoyed": "After the second time, how annoyed did Taylor feel about the social interaction with Samantha?",
+    "satisfied": "After the second time, how satisfied did Taylor feel about the outcome of the social interaction with Samantha?"
+  },
+  {
+    "story": "feedback",
+    "altruistic_status_second": "equal",
+    "strategy": "repeating",
+    "vignette": "Consider Taylor and Samantha, who are both fiction writers living in the same city. <strong>Taylor and Samantha are in a relationship where Taylor has equal power, status, or influence as Samantha.</strong> They frequently attend the same group writing workshops.",
+    "first_actual": "The <strong>first time</strong> one of them gave feedback to the other, Samantha shared her work in progress, and Taylor gave feedback on it.",
+    "second_actual": "The <strong>second time</strong> one of them gave feedback to the other, Samantha shared her work in progress, and Taylor gave feedback on it.",
+    "annoyed": "After the second time, how annoyed did Taylor feel about the social interaction with Samantha?",
+    "satisfied": "After the second time, how satisfied did Taylor feel about the outcome of the social interaction with Samantha?"
+  },
+  {
+    "story": "feedback",
+    "altruistic_status_second": "less",
+    "strategy": "repeating",
+    "vignette": "Consider Taylor and Samantha, who are both fiction writers living in the same city. <strong>Taylor and Samantha are in a relationship where Taylor has less power, status, or influence than Samantha.</strong> They frequently attend the same group writing workshops.",
+    "first_actual": "The <strong>first time</strong> one of them gave feedback to the other, Samantha shared her work in progress, and Taylor gave feedback on it.",
+    "second_actual": "The <strong>second time</strong> one of them gave feedback to the other, Samantha shared her work in progress, and Taylor gave feedback on it.",
+    "annoyed": "After the second time, how annoyed did Taylor feel about the social interaction with Samantha?",
+    "satisfied": "After the second time, how satisfied did Taylor feel about the outcome of the social interaction with Samantha?"
+  },
+  {
+    "story": "feedback",
+    "altruistic_status_second": "just_met",
+    "strategy": "repeating",
+    "vignette": "Consider Taylor and Samantha, who are both fiction writers living in the same city. <strong>Taylor and Samantha have just met for the first time.</strong> They frequently attend the same group writing workshops.",
+    "first_actual": "The <strong>first time</strong> one of them gave feedback to the other, Samantha shared her work in progress, and Taylor gave feedback on it.",
+    "second_actual": "The <strong>second time</strong> one of them gave feedback to the other, Samantha shared her work in progress, and Taylor gave feedback on it.",
+    "annoyed": "After the second time, how annoyed did Taylor feel about the social interaction with Samantha?",
+    "satisfied": "After the second time, how satisfied did Taylor feel about the outcome of the social interaction with Samantha?"
+  },
+  {
+    "story": "feedback",
+    "altruistic_status_second": "more",
+    "strategy": "alternating",
+    "vignette": "Consider Taylor and Samantha, who are both fiction writers living in the same city. <strong>Taylor and Samantha are in a relationship where Taylor has more power, status, or influence than Samantha.</strong> They frequently attend the same group writing workshops.",
+    "first_actual": "The <strong>first time</strong> one of them gave feedback to the other, Taylor shared her work in progress, and Samantha gave feedback on it.",
+    "second_actual": "The <strong>second time</strong> one of them gave feedback to the other, Samantha shared her work in progress, and Taylor gave feedback on it.",
+    "annoyed": "After the second time, how annoyed did Taylor feel about the social interaction with Samantha?",
+    "satisfied": "After the second time, how satisfied did Taylor feel about the outcome of the social interaction with Samantha?"
+  },
+  {
+    "story": "feedback",
+    "altruistic_status_second": "equal",
+    "strategy": "alternating",
+    "vignette": "Consider Taylor and Samantha, who are both fiction writers living in the same city. <strong>Taylor and Samantha are in a relationship where Taylor has equal power, status, or influence as Samantha.</strong> They frequently attend the same group writing workshops.",
+    "first_actual": "The <strong>first time</strong> one of them gave feedback to the other, Taylor shared her work in progress, and Samantha gave feedback on it.",
+    "second_actual": "The <strong>second time</strong> one of them gave feedback to the other, Samantha shared her work in progress, and Taylor gave feedback on it.",
+    "annoyed": "After the second time, how annoyed did Taylor feel about the social interaction with Samantha?",
+    "satisfied": "After the second time, how satisfied did Taylor feel about the outcome of the social interaction with Samantha?"
+  },
+  {
+    "story": "feedback",
+    "altruistic_status_second": "less",
+    "strategy": "alternating",
+    "vignette": "Consider Taylor and Samantha, who are both fiction writers living in the same city. <strong>Taylor and Samantha are in a relationship where Taylor has less power, status, or influence than Samantha.</strong> They frequently attend the same group writing workshops.",
+    "first_actual": "The <strong>first time</strong> one of them gave feedback to the other, Taylor shared her work in progress, and Samantha gave feedback on it.",
+    "second_actual": "The <strong>second time</strong> one of them gave feedback to the other, Samantha shared her work in progress, and Taylor gave feedback on it.",
+    "annoyed": "After the second time, how annoyed did Taylor feel about the social interaction with Samantha?",
+    "satisfied": "After the second time, how satisfied did Taylor feel about the outcome of the social interaction with Samantha?"
+  },
+  {
+    "story": "feedback",
+    "altruistic_status_second": "just_met",
+    "strategy": "alternating",
+    "vignette": "Consider Taylor and Samantha, who are both fiction writers living in the same city. <strong>Taylor and Samantha have just met for the first time.</strong> They frequently attend the same group writing workshops.",
+    "first_actual": "The <strong>first time</strong> one of them gave feedback to the other, Taylor shared her work in progress, and Samantha gave feedback on it.",
+    "second_actual": "The <strong>second time</strong> one of them gave feedback to the other, Samantha shared her work in progress, and Taylor gave feedback on it.",
+    "annoyed": "After the second time, how annoyed did Taylor feel about the social interaction with Samantha?",
+    "satisfied": "After the second time, how satisfied did Taylor feel about the outcome of the social interaction with Samantha?"
+  },
+  {
+    "story": "group project",
+    "altruistic_status_second": "more",
+    "strategy": "repeating",
+    "vignette": "Consider Maxwell and Ralph, two people at the same company who are assigned to work together on the same project. <strong>Maxwell and Ralph are in a relationship where Maxwell has more power, status, or influence than Ralph.</strong>",
+    "first_actual": "The <strong>first time</strong> they met about the project, Maxwell contributed most of the ideas, delegated tasks to Ralph, and decided what to do next.",
+    "second_actual": "The <strong>second time</strong> they met about the project, Maxwell contributed most of the ideas, delegated tasks to Ralph, and decided what to do next.",
+    "annoyed": "After the second time, how annoyed did Maxwell feel about the social interaction with Ralph?",
+    "satisfied": "After the second time, how satisfied did Maxwell feel about the outcome of the social interaction with Ralph?"
+  },
+  {
+    "story": "group project",
+    "altruistic_status_second": "equal",
+    "strategy": "repeating",
+    "vignette": "Consider Maxwell and Ralph, two people at the same company who are assigned to work together on the same project. <strong>Maxwell and Ralph are in a relationship where Maxwell has equal power, status, or influence as Ralph.</strong>",
+    "first_actual": "The <strong>first time</strong> they met about the project, Maxwell contributed most of the ideas, delegated tasks to Ralph, and decided what to do next.",
+    "second_actual": "The <strong>second time</strong> they met about the project, Maxwell contributed most of the ideas, delegated tasks to Ralph, and decided what to do next.",
+    "annoyed": "After the second time, how annoyed did Maxwell feel about the social interaction with Ralph?",
+    "satisfied": "After the second time, how satisfied did Maxwell feel about the outcome of the social interaction with Ralph?"
+  },
+  {
+    "story": "group project",
+    "altruistic_status_second": "less",
+    "strategy": "repeating",
+    "vignette": "Consider Maxwell and Ralph, two people at the same company who are assigned to work together on the same project. <strong>Maxwell and Ralph are in a relationship where Maxwell has less power, status, or influence than Ralph.</strong>",
+    "first_actual": "The <strong>first time</strong> they met about the project, Maxwell contributed most of the ideas, delegated tasks to Ralph, and decided what to do next.",
+    "second_actual": "The <strong>second time</strong> they met about the project, Maxwell contributed most of the ideas, delegated tasks to Ralph, and decided what to do next.",
+    "annoyed": "After the second time, how annoyed did Maxwell feel about the social interaction with Ralph?",
+    "satisfied": "After the second time, how satisfied did Maxwell feel about the outcome of the social interaction with Ralph?"
+  },
+  {
+    "story": "group project",
+    "altruistic_status_second": "just_met",
+    "strategy": "repeating",
+    "vignette": "Consider Maxwell and Ralph, two people at the same company who are assigned to work together on the same project. <strong>Maxwell and Ralph have just met for the first time.</strong>",
+    "first_actual": "The <strong>first time</strong> they met about the project, Maxwell contributed most of the ideas, delegated tasks to Ralph, and decided what to do next.",
+    "second_actual": "The <strong>second time</strong> they met about the project, Maxwell contributed most of the ideas, delegated tasks to Ralph, and decided what to do next.",
+    "annoyed": "After the second time, how annoyed did Maxwell feel about the social interaction with Ralph?",
+    "satisfied": "After the second time, how satisfied did Maxwell feel about the outcome of the social interaction with Ralph?"
+  },
+  {
+    "story": "group project",
+    "altruistic_status_second": "more",
+    "strategy": "alternating",
+    "vignette": "Consider Maxwell and Ralph, two people at the same company who are assigned to work together on the same project. <strong>Maxwell and Ralph are in a relationship where Maxwell has more power, status, or influence than Ralph.</strong>",
+    "first_actual": "The <strong>first time</strong> they met about the project, Ralph contributed most of the ideas, delegated tasks to Maxwell, and decided what to do next.",
+    "second_actual": "The <strong>second time</strong> they met about the project, Maxwell contributed most of the ideas, delegated tasks to Ralph, and decided what to do next.",
+    "annoyed": "After the second time, how annoyed did Maxwell feel about the social interaction with Ralph?",
+    "satisfied": "After the second time, how satisfied did Maxwell feel about the outcome of the social interaction with Ralph?"
+  },
+  {
+    "story": "group project",
+    "altruistic_status_second": "equal",
+    "strategy": "alternating",
+    "vignette": "Consider Maxwell and Ralph, two people at the same company who are assigned to work together on the same project. <strong>Maxwell and Ralph are in a relationship where Maxwell has equal power, status, or influence as Ralph.</strong>",
+    "first_actual": "The <strong>first time</strong> they met about the project, Ralph contributed most of the ideas, delegated tasks to Maxwell, and decided what to do next.",
+    "second_actual": "The <strong>second time</strong> they met about the project, Maxwell contributed most of the ideas, delegated tasks to Ralph, and decided what to do next.",
+    "annoyed": "After the second time, how annoyed did Maxwell feel about the social interaction with Ralph?",
+    "satisfied": "After the second time, how satisfied did Maxwell feel about the outcome of the social interaction with Ralph?"
+  },
+  {
+    "story": "group project",
+    "altruistic_status_second": "less",
+    "strategy": "alternating",
+    "vignette": "Consider Maxwell and Ralph, two people at the same company who are assigned to work together on the same project. <strong>Maxwell and Ralph are in a relationship where Maxwell has less power, status, or influence than Ralph.</strong>",
+    "first_actual": "The <strong>first time</strong> they met about the project, Ralph contributed most of the ideas, delegated tasks to Maxwell, and decided what to do next.",
+    "second_actual": "The <strong>second time</strong> they met about the project, Maxwell contributed most of the ideas, delegated tasks to Ralph, and decided what to do next.",
+    "annoyed": "After the second time, how annoyed did Maxwell feel about the social interaction with Ralph?",
+    "satisfied": "After the second time, how satisfied did Maxwell feel about the outcome of the social interaction with Ralph?"
+  },
+  {
+    "story": "group project",
+    "altruistic_status_second": "just_met",
+    "strategy": "alternating",
+    "vignette": "Consider Maxwell and Ralph, two people at the same company who are assigned to work together on the same project. <strong>Maxwell and Ralph have just met for the first time.</strong>",
+    "first_actual": "The <strong>first time</strong> they met about the project, Ralph contributed most of the ideas, delegated tasks to Maxwell, and decided what to do next.",
+    "second_actual": "The <strong>second time</strong> they met about the project, Maxwell contributed most of the ideas, delegated tasks to Ralph, and decided what to do next.",
+    "annoyed": "After the second time, how annoyed did Maxwell feel about the social interaction with Ralph?",
+    "satisfied": "After the second time, how satisfied did Maxwell feel about the outcome of the social interaction with Ralph?"
+  },
+  {
+    "story": "meeting prep",
+    "altruistic_status_second": "more",
+    "strategy": "repeating",
+    "vignette": "Consider Chloe and Victoria, who work at the same news station. <strong>Chloe and Victoria are in a relationship where Chloe has more power, status, or influence than Victoria.</strong>",
+    "first_actual": "The <strong>first time</strong> Chloe and Victoria met, Chloe prepared the agenda for the meeting and booked the meeting room.",
+    "second_actual": "The <strong>second time</strong> Chloe and Victoria met, Chloe prepared the agenda for the meeting and booked the meeting room.",
+    "annoyed": "After the second time, how annoyed did Chloe feel about the social interaction with Victoria?",
+    "satisfied": "After the second time, how satisfied did Chloe feel about the outcome of the social interaction with Victoria?"
+  },
+  {
+    "story": "meeting prep",
+    "altruistic_status_second": "equal",
+    "strategy": "repeating",
+    "vignette": "Consider Chloe and Victoria, who work at the same news station. <strong>Chloe and Victoria are in a relationship where Chloe has equal power, status, or influence as Victoria.</strong>",
+    "first_actual": "The <strong>first time</strong> Chloe and Victoria met, Chloe prepared the agenda for the meeting and booked the meeting room.",
+    "second_actual": "The <strong>second time</strong> Chloe and Victoria met, Chloe prepared the agenda for the meeting and booked the meeting room.",
+    "annoyed": "After the second time, how annoyed did Chloe feel about the social interaction with Victoria?",
+    "satisfied": "After the second time, how satisfied did Chloe feel about the outcome of the social interaction with Victoria?"
+  },
+  {
+    "story": "meeting prep",
+    "altruistic_status_second": "less",
+    "strategy": "repeating",
+    "vignette": "Consider Chloe and Victoria, who work at the same news station. <strong>Chloe and Victoria are in a relationship where Chloe has less power, status, or influence than Victoria.</strong>",
+    "first_actual": "The <strong>first time</strong> Chloe and Victoria met, Chloe prepared the agenda for the meeting and booked the meeting room.",
+    "second_actual": "The <strong>second time</strong> Chloe and Victoria met, Chloe prepared the agenda for the meeting and booked the meeting room.",
+    "annoyed": "After the second time, how annoyed did Chloe feel about the social interaction with Victoria?",
+    "satisfied": "After the second time, how satisfied did Chloe feel about the outcome of the social interaction with Victoria?"
+  },
+  {
+    "story": "meeting prep",
+    "altruistic_status_second": "just_met",
+    "strategy": "repeating",
+    "vignette": "Consider Chloe and Victoria, who work at the same news station. <strong>Chloe and Victoria have just met for the first time.</strong>",
+    "first_actual": "The <strong>first time</strong> Chloe and Victoria met, Chloe prepared the agenda for the meeting and booked the meeting room.",
+    "second_actual": "The <strong>second time</strong> Chloe and Victoria met, Chloe prepared the agenda for the meeting and booked the meeting room.",
+    "annoyed": "After the second time, how annoyed did Chloe feel about the social interaction with Victoria?",
+    "satisfied": "After the second time, how satisfied did Chloe feel about the outcome of the social interaction with Victoria?"
+  },
+  {
+    "story": "meeting prep",
+    "altruistic_status_second": "more",
+    "strategy": "alternating",
+    "vignette": "Consider Chloe and Victoria, who work at the same news station. <strong>Chloe and Victoria are in a relationship where Chloe has more power, status, or influence than Victoria.</strong>",
+    "first_actual": "The <strong>first time</strong> Chloe and Victoria met, Victoria prepared the agenda for the meeting and booked the meeting room.",
+    "second_actual": "The <strong>second time</strong> Chloe and Victoria met, Chloe prepared the agenda for the meeting and booked the meeting room.",
+    "annoyed": "After the second time, how annoyed did Chloe feel about the social interaction with Victoria?",
+    "satisfied": "After the second time, how satisfied did Chloe feel about the outcome of the social interaction with Victoria?"
+  },
+  {
+    "story": "meeting prep",
+    "altruistic_status_second": "equal",
+    "strategy": "alternating",
+    "vignette": "Consider Chloe and Victoria, who work at the same news station. <strong>Chloe and Victoria are in a relationship where Chloe has equal power, status, or influence as Victoria.</strong>",
+    "first_actual": "The <strong>first time</strong> Chloe and Victoria met, Victoria prepared the agenda for the meeting and booked the meeting room.",
+    "second_actual": "The <strong>second time</strong> Chloe and Victoria met, Chloe prepared the agenda for the meeting and booked the meeting room.",
+    "annoyed": "After the second time, how annoyed did Chloe feel about the social interaction with Victoria?",
+    "satisfied": "After the second time, how satisfied did Chloe feel about the outcome of the social interaction with Victoria?"
+  },
+  {
+    "story": "meeting prep",
+    "altruistic_status_second": "less",
+    "strategy": "alternating",
+    "vignette": "Consider Chloe and Victoria, who work at the same news station. <strong>Chloe and Victoria are in a relationship where Chloe has less power, status, or influence than Victoria.</strong>",
+    "first_actual": "The <strong>first time</strong> Chloe and Victoria met, Victoria prepared the agenda for the meeting and booked the meeting room.",
+    "second_actual": "The <strong>second time</strong> Chloe and Victoria met, Chloe prepared the agenda for the meeting and booked the meeting room.",
+    "annoyed": "After the second time, how annoyed did Chloe feel about the social interaction with Victoria?",
+    "satisfied": "After the second time, how satisfied did Chloe feel about the outcome of the social interaction with Victoria?"
+  },
+  {
+    "story": "meeting prep",
+    "altruistic_status_second": "just_met",
+    "strategy": "alternating",
+    "vignette": "Consider Chloe and Victoria, who work at the same news station. <strong>Chloe and Victoria have just met for the first time.</strong>",
+    "first_actual": "The <strong>first time</strong> Chloe and Victoria met, Victoria prepared the agenda for the meeting and booked the meeting room.",
+    "second_actual": "The <strong>second time</strong> Chloe and Victoria met, Chloe prepared the agenda for the meeting and booked the meeting room.",
+    "annoyed": "After the second time, how annoyed did Chloe feel about the social interaction with Victoria?",
+    "satisfied": "After the second time, how satisfied did Chloe feel about the outcome of the social interaction with Victoria?"
+  },
+  {
+    "story": "restaurant",
+    "altruistic_status_second": "more",
+    "strategy": "repeating",
+    "vignette": "Consider Grace and Avery, who work at the same company. <strong>Grace and Avery are in a relationship where Grace has more power, status, or influence than Avery.</strong> There are two restaurants near their work: a Chinese restaurant, and an Indian restaurant. Avery prefers the Chinese restaurant, while Grace prefers the Indian restaurant.",
+    "first_actual": "The <strong>first time</strong> Grace and Avery went out to eat after work, they went to the Chinese restaurant.",
+    "second_actual": "The <strong>second time</strong> Grace and Avery went out to eat after work, they went to the Chinese restaurant.",
+    "annoyed": "After the second time, how annoyed did Grace feel about the social interaction with Avery?",
+    "satisfied": "After the second time, how satisfied did Grace feel about the outcome of the social interaction with Avery?"
+  },
+  {
+    "story": "restaurant",
+    "altruistic_status_second": "equal",
+    "strategy": "repeating",
+    "vignette": "Consider Grace and Avery, who work at the same company. <strong>Grace and Avery are in a relationship where Grace has equal power, status, or influence as Avery.</strong> There are two restaurants near their work: a Chinese restaurant, and an Indian restaurant. Avery prefers the Chinese restaurant, while Grace prefers the Indian restaurant.",
+    "first_actual": "The <strong>first time</strong> Grace and Avery went out to eat after work, they went to the Chinese restaurant.",
+    "second_actual": "The <strong>second time</strong> Grace and Avery went out to eat after work, they went to the Chinese restaurant.",
+    "annoyed": "After the second time, how annoyed did Grace feel about the social interaction with Avery?",
+    "satisfied": "After the second time, how satisfied did Grace feel about the outcome of the social interaction with Avery?"
+  },
+  {
+    "story": "restaurant",
+    "altruistic_status_second": "less",
+    "strategy": "repeating",
+    "vignette": "Consider Grace and Avery, who work at the same company. <strong>Grace and Avery are in a relationship where Grace has less power, status, or influence than Avery.</strong> There are two restaurants near their work: a Chinese restaurant, and an Indian restaurant. Avery prefers the Chinese restaurant, while Grace prefers the Indian restaurant.",
+    "first_actual": "The <strong>first time</strong> Grace and Avery went out to eat after work, they went to the Chinese restaurant.",
+    "second_actual": "The <strong>second time</strong> Grace and Avery went out to eat after work, they went to the Chinese restaurant.",
+    "annoyed": "After the second time, how annoyed did Grace feel about the social interaction with Avery?",
+    "satisfied": "After the second time, how satisfied did Grace feel about the outcome of the social interaction with Avery?"
+  },
+  {
+    "story": "restaurant",
+    "altruistic_status_second": "just_met",
+    "strategy": "repeating",
+    "vignette": "Consider Grace and Avery, who work at the same company. <strong>Grace and Avery have just met for the first time.</strong> There are two restaurants near their work: a Chinese restaurant, and an Indian restaurant. Avery prefers the Chinese restaurant, while Grace prefers the Indian restaurant.",
+    "first_actual": "The <strong>first time</strong> Grace and Avery went out to eat after work, they went to the Chinese restaurant.",
+    "second_actual": "The <strong>second time</strong> Grace and Avery went out to eat after work, they went to the Chinese restaurant.",
+    "annoyed": "After the second time, how annoyed did Grace feel about the social interaction with Avery?",
+    "satisfied": "After the second time, how satisfied did Grace feel about the outcome of the social interaction with Avery?"
+  },
+  {
+    "story": "restaurant",
+    "altruistic_status_second": "more",
+    "strategy": "alternating",
+    "vignette": "Consider Grace and Avery, who work at the same company. <strong>Grace and Avery are in a relationship where Grace has more power, status, or influence than Avery.</strong> There are two restaurants near their work: a Chinese restaurant, and an Indian restaurant. Avery prefers the Chinese restaurant, while Grace prefers the Indian restaurant.",
+    "first_actual": "The <strong>first time</strong> Grace and Avery went out to eat after work, they went to the Indian restaurant.",
+    "second_actual": "The <strong>second time</strong> Grace and Avery went out to eat after work, they went to the Chinese restaurant.",
+    "annoyed": "After the second time, how annoyed did Grace feel about the social interaction with Avery?",
+    "satisfied": "After the second time, how satisfied did Grace feel about the outcome of the social interaction with Avery?"
+  },
+  {
+    "story": "restaurant",
+    "altruistic_status_second": "equal",
+    "strategy": "alternating",
+    "vignette": "Consider Grace and Avery, who work at the same company. <strong>Grace and Avery are in a relationship where Grace has equal power, status, or influence as Avery.</strong> There are two restaurants near their work: a Chinese restaurant, and an Indian restaurant. Avery prefers the Chinese restaurant, while Grace prefers the Indian restaurant.",
+    "first_actual": "The <strong>first time</strong> Grace and Avery went out to eat after work, they went to the Indian restaurant.",
+    "second_actual": "The <strong>second time</strong> Grace and Avery went out to eat after work, they went to the Chinese restaurant.",
+    "annoyed": "After the second time, how annoyed did Grace feel about the social interaction with Avery?",
+    "satisfied": "After the second time, how satisfied did Grace feel about the outcome of the social interaction with Avery?"
+  },
+  {
+    "story": "restaurant",
+    "altruistic_status_second": "less",
+    "strategy": "alternating",
+    "vignette": "Consider Grace and Avery, who work at the same company. <strong>Grace and Avery are in a relationship where Grace has less power, status, or influence than Avery.</strong> There are two restaurants near their work: a Chinese restaurant, and an Indian restaurant. Avery prefers the Chinese restaurant, while Grace prefers the Indian restaurant.",
+    "first_actual": "The <strong>first time</strong> Grace and Avery went out to eat after work, they went to the Indian restaurant.",
+    "second_actual": "The <strong>second time</strong> Grace and Avery went out to eat after work, they went to the Chinese restaurant.",
+    "annoyed": "After the second time, how annoyed did Grace feel about the social interaction with Avery?",
+    "satisfied": "After the second time, how satisfied did Grace feel about the outcome of the social interaction with Avery?"
+  },
+  {
+    "story": "restaurant",
+    "altruistic_status_second": "just_met",
+    "strategy": "alternating",
+    "vignette": "Consider Grace and Avery, who work at the same company. <strong>Grace and Avery have just met for the first time.</strong> There are two restaurants near their work: a Chinese restaurant, and an Indian restaurant. Avery prefers the Chinese restaurant, while Grace prefers the Indian restaurant.",
+    "first_actual": "The <strong>first time</strong> Grace and Avery went out to eat after work, they went to the Indian restaurant.",
+    "second_actual": "The <strong>second time</strong> Grace and Avery went out to eat after work, they went to the Chinese restaurant.",
+    "annoyed": "After the second time, how annoyed did Grace feel about the social interaction with Avery?",
+    "satisfied": "After the second time, how satisfied did Grace feel about the outcome of the social interaction with Avery?"
+  },
+  {
+    "story": "groceries",
+    "altruistic_status_second": "more",
+    "strategy": "repeating",
+    "vignette": "Consider Caleb and Dylan, who live on the 5th floor of a walkup in Manhattan, with a steep narrow staircase. <strong>Caleb and Dylan are in a relationship where Caleb has more power, status, or influence than Dylan.</strong> Each of them comes home from the grocery store with many heavy bags about once a week.",
+    "first_actual": "The <strong>first time</strong> one of them helped the other out, Caleb helped carry Dylan's groceries up the stairs.",
+    "second_actual": "The <strong>second time</strong> one of them helped the other out, Caleb helped carry Dylan's groceries up the stairs.",
+    "annoyed": "After the second time, how annoyed did Caleb feel about the social interaction with Dylan?",
+    "satisfied": "After the second time, how satisfied did Caleb feel about the outcome of the social interaction with Dylan?"
+  },
+  {
+    "story": "groceries",
+    "altruistic_status_second": "equal",
+    "strategy": "repeating",
+    "vignette": "Consider Caleb and Dylan, who live on the 5th floor of a walkup in Manhattan, with a steep narrow staircase. <strong>Caleb and Dylan are in a relationship where Caleb has equal power, status, or influence as Dylan.</strong> Each of them comes home from the grocery store with many heavy bags about once a week.",
+    "first_actual": "The <strong>first time</strong> one of them helped the other out, Caleb helped carry Dylan's groceries up the stairs.",
+    "second_actual": "The <strong>second time</strong> one of them helped the other out, Caleb helped carry Dylan's groceries up the stairs.",
+    "annoyed": "After the second time, how annoyed did Caleb feel about the social interaction with Dylan?",
+    "satisfied": "After the second time, how satisfied did Caleb feel about the outcome of the social interaction with Dylan?"
+  },
+  {
+    "story": "groceries",
+    "altruistic_status_second": "less",
+    "strategy": "repeating",
+    "vignette": "Consider Caleb and Dylan, who live on the 5th floor of a walkup in Manhattan, with a steep narrow staircase. <strong>Caleb and Dylan are in a relationship where Caleb has less power, status, or influence than Dylan.</strong> Each of them comes home from the grocery store with many heavy bags about once a week.",
+    "first_actual": "The <strong>first time</strong> one of them helped the other out, Caleb helped carry Dylan's groceries up the stairs.",
+    "second_actual": "The <strong>second time</strong> one of them helped the other out, Caleb helped carry Dylan's groceries up the stairs.",
+    "annoyed": "After the second time, how annoyed did Caleb feel about the social interaction with Dylan?",
+    "satisfied": "After the second time, how satisfied did Caleb feel about the outcome of the social interaction with Dylan?"
+  },
+  {
+    "story": "groceries",
+    "altruistic_status_second": "just_met",
+    "strategy": "repeating",
+    "vignette": "Consider Caleb and Dylan, who live on the 5th floor of a walkup in Manhattan, with a steep narrow staircase. <strong>Caleb and Dylan have just met for the first time.</strong> Each of them comes home from the grocery store with many heavy bags about once a week.",
+    "first_actual": "The <strong>first time</strong> one of them helped the other out, Caleb helped carry Dylan's groceries up the stairs.",
+    "second_actual": "The <strong>second time</strong> one of them helped the other out, Caleb helped carry Dylan's groceries up the stairs.",
+    "annoyed": "After the second time, how annoyed did Caleb feel about the social interaction with Dylan?",
+    "satisfied": "After the second time, how satisfied did Caleb feel about the outcome of the social interaction with Dylan?"
+  },
+  {
+    "story": "groceries",
+    "altruistic_status_second": "more",
+    "strategy": "alternating",
+    "vignette": "Consider Caleb and Dylan, who live on the 5th floor of a walkup in Manhattan, with a steep narrow staircase. <strong>Caleb and Dylan are in a relationship where Caleb has more power, status, or influence than Dylan.</strong> Each of them comes home from the grocery store with many heavy bags about once a week.",
+    "first_actual": "The <strong>first time</strong> one of them helped the other out, Dylan helped carry Caleb's groceries up the stairs.",
+    "second_actual": "The <strong>second time</strong> one of them helped the other out, Caleb helped carry Dylan's groceries up the stairs.",
+    "annoyed": "After the second time, how annoyed did Caleb feel about the social interaction with Dylan?",
+    "satisfied": "After the second time, how satisfied did Caleb feel about the outcome of the social interaction with Dylan?"
+  },
+  {
+    "story": "groceries",
+    "altruistic_status_second": "equal",
+    "strategy": "alternating",
+    "vignette": "Consider Caleb and Dylan, who live on the 5th floor of a walkup in Manhattan, with a steep narrow staircase. <strong>Caleb and Dylan are in a relationship where Caleb has equal power, status, or influence as Dylan.</strong> Each of them comes home from the grocery store with many heavy bags about once a week.",
+    "first_actual": "The <strong>first time</strong> one of them helped the other out, Dylan helped carry Caleb's groceries up the stairs.",
+    "second_actual": "The <strong>second time</strong> one of them helped the other out, Caleb helped carry Dylan's groceries up the stairs.",
+    "annoyed": "After the second time, how annoyed did Caleb feel about the social interaction with Dylan?",
+    "satisfied": "After the second time, how satisfied did Caleb feel about the outcome of the social interaction with Dylan?"
+  },
+  {
+    "story": "groceries",
+    "altruistic_status_second": "less",
+    "strategy": "alternating",
+    "vignette": "Consider Caleb and Dylan, who live on the 5th floor of a walkup in Manhattan, with a steep narrow staircase. <strong>Caleb and Dylan are in a relationship where Caleb has less power, status, or influence than Dylan.</strong> Each of them comes home from the grocery store with many heavy bags about once a week.",
+    "first_actual": "The <strong>first time</strong> one of them helped the other out, Dylan helped carry Caleb's groceries up the stairs.",
+    "second_actual": "The <strong>second time</strong> one of them helped the other out, Caleb helped carry Dylan's groceries up the stairs.",
+    "annoyed": "After the second time, how annoyed did Caleb feel about the social interaction with Dylan?",
+    "satisfied": "After the second time, how satisfied did Caleb feel about the outcome of the social interaction with Dylan?"
+  },
+  {
+    "story": "groceries",
+    "altruistic_status_second": "just_met",
+    "strategy": "alternating",
+    "vignette": "Consider Caleb and Dylan, who live on the 5th floor of a walkup in Manhattan, with a steep narrow staircase. <strong>Caleb and Dylan have just met for the first time.</strong> Each of them comes home from the grocery store with many heavy bags about once a week.",
+    "first_actual": "The <strong>first time</strong> one of them helped the other out, Dylan helped carry Caleb's groceries up the stairs.",
+    "second_actual": "The <strong>second time</strong> one of them helped the other out, Caleb helped carry Dylan's groceries up the stairs.",
+    "annoyed": "After the second time, how annoyed did Caleb feel about the social interaction with Dylan?",
+    "satisfied": "After the second time, how satisfied did Caleb feel about the outcome of the social interaction with Dylan?"
+  },
+  {
+    "story": "weekend",
+    "altruistic_status_second": "more",
+    "strategy": "repeating",
+    "vignette": "Consider Abby and Evelyn, who both generally have their weekends free. <strong>Evelyn and Abby are in a relationship where Evelyn has more power, status, or influence than Abby.</strong> Abby prefers waking up early to do intense outdoor activities, while Evelyn prefers sleeping in, getting brunch, and walking around the city.",
+    "first_actual": "The <strong>first time</strong> Abby and Evelyn spent the weekend together, they woke up early both days to do intense outdoor activities.",
+    "second_actual": "The <strong>second time</strong> Abby and Evelyn spent the weekend together, they woke up early both days to do intense outdoor activities.",
+    "annoyed": "After the second time, how annoyed did Evelyn feel about the social interaction with Abby?",
+    "satisfied": "After the second time, how satisfied did Evelyn feel about the outcome of the social interaction with Abby?"
+  },
+  {
+    "story": "weekend",
+    "altruistic_status_second": "equal",
+    "strategy": "repeating",
+    "vignette": "Consider Abby and Evelyn, who both generally have their weekends free. <strong>Evelyn and Abby are in a relationship where Evelyn has equal power, status, or influence as Abby.</strong> Abby prefers waking up early to do intense outdoor activities, while Evelyn prefers sleeping in, getting brunch, and walking around the city.",
+    "first_actual": "The <strong>first time</strong> Abby and Evelyn spent the weekend together, they woke up early both days to do intense outdoor activities.",
+    "second_actual": "The <strong>second time</strong> Abby and Evelyn spent the weekend together, they woke up early both days to do intense outdoor activities.",
+    "annoyed": "After the second time, how annoyed did Evelyn feel about the social interaction with Abby?",
+    "satisfied": "After the second time, how satisfied did Evelyn feel about the outcome of the social interaction with Abby?"
+  },
+  {
+    "story": "weekend",
+    "altruistic_status_second": "less",
+    "strategy": "repeating",
+    "vignette": "Consider Abby and Evelyn, who both generally have their weekends free. <strong>Evelyn and Abby are in a relationship where Evelyn has less power, status, or influence than Abby.</strong> Abby prefers waking up early to do intense outdoor activities, while Evelyn prefers sleeping in, getting brunch, and walking around the city.",
+    "first_actual": "The <strong>first time</strong> Abby and Evelyn spent the weekend together, they woke up early both days to do intense outdoor activities.",
+    "second_actual": "The <strong>second time</strong> Abby and Evelyn spent the weekend together, they woke up early both days to do intense outdoor activities.",
+    "annoyed": "After the second time, how annoyed did Evelyn feel about the social interaction with Abby?",
+    "satisfied": "After the second time, how satisfied did Evelyn feel about the outcome of the social interaction with Abby?"
+  },
+  {
+    "story": "weekend",
+    "altruistic_status_second": "just_met",
+    "strategy": "repeating",
+    "vignette": "Consider Abby and Evelyn, who both generally have their weekends free. <strong>Evelyn and Abby have just met for the first time.</strong> Abby prefers waking up early to do intense outdoor activities, while Evelyn prefers sleeping in, getting brunch, and walking around the city.",
+    "first_actual": "The <strong>first time</strong> Abby and Evelyn spent the weekend together, they woke up early both days to do intense outdoor activities.",
+    "second_actual": "The <strong>second time</strong> Abby and Evelyn spent the weekend together, they woke up early both days to do intense outdoor activities.",
+    "annoyed": "After the second time, how annoyed did Evelyn feel about the social interaction with Abby?",
+    "satisfied": "After the second time, how satisfied did Evelyn feel about the outcome of the social interaction with Abby?"
+  },
+  {
+    "story": "weekend",
+    "altruistic_status_second": "more",
+    "strategy": "alternating",
+    "vignette": "Consider Abby and Evelyn, who both generally have their weekends free. <strong>Evelyn and Abby are in a relationship where Evelyn has more power, status, or influence than Abby.</strong> Abby prefers waking up early to do intense outdoor activities, while Evelyn prefers sleeping in, getting brunch, and walking around the city.",
+    "first_actual": "The <strong>first time</strong> Abby and Evelyn spent the weekend together, they slept in, got brunch, and walked around the city.",
+    "second_actual": "The <strong>second time</strong> Abby and Evelyn spent the weekend together, they woke up early both days to do intense outdoor activities.",
+    "annoyed": "After the second time, how annoyed did Evelyn feel about the social interaction with Abby?",
+    "satisfied": "After the second time, how satisfied did Evelyn feel about the outcome of the social interaction with Abby?"
+  },
+  {
+    "story": "weekend",
+    "altruistic_status_second": "equal",
+    "strategy": "alternating",
+    "vignette": "Consider Abby and Evelyn, who both generally have their weekends free. <strong>Evelyn and Abby are in a relationship where Evelyn has equal power, status, or influence as Abby.</strong> Abby prefers waking up early to do intense outdoor activities, while Evelyn prefers sleeping in, getting brunch, and walking around the city.",
+    "first_actual": "The <strong>first time</strong> Abby and Evelyn spent the weekend together, they slept in, got brunch, and walked around the city.",
+    "second_actual": "The <strong>second time</strong> Abby and Evelyn spent the weekend together, they woke up early both days to do intense outdoor activities.",
+    "annoyed": "After the second time, how annoyed did Evelyn feel about the social interaction with Abby?",
+    "satisfied": "After the second time, how satisfied did Evelyn feel about the outcome of the social interaction with Abby?"
+  },
+  {
+    "story": "weekend",
+    "altruistic_status_second": "less",
+    "strategy": "alternating",
+    "vignette": "Consider Abby and Evelyn, who both generally have their weekends free. <strong>Evelyn and Abby are in a relationship where Evelyn has less power, status, or influence than Abby.</strong> Abby prefers waking up early to do intense outdoor activities, while Evelyn prefers sleeping in, getting brunch, and walking around the city.",
+    "first_actual": "The <strong>first time</strong> Abby and Evelyn spent the weekend together, they slept in, got brunch, and walked around the city.",
+    "second_actual": "The <strong>second time</strong> Abby and Evelyn spent the weekend together, they woke up early both days to do intense outdoor activities.",
+    "annoyed": "After the second time, how annoyed did Evelyn feel about the social interaction with Abby?",
+    "satisfied": "After the second time, how satisfied did Evelyn feel about the outcome of the social interaction with Abby?"
+  },
+  {
+    "story": "weekend",
+    "altruistic_status_second": "just_met",
+    "strategy": "alternating",
+    "vignette": "Consider Abby and Evelyn, who both generally have their weekends free. <strong>Evelyn and Abby have just met for the first time.</strong> Abby prefers waking up early to do intense outdoor activities, while Evelyn prefers sleeping in, getting brunch, and walking around the city.",
+    "first_actual": "The <strong>first time</strong> Abby and Evelyn spent the weekend together, they slept in, got brunch, and walked around the city.",
+    "second_actual": "The <strong>second time</strong> Abby and Evelyn spent the weekend together, they woke up early both days to do intense outdoor activities.",
+    "annoyed": "After the second time, how annoyed did Evelyn feel about the social interaction with Abby?",
+    "satisfied": "After the second time, how satisfied did Evelyn feel about the outcome of the social interaction with Abby?"
+  },
+  {
+    "story": "scheduling",
+    "altruistic_status_second": "more",
+    "strategy": "repeating",
+    "vignette": "Consider Matt and William, who like to go to an Italian restaurant near their workplace. <strong>Matt and William are in a relationship where Matt has more power, status, or influence than William.</strong> Scheduling-wise, Matt prefers lunches, because Matt likes to have a free schedule after work. William prefers dinners because William prefers not to break up the work day by traveling somewhere after lunch.",
+    "first_actual": "The <strong>first time</strong> Matt and William got a meal together, they got dinner on Wednesday at 7pm.",
+    "second_actual": "They <strong>second time</strong> Matt and William got a meal together, they got dinner on Wednesday at 7pm.",
+    "annoyed": "After the second time, how annoyed did Matt feel about the social interaction with William?",
+    "satisfied": "After the second time, how satisfied did Matt feel about the outcome of the social interaction with William?"
+  },
+  {
+    "story": "scheduling",
+    "altruistic_status_second": "equal",
+    "strategy": "repeating",
+    "vignette": "Consider Matt and William, who like to go to an Italian restaurant near their workplace. <strong>Matt and William are in a relationship where Matt has equal power, status, or influence as William.</strong> Scheduling-wise, Matt prefers lunches, because Matt likes to have a free schedule after work. William prefers dinners because William prefers not to break up the work day by traveling somewhere after lunch.",
+    "first_actual": "The <strong>first time</strong> Matt and William got a meal together, they got dinner on Wednesday at 7pm.",
+    "second_actual": "They <strong>second time</strong> Matt and William got a meal together, they got dinner on Wednesday at 7pm.",
+    "annoyed": "After the second time, how annoyed did Matt feel about the social interaction with William?",
+    "satisfied": "After the second time, how satisfied did Matt feel about the outcome of the social interaction with William?"
+  },
+  {
+    "story": "scheduling",
+    "altruistic_status_second": "less",
+    "strategy": "repeating",
+    "vignette": "Consider Matt and William, who like to go to an Italian restaurant near their workplace. <strong>Matt and William are in a relationship where Matt has less power, status, or influence than William.</strong> Scheduling-wise, Matt prefers lunches, because Matt likes to have a free schedule after work. William prefers dinners because William prefers not to break up the work day by traveling somewhere after lunch.",
+    "first_actual": "The <strong>first time</strong> Matt and William got a meal together, they got dinner on Wednesday at 7pm.",
+    "second_actual": "They <strong>second time</strong> Matt and William got a meal together, they got dinner on Wednesday at 7pm.",
+    "annoyed": "After the second time, how annoyed did Matt feel about the social interaction with William?",
+    "satisfied": "After the second time, how satisfied did Matt feel about the outcome of the social interaction with William?"
+  },
+  {
+    "story": "scheduling",
+    "altruistic_status_second": "just_met",
+    "strategy": "repeating",
+    "vignette": "Consider Matt and William, who like to go to an Italian restaurant near their workplace. <strong>Matt and William have just met for the first time.</strong> Scheduling-wise, Matt prefers lunches, because Matt likes to have a free schedule after work. William prefers dinners because William prefers not to break up the work day by traveling somewhere after lunch.",
+    "first_actual": "The <strong>first time</strong> Matt and William got a meal together, they got dinner on Wednesday at 7pm.",
+    "second_actual": "They <strong>second time</strong> Matt and William got a meal together, they got dinner on Wednesday at 7pm.",
+    "annoyed": "After the second time, how annoyed did Matt feel about the social interaction with William?",
+    "satisfied": "After the second time, how satisfied did Matt feel about the outcome of the social interaction with William?"
+  },
+  {
+    "story": "scheduling",
+    "altruistic_status_second": "more",
+    "strategy": "alternating",
+    "vignette": "Consider Matt and William, who like to go to an Italian restaurant near their workplace. <strong>Matt and William are in a relationship where Matt has more power, status, or influence than William.</strong> Scheduling-wise, Matt prefers lunches, because Matt likes to have a free schedule after work. William prefers dinners because William prefers not to break up the work day by traveling somewhere after lunch.",
+    "first_actual": "The <strong>first time</strong> Matt and William got a meal together, they got lunch on Wednesday at 12pm.",
+    "second_actual": "They <strong>second time</strong> Matt and William got a meal together, they got dinner on Wednesday at 7pm.",
+    "annoyed": "After the second time, how annoyed did Matt feel about the social interaction with William?",
+    "satisfied": "After the second time, how satisfied did Matt feel about the outcome of the social interaction with William?"
+  },
+  {
+    "story": "scheduling",
+    "altruistic_status_second": "equal",
+    "strategy": "alternating",
+    "vignette": "Consider Matt and William, who like to go to an Italian restaurant near their workplace. <strong>Matt and William are in a relationship where Matt has equal power, status, or influence as William.</strong> Scheduling-wise, Matt prefers lunches, because Matt likes to have a free schedule after work. William prefers dinners because William prefers not to break up the work day by traveling somewhere after lunch.",
+    "first_actual": "The <strong>first time</strong> Matt and William got a meal together, they got lunch on Wednesday at 12pm.",
+    "second_actual": "They <strong>second time</strong> Matt and William got a meal together, they got dinner on Wednesday at 7pm.",
+    "annoyed": "After the second time, how annoyed did Matt feel about the social interaction with William?",
+    "satisfied": "After the second time, how satisfied did Matt feel about the outcome of the social interaction with William?"
+  },
+  {
+    "story": "scheduling",
+    "altruistic_status_second": "less",
+    "strategy": "alternating",
+    "vignette": "Consider Matt and William, who like to go to an Italian restaurant near their workplace. <strong>Matt and William are in a relationship where Matt has less power, status, or influence than William.</strong> Scheduling-wise, Matt prefers lunches, because Matt likes to have a free schedule after work. William prefers dinners because William prefers not to break up the work day by traveling somewhere after lunch.",
+    "first_actual": "The <strong>first time</strong> Matt and William got a meal together, they got lunch on Wednesday at 12pm.",
+    "second_actual": "They <strong>second time</strong> Matt and William got a meal together, they got dinner on Wednesday at 7pm.",
+    "annoyed": "After the second time, how annoyed did Matt feel about the social interaction with William?",
+    "satisfied": "After the second time, how satisfied did Matt feel about the outcome of the social interaction with William?"
+  },
+  {
+    "story": "scheduling",
+    "altruistic_status_second": "just_met",
+    "strategy": "alternating",
+    "vignette": "Consider Matt and William, who like to go to an Italian restaurant near their workplace. <strong>Matt and William have just met for the first time.</strong> Scheduling-wise, Matt prefers lunches, because Matt likes to have a free schedule after work. William prefers dinners because William prefers not to break up the work day by traveling somewhere after lunch.",
+    "first_actual": "The <strong>first time</strong> Matt and William got a meal together, they got lunch on Wednesday at 12pm.",
+    "second_actual": "They <strong>second time</strong> Matt and William got a meal together, they got dinner on Wednesday at 7pm.",
+    "annoyed": "After the second time, how annoyed did Matt feel about the social interaction with William?",
+    "satisfied": "After the second time, how satisfied did Matt feel about the outcome of the social interaction with William?"
+  },
+  {
+    "story": "babysitting",
+    "altruistic_status_second": "more",
+    "strategy": "repeating",
+    "vignette": "Consider Ryan and John, who both have two children under 10 years old. <strong>John and Ryan are in a relationship where John has more power, status, or influence than Ryan.</strong>",
+    "first_actual": "The <strong>first time</strong> one of them volunteered to watch the other's children, Ryan dropped his children off at John's house, where John volunteered to watch Ryan's children so Ryan could have a date night.",
+    "second_actual": "The <strong>second time</strong> one of them volunteered to watch the other's children, Ryan dropped his children off at John's house, where John volunteered to watch Ryan's children so Ryan could have a date night.",
+    "annoyed": "After the second time, how annoyed did John feel about the social interaction with Ryan?",
+    "satisfied": "After the second time, how satisfied did John feel about the outcome of the social interaction with Ryan?"
+  },
+  {
+    "story": "babysitting",
+    "altruistic_status_second": "equal",
+    "strategy": "repeating",
+    "vignette": "Consider Ryan and John, who both have two children under 10 years old. <strong>John and Ryan are in a relationship where John has equal power, status, or influence as Ryan.</strong>",
+    "first_actual": "The <strong>first time</strong> one of them volunteered to watch the other's children, Ryan dropped his children off at John's house, where John volunteered to watch Ryan's children so Ryan could have a date night.",
+    "second_actual": "The <strong>second time</strong> one of them volunteered to watch the other's children, Ryan dropped his children off at John's house, where John volunteered to watch Ryan's children so Ryan could have a date night.",
+    "annoyed": "After the second time, how annoyed did John feel about the social interaction with Ryan?",
+    "satisfied": "After the second time, how satisfied did John feel about the outcome of the social interaction with Ryan?"
+  },
+  {
+    "story": "babysitting",
+    "altruistic_status_second": "less",
+    "strategy": "repeating",
+    "vignette": "Consider Ryan and John, who both have two children under 10 years old. <strong>John and Ryan are in a relationship where John has less power, status, or influence than Ryan.</strong>",
+    "first_actual": "The <strong>first time</strong> one of them volunteered to watch the other's children, Ryan dropped his children off at John's house, where John volunteered to watch Ryan's children so Ryan could have a date night.",
+    "second_actual": "The <strong>second time</strong> one of them volunteered to watch the other's children, Ryan dropped his children off at John's house, where John volunteered to watch Ryan's children so Ryan could have a date night.",
+    "annoyed": "After the second time, how annoyed did John feel about the social interaction with Ryan?",
+    "satisfied": "After the second time, how satisfied did John feel about the outcome of the social interaction with Ryan?"
+  },
+  {
+    "story": "babysitting",
+    "altruistic_status_second": "just_met",
+    "strategy": "repeating",
+    "vignette": "Consider Ryan and John, who both have two children under 10 years old. <strong>John and Ryan have just met for the first time.</strong>",
+    "first_actual": "The <strong>first time</strong> one of them volunteered to watch the other's children, Ryan dropped his children off at John's house, where John volunteered to watch Ryan's children so Ryan could have a date night.",
+    "second_actual": "The <strong>second time</strong> one of them volunteered to watch the other's children, Ryan dropped his children off at John's house, where John volunteered to watch Ryan's children so Ryan could have a date night.",
+    "annoyed": "After the second time, how annoyed did John feel about the social interaction with Ryan?",
+    "satisfied": "After the second time, how satisfied did John feel about the outcome of the social interaction with Ryan?"
+  },
+  {
+    "story": "babysitting",
+    "altruistic_status_second": "more",
+    "strategy": "alternating",
+    "vignette": "Consider Ryan and John, who both have two children under 10 years old. <strong>John and Ryan are in a relationship where John has more power, status, or influence than Ryan.</strong>",
+    "first_actual": "The <strong>first time</strong> one of them volunteered to watch the other's children, John dropped his children off at Ryan's house, where Ryan volunteered to watch John's children so John could have a date night.",
+    "second_actual": "The <strong>second time</strong> one of them volunteered to watch the other's children, Ryan dropped his children off at John's house, where John volunteered to watch Ryan's children so Ryan could have a date night.",
+    "annoyed": "After the second time, how annoyed did John feel about the social interaction with Ryan?",
+    "satisfied": "After the second time, how satisfied did John feel about the outcome of the social interaction with Ryan?"
+  },
+  {
+    "story": "babysitting",
+    "altruistic_status_second": "equal",
+    "strategy": "alternating",
+    "vignette": "Consider Ryan and John, who both have two children under 10 years old. <strong>John and Ryan are in a relationship where John has equal power, status, or influence as Ryan.</strong>",
+    "first_actual": "The <strong>first time</strong> one of them volunteered to watch the other's children, John dropped his children off at Ryan's house, where Ryan volunteered to watch John's children so John could have a date night.",
+    "second_actual": "The <strong>second time</strong> one of them volunteered to watch the other's children, Ryan dropped his children off at John's house, where John volunteered to watch Ryan's children so Ryan could have a date night.",
+    "annoyed": "After the second time, how annoyed did John feel about the social interaction with Ryan?",
+    "satisfied": "After the second time, how satisfied did John feel about the outcome of the social interaction with Ryan?"
+  },
+  {
+    "story": "babysitting",
+    "altruistic_status_second": "less",
+    "strategy": "alternating",
+    "vignette": "Consider Ryan and John, who both have two children under 10 years old. <strong>John and Ryan are in a relationship where John has less power, status, or influence than Ryan.</strong>",
+    "first_actual": "The <strong>first time</strong> one of them volunteered to watch the other's children, John dropped his children off at Ryan's house, where Ryan volunteered to watch John's children so John could have a date night.",
+    "second_actual": "The <strong>second time</strong> one of them volunteered to watch the other's children, Ryan dropped his children off at John's house, where John volunteered to watch Ryan's children so Ryan could have a date night.",
+    "annoyed": "After the second time, how annoyed did John feel about the social interaction with Ryan?",
+    "satisfied": "After the second time, how satisfied did John feel about the outcome of the social interaction with Ryan?"
+  },
+  {
+    "story": "babysitting",
+    "altruistic_status_second": "just_met",
+    "strategy": "alternating",
+    "vignette": "Consider Ryan and John, who both have two children under 10 years old. <strong>John and Ryan have just met for the first time.</strong>",
+    "first_actual": "The <strong>first time</strong> one of them volunteered to watch the other's children, John dropped his children off at Ryan's house, where Ryan volunteered to watch John's children so John could have a date night.",
+    "second_actual": "The <strong>second time</strong> one of them volunteered to watch the other's children, Ryan dropped his children off at John's house, where John volunteered to watch Ryan's children so Ryan could have a date night.",
+    "annoyed": "After the second time, how annoyed did John feel about the social interaction with Ryan?",
+    "satisfied": "After the second time, how satisfied did John feel about the outcome of the social interaction with Ryan?"
+  },
+  {
+    "story": "fundraising",
+    "altruistic_status_second": "more",
+    "strategy": "repeating",
+    "vignette": "Consider Caroline and Bella, who both run races for charity, and have to raise money for their charity to enter the race. <strong>Caroline and Bella are in a relationship where Caroline has more power, status, or influence than Bella.</strong>",
+    "first_actual": "The <strong>first time</strong> they ran a race and fundraised together, Caroline took the lead on the advertising and fundraising, contacting and following up with her friends to ask them if they would like to donate to their charity.",
+    "second_actual": "The <strong>second time</strong> they ran a race and fundraised together, Caroline took the lead on the advertising and fundraising, contacting and following up with her friends to ask them if they would like to donate to their charity.",
+    "annoyed": "After the second time, how annoyed did Caroline feel about the social interaction with Bella?",
+    "satisfied": "After the second time, how satisfied did Caroline feel about the outcome of the social interaction with Bella?"
+  },
+  {
+    "story": "fundraising",
+    "altruistic_status_second": "equal",
+    "strategy": "repeating",
+    "vignette": "Consider Caroline and Bella, who both run races for charity, and have to raise money for their charity to enter the race. <strong>Caroline and Bella are in a relationship where Caroline has equal power, status, or influence as Bella.</strong>",
+    "first_actual": "The <strong>first time</strong> they ran a race and fundraised together, Caroline took the lead on the advertising and fundraising, contacting and following up with her friends to ask them if they would like to donate to their charity.",
+    "second_actual": "The <strong>second time</strong> they ran a race and fundraised together, Caroline took the lead on the advertising and fundraising, contacting and following up with her friends to ask them if they would like to donate to their charity.",
+    "annoyed": "After the second time, how annoyed did Caroline feel about the social interaction with Bella?",
+    "satisfied": "After the second time, how satisfied did Caroline feel about the outcome of the social interaction with Bella?"
+  },
+  {
+    "story": "fundraising",
+    "altruistic_status_second": "less",
+    "strategy": "repeating",
+    "vignette": "Consider Caroline and Bella, who both run races for charity, and have to raise money for their charity to enter the race. <strong>Caroline and Bella are in a relationship where Caroline has less power, status, or influence than Bella.</strong>",
+    "first_actual": "The <strong>first time</strong> they ran a race and fundraised together, Caroline took the lead on the advertising and fundraising, contacting and following up with her friends to ask them if they would like to donate to their charity.",
+    "second_actual": "The <strong>second time</strong> they ran a race and fundraised together, Caroline took the lead on the advertising and fundraising, contacting and following up with her friends to ask them if they would like to donate to their charity.",
+    "annoyed": "After the second time, how annoyed did Caroline feel about the social interaction with Bella?",
+    "satisfied": "After the second time, how satisfied did Caroline feel about the outcome of the social interaction with Bella?"
+  },
+  {
+    "story": "fundraising",
+    "altruistic_status_second": "just_met",
+    "strategy": "repeating",
+    "vignette": "Consider Caroline and Bella, who both run races for charity, and have to raise money for their charity to enter the race. <strong>Caroline and Bella have just met for the first time.</strong>",
+    "first_actual": "The <strong>first time</strong> they ran a race and fundraised together, Caroline took the lead on the advertising and fundraising, contacting and following up with her friends to ask them if they would like to donate to their charity.",
+    "second_actual": "The <strong>second time</strong> they ran a race and fundraised together, Caroline took the lead on the advertising and fundraising, contacting and following up with her friends to ask them if they would like to donate to their charity.",
+    "annoyed": "After the second time, how annoyed did Caroline feel about the social interaction with Bella?",
+    "satisfied": "After the second time, how satisfied did Caroline feel about the outcome of the social interaction with Bella?"
+  },
+  {
+    "story": "fundraising",
+    "altruistic_status_second": "more",
+    "strategy": "alternating",
+    "vignette": "Consider Caroline and Bella, who both run races for charity, and have to raise money for their charity to enter the race. <strong>Caroline and Bella are in a relationship where Caroline has more power, status, or influence than Bella.</strong>",
+    "first_actual": "The <strong>first time</strong> they ran a race and fundraised together, Bella took the lead on the advertising and fundraising, contacting and following up with her friends to ask them if they would like to donate to their charity.",
+    "second_actual": "The <strong>second time</strong> they ran a race and fundraised together, Caroline took the lead on the advertising and fundraising, contacting and following up with her friends to ask them if they would like to donate to their charity.",
+    "annoyed": "After the second time, how annoyed did Caroline feel about the social interaction with Bella?",
+    "satisfied": "After the second time, how satisfied did Caroline feel about the outcome of the social interaction with Bella?"
+  },
+  {
+    "story": "fundraising",
+    "altruistic_status_second": "equal",
+    "strategy": "alternating",
+    "vignette": "Consider Caroline and Bella, who both run races for charity, and have to raise money for their charity to enter the race. <strong>Caroline and Bella are in a relationship where Caroline has equal power, status, or influence as Bella.</strong>",
+    "first_actual": "The <strong>first time</strong> they ran a race and fundraised together, Bella took the lead on the advertising and fundraising, contacting and following up with her friends to ask them if they would like to donate to their charity.",
+    "second_actual": "The <strong>second time</strong> they ran a race and fundraised together, Caroline took the lead on the advertising and fundraising, contacting and following up with her friends to ask them if they would like to donate to their charity.",
+    "annoyed": "After the second time, how annoyed did Caroline feel about the social interaction with Bella?",
+    "satisfied": "After the second time, how satisfied did Caroline feel about the outcome of the social interaction with Bella?"
+  },
+  {
+    "story": "fundraising",
+    "altruistic_status_second": "less",
+    "strategy": "alternating",
+    "vignette": "Consider Caroline and Bella, who both run races for charity, and have to raise money for their charity to enter the race. <strong>Caroline and Bella are in a relationship where Caroline has less power, status, or influence than Bella.</strong>",
+    "first_actual": "The <strong>first time</strong> they ran a race and fundraised together, Bella took the lead on the advertising and fundraising, contacting and following up with her friends to ask them if they would like to donate to their charity.",
+    "second_actual": "The <strong>second time</strong> they ran a race and fundraised together, Caroline took the lead on the advertising and fundraising, contacting and following up with her friends to ask them if they would like to donate to their charity.",
+    "annoyed": "After the second time, how annoyed did Caroline feel about the social interaction with Bella?",
+    "satisfied": "After the second time, how satisfied did Caroline feel about the outcome of the social interaction with Bella?"
+  },
+  {
+    "story": "fundraising",
+    "altruistic_status_second": "just_met",
+    "strategy": "alternating",
+    "vignette": "Consider Caroline and Bella, who both run races for charity, and have to raise money for their charity to enter the race. <strong>Caroline and Bella have just met for the first time.</strong>",
+    "first_actual": "The <strong>first time</strong> they ran a race and fundraised together, Bella took the lead on the advertising and fundraising, contacting and following up with her friends to ask them if they would like to donate to their charity.",
+    "second_actual": "The <strong>second time</strong> they ran a race and fundraised together, Caroline took the lead on the advertising and fundraising, contacting and following up with her friends to ask them if they would like to donate to their charity.",
+    "annoyed": "After the second time, how annoyed did Caroline feel about the social interaction with Bella?",
+    "satisfied": "After the second time, how satisfied did Caroline feel about the outcome of the social interaction with Bella?"
+  }
+]

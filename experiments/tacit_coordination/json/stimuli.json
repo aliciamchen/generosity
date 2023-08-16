@@ -610,10 +610,10 @@
     "first_meeting": "alice",
     "vignette": "Consider Ethan and Benjamin, who work at the same Boston-area nonprofit. <strong>Ethan and Benjamin are in a relationship where Ethan has more power, status, or influence than Benjamin.</strong> They meet every week, at either Ethan's office or Benjamin's office.",
     "first_actual": "Ethan walked to Benjamin’s office.",
-    "first_q": "The first time Taylor and Samantha interacted at the workshop, who gave feedback on the other's work?",
+    "first_q": "The first time Ethan and Benjamin met, who walked to whose office?",
     "alice": "Ethan walked to Benjamin’s office.",
     "bob": "Benjamin walked to Ethan’s office.",
-    "second_q": "The second time Taylor and Samantha interacted at the workshop, who gave feedback on the other's work?"
+    "second_q": "The second time Ethan and Benjamin met, who walked to whose office?"
   },
   {
     "story": "meeting location",
@@ -942,7 +942,7 @@
     "first_actual": "Abby and Evelyn woke up early both days to do intense outdoor activities.",
     "first_q": "The first time Abby and Evelyn spent the weekend together, what did they do?",
     "alice": "Abby and Evelyn woke up early both days to do intense outdoor activities.",
-    "bob": "Abby and Evelyn woke up early both days to sleep in, get brunch, and walk around the city.",
+    "bob": "Abby and Evelyn slept, in, got brunch, and walked around the city.",
     "second_q": "The second time Abby and Evelyn spent the weekend together, what did they do?"
   },
   {
@@ -953,7 +953,7 @@
     "first_actual": "Abby and Evelyn woke up early both days to do intense outdoor activities.",
     "first_q": "The first time Abby and Evelyn spent the weekend together, what did they do?",
     "alice": "Abby and Evelyn woke up early both days to do intense outdoor activities.",
-    "bob": "Abby and Evelyn woke up early both days to sleep in, get brunch, and walk around the city.",
+    "bob": "Abby and Evelyn slept, in, got brunch, and walked around the city.",
     "second_q": "The second time Abby and Evelyn spent the weekend together, what did they do?"
   },
   {
@@ -964,7 +964,7 @@
     "first_actual": "Abby and Evelyn woke up early both days to do intense outdoor activities.",
     "first_q": "The first time Abby and Evelyn spent the weekend together, what did they do?",
     "alice": "Abby and Evelyn woke up early both days to do intense outdoor activities.",
-    "bob": "Abby and Evelyn woke up early both days to sleep in, get brunch, and walk around the city.",
+    "bob": "Abby and Evelyn slept, in, got brunch, and walked around the city.",
     "second_q": "The second time Abby and Evelyn spent the weekend together, what did they do?"
   },
   {
@@ -972,10 +972,10 @@
     "altruistic_status": "more",
     "first_meeting": "bob",
     "vignette": "Consider Abby and Evelyn, who both generally have their weekends free. <strong>Evelyn and Abby are in a relationship where Abby has more power, status, or influence than Evelyn.</strong> Abby prefers waking up early to do intense outdoor activities, while Evelyn prefers sleeping in, getting brunch, and walking around the city.",
-    "first_actual": "Abby and Evelyn woke up early both days to sleep in, get brunch, and walk around the city.",
+    "first_actual": "Abby and Evelyn slept, in, got brunch, and walked around the city.",
     "first_q": "The first time Abby and Evelyn spent the weekend together, what did they do?",
     "alice": "Abby and Evelyn woke up early both days to do intense outdoor activities.",
-    "bob": "Abby and Evelyn woke up early both days to sleep in, get brunch, and walk around the city.",
+    "bob": "Abby and Evelyn slept, in, got brunch, and walked around the city.",
     "second_q": "The second time Abby and Evelyn spent the weekend together, what did they do?"
   },
   {
@@ -983,10 +983,10 @@
     "altruistic_status": "equal",
     "first_meeting": "bob",
     "vignette": "Consider Abby and Evelyn, who both generally have their weekends free. <strong>Evelyn and Abby are in a relationship where Abby has equal power, status, or influence as Evelyn.</strong> Abby prefers waking up early to do intense outdoor activities, while Evelyn prefers sleeping in, getting brunch, and walking around the city.",
-    "first_actual": "Abby and Evelyn woke up early both days to sleep in, get brunch, and walk around the city.",
+    "first_actual": "Abby and Evelyn slept, in, got brunch, and walked around the city.",
     "first_q": "The first time Abby and Evelyn spent the weekend together, what did they do?",
     "alice": "Abby and Evelyn woke up early both days to do intense outdoor activities.",
-    "bob": "Abby and Evelyn woke up early both days to sleep in, get brunch, and walk around the city.",
+    "bob": "Abby and Evelyn slept, in, got brunch, and walked around the city.",
     "second_q": "The second time Abby and Evelyn spent the weekend together, what did they do?"
   },
   {
@@ -994,10 +994,10 @@
     "altruistic_status": "less",
     "first_meeting": "bob",
     "vignette": "Consider Abby and Evelyn, who both generally have their weekends free. <strong>Evelyn and Abby are in a relationship where Abby has less power, status, or influence than Evelyn.</strong> Abby prefers waking up early to do intense outdoor activities, while Evelyn prefers sleeping in, getting brunch, and walking around the city.",
-    "first_actual": "Abby and Evelyn woke up early both days to sleep in, get brunch, and walk around the city.",
+    "first_actual": "Abby and Evelyn slept, in, got brunch, and walked around the city.",
     "first_q": "The first time Abby and Evelyn spent the weekend together, what did they do?",
     "alice": "Abby and Evelyn woke up early both days to do intense outdoor activities.",
-    "bob": "Abby and Evelyn woke up early both days to sleep in, get brunch, and walk around the city.",
+    "bob": "Abby and Evelyn slept, in, got brunch, and walked around the city.",
     "second_q": "The second time Abby and Evelyn spent the weekend together, what did they do?"
   },
   {
