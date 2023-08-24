@@ -1,0 +1,30 @@
+subject_id,time_elapsed,gender,age,understood,pass_attention,comments
+55b6ed4afdf99b437183fa6f,1377763,female,50,yes,True,            
+56ec2213388e1d000a5960c2,1064929,male,41,yes,True,            
+58ae59babb9e0f0001acb414,742885,male,20,yes,True,            
+58d9a79c33fef3000118abdf,571839,male,34,yes,True,            
+5c47cab451c26300012cdd41,1638440,female,45,yes,True,            
+5c9ebf067114700016da2813,968515,male,31,yes,True,            
+5cea73210b20970001acee5f,1466913,female,39,yes,True,            
+5d166f8340218700169a0814,890620,male,25,yes,True,no comments or suggestions     
+5d7850851841fc0001e9c64d,369088,female,33,yes,True,            
+5e31c4596ef37a1ab34f4454,603097,female,51,yes,True,       none     
+5ec9cf3ed4642d4ebb802b42,549414,male,55,yes,True,            
+5ecf52cd61786437829c527f,329564,female,33,yes,True,            
+5f4e077fdec6ab09c3cf3d88,846609,male,20,yes,True,            
+605776c7ffd8cb64476fc73f,414513,female,41,yes,True,            
+608f377a1d065fa7240de113,601817,male,28,yes,True,            
+60c701efc22d9a81c8003de7,634436,female,51,yes,True,            
+60ce10a00e94f4536eb3173e,463592,male,22,yes,True,       good     
+60ed200c728ab881912aac11,1155555,female,33,yes,True,            
+60fb264b9630580cb9a48380,676975,male,26,yes,True,            
+60fdbfca9d0cf6294320f469,1098980,female,32,yes,False,            no thanks
+6122bff4706b6d848da00ec1,2000738,female,26,yes,True,        N/A    
+62938ad3a68699aa5fa14ce3,635868,male,38,yes,True,            
+62da0d692b89efcaba51846d,1509260,male,31,yes,True,I thought this was a fun study and I enjoyed it a lot. Thank you for the opportunity.
+62f32d1cd0736183ffe64dc7,2481224,nonconforming,21,yes,False,            im sorry i clicked the last question when i was supposed to click obilgatory instead of the middle answer im not a bot
+631b822619211df6b4180d50,533417,female,39,yes,True,            
+63ba25bb25f0eaa06fb86740,1163450,female,27,yes,True,            
+63cff34d33a9948e3b0b28d6,337738,male,30,yes,True,            
+63db49b4969069441bc68182,1298520,male,56,yes,True,            
+63df06a8c5ac5f3c6bf77e6f,369996,female,56,yes,True,            

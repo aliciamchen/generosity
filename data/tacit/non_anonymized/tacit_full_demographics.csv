@@ -1,119 +1,121 @@
-subject_id,time_elapsed,gender,age,understood,comments
-5484949efdf99b0379939cc6,1072902,male,38,yes,            
-559c3ad8fdf99b32b55f2d32,1223718,female,47,yes,            
-565bff58c121fe0005fc390d,1672913,female,43,yes,            None
-569916e4b0e16500050131b4,878962,male,64,yes,            
-5727e394c68b5a000e397d8c,2323631,male,38,yes,            
-57b560e4a18afd00013e0579,743195,female,48,yes,            
-57d02ffb596f5d0001df741f,899772,male,34,yes,          None. Thank you.  
-585716b522a6220001da6cb4,422019,male,44,yes,            
-58752fed445a5f00019b4a3f,850075,male,24,yes,            
-58c518d7b101a70001293900,640805,male,39,yes,            
-5930c7fdfa699e0001017cc1,851042,male,35,yes,            
-593f819f0ab1bd00019fd63d,1235897,female,44,yes,            
-5a4a7bed1950a80001e7d3d5,608113,female,36,yes,            
-5b0b8252e9270900013ba88f,961395,female,53,yes,            
-5ba1aa86517ed100019449ac,682552,female,35,yes,"On the Ben scenario there is a typo, it has the wrong names listed so it was a bit confusing.        "
-5bdb5e785e77d9000147e94d,1455871,female,56,yes,            thank you
-5bf4f905345b9b00016eda45,750747,male,33,yes,            Not really.
-5c0fdcfd3481220001de3039,1181253,female,57,yes,            no
-5c239f96da51990001e21d97,935236,male,76,yes,            
-5c2a9b55867f660001af0515,748963,male,34,yes,            No comments.
-5c52f898110c55000144bf18,781867,female,41,yes,            N/A
-5d295e07d3edf9001a801625,1269898,female,54,yes,            
-5d3cc9010e510a00013df6f6,450799,male,24,yes,            
-5d40616adfc847001a604314,436119,male,32,yes,            
-5d4c57f398b7a800018eb77a,936858,female,35,yes,            
-5d5035c5d87393001af70561,530129,female,55,yes,            n/a
-5d58b018a0c0940001a47057,1867303,female,48,yes,           
-5d5c4a4274abca000158631b,512187,female,50,yes,            
-5d698b40a2440e000196912b,3822272,female,28,yes,            
-5d6e502d05e693001ea14a37,697356,male,59,yes,            
-5d8b68e5140c8a00173dbb26,725148,male,23,yes,            nope
-5d9a90db9fcbb7032d1bbe62,443955,male,36,yes,            
-5db598f48cf15c000b57eb36,550648,female,30,yes,            
-5dcc3ec7db13278d75c8622f,951566,female,38,yes,            
-5dd340e3e25acf34bf91032e,1002532,male,58,yes,            
-5dd45741e454cd4505d57477,927440,female,52,yes,            
-5dd6a565f30aa662cba3d8de,654126,male,39,yes,            
-5de9569d5c340f05d554fbeb,564233,male,27,yes,            
-5deaa726df55eb1cc1b9474f,846080,male,68,yes,            No
-5df5174fb1f22238259d486b,722818,female,34,yes,            I got several of the first time scenarios wrong because I was thinking of it more along the lines that the person with less power would be made to do the bulk of the work. 
-5e0a4154deea2b2c63fb1062,818558,female,51,yes,            
-5e32454e441956226b50d5dc,678663,female,26,yes,n/a
-5e378948cd9d1670b2b86a51,2788176,male,39,yes,    no comment    
-5e46f51bc3298c1bf813a984,1105261,male,25,yes,            
-5e5e5b2488479216d9171d1b,579242,female,58,yes,            none
-5ea3442e0db9862b6f42935d,1139461,female,66,yes,            
-5ec47b2d91b37736ce88f3d6,778776,male,27,yes,           N/A 
-5ed5afc6e8229914710ada06,805946,female,24,yes,            
-5ee6d6e22472a0463a271bd8,1027198,female,63,yes,            
-5efe5679c3d6bf16d5af6ba6,881034,male,47,yes,            
-5f033adcd2fab64efd3502d2,557347,male,39,yes,            
-5f4692f3b035470116694a35,861256,male,22,yes,            
-5f494c1ba043204912fb6be1,748000,female,30,yes,       None     
-5f63d462fb4c4713b69d4bb7,605506,male,26,yes,Everything was easy to understand and answer thank you!
-5f820deb48cf2a31b3c31f21,493104,female,36,yes,            One on the questions said they woke up early to sleep in- that's not possible.
-5f90581950d8520e8c7d3890,1008722,male,32,yes,            
-5fa2cc2b3e219f50614c063a,2413657,female,22,yes,            
-5fa86899f519ba6f291dbf41,643660,male,35,yes,            
-5fa9fffcf843322ce7456283,884629,male,20,yes,          n/a  
-600b034b4b8e6501e23eddfd,1177866,female,30,yes,            
-602c7d31733e6a57dda83b9d,452182,male,49,yes,            no
-605399bd9b612f585a9f8412,531824,female,26,yes,            
-605c4e16d1854981a801c6e0,701410,male,22,yes,            
-6095904b3fb937367c62813a,584442,male,38,yes,            
-60a43a15a4fd5c478172115f,1336743,female,76,yes,            
-60fcc7bc1cb27f1770cc7ad9,1105583,female,22,yes,            
-60fd039e56424472d825f1e5,850261,female,22,yes,            
-60fd63348951a954e123762a,304287,female,28,yes,            
-60fd772e3e1dd6055c9c11bc,676033,female,34,yes,            
-60fdc00564398d684985cd61,795234,female,37,yes,        interesting!     
-61008ec4fb538633a2c38cc0,585321,female,25,yes,            
-6103111c9497e2cabb379cbe,1446142,male,20,yes,            
-61076d7ce18795a35ebb67b5,2199187,male,25,yes,            
-610790e286844c36e02f906c,1452298,female,29,yes,            
-61080e427da5813c9ecceae1,568077,female,34,yes,            
-610838248aa1f186a7bbe41c,906944,female,54,yes, this was an interesting study.  I used previous answers to guide my choices            
-610857292a7b8f8da7f6bb4d,1006181,female,27,yes,            
-6108681f9a9d64d888b9addb,724111,female,21,yes,            
-611118b967515e93dcf141f1,698795,male,22,yes,"Just now realizing that I interpreted, ""relationship,"" specifically as a romantic one... so- lots of same-sex romantic relationships.            "
-611184f7c69ca64368ff48d3,609939,female,22,yes,            
-61156cab775e1f9e2c3a4bfa,2144383,female,27,yes,            
-611ab91a00baa062f55b86d8,844808,female,23,yes,            
-613181d8ec159cf063be3554,326367,male,19,yes,            
-6138c15bd47ecca8b56a704f,1803591,female,33,yes,I enjoyed working on the survey.
-6138f7e0ad42e592ca5f2024,1304793,male,35,yes,no comments.
-6157d22b9998f96a77f41567,600990,female,54,yes,            The very first scenario I think was between 2 guys but the info in the box was on Taylor and someone else--and that was a scenario that came later (the writers one). So it appears the wrong prompt was in that box for the first scenario. 
-6158cd25533cca75a4429fc9,1184162,male,53,yes,Thank You.     
-615dd0b0a024ba4f4b4f7c24,2660701,female,44,yes,No
-622a11c552b2b35bab72a39c,777133,male,63,yes,            
-623666be98139b323ce77f86,1606120,female,47,yes,            
-626805a1a733f39a611c7064,1162735,male,52,yes,"I think there was a typo on one question, which had an answer that did not make sense - it said ""they woke up early so they could sleep in, etc etc"". Not sure if that was intentional or not.       "
-6290c772938bc3b286388004,1177090,male,35,yes,            
-62911ef14fd68295d60ba83b,1370685,male,30,yes,            
-629123291e21f234a2c06705,1197407,male,35,yes,            
-62979d6078be475dbbcb0149,1087689,female,64,yes,            it was different
-62b09ec786f3ae29c826601f,602265,male,26,yes,            none thank you for this opportunity
-62b33e2a447824fbd0770025,656895,female,26,yes,            
-62bb2aab9ab9a9f782859359,485318,female,29,yes,            
-62d21564841b1b1402caefc4,615051,male,24,yes,            None
-62f57b03f56513c58f1cf1d1,1992118,male,27,yes,        n/a    
-62f81bd31e8faa5b87e6ddb8,670933,female,23,yes,            
-63210b26bd58960c97b47ddc,1012592,male,33,yes,            N/A
-636212999d9d4a04989c95e9,772210,male,42,yes,            Very important experiment.
-636590165e6fcc3e84ee2b6d,1029698,male,47,yes,            no comments
-63d2094a50ed63bfb3b19fd4,1580515,male,42,yes,"            one scenario had the two ""woke up both days to sleep in"" which is worded strange. "
-63d2c192777fb7d26c001146,1281889,female,57,yes,            
-63d308ed4334af89e0661538,1286179,female,33,yes,            
-63d404f4eaf69448ef9e09e6,1057174,male,36,yes,"For the friends that spent the weekend together, was one of the options meant to be that they ""woke up later and slept in, walked around, etc."" instead of ""woke up earlier and slept in...""?"
-63d7a0c6fe36d852418ac97a,574819,female,25,yes,            
-63d82a2cbe548c32ab88cf6a,801603,male,36,yes,            
-63d9c4ea4b5efb771f895e11,934908,male,51,yes,    Interesting study!  Thank you      
-63ecf8c3796bf9efcf715050,570498,female,51,yes,            Thanks
-63f7816a0daa0e78f8659c78,608848,male,18,yes,            
-644af3263650e8dd9d942487,661002,male,53,yes,            
-644e757b60476ac7d5a7717a,879854,male,59,yes,"  There were some examples where reciprocity would be expected. The others, were a specific person would lead no matter what.          "
-645baff202a9482deefafab3,728311,male,38,yes,"Thank you, hope my answers helped your study.  "
-64722069e3f952447b20006c,920500,female,20,yes,            
-6476b68d90c09af88f39e1a5,1246787,female,65,yes,            
+subject_id,time_elapsed,gender,age,understood,pass_attention,comments
+559c1e28fdf99b2189ee807d,818335,female,55,yes,True,            
+5686e598369319000b268e63,1305815,male,39,yes,True,            
+56e2d87a0756b2000da6303d,643069,male,30,yes,True,            
+5722d02a74e7ff0013a6f051,567902,female,38,yes,True,            
+5758a211cb13810006479a0d,1527193,male,59,yes,True,            
+576017836442fa0006cfb7cd,1511095,female,53,yes,True,            
+57dd7528a0e8ce00015445fd,1759085,female,32,yes,True,            
+58064d91f25c440001678a10,861028,male,60,yes,True,            
+582c800ab56bfd00011fd586,818950,female,41,yes,True,            
+589a46af57995d0001a8a03a,1032106,female,43,yes,True,            
+58e98b8c41b9a700018d580b,603035,female,29,yes,True,            
+597b81f3de42bf000181db0b,1015047,male,41,yes,True,           No comments. 
+59ea4e1116ecc200016ff81e,1049005,male,34,yes,True,          None.   
+5a459ab2ee927b0001e1e1e2,796533,female,55,yes,True,            
+5a6f60e4efd3a7000120f057,1438656,female,34,yes,True,            
+5a6ff39ef660ae0001a9837e,373920,female,25,yes,True,            n/a
+5ac4c730f69e940001d977e1,1000352,male,29,yes,True,            none
+5af09ff00eca060001b1379c,1232405,female,52,yes,True,            
+5ba41c422d28760001a382e0,576192,female,29,yes,True,            
+5bc79ce8f653a50001ce430e,789164,female,35,yes,True,            N/A
+5be33a3fdd850e0001d2c600,3815104,female,45,yes,True,            no
+5bf311373a5bf00001401f64,780029,male,37,yes,True,      no comments      
+5c37db5fbef9a20001e3aee7,946704,male,23,yes,True,            
+5c37ecbfbef9a20001e3b0d9,383568,male,29,yes,True,            
+5c476621b521ee00019abf67,803684,female,64,yes,True,            
+5c958b7bd676900001e1a73b,784315,female,25,yes,True,            no comments 
+5cc7d0ec3ef93000171c9637,657731,female,40,yes,True,            
+5cd08e2ff59e0a0013563602,2414822,male,35,yes,True,            
+5d0a7c784cf0d90018b049c6,537393,female,26,yes,True,            
+5d163b2c601cd7000172713c,336928,male,30,yes,True,            
+5d30ec270334500019f10a91,585512,female,35,yes,True,            
+5d3116d2f623e900160b5a3d,952294,male,34,yes,True,My general line of thinking is that the one with more power generally gets their way if it is something work/responsibility related and things stay the same.  If they have equal power it balances back and forth and if it is something personal like watching each others kids then it would be a back and forth because those are personal favors and outside of the realm of work status or what have you.   
+5d57e3807d795e001988c034,821755,male,26,yes,True,         maybe variation for the questions. or person 1 > person 2   
+5d61547443c13200193ccb12,1703819,male,39,yes,True,            
+5d93b788fdfe9d001c00c255,472207,female,44,yes,True,            
+5d989a27b4d967001657580d,3018792,male,31,yes,True,            
+5dbddfb8a7b7bc306f4f5daa,874410,female,43,yes,True,            
+5dd00a19b51b3e103a6f50c8,1223502,female,50,yes,True,            
+5dd6d370194e486498e13ab6,891931,female,48,yes,True,            
+5ddae85b393bd3a44d7cbaaa,1039685,female,41,yes,True,            
+5e1b299528c70235eeed62ef,1929414,male,34,yes,False,            
+5e2b3e22a8f85318c2429121,904474,female,28,yes,True,            
+5e40a082f333ca2ec829e200,852878,female,34,yes,True,            
+5e41604a69052239b7739deb,626163,female,35,yes,True,            
+5e6734d8c93b304c33653171,664245,male,39,yes,True,            
+5e70e4309b339b03acc24159,568472,male,25,yes,True,           None 
+5e742af79064483aedad296c,1030825,male,51,yes,True,            
+5e89ce643ac81466c24cb5d8,764006,nonconforming,33,yes,True,            
+5e8a79496a7800724c1df04b,879011,male,20,yes,True,            
+5ea4c1cb7a313648ab349f3d,433993,male,40,yes,True,            
+5eb4d812d25d2534cacd8c68,2269794,female,25,yes,True,            
+5ed0091bd374190b9b04045d,1200691,male,31,yes,True,       I have no other comments.     
+5ee3fbb98976fc0f59fe2939,1575794,male,23,yes,True,            
+5eed8bec94fa2f1be77c189a,377927,female,27,yes,True,            
+5f4d1371c20934977e621ac3,714451,female,41,yes,True,            
+5f5c4b9c062e0f43a15ed050,898311,male,30,yes,True,            
+5f888877136ad50208b48b47,1311247,male,23,yes,True,            
+5faef7fc4c8b22101ada3d1f,328668,female,18,yes,False,            no
+5fbd057ea95c7102638685d5,1086795,female,30,yes,True,            
+5fc2c0cfdb80f9025c6b4810,2241125,female,33,yes,True,            no comments
+5fe821174cfb7d1f5b64e0c3,703422,male,22,yes,True,            
+5fee2749ad8fba1104bd0f5b,865221,female,35,yes,True,            Thank you for including a progress bar at the top. It always makes it easier for me to not rush or get frustrated by not knowing when the study will end.
+6060f15cdc1a3c002e38b9a4,592679,male,40,yes,True,            
+6068ed51ec587282cd341998,804003,male,33,yes,True,            
+608418128f63e731da705bf5,551932,female,46,yes,True,            
+6088c08b5db0d7af3daf4b69,3162141,female,42,yes,True,            
+60da00bc6e404d9b0a9f576f,927081,female,29,yes,True,            
+60ddc7abdf6661b9c294691f,285814,male,35,yes,True,            No
+60f71eb315abd11a590fda93,2448896,female,28,yes,True,            
+60fdb65690ed7b149bebd1ad,509535,female,28,yes,True,            
+60feba907cda681c2cf6cb07,558796,female,29,yes,True,            
+60ffa146784103f75aadb045,1527436,male,35,yes,True,      None      
+6101930ddd5330f83b898c61,457950,female,22,yes,True,            
+610327511cf145114daa0ab6,279072,male,36,yes,False,            
+6108179448042313112a0967,435365,female,27,yes,True,            
+61084d5606f7f1e9239785a2,653156,male,51,yes,True,            
+611d611769a71eb0469ffd6c,843801,female,23,yes,True,            
+61267e282a445af9eb95beae,847973,female,36,yes,True,            
+612d576fd75b6c46b4cefc6e,1001934,male,50,yes,True,            N/A
+612e1df9913c996adb2a42a6,2247826,female,65,yes,True,            
+613107a0c7fc3a96a54c7693,667849,male,29,yes,True,            
+613589ac6333693e1927fa76,960357,female,40,yes,True,            
+613a587c12eb153c16c310c2,1221092,female,34,yes,True,            
+6148c992c6bba7885c57750a,531617,male,25,yes,True,            
+6150b927614a4f154f311f9d,1996525,female,33,yes,True,Thank you
+615880a66bc32302998866d9,850878,female,56,yes,True,            
+616b082feb953c8c989b77fa,454661,female,26,yes,True,            
+6277cd4fea5f69868617658b,1334285,female,29,yes,False,            I read the last two attention checks and accidentally selected Alice instead of angela
+62825aef9d9d5544867a6fc0,546937,female,34,yes,True,            
+6298d20b980818fad3ef7562,551822,male,36,yes,True,            
+62b1f567d5f22515024421f1,4676909,male,29,yes,True,            
+62d06d1b651d6922f62fab9b,707234,male,28,yes,True,            
+62dbff5b57bc6f2241a8f5f4,541551,male,35,yes,True,            
+62e5ed723490aa324bc05d84,1093618,male,85,yes,True,       none     
+6312bdcf64c0abf681b89dd5,708035,male,34,yes,True,            
+6317db8020afb4f2e618569c,1349544,male,57,yes,True,            
+6330deabf9912c7e44d35a69,666127,male,33,yes,True,         None   
+63655d5226651ebb9318f938,2164943,male,37,yes,True,            this was fun
+637d4196c70a66e28ecede34,1199527,male,49,yes,True,            
+638144b112820e51c06fb151,3155767,male,54,yes,True,            
+6387984be099d077b7cd8508,1131006,female,53,yes,False,            
+6388fe254da991e17e7535ed,608267,female,57,yes,True,            
+6392a6889c3e1137e2f15cfa,1683325,female,26,yes,True,            
+63c16f0c495b7a4849e44651,1189845,female,62,yes,True,            
+63d13b586b230d231577a44b,1294675,female,35,yes,True,            
+63d1458687bb808c5929e352,713945,male,26,yes,True,            
+63d14c303699c73fb81300cc,544263,male,41,yes,True,            
+63d4228c4477a4a824d0228c,1171342,male,29,yes,True,No!      
+63da85a05dcc5a9d931ca267,1120572,male,49,yes,True,            
+63ecfdaaab08d13d8a00db85,634301,male,24,yes,True,            
+63f82e311d2a2c2002be81f4,750779,male,37,yes,True,      Thank you!      
+63fceba525d21052bc1ee390,1813639,male,64,yes,True,            
+640b6f6028392f94f4a4938a,2292978,female,34,yes,True,"It's hard to assume what people will do with their level of influence because yes, some people can use it to take advantage or some people know how to use their influence fairly.            "
+640efe279750dc59ba3e9fb9,1626179,male,52,yes,False,            
+641357bf4ac1d4ead1fcb764,422985,male,39,yes,True,            
+644ff5cdfdce8f493ccc6ca9,1413116,female,62,yes,True,            
+646347d6f98c9284d0227840,844655,male,51,yes,False,"       no, thanks     "
+64668fee9f95265c11ddbc29,431498,male,21,yes,True,            
+64788046d0fc88f991d3847c,1533525,male,48,yes,True,            No 
+6481b0ad5d54ef1ff2a550f7,2492883,male,54,yes,True,            

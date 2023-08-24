@@ -1,0 +1,61 @@
+subject_id,time_elapsed,gender,age,understood,pass_attention,comments
+038ecddfba7a11699158f7471c3c8223,752421,female,34,yes,TRUE,Thank you! I enjoyed being a part of this study it was interesting!
+e3fa6a6bc6aecd3be4dedc233254faad,346645,female,51,yes,TRUE,NA
+73d4d253c0e944038ea52f3953cd877b,756117,female,74,yes,TRUE,NA
+75e9003d16580fe976155eb204b95076,882133,female,35,yes,TRUE,No comments or issues.  Very well done study.
+b4c897a0a926267dcecac78c3a2aed94,580377,male,59,yes,TRUE,NA
+86c90aa7930c11cd449ebdc8675b8a63,328418,female,24,yes,TRUE,NA
+9871ab95a69023922e05f6a438c79850,736815,female,41,yes,TRUE,NA
+04811f3a300b7ac83d7130eae767e8ef,374077,female,30,yes,TRUE,NA
+4025e49556cfbcbb4c47266591276466,573930,female,30,yes,TRUE,none
+23c998c0fbe54b1f2f2c79e2a5b2b361,1375881,male,38,yes,TRUE,NA
+96f81c4dba790978bb4aac0fbebdf082,568841,female,41,yes,TRUE,NA
+350056cfbb94d669dcdd37a1bbab8b85,467439,female,38,yes,TRUE,NA
+fc3349648774a7cb80417a70334e256c,552873,female,47,yes,TRUE,NA
+271f8facc709a9664a34e2116f544420,1139605,female,64,yes,TRUE,NA
+7fdcb6232fd232c23946434a1d397f95,244782,male,28,yes,TRUE,NA
+73c67113266c78a0992d398a79403f48,496489,male,26,yes,TRUE,NA
+dd0a08ee38ee0f6145c11da6dad9157c,541230,female,55,yes,TRUE,NA
+4e092817f48cca99cef9346d4d0c72e6,357727,male,40,yes,TRUE,NA
+1e4f39777bb7d58c3591e8291b049205,1433400,male,21,yes,TRUE,NA
+d165c9c147eef9d13a2b5b52d5e32d06,731803,male,40,yes,TRUE,NA
+2dee66ecbde11f4029889629a523bc0a,498200,female,21,yes,TRUE,"I really hope you don't think I didn't consider these scenarios carefully, but they all seemed fair, even with the power imbalances. In the case of the one where John volunteered to babysit even though the other guy (Caleb?) had more influence. John volunteered though."
+f9d0a8493bee292bfaf5545b3fa0b8fa,697350,female,67,yes,TRUE,NA
+4f595a661d8a9a00420fafb067c35bd1,542861,male,31,yes,TRUE,NA
+5a7c47f0c0e5f99bc4204cc910e36526,1185723,female,29,yes,TRUE,I enjoyed being a part of this study!
+ab7d687d3694f6d1eb0ecb29deac3308,765438,male,33,yes,TRUE,NA
+b5d2d1aaea02110d6051ab2fa4f645b7,299576,male,26,yes,FALSE,No
+6bfaf7148f921d6f42c88f58cfc1f39f,846072,female,25,yes,TRUE,None
+4eb96594b39b72c1d369d763b9d86fba,525309,male,34,yes,TRUE,Thank you
+7e499a341ab16f0917104b0f976181e8,456968,female,26,yes,TRUE,NA
+e82f204819ea84c7b7913074d5e140cb,593656,female,56,yes,TRUE,NA
+29cc2c8a97bd8cf90f7e5e092a3f7824,777899,male,25,yes,TRUE,NA
+7aed8048b363a9ef4080511ae304559c,741892,female,28,yes,TRUE,"I wish we could be more precise with the ratings. Sometimes I felt like what exactly I was rating was unclear. For example, with the poor family giving an expensive gift to the rich family, I don't think it's morally forbidden for the poor family to give the gift, but I do think it would be more morally forbidden for the rich family to accept the gift."
+0e2ed9aeca8127b21879e93cbb0aef7f,471994,nonconforming,39,yes,TRUE,have a nice day
+5ad79f3f42189cdadb9b7aa347ec6ff4,975138,male,39,yes,TRUE,NA
+e6b0fcbf030e00bb27eaf23e4b189075,760934,male,30,yes,TRUE,It was a fun survey. Really made me think on the moral implications of social situations
+e8726085ff92158acda2c6493e4169db,268054,female,20,yes,TRUE,NA
+483d7e40734d38d390228e2994d5f498,525858,male,63,yes,TRUE,None
+d1e0c054dac3142b511126a648c03620,444972,female,55,yes,TRUE,NA
+3f34c72d02ae6627c8d0997459d742cc,1394488,female,23,yes,TRUE,NA
+90712e019bab6d5193c562b79347601d,349602,male,24,yes,TRUE,NA
+227e100d7d47c48b6987492b88128e62,406686,male,19,yes,TRUE,NA
+5f79229471de34e0bc39aa0ab9a88e22,859840,male,30,yes,TRUE,None
+d981b7a3dab1e7d191e7b34109cdef95,221045,male,35,yes,FALSE,None
+d49cd5d6b6a851aefd91438d07f09457,454223,male,20,yes,TRUE,NA
+8e730338348faf6da47b4109d2a4f87c,704157,male,41,yes,TRUE,NA
+8b96993e00607164c61ba596f7638133,1085124,male,29,yes,TRUE,NA
+970fe4d71decb74b25d229d2b0155262,387488,female,38,yes,TRUE,NA
+fc7c3dc647152692d595507428c20858,996354,male,51,yes,TRUE,None
+623c305ee071f7a1a479ef9558f24e08,921261,female,71`,yes,TRUE,NA
+ad21c859cd0a4b0e2380547c9d97dfe1,499123,female,54,yes,TRUE,NA
+b5eee82dff6e07279477f0e4681ec5ff,755469,female,59,yes,TRUE,"Understanding the terms ""obligatory"" and particularly ""forbidden"" was a bit confusing."
+94a6f65d0d9ac9822b3a6349f66b764a,533014,female,56,yes,TRUE,Fun study
+81699919585aaf1099c047b8373cf8d6,447242,male,35,yes,TRUE,NA
+1f20148cb7f0f243e42f5c7c42c9bbea,229168,male,33,yes,TRUE,NA
+b60711d7b90ac15876bde1b7b7617686,371150,female,25,yes,TRUE,NA
+208cecf171bdbafe05285d6f3b9ada78,2531627,abstain,44,yes,TRUE,NA
+32090f26a5adbb2ebc1e84f344db7ad6,550796,male,18,yes,FALSE,NA
+c04520fe45d6e24a00d71be7514ddc78,1649880,male,70,yes,TRUE,NA
+e4661a6e938aca6e3ea488404c687f8d,464446,male,34,yes,TRUE,NA
+9c572011cbbcf940189523b70792b303,621572,female,53,yes,TRUE,NA

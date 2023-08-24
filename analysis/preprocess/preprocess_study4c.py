@@ -37,29 +37,27 @@ def main(args):
             'gender': demographics['response']['gender'],
             'age': int(demographics['response']['age']),
             'understood': demographics['response']['understood'],
-            'pass_attention': attention['passAttention'],
+            'pass_attention': attention['passAttentionCheck'],
             'comments': demographics['response']['comments'],
         }, index=[0])
 
 
         # Make data dataframe
-        cols = ['subject_id', 'story', 'altruistic_status', 'first_meeting', 'stage', 'response', 'response_status', 'strategy']
+        cols = ['subject_id', 'story', 'strategy']
         df_data = pd.DataFrame(columns=cols)
 
         for i, trial in enumerate(data):
             df_data.loc[i, 'subject_id'] = trial['subject_id']
             df_data.loc[i, 'story'] = trial['story']
-            df_data.loc[i, 'altruistic_status'] = trial.get('altruistic_status', None)
-            df_data.loc[i, 'first_meeting'] = trial['first_meeting']
-            df_data.loc[i, 'stage'] = trial['stage']
-            df_data.loc[i, 'response'] = trial['response'].get('answer', None)
-            df_data.loc[i, 'response_status'] = trial.get('response_status', trial.get('response', {}).get('status', None)) # This was because i called it something different stage to stage
+            df_data.loc[i, 'altruistic_status_second'] = trial.get('altruistic_status_second', None)
+            df_data.loc[i, 'annoyed'] = trial['response'].get('annoyed', None)
+            df_data.loc[i, 'satisfied'] = trial['response'].get('satisfied', None)
             df_data.loc[i, 'strategy'] = trial.get('strategy', None)
 
         # print(df_data)
         # Add bonus info and understood instructions (for exclusion criteria)
         df_data['understood'] = demographics['response']['understood']
-        df_data['pass_attention'] = attention['passAttention']
+        df_data['pass_attention'] = attention['passAttentionCheck']
 
         dfs_demographics.append(df_demographics)
         dfs_data.append(df_data)

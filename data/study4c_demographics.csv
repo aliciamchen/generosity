@@ -1,0 +1,60 @@
+subject_id,time_elapsed,gender,age,understood,pass_attention,comments
+821eb5095d5427a178420838220a2c1e,2603738,female,53,yes,TRUE,NA
+e1cc628812f7e403c482ae97e60a71d1,689702,female,67,yes,TRUE,NA
+d6d607e8ea2220c319d53963078c2db2,1220161,male,33,yes,TRUE,none
+aeed2150917e175352ac5acac30712da,671145,male,33,yes,TRUE,NA
+8603c3b97583fa773c3527542363fd57,494564,male,30,yes,TRUE,NA
+d7783479786f8337a9b8cfa0443b49be,871820,male,30,yes,TRUE,NA
+18c7b5bdfb413a83806004fdb701278a,604530,female,38,yes,TRUE,NA
+ea1744a669b4c659e758c37ac6573621,2915431,female,35,yes,TRUE,no comments
+51e9e0da225a53ed011b6c6aa1c20c92,592708,female,32,yes,TRUE,N/A
+69c00648e3b0eb05385d01ad65642983,993688,female,60,yes,TRUE,NA
+d8eee9ff3b61c8496ba18d013e3acd7e,1202609,male,26,yes,TRUE,NA
+32354b0a447219320e77ce3c6a3dbeb2,657225,female,56,yes,TRUE,NA
+9b6b985c4c904e3372bb0e068c4600bc,557677,male,25,yes,TRUE,NA
+61623ab2395ef82026b8b0912c6eb275,1589198,female,43,yes,TRUE,NA
+b31cf63632646f191510fa06b52a880d,476432,male,29,yes,TRUE,NA
+820e345ff1339c03405aadc67d639a90,648162,male,25,yes,TRUE,NA
+1ee5b099575294eba944ccec3bafcc91,525473,female,40,yes,TRUE,NA
+e0107685ff5504fcd547953f6fe3805f,1184976,male,34,yes,TRUE,NA
+e8c53f169eb6b0c7e54e2a711a3dabb2,817306,male,35,yes,TRUE,NA
+166237423352a1a377a808e9b6ebe916,526175,male,29,yes,TRUE,N/A
+dd77429360e9b5872f2191bf6774bdaa,1305086,female,35,yes,TRUE,NA
+a6c647355548cc73979efa46589c1e11,398712,male,25,yes,TRUE,NA
+33c49d73c134ee2b939b6e270253d440,886114,male,56,yes,TRUE,NA
+8052bcf45bda4fec5b998dd4b51d9557,726601,male,38,yes,TRUE,NA
+1461c4ed75492b07f33bdebbd3844eb0,1222573,female,24,yes,TRUE,NA
+b4f53c4d5a888d3188e611f173108e40,704342,nonconforming,27,yes,TRUE,NA
+21b1bcaae77cd1b12f9a5761a8ec4a5c,1032369,female,50,yes,TRUE,Equal situations can still bring annoyance.
+464da4b1aafc122075c14f10e362faee,410219,female,27,yes,TRUE,NA
+5fdc73a7d9fcfe68a790cc108f8a8d62,1036438,male,61,yes,TRUE,NA
+28851f50d51a16ce0d83621fa2ffbc88,1235305,nonconforming,23,yes,TRUE,no
+f657d35924b5edbad976ece6e63d3a95,486632,male,31,yes,TRUE,NA
+a3468f079913d9de1b2f37ea958d5faa,604570,male,26,yes,TRUE,NA
+c471b945b05a5ae86f429466558a3acd,1682975,male,37,yes,TRUE,None
+d8881bb3d9eae27aab6dc0447e042c66,824811,female,42,yes,TRUE,This was very interesting and I appreciate the opportunity to contribute!
+1580ade8bdd425b3df20e31ae3e9dd3f,387659,male,24,yes,TRUE,NA
+534fd25455b1f91b6efc99bb2c0413fa,493276,female,22,yes,TRUE,NA
+9285d707d8bdadb9f800d52f55834b64,655923,female,21,yes,TRUE,NA
+b949ae8777a4546f9b7ce0e86d1c06a6,2582653,female,23,yes,TRUE,NA
+27514371afa11da6be463ca31a94f586,591692,female,52,yes,TRUE,NA
+3b7da04c5a0c1e02887df5e71ff93f1a,654656,female,30,yes,TRUE,n/a
+df891a667565ea0325672dbe9325cbae,508825,female,29,yes,TRUE,NA
+08ba4d86e4dc38d06ac8352ba2258138,1003402,male,42,yes,TRUE,Questions were clear and easy to understand. Thanks!
+b3a0f088c552a50ae5e3221fbd4fe45c,594108,male,54,yes,TRUE,NA
+caf73f0f216f2b6a151b85abdc98e629,687478,female,27,yes,TRUE,NA
+7bb9f0294f3a6c9931482b82e8d40bc7,647335,male,25,yes,TRUE,NA
+ed2adc3c0fdf763bcef93323aec91d7e,293863,male,39,yes,TRUE,no
+21295e054853e72d634b24d105d944fc,510829,male,34,yes,TRUE,great survey
+2f041dc13e4ae63fcc37e6ccd528a795,605841,male,28,yes,TRUE,NA
+e4dd2d0575b4ed44a9d98d301302d2a6,449149,female,45,yes,TRUE,NA
+1e87a2e052584490b8f9ec9c334bab62,1411043,male,23,yes,TRUE,NA
+c8efbcd3c665b4e0fdb2841cc7c3eda1,841985,female,57,yes,TRUE,NA
+8c12e9bb9e3017f7768782d9e27326b0,758349,male,48,yes,TRUE,thanks
+afd552f1c37d1691dd2d9a922e707cca,1503932,female,35,yes,TRUE,NA
+c0e16d7c41f1b48675e8d07b4b735251,536055,male,44,yes,TRUE,NA
+86780df486e57f784c5949425a2027a1,1163176,female,67,yes,TRUE,NA
+a762422876f048c62beaf6fe147722e6,593552,male,27,yes,TRUE,"A lot of the scenarios seemed similar and I found myself picking ""not at all annoyed"" and ""highly satisfied"" for the overwhelming majority."
+5e977377586409bcbfa9e2aab3820a1f,595031,male,19,yes,TRUE,NA
+2b8f669488a268d502903433fc1b75bf,404819,female,27,yes,TRUE,NA
+98e5eb8176aa36724cef12ddc3b132a3,1138399,female,40,yes,TRUE,NA

@@ -192,6 +192,15 @@ f
 
   
 
+# Figure out what 2 stories to exclude for study 4
+# using abs of sum of benefit and effort diff
+smallest_diffs <- df.stacked.means %>% 
+  pivot_wider(names_from = type, values_from = diff, id_cols = story) %>% 
+  mutate(sum_abs_diff = abs(benefit) + abs(effort)) %>% 
+  arrange(sum_abs_diff) 
+
+
+print(smallest_diffs)
 ## Analysis
 
 

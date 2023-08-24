@@ -17,9 +17,9 @@ d <-
 
 d <-
   read.csv(here('data/tacit_full_data.csv')) %>% filter(understood == 'yes', story != 'attention') %>% 
-  mutate(strategy = case_when(stage == "second" & first_meeting == response ~ 'repeating', 
-                              stage == "second" & first_meeting != response ~ 'alternating')) %>% 
-  select(-response,-understood,-first_meeting) %>%
+  mutate(strategy = case_when(stage == "second" & first_meeting == response ~ 'repeating',
+                              stage == "second" & first_meeting != response ~ 'alternating')) %>%
+  select(-response,-understood,-first_meeting,-pass_attention) %>%
   mutate_all( ~ case_when(. == 'less' ~ 'lower',
                           . == 'more' ~ 'higher',
                           TRUE ~ .)) %>%
