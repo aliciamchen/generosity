@@ -6,8 +6,9 @@ library(lme4)
 library(lmerTest)
 library(wesanderson)
 library(forcats)
+library(glue)
 
-theme_set(theme_classic(base_size = 15))
+theme_set(theme_classic(base_size = 30))
 options(contrasts = c(unordered = "contr.sum", ordered = "contr.poly"))
 
 d <-
@@ -68,6 +69,33 @@ f = ggplot(data = d,
 
 f
 
+# switch axes to see if it visualizes data better
+f = ggplot(data = d,
+           aes(x = strategy, y = likert_rating, fill = altruistic_status_second)) +
+  geom_violin(width = 1.16,
+              bw = 0.43,
+              position = position_dodge(width = 0.8)) +
+  geom_point(
+    d.means.all,
+    mapping = aes(x = strategy, y = likert_rating),
+    size = 2.3,
+    alpha = 1,
+    position = position_dodge(width = 0.8)
+  ) +
+  geom_errorbar(
+    d.means.all,
+    mapping = aes(x = strategy, ymin = ci_lower, ymax = ci_upper),
+    position = position_dodge(width = 0.8),
+    size = 1.5,
+    width = 0.09
+  ) +
+  scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
+                     limits = c(0.8, 7.2)) +
+  labs(x = "strategy", y = "how moral?") +
+  theme(legend.position = "bottom")
+
+f
+
 # grouped by story
 
 d.means.all <-
@@ -124,6 +152,52 @@ emm <- mod %>% emmeans(pairwise ~ altruistic_status_second * strategy) %>%
                c("yes", "yes", "no"))
 
 emmeans(emm, pairwise ~ asymmetric | strategy)
+
+# study 4a for presentation
+
+stati = c("higher", "lower", "equal", "just_met")
+
+for (status in stati) {
+  
+  
+  f = ggplot(data = d %>% filter(altruistic_status_second == status),
+             aes(x = altruistic_status_second, y = likert_rating, fill = strategy)) +
+    geom_violin(width = 1.4,
+                bw = 0.43,
+                position = position_dodge(width = 0.8)) +
+    geom_point(
+      d.means.all %>% filter(altruistic_status_second == status),
+      mapping = aes(x = altruistic_status_second, y = likert_rating),
+      size = 2.3,
+      alpha = 1,
+      position = position_dodge(width = 0.8)
+    ) +
+    geom_errorbar(
+      d.means.all %>% filter(altruistic_status_second == status),
+      mapping = aes(x = altruistic_status_second, ymin = ci_lower, ymax = ci_upper),
+      position = position_dodge(width = 0.8),
+      size = 1.5,
+      width = 0.06
+    ) +
+    scale_fill_manual(
+      values = wes_palette(n = 3, name = "Darjeeling1"),
+      name = "strategy"
+    ) +
+    scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
+                       limits = c(0.8, 7.2)) +
+    labs(x = "status of 2nd time altruistic person", y = "how moral", fill = "strategy") +
+    theme(legend.position = "bottom")  
+  
+  f
+  
+  ggsave(here(glue("figures/study4/4a_{status}.pdf")),
+         width = 4.5,
+         height = 7.5)
+  
+}
+
+
+
 
 
 # Study 4b
@@ -214,6 +288,89 @@ f = ggplot(data = d.4b %>% filter(response == "satisfied"),
   theme(legend.position = "bottom")
 
 f
+
+# 4b for presentation
+
+# d.4b.annoyed <- d.4b %>% filter(response == "annoyed")
+# d.4b.satisfied <- d.4b %>% filter(response == "satisfied")
+
+# 4b annoyed for presentation
+for (status in stati) {
+  
+  f = ggplot(data = d.4b %>% filter(response == "annoyed", altruistic_status_second == status),
+             aes(x = altruistic_status_second, y = likert_rating, fill = strategy)) +
+    geom_violin(width = 1.4,
+                bw = 0.43,
+                position = position_dodge(width = 0.8)) +
+    geom_point(
+      d.4b.means.all %>% filter(response == "annoyed", altruistic_status_second == status),
+      mapping = aes(x = altruistic_status_second, y = likert_rating),
+      size = 2.3,
+      alpha = 1,
+      position = position_dodge(width = 0.8)
+    ) +
+    geom_errorbar(
+      d.4b.means.all %>% filter(response == "annoyed", altruistic_status_second == status),
+      mapping = aes(x = altruistic_status_second, ymin = ci_lower, ymax = ci_upper),
+      position = position_dodge(width = 0.8),
+      size = 1.5,
+      width = 0.06
+    ) +
+    scale_fill_manual(
+      values = wes_palette(n = 3, name = "Darjeeling1"),
+      name = "strategy"
+    ) +
+    scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
+                       limits = c(0.8, 7.2)) +
+    labs(x = "status of 2nd time altruistic person", y = "how annoyed?", fill = "strategy") +
+    theme(legend.position = "bottom")  
+  
+  f
+  
+  ggsave(here(glue("figures/study4/4b_annoyed_{status}.pdf")),
+         width = 4.5,
+         height = 7.5)
+  
+}
+
+# 4b satisfied for presentation
+for (status in stati) {
+  
+  f = ggplot(data = d.4b %>% filter(response == "satisfied", altruistic_status_second == status),
+             aes(x = altruistic_status_second, y = likert_rating, fill = strategy)) +
+    geom_violin(width = 1.4,
+                bw = 0.43,
+                position = position_dodge(width = 0.8)) +
+    geom_point(
+      d.4b.means.all %>% filter(response == "satisfied", altruistic_status_second == status),
+      mapping = aes(x = altruistic_status_second, y = likert_rating),
+      size = 2.3,
+      alpha = 1,
+      position = position_dodge(width = 0.8)
+    ) +
+    geom_errorbar(
+      d.4b.means.all %>% filter(response == "satisfied", altruistic_status_second == status),
+      mapping = aes(x = altruistic_status_second, ymin = ci_lower, ymax = ci_upper),
+      position = position_dodge(width = 0.8),
+      size = 1.5,
+      width = 0.06
+    ) +
+    scale_fill_manual(
+      values = wes_palette(n = 3, name = "Darjeeling1"),
+      name = "strategy"
+    ) +
+    scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
+                       limits = c(0.8, 7.2)) +
+    labs(x = "status of 2nd time altruistic person", y = "how satisfied?", fill = "strategy") +
+    theme(legend.position = "bottom")  
+  
+  f
+  
+  ggsave(here(glue("figures/study4/4b_satisfied_{status}.pdf")),
+         width = 4.5,
+         height = 7.5)
+  
+}
 
 # Stats for 4b
 
@@ -318,6 +475,85 @@ f = ggplot(data = d.4c %>% filter(response == "satisfied"),
 
 f
 
+# 4c for presentation
+
+# 4c annoyed for presentation
+for (status in stati) {
+  
+  f = ggplot(data = d.4c %>% filter(response == "annoyed", altruistic_status_second == status),
+             aes(x = altruistic_status_second, y = likert_rating, fill = strategy)) +
+    geom_violin(width = 1.4,
+                bw = 0.43,
+                position = position_dodge(width = 0.8)) +
+    geom_point(
+      d.4c.means.all %>% filter(response == "annoyed", altruistic_status_second == status),
+      mapping = aes(x = altruistic_status_second, y = likert_rating),
+      size = 2.3,
+      alpha = 1,
+      position = position_dodge(width = 0.8)
+    ) +
+    geom_errorbar(
+      d.4c.means.all %>% filter(response == "annoyed", altruistic_status_second == status),
+      mapping = aes(x = altruistic_status_second, ymin = ci_lower, ymax = ci_upper),
+      position = position_dodge(width = 0.8),
+      size = 1.5,
+      width = 0.06
+    ) +
+    scale_fill_manual(
+      values = wes_palette(n = 3, name = "Darjeeling1"),
+      name = "strategy"
+    ) +
+    scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
+                       limits = c(0.8, 7.2)) +
+    labs(x = "status of 2nd time altruistic person (A)", y = "how annoyed was B?", fill = "strategy") +
+    theme(legend.position = "bottom")  
+  
+  f
+  
+  ggsave(here(glue("figures/study4/4c_annoyed_{status}.pdf")),
+         width = 4.5,
+         height = 7.5)
+  
+}
+
+# 4c satisfied for presentation
+for (status in stati) {
+  
+  f = ggplot(data = d.4c %>% filter(response == "satisfied", altruistic_status_second == status),
+             aes(x = altruistic_status_second, y = likert_rating, fill = strategy)) +
+    geom_violin(width = 1.4,
+                bw = 0.43,
+                position = position_dodge(width = 0.8)) +
+    geom_point(
+      d.4c.means.all %>% filter(response == "satisfied", altruistic_status_second == status),
+      mapping = aes(x = altruistic_status_second, y = likert_rating),
+      size = 2.3,
+      alpha = 1,
+      position = position_dodge(width = 0.8)
+    ) +
+    geom_errorbar(
+      d.4c.means.all %>% filter(response == "satisfied", altruistic_status_second == status),
+      mapping = aes(x = altruistic_status_second, ymin = ci_lower, ymax = ci_upper),
+      position = position_dodge(width = 0.8),
+      size = 1.5,
+      width = 0.06
+    ) +
+    scale_fill_manual(
+      values = wes_palette(n = 3, name = "Darjeeling1"),
+      name = "strategy"
+    ) +
+    scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
+                       limits = c(0.8, 7.2)) +
+    labs(x = "status of 2nd time altruistic person (A)", y = "how satisfied was B?", fill = "strategy") +
+    theme(legend.position = "bottom")  
+  
+  f
+  
+  ggsave(here(glue("figures/study4/4c_satisfied_{status}.pdf")),
+         width = 4.5,
+         height = 7.5)
+  
+}
 
 mod <- lmer(data = d.4c %>% filter(response == "annoyed"), likert_rating ~ strategy * altruistic_status_second + (1 | subject_id) + (1 | story))
 
@@ -388,6 +624,52 @@ f = ggplot(data = d,
   theme(legend.position = "bottom")
 
 f
+
+# 4d for presentation
+
+
+for (status in stati) {
+  
+  
+  f = ggplot(data = d %>% filter(altruistic_status_second == status),
+             aes(x = altruistic_status_second, y = likert_rating, fill = strategy)) +
+    geom_violin(width = 1.4,
+                bw = 0.43,
+                position = position_dodge(width = 0.8)) +
+    geom_point(
+      d.means.all %>% filter(altruistic_status_second == status),
+      mapping = aes(x = altruistic_status_second, y = likert_rating),
+      size = 2.3,
+      alpha = 1,
+      position = position_dodge(width = 0.8)
+    ) +
+    geom_errorbar(
+      d.means.all %>% filter(altruistic_status_second == status),
+      mapping = aes(x = altruistic_status_second, ymin = ci_lower, ymax = ci_upper),
+      position = position_dodge(width = 0.8),
+      size = 1.5,
+      width = 0.06
+    ) +
+    scale_fill_manual(
+      values = wes_palette(n = 3, name = "Darjeeling1"),
+      name = "strategy"
+    ) +
+    scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
+                       limits = c(0.8, 7.2)) +
+    labs(x = "status of 2nd time altruistic person", y = "how fair?", fill = "strategy") +
+    theme(legend.position = "bottom")  
+  
+  f
+  
+  ggsave(here(glue("figures/study4/4d_{status}.pdf")),
+         width = 4.5,
+         height = 7.5)
+  
+}
+
+
+
+# stats
 
 mod <- lmer(data = d, likert_rating ~ strategy * altruistic_status_second + (1 | subject_id) + (1 | story))
 
