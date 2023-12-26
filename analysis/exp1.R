@@ -200,6 +200,7 @@ ggsave(here("figures/sloan_talk/2a_violin_control_prec.pdf"),
        height = 7.5)
 
 
+
 f = ggplot(data = d %>% filter(social_interaction == "reciprocity"),
            aes(x = social_interaction, y = likert_rating, fill = relationship)) +
   geom_violin(width = 1.4,

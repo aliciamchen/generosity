@@ -7,8 +7,9 @@ library(lmerTest)
 library(wesanderson)
 library(forcats)
 library(emmeans)
+library(glue)
 
-theme_set(theme_classic(base_size = 20))
+theme_set(theme_classic(base_size = 16))
 options(contrasts = c(unordered = "contr.sum", ordered = "contr.poly"))
 
 # 
@@ -349,7 +350,129 @@ f = ggplot(data = stage.one, aes(x = stage, y = 0)) +
 
 f
 
+
+# REBECCA SUGGESTED STUFF
+# todo: do for symmetric
+
+d.first.response <- 
+  d %>% filter(symmetric == "asymmetric") %>% 
+  mutate(first_response_higher = recode(first_response_higher, "higher" = 1, "lower" = -1), 
+         second_response_higher = recode(second_response_higher, "higher" = 1, "lower" = -1) 
+         ) %>% 
+  group_by(story) %>% 
+  tidyboot_mean(first_response_higher, na.rm = TRUE) 
+
+d.second.response <- 
+  d %>% filter(symmetric == "asymmetric") %>% 
+  mutate(first_response_higher = recode(first_response_higher, "higher" = 1, "lower" = -1), 
+         second_response_higher = recode(second_response_higher, "higher" = 1, "lower" = -1) 
+  ) %>% 
+  group_by(story, first_actual_higher) %>% 
+  tidyboot_mean(second_response_higher, na.rm = TRUE) 
+
+
+
+
+f <- ggplot(d.first.response, aes(x = 'first time', y = empirical_stat)) + 
+  geom_point(size = 3, alpha = 0.7) + 
+  geom_errorbar(mapping = aes(x = 'first time', ymin = ci_lower, ymax=ci_upper), size= 1.5, width = 0.09, alpha = 0.7) +
+  geom_hline(yintercept = 0, linetype = "dashed", color = "red") +
+  labs(x = "", y = "expectations for high status", title = "asymmetric relationships first meeting") +
+  facet_wrap(~story)
+
+f
+
+stories = c('concerts', 'restaurant', 'family meals', 'meeting location')
+for (s in stories) {
+  
+  f <- ggplot(d.first.response %>% filter(story == s), aes(x = 'first time', y = empirical_stat)) + 
+    geom_point(size = 3, alpha = 0.7) + 
+    geom_errorbar(mapping = aes(x = 'first time', ymin = ci_lower, ymax=ci_upper), size= 1.5, width = 0.09, alpha = 0.7) +
+    geom_hline(yintercept = 0, linetype = "dashed", color = "red") +
+    labs(x = "", y = "expectations for high status", title = glue("{s}")) + 
+    scale_y_continuous(limits = c(-1, 1)) 
+  
+  f
+  
+  ggsave(here(glue("figures/coglunch/1c_first_time_{s}.pdf")),
+         width = 2.5,
+         height = 4)
+  
+}
+
+f <- ggplot(d.second.response %>% filter(first_actual_higher == 'higher'), aes(x = 'first time', y = empirical_stat)) + 
+  geom_point(size = 3, alpha = 0.7) + 
+  geom_errorbar(mapping = aes(x = 'first time', ymin = ci_lower, ymax=ci_upper), size= 1.5, width = 0.09, alpha = 0.7) +
+  geom_hline(yintercept = 0, linetype = "dashed", color = "red") +
+  labs(x = "", y = "expectations for high status", title = "second meeting, first actual higher") +
+  facet_wrap(~story)
+
+f
+
+for (s in stories) {
+  f <- ggplot(d.second.response %>% filter(first_actual_higher == 'higher', story == s), aes(x = 'first time', y = empirical_stat)) + 
+    geom_point(size = 3, alpha = 0.7) + 
+    geom_errorbar(mapping = aes(x = 'first time', ymin = ci_lower, ymax=ci_upper), size= 1.5, width = 0.09, alpha = 0.7) +
+    geom_hline(yintercept = 0, linetype = "dashed", color = "red") +
+    labs(x = "", y = "expectations for high status", title = s) +
+    scale_y_continuous(limits = c(-1, 1)) 
+  
+  f
+  
+  ggsave(here(glue("figures/coglunch/1c_second_time_higher_{s}.pdf")),
+         width = 2.5,
+         height = 4)
+}
+
+f <- ggplot(d.second.response %>% filter(first_actual_higher == 'lower'), aes(x = '', y = empirical_stat)) + 
+  geom_point(size = 3, alpha = 0.7) + 
+  geom_errorbar(mapping = aes(x = '', ymin = ci_lower, ymax=ci_upper), size= 1.5, width = 0.09, alpha = 0.7) +
+  geom_hline(yintercept = 0, linetype = "dashed", color = "red") +
+  labs(x = "", y = "expectations for high status", title = "second meeting, first actual lower") +
+  facet_wrap(~story)
+
+f
+
+#plot w diff colors
+
+d.combined <- bind_rows(d.first.response %>% mutate(first_actual_higher = 'prior'), d.second.response)
+d.combined$first_actual_higher <- factor(d.combined$first_actual_higher, levels = c("prior", "higher", "lower"))
+
+# ggplot(df, aes(x = category, y = value)) + 
+
+f <- ggplot(d.combined, aes(x = first_actual_higher, y = empirical_stat)) + 
+  geom_point(size = 3, alpha = 0.7) + 
+  geom_errorbar(mapping = aes(x = first_actual_higher, ymin = ci_lower, ymax=ci_upper), size= 1.5, width = 0.09, alpha = 0.7) +
+  geom_hline(yintercept = 0, linetype = "dashed", color = "red") +
+  labs(x = "", y = "expectations for high status", title = "second meeting, first actual lower") +
+  theme(axis.text.x = element_text(angle = 30, hjust = 1)) +
+  facet_wrap(~story)
+
+f
+ggsave(here(glue("figures/coglunch/1c_implicit_all.pdf")),
+       width = 8,
+       height = 8)
+
+for (s in stories) {
+  f <- ggplot(d.second.response %>% filter(first_actual_higher == 'lower', story == s), aes(x = 'first time', y = empirical_stat)) + 
+    geom_point(size = 3, alpha = 0.7) + 
+    geom_errorbar(mapping = aes(x = 'first time', ymin = ci_lower, ymax=ci_upper), size= 1.5, width = 0.09, alpha = 0.7) +
+    geom_hline(yintercept = 0, linetype = "dashed", color = "red") +
+    labs(x = "", y = "expectations for high status", title = s) +
+    scale_y_continuous(limits = c(-1, 1)) 
+  
+  f
+  
+  ggsave(here(glue("figures/coglunch/1c_second_time_lower_{s}.pdf")),
+         width = 2.5,
+         height = 4)
+}
+
+# TODO: do for symmetric 
+
 # correlation expectations for high status with relative cost for each scenario.
+
+
 
 
 f <- ggplot(stage.one.mean.story, aes(x = effort_diff, y = empirical_stat)) + 

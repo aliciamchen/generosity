@@ -6,6 +6,7 @@ library(lme4)
 library(lmerTest)
 library(wesanderson)
 library(forcats)
+library(glue)
 
 theme_set(theme_classic(base_size = 30))
 options(contrasts = c(unordered = "contr.sum", ordered = "contr.poly"))
@@ -72,6 +73,50 @@ f = ggplot(data = d,
                      limits = c(0.8, 7.2)) +
   labs(x = "status of altruistic person", y = "how likely?", fill = "next interaction") +
   theme(legend.position = "bottom")
+
+f
+
+# grouped by story
+
+d.means.story <-
+  d %>% drop_na() %>%
+  group_by(story, relationship, next_interaction) %>%
+  tidyboot_mean(likert_rating, na.rm = TRUE) %>%
+  rename(likert_rating = empirical_stat) %>%
+  mutate(next_interaction = fct_relevel(next_interaction,
+                                        "repeating", "alternating", "none"))
+
+
+f = ggplot(data = d,
+           aes(x = relationship, y = likert_rating, fill = next_interaction)) +
+  geom_violin(width = 1.16,
+              bw = 0.43,
+              position = position_dodge(width = 0.8)) +
+  geom_point(
+    d.means.story,
+    mapping = aes(x = relationship, y = likert_rating),
+    size = 2.3,
+    alpha = 1,
+    position = position_dodge(width = 0.8)
+  ) +
+  geom_errorbar(
+    d.means.story,
+    mapping = aes(x = relationship, ymin = ci_lower, ymax = ci_upper),
+    position = position_dodge(width = 0.8),
+    size = 1.5,
+    width = 0.09
+  ) +
+  scale_fill_manual(
+    values = wes_palette(n = 3, name = "FantasticFox1"),
+    name = "next interaction",
+    breaks = c("repeating", "alternating", "none")
+  ) +
+  scale_x_discrete(limits = c("more", "less", "equal")) +
+  scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
+                     limits = c(0.8, 7.2)) +
+  labs(x = "status of altruistic person", y = "how likely?", fill = "next interaction") +
+  theme(legend.position = "bottom") + 
+  facet_wrap(~story)
 
 f
 # ggsave(here("figures/exp2b_violin.pdf"),
@@ -295,6 +340,87 @@ ggsave(here("figures/sloan_talk/1b_violin_lower_cont.pdf"),
        height = 7.5)
 
 
+## Cog lunch figs
+stories = c('concerts', 'restaurant', 'family meals', 'meeting location')
+
+for (s in stories) {
+  
+  f = ggplot(data = d %>% filter(relationship == "more", story == s),
+             aes(x = relationship, y = likert_rating, fill = next_interaction)) +
+    geom_violin(width = 1.16,
+                bw = 0.43,
+                position = position_dodge(width = 0.8)) +
+    geom_point(
+      d.means.story %>% filter(relationship == "more", story == s),
+      mapping = aes(x = relationship, y = likert_rating),
+      size = 2.3,
+      alpha = 1,
+      position = position_dodge(width = 0.8)
+    ) +
+    geom_errorbar(
+      d.means.story %>% filter(relationship == "more", story == s),
+      mapping = aes(x = relationship, ymin = ci_lower, ymax = ci_upper),
+      position = position_dodge(width = 0.8),
+      size = 1.5,
+      width = 0.09
+    ) +
+    scale_fill_manual(
+      values = wes_palette(n = 3, name = "FantasticFox1"),
+      name = "next interaction",
+      breaks = c("repeating", "alternating")
+    ) +
+    scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
+                       limits = c(0.8, 7.2)) +
+    labs(x = "status of altruistic person", y = "how likely?", fill = "next interaction", title = s) +
+    theme(legend.position = "bottom")
+  
+  f
+  
+  ggsave(here(glue("figures/coglunch/1b_higher_{s}.pdf")),
+         width = 6,
+         height = 7.5)
+  
+}
+
+
+for (s in stories) {
+  
+  f = ggplot(data = d %>% filter(relationship == "less", story == s),
+             aes(x = relationship, y = likert_rating, fill = next_interaction)) +
+    geom_violin(width = 1.16,
+                bw = 0.43,
+                position = position_dodge(width = 0.8)) +
+    geom_point(
+      d.means.story %>% filter(relationship == "less", story == s),
+      mapping = aes(x = relationship, y = likert_rating),
+      size = 2.3,
+      alpha = 1,
+      position = position_dodge(width = 0.8)
+    ) +
+    geom_errorbar(
+      d.means.story %>% filter(relationship == "less", story == s),
+      mapping = aes(x = relationship, ymin = ci_lower, ymax = ci_upper),
+      position = position_dodge(width = 0.8),
+      size = 1.5,
+      width = 0.09
+    ) +
+    scale_fill_manual(
+      values = wes_palette(n = 3, name = "FantasticFox1"),
+      name = "next interaction",
+      breaks = c("repeating", "alternating")
+    ) +
+    scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
+                       limits = c(0.8, 7.2)) +
+    labs(x = "status of altruistic person", y = "how likely?", fill = "next interaction", title = s) +
+    theme(legend.position = "bottom")
+  
+  f
+  
+  ggsave(here(glue("figures/coglunch/1b_lower_{s}.pdf")),
+         width = 6,
+         height = 7.5)
+  
+}
 
 ## Stats
 

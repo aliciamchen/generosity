@@ -6,6 +6,7 @@ library(lme4)
 library(lmerTest)
 library(wesanderson)
 library(forcats)
+library(glue)
 
 theme_set(theme_classic(base_size = 30))
 options(contrasts = c(unordered = "contr.sum", ordered = "contr.poly"))
@@ -78,6 +79,49 @@ f
 #        height = 7.8)
 
 
+# Grouped by story
+
+d.means.story <-
+  d %>% drop_na() %>%
+  group_by(story, relationship, next_interaction) %>%
+  tidyboot_mean(likert_rating, na.rm = TRUE) %>%
+  rename(likert_rating = empirical_stat) %>%
+  mutate(next_interaction = fct_relevel(next_interaction,
+                                        "repeating", "alternating", "none"))
+
+
+f = ggplot(data = d,
+           aes(x = relationship, y = likert_rating, fill = next_interaction)) +
+  geom_violin(width = 1.16,
+              bw = 0.43,
+              position = position_dodge(width = 0.8)) +
+  geom_point(
+    d.means.story,
+    mapping = aes(x = relationship, y = likert_rating),
+    size = 2.3,
+    alpha = 1,
+    position = position_dodge(width = 0.8)
+  ) +
+  geom_errorbar(
+    d.means.story,
+    mapping = aes(x = relationship, ymin = ci_lower, ymax = ci_upper),
+    position = position_dodge(width = 0.8),
+    size = 1.5,
+    width = 0.09
+  ) +
+  scale_fill_manual(
+    values = wes_palette(n = 3, name = "FantasticFox1"),
+    name = "next interaction",
+    breaks = c("repeating", "alternating", "none")
+  ) +
+  scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
+                     limits = c(0.8, 7.2)) +
+  labs(x = "relationship", y = "how likely?", fill = "next interaction") +
+  theme(legend.position = "bottom") + 
+  facet_wrap(~story)
+
+
+f
 ## Poster figs
 
 f = ggplot(data = d %>% filter(relationship == "asymmetric", next_interaction != "none"),
@@ -270,6 +314,84 @@ ggsave(here("figures/sloan_talk/1a_violin_cont.pdf"),
        width = 6,
        height = 7.5)
 
+## Individual scenarios
+stories = c('concerts', 'restaurant', 'family meals', 'meeting location')
+
+for (s in stories) {
+  f = ggplot(data = d %>% filter(relationship == "asymmetric", story == s),
+             aes(x = relationship, y = likert_rating, fill = next_interaction)) +
+    geom_violin(width = 1.16,
+                bw = 0.43,
+                position = position_dodge(width = 0.8)) +
+    geom_point(
+      d.means.story %>% filter(relationship == "asymmetric", story == s),
+      mapping = aes(x = relationship, y = likert_rating),
+      size = 2.3,
+      alpha = 1,
+      position = position_dodge(width = 0.8)
+    ) +
+    geom_errorbar(
+      d.means.story %>% filter(relationship == "asymmetric", story == s),
+      mapping = aes(x = relationship, ymin = ci_lower, ymax = ci_upper),
+      position = position_dodge(width = 0.8),
+      size = 1.5,
+      width = 0.09
+    ) +
+    scale_fill_manual(
+      values = wes_palette(n = 3, name = "FantasticFox1"),
+      name = "next interaction",
+      breaks = c("repeating", "alternating", "none")
+    ) +
+    scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
+                       limits = c(0.8, 7.2)) +
+    labs(x = "relationship", y = "how likely?", fill = "next interaction", title = s) +
+    theme(legend.position = "bottom")
+  
+  f
+  
+  
+  ggsave(here(glue("figures/coglunch/1a_asymmetric_{s}.pdf")),
+         width = 6,
+         height = 7.5)
+}
+
+for (s in stories) {
+  f = ggplot(data = d %>% filter(relationship == "symmetric", story == s),
+             aes(x = relationship, y = likert_rating, fill = next_interaction)) +
+    geom_violin(width = 1.16,
+                bw = 0.43,
+                position = position_dodge(width = 0.8)) +
+    geom_point(
+      d.means.story %>% filter(relationship == "symmetric", story == s),
+      mapping = aes(x = relationship, y = likert_rating),
+      size = 2.3,
+      alpha = 1,
+      position = position_dodge(width = 0.8)
+    ) +
+    geom_errorbar(
+      d.means.story %>% filter(relationship == "symmetric", story == s),
+      mapping = aes(x = relationship, ymin = ci_lower, ymax = ci_upper),
+      position = position_dodge(width = 0.8),
+      size = 1.5,
+      width = 0.09
+    ) +
+    scale_fill_manual(
+      values = wes_palette(n = 3, name = "FantasticFox1"),
+      name = "next interaction",
+      breaks = c("repeating", "alternating", "none")
+    ) +
+    scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
+                       limits = c(0.8, 7.2)) +
+    labs(x = "relationship", y = "how likely?", fill = "next interaction", title = s) +
+    theme(legend.position = "bottom")
+  
+  f
+  
+  
+  ggsave(here(glue("figures/coglunch/1a_symmetric_{s}.pdf")),
+         width = 6,
+         height = 7.5)
+}
 
 ## Stats
 

@@ -32,7 +32,7 @@ def main(args):
         attention = raw_json_data[-2]
 
         df_demographics = pd.DataFrame(data={
-            'subject_id': demographics['subject_id'],
+            'subject_id': demographics.get('subject_id', None),
             'time_elapsed': demographics['time_elapsed'],
             'gender': demographics['response']['gender'],
             'age': int(demographics['response']['age']),
@@ -47,7 +47,7 @@ def main(args):
         df_data = pd.DataFrame(columns=cols)
 
         for i, trial in enumerate(data):
-            df_data.loc[i, 'subject_id'] = trial['subject_id']
+            df_data.loc[i, 'subject_id'] = trial.get('subject_id', None)
             df_data.loc[i, 'story'] = trial['story']
             df_data.loc[i, 'altruistic_status_second'] = trial.get('altruistic_status_second', None)
             df_data.loc[i, 'annoyed'] = trial['response'].get('annoyed', None)

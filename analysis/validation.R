@@ -190,7 +190,286 @@ f
 
 # ggsave(here("figures/validation_.pdf"), width = 10, height = 3)
 
+
+
+# Are these scenarios coordination or zero sum? 
+all.diffs.benefit.long <- all.diffs.benefit %>% pivot_longer(
+  names_to = "which_one", 
+  cols = c("expected_high_benefit", "expected_low_benefit")
+)
+
+my.means <- all.diffs.benefit.long %>% 
+  group_by(story, which_one) %>% 
+  tidyboot_mean(value, na.rm = T)
+# variable names r shit... fix later 
+
+
+ggplot(my.means, aes(x = which_one, y = empirical_stat)) +
+  geom_point(
+    data = my.means,
+    size = 1,
+    alpha = 1,
+    position = position_dodge(width = 0.4)
+  ) +
+  geom_errorbar(
+    data = my.means,
+    aes(x = which_one, ymin = ci_lower, ymax = ci_upper),
+    position = position_dodge(width = 0.4),
+    size = 1,
+    width = 0.2
+  ) +
+  scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
+                     limits = c(0.8, 7.2)) +
+  # geom_hline(yintercept = 4, color="red", linetype = "dotted") +
+  labs(title = "how much benefit compared to not interacting?", y = "how much benefit compared to not interaction (not at all to extremely)") + 
+  facet_wrap(~story) 
+
+
+# look at the same thing for effort 
+
+# Are these scenarios coordination or zero sum? 
+all.diffs.effort.long <- all.diffs.effort %>% pivot_longer(
+  names_to = "which_one", 
+  cols = c("expected_high_benefit", "expected_low_benefit")
+)
+
+my.means <- all.diffs.effort.long %>% 
+  group_by(story, which_one) %>% 
+  tidyboot_mean(value, na.rm = T) %>% 
+  rename(value = empirical_stat)
+# variable names r shit... fix later 
+
+
+ggplot(my.means, aes(x = which_one, y = empirical_stat)) +
+  geom_point(
+    data = my.means,
+    size = 1,
+    alpha = 1,
+    position = position_dodge(width = 0.4)
+  ) +
+  geom_errorbar(
+    data = my.means,
+    aes(x = which_one, ymin = ci_lower, ymax = ci_upper),
+    position = position_dodge(width = 0.4),
+    size = 1,
+    width = 0.2
+  ) +
+  scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
+                     limits = c(0.8, 7.2)) +
+  # geom_hline(yintercept = 4, color="red", linetype = "dotted") +
+  labs(title = "how much effort compared to not interacting?", y = "how much effort compared to not interaction (not at all to extremely)") + 
+  facet_wrap(~story) 
+
+
+# The plot that rebecca wants for whether these scenarios are coordiantion or zero sum
+# TODO: y axis stuff
+all.diffs.benefit.long$story <- factor(all.diffs.benefit.long$story, levels=levs)
+all.diffs.effort.long$story <- factor(all.diffs.effort.long$story, levels=levs)
+my.means <- all.diffs.benefit.long %>% 
+  group_by(story, which_one) %>% 
+  tidyboot_mean(value, na.rm = T) %>% 
+  rename(value = empirical_stat)
+# variable names r shit... fix later 
+
+# df.stacked.all$story <- factor(df.stacked.all$story, levels=levs)
+
+# my.means$story <- factor(my.means$story, levels=levs)
+# f <- ggplot(all.diffs.benefit.long, aes(x = story, y = value, fill = which_one)) + 
+#   geom_violin(width = 2.0,
+#               bw = 0.43,
+#               position = position_dodge(width = 0.4))
+# 
+# f
+
+f <- ggplot(all.diffs.benefit.long %>% filter(which_one == "expected_high_benefit"), aes(x = story, y = value)) + 
+  geom_violin(width = 2.0,
+              bw = 0.43,
+              position = position_dodge(width = 0.4)) +
+  geom_point(
+    data = my.means %>% filter(which_one == "expected_high_benefit"),
+    aes(x = story, y = value),
+    size = 1,
+    alpha = 1,
+    position = position_dodge(width = 0.4)
+  ) +
+  geom_errorbar(
+    data = my.means %>% filter(which_one == "expected_high_benefit"),
+    aes(x = story, ymin = ci_lower, ymax = ci_upper),
+    position = position_dodge(width = 0.4),
+    size = 1,
+    width = 0.2
+  ) +
+  scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
+                     limits = c(0.8, 7.2)) +
+  labs(x = "story", y = "B benefit compared to not interacting") +
+  theme(axis.text.x = element_text(angle = 30, hjust = 1))
+
+f
+
+ggsave(here("figures/coglunch/B_benefit.pdf"), width = 10, height = 3)
+
+f <- ggplot(all.diffs.benefit.long %>% filter(which_one == "expected_low_benefit"), aes(x = story, y = value)) + 
+  geom_violin(width = 2.0,
+              bw = 0.43,
+              position = position_dodge(width = 0.4)) +
+  geom_point(
+    data = my.means %>% filter(which_one == "expected_low_benefit"),
+    aes(x = story, y = value),
+    size = 1,
+    alpha = 1,
+    position = position_dodge(width = 0.4)
+  ) +
+  geom_errorbar(
+    data = my.means %>% filter(which_one == "expected_low_benefit"),
+    aes(x = story, ymin = ci_lower, ymax = ci_upper),
+    position = position_dodge(width = 0.4),
+    size = 1,
+    width = 0.2
+  ) +
+  scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
+                     limits = c(0.8, 7.2)) +
+  labs(x = "story", y = "A benefit compared to not interacting") +
+  theme(axis.text.x = element_text(angle = 30, hjust = 1))
+
+f
+
+ggsave(here("figures/coglunch/A_benefit.pdf"), width = 10, height = 3)
+
+# effort
+my.means <- all.diffs.effort.long %>% 
+  group_by(story, which_one) %>% 
+  tidyboot_mean(value, na.rm = T) %>% 
+  rename(value = empirical_stat)
+
+
+
+f <- ggplot(all.diffs.effort.long %>% filter(which_one == "expected_low_benefit"), aes(x = story, y = value)) + 
+  geom_violin(width = 2.0,
+              bw = 0.43,
+              position = position_dodge(width = 0.4)) +
+  geom_point(
+    data = my.means %>% filter(which_one == "expected_low_benefit"),
+    aes(x = story, y = value),
+    size = 1,
+    alpha = 1,
+    position = position_dodge(width = 0.4)
+  ) +
+  geom_errorbar(
+    data = my.means %>% filter(which_one == "expected_low_benefit"),
+    aes(x = story, ymin = ci_lower, ymax = ci_upper),
+    position = position_dodge(width = 0.4),
+    size = 1,
+    width = 0.2
+  ) +
+  scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
+                     limits = c(0.8, 7.2)) +
+  labs(x = "story", y = "A effort compared to not interacting") +
+  theme(axis.text.x = element_text(angle = 30, hjust = 1))
+
+f
+
+ggsave(here("figures/coglunch/A_effort.pdf"), width = 10, height = 3)
+
+f <- ggplot(all.diffs.effort.long %>% filter(which_one == "expected_high_benefit"), aes(x = story, y = value)) + 
+  geom_violin(width = 2.0,
+              bw = 0.43,
+              position = position_dodge(width = 0.4)) +
+  geom_point(
+    data = my.means %>% filter(which_one == "expected_high_benefit"),
+    aes(x = story, y = value),
+    size = 1,
+    alpha = 1,
+    position = position_dodge(width = 0.4)
+  ) +
+  geom_errorbar(
+    data = my.means %>% filter(which_one == "expected_high_benefit"),
+    aes(x = story, ymin = ci_lower, ymax = ci_upper),
+    position = position_dodge(width = 0.4),
+    size = 1,
+    width = 0.2
+  ) +
+  scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
+                     limits = c(0.8, 7.2)) +
+  labs(x = "story", y = "B effort compared to not interacting") +
+  theme(axis.text.x = element_text(angle = 30, hjust = 1))
+
+f
+
+ggsave(here("figures/coglunch/B_effort.pdf"), width = 10, height = 3)
   
+# Relative cost and benefit for cog lunch
+
+f <- ggplot(df.stacked.all %>% filter(type == "benefit"), aes(x = story, y = diff)) + 
+  geom_violin(width = 2.0,
+              bw = 0.43,
+              position = position_dodge(width = 0.4)) +
+  geom_point(
+    data = df.stacked.means %>% filter(type == "benefit"),
+    aes(x = story, y = diff),
+    size = 1,
+    alpha = 1,
+    position = position_dodge(width = 0.4)
+  ) +
+  geom_errorbar(
+    data = df.stacked.means %>% filter(type == "benefit"),
+    aes(x = story, ymin = ci_lower, ymax = ci_upper),
+    position = position_dodge(width = 0.4),
+    size = 1,
+    width = 0.2
+  ) +
+  labs(x = "story", y = "B minus A", title = 'B benefits more') +
+  theme(axis.text.x = element_text(angle = 30, hjust = 1))
+
+f
+ggsave(here("figures/coglunch/B_benefits_more.pdf"), width = 10, height = 3)
+
+f <- ggplot(df.stacked.all %>% filter(type == "effort") %>% mutate(diff = diff * -1), aes(x = story, y = diff)) + 
+  geom_violin(width = 2.0,
+              bw = 0.43,
+              position = position_dodge(width = 0.4)) +
+  geom_point(
+    data = df.stacked.means %>% filter(type == "effort") %>% mutate(diff = diff * -1),
+    aes(x = story, y = diff),
+    size = 1,
+    alpha = 1,
+    position = position_dodge(width = 0.4)
+  ) +
+  geom_errorbar(
+    data = df.stacked.means %>% filter(type == "effort")%>% mutate(diff = diff * -1, ci_lower = ci_lower * -1, mean = mean * -1, ci_upper = ci_upper * -1), # so jank but whatever
+    aes(x = story, ymin = ci_lower, ymax = ci_upper),
+    position = position_dodge(width = 0.4),
+    size = 1,
+    width = 0.2
+  ) +
+  labs(x = "story", y = "A minus B", title = 'A more effort') +
+  theme(axis.text.x = element_text(angle = 30, hjust = 1))
+
+f
+ggsave(here("figures/coglunch/A_effort_more.pdf"), width = 10, height = 3)
+
+f <- ggplot(df.stacked.all %>% filter(type == "effort"), aes(x = story, y = diff)) + 
+  geom_violin(width = 2.0,
+              bw = 0.43,
+              position = position_dodge(width = 0.4)) +
+  geom_point(
+    data = df.stacked.means %>% filter(type == "effort"),
+    aes(x = story, y = diff),
+    size = 1,
+    alpha = 1,
+    position = position_dodge(width = 0.4)
+  ) +
+  geom_errorbar(
+    data = df.stacked.means %>% filter(type == "effort"), # so jank but whatever
+    aes(x = story, ymin = ci_lower, ymax = ci_upper),
+    position = position_dodge(width = 0.4),
+    size = 1,
+    width = 0.2
+  ) +
+  labs(x = "story", y = "B minus A", title = 'A more effort') +
+  theme(axis.text.x = element_text(angle = 30, hjust = 1))
+
+f
+ggsave(here("figures/coglunch/A_effort_more.pdf"), width = 10, height = 3)
 
 # Figure out what 2 stories to exclude for study 4
 # using abs of sum of benefit and effort diff
