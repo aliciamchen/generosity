@@ -37,6 +37,10 @@ d.demographics %>% summarize(mean_age = mean(age), sd_age = sd(age))
 
 print(length(unique(d$subject_id)))
 
+
+################## PLOTS
+
+
 # Calculate means for plotting
 d.means.all <-
   d %>% drop_na() %>%
@@ -325,7 +329,7 @@ for (s in stories) {
 }
 
 
-########## Stats
+################## STATS
 
 # With all levels
 mod <- lmer(likert_rating ~ 1 + next_interaction * relationship + (1 |

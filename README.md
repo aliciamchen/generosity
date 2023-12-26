@@ -1,5 +1,7 @@
 # Norms for repeated generous actions in social relationships
 
+Alicia Chen, Rebecca Saxe
+
 ## Preregistrations
 
 - Study 1
@@ -14,3 +16,9 @@
     - Study 3b: https://osf.io/c9t8g
 
 *Note that the numbering on the title for preregistrations (which can't be changed) is different from in the paper.*
+
+## Stimuli
+
+Stimuli for each experiment are in `json/stimuli.json` under each experiment folder.
+
+
