@@ -1,58 +1,174 @@
 subject_id,time_elapsed,gender,age,understood,pass_attention,comments
+d2a6c80877a9157caa41cb74427f77c8,689229,male,39,yes,TRUE,NA
 7383c86636c98cebfbafdb94c310fc61,379309,male,26,yes,TRUE,NA
 d8a31b0c46d97f79b42d7e6bf88b2ad9,808369,female,62,yes,TRUE,NA
+1c6be1a0c77bbeac941b3f7786b0c490,514534,female,37,yes,TRUE,NA
+8baa0c15df3215a7ed0285476180c12b,585704,female,39,yes,TRUE,NA
 515b1220677d1a593209da6259f73243,814043,male,30,yes,TRUE,NA
 168e60f6ea314e9e0b77200af538705e,362776,female,41,yes,TRUE,NA
+28e38959331a294a80bfa566a7721802,1316828,female,39,yes,TRUE,NA
 746bb56e477fa0ae07458348cd32c8cc,367367,female,43,yes,TRUE,NA
+a229c43610f5123756eaae81ee1cfb80,1268172,male,44,yes,TRUE,NA
+f0b50c108a89d3c95885125e89932045,392179,nonconforming,30,yes,TRUE,NA
+0056a22d2523561f803d86662062e241,1062746,male,59,yes,TRUE,NA
+d3ca0a441c8c83d2a7ef676185479b20,408269,male,43,yes,TRUE,NA
+7a19b53f6bcfcf68717d7ec727d5bc09,946288,male,56,yes,TRUE,No technical issues noted
+ecab5bd6dcc69a45dcaefd45b1abf963,807623,female,35,yes,TRUE,The survey went well. Thank you for allowing me to participate.
+aa6f6cd41207f9d7b87b71ba316e4b08,690590,female,33,yes,TRUE,NA
 af4e200a8498ee75fb604985c72099cd,725568,male,32,yes,TRUE,NA
+9dc1aa080a0df44d39ade41f006e4bd9,1416873,male,34,yes,TRUE,NA
+8485fdacb89f3bc5478e555ad1f8f48c,556915,female,31,yes,TRUE,NA
 906e53b0d1cf8c3fafd67c2fa469597d,1277439,male,29,yes,TRUE,NA
+7089e50f55e11ec09218d9f7a58486bf,1243541,female,31,yes,TRUE,NA
 cf0fbfe6797c174a500ced0bc2913f99,2621263,male,25,yes,TRUE,NA
 868a7503cff2fdc18daf09391da6f5dc,478236,female,23,yes,TRUE,NA
+3982071ed59cb66bda3a5fcba958272f,521786,male,38,yes,TRUE,NA
 db9bc332f4483d998a910ff03b1fafbe,879997,male,44,yes,TRUE,"None,thank you"
+03ee5ada7c1a0fff5f56031d3a39b421,655112,male,47,yes,TRUE,NA
 b471cda6965be6c0addea826eb6195f9,530860,female,24,yes,TRUE,NA
 bfeda4057736d0f4c1ceff36f64f8d40,808525,male,41,yes,TRUE,n/a
+2f9bfcaa3db6e2ad41b31e4ee8a07da2,1085276,female,38,yes,TRUE,NA
 a4b1999cfb2c73cd62c9d737d8455c92,1967146,nonconforming,36,yes,TRUE,No comments or suggestions.
+cbaf2fc8e8adb5750237068cf09f18c1,653484,male,28,yes,TRUE,none
+eb9a85e3e3ad7613e3bcbc6e30e9e1ab,887261,female,28,yes,TRUE,NA
+40c5d77f93dfe6613f3dd08fffe17743,978221,male,43,yes,TRUE,no comment
+8ed8529bb9e2596c5db849713f68de2a,564136,female,29,yes,TRUE,NA
 29c5beb78d82eeb647951f71d5feec52,883434,female,25,yes,TRUE,NA
 e51b32b4cef420e77d9629ac96c19d4e,701877,male,71,yes,TRUE,NA
 5b53d173197bdfc1b5a7d361ec77bc63,528232,male,28,yes,TRUE,NA
 ed971b6660900537722bf48b893c3e55,781999,male,24,yes,TRUE,NA
 5395051372574103752e9ba8b4c71229,600057,female,33,yes,TRUE,NA
+95595d4139f3bcce658d3b53c63b0425,901300,female,39,yes,TRUE,NA
 2e3330d3313718b66ed2765b82433943,860059,male,42,yes,TRUE,none
 31b525d19f94a881eea92db4f124be56,1077219,male,21,yes,TRUE,NA
+b568c4af25cfdb87e1dbe49567885733,1053876,female,34,yes,TRUE,NA
+27a36d99c526a96467469239c8e4a0a1,611051,female,40,yes,TRUE,NA
 cf02d7ca41e2955b5df818613685a1de,824871,female,39,yes,TRUE,Thank you for the survey opportunity!
+9afdd2efea0e43f1f9dca43835a1f673,1293553,male,32,yes,TRUE,None
 ff07511ca43402a9ceace1741d068340,1537811,female,43,yes,TRUE,I enjoyed the survey thank you.
+6cd4c43fdfcccdb637cd04d04087f66a,2013027,female,70,yes,TRUE,Thanks
 5f3bec473f1462f3509ee4f86206661d,629673,female,50,yes,TRUE,NA
+98cad7834576e43d9bf5f36c0c5eb58c,1459010,male,61,yes,TRUE,NA
+8a8204aebe01417010d4c0ae0865bd82,521552,female,53,yes,TRUE,NA
 d23f3cf4e7f452d59120d0d12046853b,1135474,male,29,yes,TRUE,NA
+c162eedc7283529e3e323f045b75e752,1046071,female,58,yes,TRUE,NA
 bc5c9c36e0505f8bac879ff48ad5f462,1487800,male,37,yes,TRUE,none
+4959a2d8519e3438d25f56e817a54918,710304,male,61,yes,TRUE,NA
+b017eb3f2fb92693b0f37de07d23da9b,792419,male,51,yes,TRUE,NA
+e089e3cec22d1e8481f1cd56967fcf7d,2755169,female,42,yes,TRUE,none at this time. Have a great day!
+ff8791789bbc15ca3671b3f081e8f4b0,1814217,female,62,yes,TRUE,none
 e68e1050664d4a7a991394c821c2f349,722943,male,26,yes,TRUE,NA
+6b89b398c2e11b6c9f99d990074c0f76,1202020,male,28,yes,TRUE,NA
 728331c02175f383b38fb01d6bb21187,933440,male,25,yes,TRUE,NA
+8990f7625b7cde4e61aafa01f88be6ff,337037,female,22,yes,TRUE,NA
+cd44998e7b4de0f3641e97003fddc72d,725794,female,25,yes,TRUE,"On the one with the two girls from the writing workshop, I think it didn't log my response to the second question, but I was trying to select moderately satisfied!"
 e523f0d7df89dafb7b17a69c145874cb,1016581,female,45,yes,TRUE,NA
 e5ebc959d63f3be1babd31d5097740de,906873,female,60,yes,TRUE,NA
+8a0b9d35ac481d9dc3736d1e574c0e55,619961,male,22,yes,TRUE,NA
+ca2ed61accb29d76109876b29cf03807,398977,female,23,yes,TRUE,NA
 1188152505608349e347d32989380e71,1615642,male,25,yes,TRUE,N/A
+fc567b8fb78eb97eb7bdd3111ea126bb,1285607,female,42,yes,TRUE,NA
+1e2d1f6450d0dca12a078513535708bd,709082,male,31,yes,TRUE,NA
+78fe0e302f456ffa8cb74d10437c2845,910331,nonconforming,26,yes,TRUE,NA
 dce7a1b0f34eb35e5bae1977cadc26fc,917615,female,25,yes,TRUE,NA
 8bef799a726453f7130db96430400026,612415,male,25,yes,TRUE,NA
 ba02f29327cd04b776a765cc3931d935,539862,female,28,yes,TRUE,NA
 b09774ef4fb14a371420ed2d6068a2ee,666726,male,22,yes,TRUE,NA
+685c57c7c3f39a0ca2465609ccbb98fa,686523,female,29,yes,TRUE,NA
+bd5e38884ac0d86c5ed49fb38787ff31,1003167,male,25,yes,TRUE,NA
+b057dd12a01d2101108f7c07108d27c3,485495,female,29,yes,TRUE,NA
+73738bd460136e4db3488e5697ed4282,728770,female,20,yes,TRUE,NA
 1020698265d01793927f95cb33fcbb4d,996623,nonconforming,21,yes,TRUE,NA
+f4c1abee4565a72bd46ece6c1d83761c,867379,female,42,yes,TRUE,NA
+52c8526523336b5ad5f01dc01089e0ed,717386,male,34,yes,TRUE,NA
+cc0d09032917198c9a4ab3832a258820,1102447,female,28,yes,TRUE,NA
+8e00dbfed952c27cdaa5f2726c1104e1,768748,male,33,yes,TRUE,NA
 45ca78b10aa552069035ff6589e399b2,1054345,female,47,yes,TRUE,NA
 b4f8b2442a2edfc3cf2c9243cdd92c3d,850437,female,39,yes,TRUE,NA
 29e8e4b9d27ef4ff0d3ac620f90b2b4e,351242,male,43,yes,TRUE,NA
+57b489a5f34bc88cfffff1dc3e927d70,402341,male,21,yes,TRUE,NA
+db5548dfdd325102b4acc64f8aed2211,292831,male,30,yes,TRUE,NA
 f82285267cc5ad37d29eea304cd13f3c,684319,female,27,yes,TRUE,NA
+84ca7a61edf1bafa1b4ea4ab4c38dba8,682779,female,20,yes,TRUE,NA
 550997b2fc20669b54441eaffd614c3f,842409,female,24,yes,TRUE,NA
+ac896fc4b3c5b807a771b4277912b870,745781,nonconforming,21,yes,TRUE,NA
 fc90a62500583da52b867948864dfaba,652903,female,20,yes,TRUE,NA
+87083c468e00a63f84fef41f82d67089,698224,female,22,yes,TRUE,NA
+38045180fba12667807efd21c18cc440,571209,female,22,yes,TRUE,NA
+b1e0ab4db55747fa60f65e1912323fc3,543912,female,20,yes,TRUE,NA
+21755a3f4aab93458ca27d465dc51362,400453,male,21,yes,TRUE,NA
+4b00b58acd17c06e24c896e9f2bf92b1,333594,female,24,yes,TRUE,NA
+8a90ad3343d65f0fd0c8c47dd457ef89,675460,male,48,yes,TRUE,NA
 6aac71e7a97fd91ad17dddb77cb9444c,779761,female,21,yes,TRUE,NA
+36d8a648e1fc6c8a22d760a61ec5a2db,1636171,male,30,yes,TRUE,none
+c31443f87196a2907265f80c6dd37524,625148,female,29,yes,TRUE,NA
+a514f1840cc11d75e9cbf09a3a241ba5,603642,female,30,yes,TRUE,NA
+136f9c19a17d0ed6742a0e5d206bb8a1,1167071,female,32,yes,TRUE,NA
+695a8ae7f9e7d0b2e3914d033fa8f846,343753,male,36,yes,TRUE,NA
+2dc9f406a658cbd8a5bfd4b25f0e8502,768211,female,32,yes,TRUE,NA
 409bd1fbf126b841b34f1924c1a408ca,340678,male,21,yes,TRUE,NA
 902410fbfcd479a22ab87aa07d1c836a,601658,male,30,yes,TRUE,no thank you for the opportunity
+bce12a009046241173a6ee6560098a52,432336,female,39,yes,TRUE,NA
 9ad443d0e6308ac3d271c081cefd7b03,831110,female,25,yes,TRUE,NA
+fd29325f93b6e5b3463195b7d93c2fbe,606529,female,27,yes,TRUE,NA
+80bc817166112b11aca582140b47dab5,589626,male,36,yes,TRUE,NA
 dffce6c012fea9287d1bd57934945d79,1567668,male,46,yes,TRUE,nope
+fd79f153eb2a038ec70074752d475357,667177,female,57,yes,TRUE,NA
 ad421e1590d358284d5827f37255c5c6,607465,male,30,yes,TRUE,NA
+0b1d6f5dd87243f5e12a65f48c99105e,1892484,female,55,yes,TRUE,NA
+d92966c60e1e17dc1721c7cbfbbc92dd,466614,male,47,yes,TRUE,NA
+a9a1a974ba88ef09c2d49a357472f0ea,942689,male,30,yes,TRUE,n/a
 1d3441a3a775a233d9ca95702da40f85,535068,male,26,yes,TRUE,NA
+dd94452e8c706f8f54bcb3305e106a0e,758242,male,31,yes,TRUE,"It's a bit ambiguous what ""satisfied"" means, so giving some examples would help"
+b3b26b9db97154049b82bfe36047d713,594004,male,54,yes,TRUE,NA
+39f6efe7722858711bce3543ba3ae44c,952122,male,36,yes,TRUE,NA
+71198f241a07f48eb0f9a439fead8c11,486729,male,27,yes,TRUE,NA
+fe47eeacdec219f9d2129f3936e66da6,729621,male,40,yes,TRUE,NA
+de927e77d9bc585c2f34f0299eb21c1f,435884,male,27,yes,TRUE,NA
+51cb1c7b06f0b318a2dee5f04dac5d12,410576,female,38,yes,TRUE,NA
 1e0341db81e70ec659b315d904d42fd4,1939768,female,19,yes,TRUE,NA
+2932f0687f38327f497a37ea7e9467d1,408131,female,21,yes,TRUE,This was interesting and took less than 20 minutes to complete when reading thoroughly and paying full attention
+9fc7e5fbb8e6ca78bc28c17963b65e06,629762,male,52,yes,TRUE,NA
+bbb116ce5f6c85e0f217b8e96ab2458e,1076846,male,38,yes,TRUE,NA
+dfe6b2fd7203166993529e564cad9443,689964,female,30,yes,TRUE,NA
+e5a5bfdeb22860856b5a4945824a27c7,799331,male,42,yes,TRUE,None
+ebe4a1928802754cdce7d0245d2fcc08,1458489,male,39,yes,TRUE,NA
+fb4bc2f218b2f4f816d4fdb1b4fee6bc,796393,female,56,yes,TRUE,NA
 bdd2cc01668c17ffdc1a0fa53a67aee8,987208,female,64,yes,TRUE,NA
 1e35edcf34a0ce5224d809cdb66783ba,2594249,female,52,yes,FALSE,NA
+a6c93678f9b19dbeab5a5e97e9f31b54,980580,female,54,yes,TRUE,Sometimes I am more satisfied with an interaction when I contribute more to the relationship. It helps me feel more invested in it.
+c0be2900c9a7c8194ca1274981e9f30a,1279038,male,31,yes,TRUE,NA
 a21d44053eed9466a1c3bbe0a57e13c8,393253,male,21,yes,TRUE,NA
+896c15d4500e162e68b95006b278e78f,685327,male,43,yes,TRUE,NA
+aaa0cdc8e843d931f0464f5784ed0641,766668,male,53,yes,TRUE,none
+bd096d95aeaa8df6bc76661b86cf63d0,488881,female,28,yes,TRUE,very interesting!
+70d20591512fd4d40e42c8a4c0d2941b,1167464,male,31,yes,TRUE,FUN SURVEY
 bffda1ee36557501842cdee7c8eabfb1,982332,nonconforming,29,yes,TRUE,NA
+295dab62f6622519b09bb1a5a0034e79,905341,male,35,yes,TRUE,"I feel like overall I understood the instructions and how to ""rate"" each scenario. However, reading the prompt, then the two scenarios and the after that to rate two different outcomes, that was a bit confusing and hard t keep track of who was who and how the two groups were different or not from one another."
+419b335a8d7cb9de7db03cce0be226d5,480572,male,25,yes,TRUE,NA
 c1c15f50b03cb3b482a61120f53729cd,848303,female,22,yes,TRUE,NA
+48710d03aaba7f23feedac7fea2c2ff6,1088178,male,17,yes,TRUE,NA
+a6d0c88bfc9c2de433d40a9befa0c58a,855894,male,59,yes,TRUE,None
+3674af7990bacd9affa8c446e0ccbee2,910803,female,52,yes,TRUE,NA
+e2b6c0900e858e15f337595d6d3f045d,1011337,female,41,yes,TRUE,NA
+d411e2902815c54282aa5ee161360376,592427,male,39,yes,TRUE,NA
+724792f875d46f5de231124326590d9d,356196,male,27,yes,TRUE,n/a
+96891b6cc43b12332c1cddbe02c24ca1,602569,male,33,yes,TRUE,NA
 6d9a075fa2ed58b6d9a2062aeff4d517,556162,male,20,yes,TRUE,NA
+a3e1131bd45ad13ad421866c6086eeb0,386201,male,22,yes,TRUE,NA
 94f905fb4c453b9a19dbb62a511cd6eb,645131,female,28,yes,TRUE,NA
 43cf62e7e3c617c47af7a61e6f46c15d,343195,male,53,yes,TRUE,NA
+0d28ad879230374017ec071eac39172c,869717,male,49,yes,TRUE,NA
+3a8f4f7086d1a8a75db94c73d99dbd61,430104,male,21,yes,TRUE,NA
+607b96cab4e0d5dd8e79468647046b1f,1338406,female,58,yes,TRUE,None.
+10dd8f4a5e24b7a0f3373ab21c740e71,2225951,female,60,yes,TRUE,NA
+c62cb12d4f4742c25e49aaecd7dcba9d,819954,female,69,yes,TRUE,NA
+312b8587faf09648c811f1787596e23e,831726,female,54,yes,TRUE,NA
+c35462237262fa8548885817fceaf3bb,871124,female,37,yes,TRUE,NA
+05a0f2a8e71cf23666797deec06389b0,606870,female,33,yes,TRUE,None.
+4cfb5524d7c1ff63c1ee609249b13392,377392,female,31,yes,TRUE,NA
+41dda7bb472a4f5d4b727b793bc58fba,892279,male,22,yes,TRUE,NA
+6a2ff142c6e9a4fa6b725095f21e00c6,905314,male,27,yes,TRUE,NA
+3e8c90ec293f0d3adc29b4e534a705e8,652919,female,24,yes,TRUE,"None, thanks!"
+a031b4cdd621c07538ff0a0fea12f162,944656,female,24,yes,TRUE,I feel like the questions were very open ended and left a lot up to interpretation. But I assume that is how this study was intended.
+55611e71b358a30158c61810ad802435,706292,male,37,yes,TRUE,NA

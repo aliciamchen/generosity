@@ -1,61 +1,181 @@
 subject_id,time_elapsed,gender,age,understood,pass_attention,comments
+1a641fd69aa34d39a35388d23717b83d,314084,female,27,yes,TRUE,NA
+7693be758993f96baa7993076509e059,3070703,female,43,yes,TRUE,NA
+a8d99205dbf551974c22a1824c543e7e,713226,male,35,yes,TRUE,NA
+dd0e28b0e1eabbeb1bb2dd8052abe36a,1349070,female,31,yes,TRUE,"This was interesting, and very well paid for the time it took. Thank you!"
 038ecddfba7a11699158f7471c3c8223,752421,female,34,yes,TRUE,Thank you! I enjoyed being a part of this study it was interesting!
+79f72150d992e3efc5940b8826313cc3,557967,male,30,yes,TRUE,NA
 e3fa6a6bc6aecd3be4dedc233254faad,346645,female,51,yes,TRUE,NA
 73d4d253c0e944038ea52f3953cd877b,756117,female,74,yes,TRUE,NA
 75e9003d16580fe976155eb204b95076,882133,female,35,yes,TRUE,No comments or issues.  Very well done study.
+7441e8f9af0af3773d81b05fc6ec447e,474970,male,30,yes,TRUE,NA
+433ebdcb22745895fa1f70975e3f71b2,994479,female,37,yes,TRUE,NA
+6ea013d276db80102e08f5a73c9959c7,787648,male,37,yes,TRUE,NA
+96cf536b6d9886d14eabe31b233f6235,414499,male,30,yes,TRUE,Thank you
+e67e32f77e985df5ece7d8aeb6e4c84c,601312,female,50,yes,TRUE,None
+0bb16be1f7c56763e014ef0624b3a20d,483268,female,33,yes,TRUE,NA
 b4c897a0a926267dcecac78c3a2aed94,580377,male,59,yes,TRUE,NA
+7beee646b58121b9501657007d726377,487444,male,54,yes,TRUE,NA
+ec7a0d7c3bc304386a148d2e0cf0cafd,502024,male,33,yes,TRUE,N/A
 86c90aa7930c11cd449ebdc8675b8a63,328418,female,24,yes,TRUE,NA
 9871ab95a69023922e05f6a438c79850,736815,female,41,yes,TRUE,NA
+727129419c0be43df4e12c96528bd08b,472867,male,29,yes,TRUE,NA
 04811f3a300b7ac83d7130eae767e8ef,374077,female,30,yes,TRUE,NA
+3e48ea337fe117eb5922a57fa7037af7,583579,male,48,yes,TRUE,NA
+3b145e46ab619322eef51b3619112c01,745288,female,52,yes,TRUE,NA
 4025e49556cfbcbb4c47266591276466,573930,female,30,yes,TRUE,none
 23c998c0fbe54b1f2f2c79e2a5b2b361,1375881,male,38,yes,TRUE,NA
 96f81c4dba790978bb4aac0fbebdf082,568841,female,41,yes,TRUE,NA
 350056cfbb94d669dcdd37a1bbab8b85,467439,female,38,yes,TRUE,NA
 fc3349648774a7cb80417a70334e256c,552873,female,47,yes,TRUE,NA
+44526bd32928c8547c785ceda77744ad,392999,female,42,yes,TRUE,NA
+9392c5bf07a36b0b5e569344f561ad7c,615469,male,48,yes,TRUE,NA
 271f8facc709a9664a34e2116f544420,1139605,female,64,yes,TRUE,NA
+7e3cdd8cf8bd6610b6747ce40311e39c,335534,male,28,yes,TRUE,NA
+d43cb2ffe2ee3dcb891555ed195a7d2b,388190,female,36,yes,TRUE,Everything worked well.
+bfc056a8769cbdfd56c1e8c9e937c095,473627,male,36,yes,FALSE,NA
+6a0f111096550388eed0614a979c555d,489655,female,57,yes,TRUE,NA
 7fdcb6232fd232c23946434a1d397f95,244782,male,28,yes,TRUE,NA
+f49b64af14d1ba0234e34dec86f969bf,1883781,male,32,yes,TRUE,NONE
 73c67113266c78a0992d398a79403f48,496489,male,26,yes,TRUE,NA
 dd0a08ee38ee0f6145c11da6dad9157c,541230,female,55,yes,TRUE,NA
+75676c5c132569ac8bb6fdbd3172c958,288832,male,53,yes,TRUE,NA
+2481ef4f27734011dea38f15c797daab,799611,nonconforming,26,yes,TRUE,Have a nice day!
+de496dcbcbd745cf24b604f5806ba46f,3871118,male,38,yes,TRUE,NA
+0b78ecab93bcd1970118d5a0efebdd03,974089,female,26,yes,TRUE,NA
+00a5ad5cf54a9310a421bb1fcad06c5e,590250,female,60,yes,TRUE,NA
+89006b6bc1ba8b0aa714143312f00933,397098,female,40,yes,TRUE,NA
+61190e5707ea6188c05003bf1d06b3b3,351190,male,44,yes,TRUE,None
+d02047414473be69d4f3f0a4c9b771d1,853442,female,69,yes,TRUE,I enjoyed your study.
+9534d68a2515be3c67cd7764061d576a,661752,male,49,yes,TRUE,the directions could have elaborated about the answers more
+3e94043691132417210a43bcba066af1,1078123,male,69,yes,TRUE,None
+4ce8caef92e73dff28b1a568712d56ef,608414,male,39,yes,TRUE,NA
 4e092817f48cca99cef9346d4d0c72e6,357727,male,40,yes,TRUE,NA
 1e4f39777bb7d58c3591e8291b049205,1433400,male,21,yes,TRUE,NA
+365617d388719e2503f16292a8b037bf,229802,male,40,yes,TRUE,NA
+dd9bc89872b2a0f3536adf1cec5b85b1,640069,nonconforming,25,yes,TRUE,NA
+bb05bbdbc398ec85fa5d3aee2bbff49e,441091,female,48,yes,TRUE,N/A
+f0f9d1e130c7e76dbbf8f3dd3f5383a5,782944,female,44,yes,TRUE,NA
+de33eb7827568df5936caa10374adbc5,870774,male,46,yes,TRUE,Tough to determine moral behavior when compared to fair behavior.
 d165c9c147eef9d13a2b5b52d5e32d06,731803,male,40,yes,TRUE,NA
+9329a6e2a58b8368caa5007252624fdf,468522,female,22,yes,TRUE,NA
+e55639cf5fe05769796bf8436b05855d,590631,female,23,yes,TRUE,NA
+f57b33a8d3d5163fd176bf9311448c41,524881,male,36,yes,TRUE,NA
+e3ca9881b107c919d903c87796b30c20,371763,male,39,yes,TRUE,NA
+23d87c924ac1fb1d56e4cd7179e63917,394855,female,36,yes,FALSE,NA
+7ef4915524149688bd4e111abf8585d9,586443,female,32,yes,TRUE,NA
 2dee66ecbde11f4029889629a523bc0a,498200,female,21,yes,TRUE,"I really hope you don't think I didn't consider these scenarios carefully, but they all seemed fair, even with the power imbalances. In the case of the one where John volunteered to babysit even though the other guy (Caleb?) had more influence. John volunteered though."
+6c151d2760df491c6c87a18ed27692bf,209121,female,45,yes,TRUE,NA
+30c661cc5ce4e6babf394180daf54179,1050084,female,31,yes,TRUE,no
 f9d0a8493bee292bfaf5545b3fa0b8fa,697350,female,67,yes,TRUE,NA
 4f595a661d8a9a00420fafb067c35bd1,542861,male,31,yes,TRUE,NA
 5a7c47f0c0e5f99bc4204cc910e36526,1185723,female,29,yes,TRUE,I enjoyed being a part of this study!
+1720240da81c70adbbacf9afb256898d,652411,female,34,yes,TRUE,NA
+cbc2a9f9ed60d9f8ce0915f239c3c609,460652,female,44,yes,FALSE,NA
 ab7d687d3694f6d1eb0ecb29deac3308,765438,male,33,yes,TRUE,NA
 b5d2d1aaea02110d6051ab2fa4f645b7,299576,male,26,yes,FALSE,No
+80acc452ce13ae04f6411b458965ac29,828207,female,42,yes,TRUE,NA
 6bfaf7148f921d6f42c88f58cfc1f39f,846072,female,25,yes,TRUE,None
+71a2e966abbec9ee11453a029f930da5,220884,male,29,yes,TRUE,NA
 4eb96594b39b72c1d369d763b9d86fba,525309,male,34,yes,TRUE,Thank you
+6b017197d8a5899eff5930f43d38cbd7,1030398,female,43,yes,TRUE,na
 7e499a341ab16f0917104b0f976181e8,456968,female,26,yes,TRUE,NA
+0b9fd46069495c793eef95806b42b820,440220,male,38,yes,TRUE,NA
 e82f204819ea84c7b7913074d5e140cb,593656,female,56,yes,TRUE,NA
+a045aa7caaab9e7314e4ffae5852ecbb,981405,male,45,yes,TRUE,NA
 29cc2c8a97bd8cf90f7e5e092a3f7824,777899,male,25,yes,TRUE,NA
 7aed8048b363a9ef4080511ae304559c,741892,female,28,yes,TRUE,"I wish we could be more precise with the ratings. Sometimes I felt like what exactly I was rating was unclear. For example, with the poor family giving an expensive gift to the rich family, I don't think it's morally forbidden for the poor family to give the gift, but I do think it would be more morally forbidden for the rich family to accept the gift."
 0e2ed9aeca8127b21879e93cbb0aef7f,471994,nonconforming,39,yes,TRUE,have a nice day
 5ad79f3f42189cdadb9b7aa347ec6ff4,975138,male,39,yes,TRUE,NA
+28030545d45227713fbaa3fc1093b463,580947,female,46,yes,TRUE,NA
+0e222a31d112c194c45e7da6dd263c3c,760512,male,44,yes,TRUE,I have none...
+d1b2e3546c7dbb994eb4b923f60336b4,504872,female,33,yes,TRUE,NA
+a4a0e52911d32e850fb6f07244baa775,607040,male,42,yes,TRUE,NA
 e6b0fcbf030e00bb27eaf23e4b189075,760934,male,30,yes,TRUE,It was a fun survey. Really made me think on the moral implications of social situations
+7fe3a24bad7b1ed136f8f1362f593195,1190107,female,50,yes,TRUE,I thought the study was interesting and I enjoyed it.
+b46a546da7fb9081daa0c100f3ca1a36,434219,female,24,yes,TRUE,NA
+162acc3705b811dd17505bf78862e157,1072049,female,32,yes,TRUE,NA
+524d16564ed3df5f0e23480abaf29368,415762,female,20,yes,TRUE,NA
+644f1631e19a53d32298240e99da542f,309097,female,20,yes,TRUE,NA
+0095b5a44bb6a3fb7eb646f1595045e4,649027,male,22,yes,TRUE,NA
+b6f6df9999a6a6128922984958815c84,379391,female,21,yes,TRUE,NA
+99f21bb8b87bfa43f63dbed16cb73f06,772706,male,21,yes,TRUE,NA
+73564aea8ac8c81434a3e9e7ec8b744c,380837,female,24,yes,TRUE,NA
+99fe26270e5001d59ffe7828e431006f,364298,female,21,yes,TRUE,NA
+64f7628cc60ba8775cf6deaea2e8c04a,378019,female,27,yes,TRUE,NA
+97c6220b2da82cf3b06f27c80bb0d45e,342019,female,34,yes,TRUE,NA
+17f2f6db4e4fee14540b10c0081728a2,558776,male,70,yes,TRUE,NA
+08fcd3697a646856dde62402ca080985,673404,female,20,yes,TRUE,NA
+fd8e9e9d93d7ed262f25eff58b521772,223723,female,25,yes,TRUE,NA
+726670b9be729ff76a4c085c4bf8508b,381819,female,26,yes,TRUE,The wording is a little weird for this project when it comes to what you're rating the decisions as
+e6d46c57f4c78504a1f9d62fbba20b0a,1546927,male,23,yes,TRUE,none
+7fb1a3b91397be8744cbdaab1890a613,858772,female,25,yes,TRUE,NA
+cbea20838bd2bf03f0303fbe612a8196,321162,female,24,yes,TRUE,NA
 e8726085ff92158acda2c6493e4169db,268054,female,20,yes,TRUE,NA
+7402dc1913a0622596b264a1c9615169,465236,female,38,yes,TRUE,no & thank you!
+8c5d341c90307099929abe15c49e7854,1321530,male,30,yes,TRUE,NA
+5cc2d6e0f9c74ce07e2e649c6628394e,350536,female,27,yes,TRUE,NA
+db659d271ac9bddb1454f1f0a2d05453,487203,male,44,yes,TRUE,"This was actually an interesting study. Many are rather boring, but I don't know why, exactly, but this one was more interesting than most."
+77171a243b31c1925bf222face1b18df,458789,female,55,yes,TRUE,NA
+c5a7963f0d322dacad067f4cdc97c469,811113,female,63,yes,TRUE,none
 483d7e40734d38d390228e2994d5f498,525858,male,63,yes,TRUE,None
+d784aa13f9d3cff304e3953705154352,535333,male,34,yes,TRUE,NA
+0119f2179c589f730d226db238be3af9,633094,female,22,yes,TRUE,None :)
 d1e0c054dac3142b511126a648c03620,444972,female,55,yes,TRUE,NA
+a1b4c29d8f2e7057dd5a5db103371e56,301333,male,48,yes,TRUE,good luck with your study
+3d2cb6c54767df1d95dfcec02f7a80f6,436148,female,41,yes,TRUE,NA
+74164f403abd2883bbe40d9ebf2d7352,1606883,male,29,yes,TRUE,NA
+145984d125db8251f0f44a110d411730,1715558,male,27,yes,TRUE,NA
+2511eb1d2200790977ec69e5c14e1ad2,704031,male,22,yes,TRUE,NA
+b9fdf75cfe07d3933a2ae4f4eba1d6e3,416581,male,28,yes,TRUE,NA
+7c7ab141d257dae873d5eb21b49eba0e,583185,male,78,yes,TRUE,NA
 3f34c72d02ae6627c8d0997459d742cc,1394488,female,23,yes,TRUE,NA
+8a980396604ad34cad8bf3f1b4fc1459,640390,female,32,yes,TRUE,NA
+c813bc183f5ef333a0c1130341cfe484,361560,male,32,yes,TRUE,NA
 90712e019bab6d5193c562b79347601d,349602,male,24,yes,TRUE,NA
+58b04c014b2e762852a51602863afaac,406630,male,30,yes,TRUE,NA
+c6cbec402851c6a33ec8bf2b4052935c,546324,male,24,yes,TRUE,NA
 227e100d7d47c48b6987492b88128e62,406686,male,19,yes,TRUE,NA
 5f79229471de34e0bc39aa0ab9a88e22,859840,male,30,yes,TRUE,None
+7e8f039f75083111278536d572e1bf27,527857,male,23,yes,TRUE,NA
+53391d5b97342b21261128c66da17ffd,2092312,male,20,yes,TRUE,NA
+9f916afb47c4911898ffcd6a39b843e6,496703,male,41,yes,TRUE,none
+01da9d0e32f9cf455922a17a80725a07,379015,male,34,yes,TRUE,no
+d62adeb5370de02345ee8b939367cf7a,1473804,male,49,yes,TRUE,NA
 d981b7a3dab1e7d191e7b34109cdef95,221045,male,35,yes,FALSE,None
 d49cd5d6b6a851aefd91438d07f09457,454223,male,20,yes,TRUE,NA
 8e730338348faf6da47b4109d2a4f87c,704157,male,41,yes,TRUE,NA
+4467b39e0a8eef18947e513d0316129c,415468,male,34,yes,TRUE,NA
 8b96993e00607164c61ba596f7638133,1085124,male,29,yes,TRUE,NA
 970fe4d71decb74b25d229d2b0155262,387488,female,38,yes,TRUE,NA
 fc7c3dc647152692d595507428c20858,996354,male,51,yes,TRUE,None
 623c305ee071f7a1a479ef9558f24e08,921261,female,71`,yes,TRUE,NA
 ad21c859cd0a4b0e2380547c9d97dfe1,499123,female,54,yes,TRUE,NA
+9e37e47c9c62c355510fc23d7a96171c,551433,female,54,yes,TRUE,NA
 b5eee82dff6e07279477f0e4681ec5ff,755469,female,59,yes,TRUE,"Understanding the terms ""obligatory"" and particularly ""forbidden"" was a bit confusing."
 94a6f65d0d9ac9822b3a6349f66b764a,533014,female,56,yes,TRUE,Fun study
+b4a0c5eda6dc3f18abd99b177abde3ab,393661,nonconforming,30,yes,TRUE,NA
 81699919585aaf1099c047b8373cf8d6,447242,male,35,yes,TRUE,NA
+af573200bcacba898a8c31bfd7ab4b8f,518503,female,28,yes,TRUE,N/a
+1df0d70a0bb3ae58ddca7a064a0ad76c,409970,male,24,yes,TRUE,NA
 1f20148cb7f0f243e42f5c7c42c9bbea,229168,male,33,yes,TRUE,NA
+8e8d30b51eef974d303a33bf348b6e0b,618457,female,23,yes,TRUE,NA
 b60711d7b90ac15876bde1b7b7617686,371150,female,25,yes,TRUE,NA
 208cecf171bdbafe05285d6f3b9ada78,2531627,abstain,44,yes,TRUE,NA
+4ce648993a7ebe66ce5a6127f6c84a4a,2043494,male,32,yes,TRUE,NA
+4c9bf8e1edabfd3874656ef4cfab3a72,345600,male,31,yes,TRUE,"Interesting and engaging study, thank you"
 32090f26a5adbb2ebc1e84f344db7ad6,550796,male,18,yes,FALSE,NA
+50714c6187f395b2e1680bf6600068f9,882869,female,49,yes,TRUE,NA
+5e23c9d79277b89c8c732a7e18e3928e,1881802,male,30,yes,TRUE,Very interesting survey! Very thought provoking...
 c04520fe45d6e24a00d71be7514ddc78,1649880,male,70,yes,TRUE,NA
+7d5ad2678ee4cf58c186e0b59357b0a7,260872,male,60,yes,FALSE,Interesting survey
 e4661a6e938aca6e3ea488404c687f8d,464446,male,34,yes,TRUE,NA
 9c572011cbbcf940189523b70792b303,621572,female,53,yes,TRUE,NA
+2317380bb52ff77c9de5f4f8b8958d2e,792350,female,33,yes,TRUE,"No, this was a neat survey."
+a7f2b9d40bffaafd4a69be571457efa1,456207,male,39,yes,TRUE,NA
+a8eba7049ee97ae26158801531149781,554462,female,48,yes,TRUE,NA
+c5c2fc7a6c094ef8534eeb32f2e89102,437078,female,25,yes,TRUE,NA
+5b96c9cb02dc40e15a88c7aa0ea3800c,442687,male,32,yes,TRUE,No
+1149c0809f2ef41e5f76e719089bb850,381810,male,26,yes,TRUE,NA
+f7fe0abce5e00a5fc84db9bf9157ff0a,850687,female,30,yes,TRUE,NA
+53f50376beecb73d54ba4fc992f936fb,619426,female,31,yes,TRUE,NA

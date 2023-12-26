@@ -1,61 +1,179 @@
 subject_id,time_elapsed,gender,age,understood,pass_attention,comments
+75008e4129a37cf9e874dbf7c07f72f8,823731,female,30,yes,TRUE,NA
 87859ebe274168633eea12c09510439c,621144,male,41,yes,TRUE,NA
 95aeaeba623818da114cd2569ab16617,615960,female,72,yes,TRUE,None
 3c3dd306b52494671a3ed51d16d676ce,380455,female,59,yes,TRUE,NA
 d502159613fc25e6f36bf15e7b8ffde1,505142,nonconforming,31,yes,TRUE,NA
+b1c404284c10e7028966c80b52f6a84e,511158,male,30,yes,TRUE,N/A
+a2d8f0f5c3d7bc5c0ff3391ef04b89be,1450090,male,33,yes,TRUE,NA
 1b7103d7ff7a6126002dbe96c1d2c3fc,466779,female,27,yes,TRUE,n/a
+c2d4d4c9f90826a1092ac07d1b939b75,546735,female,52,yes,TRUE,NA
+4b338cf963b462b141eb4417023e4ca8,909768,male,54,yes,TRUE,I would have liked more information on some of the scenarios so I could better judge their fairness.  Also I find it intriguing that MIT are involved in the research.
+791f25da420ef5bacac87c3c275fbc26,823149,female,39,yes,TRUE,NA
 5ed26a88020252c4cd228fd4629f6998,504331,female,66,yes,TRUE,NA
+6264ccc9292f43ee266f21dec05ca965,618692,male,44,yes,TRUE,NA
+c96d9235904c0fe17d7b18d0d8e6339c,499148,male,32,yes,TRUE,NA
+daf50ffe74e278e02bcd06dbf04ed032,358314,male,31,yes,TRUE,NA
+539e3634118df241124dfc66bf3d9de0,929327,female,33,yes,TRUE,"N/A, thank you!"
 852f4e185c3fa471873044db6f3f1c6d,834431,male,67,yes,TRUE,NA
+269de01d65e215c7fad3ff92975f43d2,439561,male,24,yes,TRUE,NA
+1ce0d20e6414eff6030f00e7eabc81bd,1082669,female,39,yes,TRUE,NA
 d5a5215ecc76015a1dae31011e0b66bd,1346425,female,35,yes,TRUE,NA
 66b0a011775810b7d948e083f834e1b2,1948055,male,39,yes,TRUE,I enjoyed this study it was fun.
 e6db685e48bb648b179cc29847631ae9,473363,male,40,yes,TRUE,NA
 78de8fb3dfa3b837f09debc35752dfc2,478915,female,50,yes,TRUE,NA
+182e0a9a61e6b87cd5551d735cafcaba,800916,female,27,yes,TRUE,NA
 f6566c3dfbb1ec0d0aa54c0feeb7fe86,498476,male,30,yes,TRUE,NA
+ac3bc88a1cf83fea5f3e1de6196984a0,447047,male,65,yes,TRUE,NA
+41b1841e9258005a7be5ab1795a6470f,653563,female,39,yes,TRUE,NA
 16e50f8bc4328c1aa3d30d5c4de6d927,2677104,male,32,yes,TRUE,NA
 16f1f8869a22190bfee2970c6637fd39,747576,male,30,yes,TRUE,NA
 a11e58ccb8d185ac13d2aeb065b787e5,596665,male,66,yes,TRUE,NA
+f27e7acae00befd948b9c92de7c7fe9b,348497,male,43,yes,TRUE,NA
+8a95f8c43dc760bbae702b8c2153b6c0,427221,female,61,yes,TRUE,NA
+3805ca806e3e0439b84f09ae389af2a4,518926,male,34,yes,TRUE,None
+9a6204b78679455df34f973b67a0b09d,415287,male,46,yes,TRUE,Only that I found the scenarios interesting and relatable.
 83f28b2d16183475a8b6b58e9a1590f5,597569,nonconforming,28,yes,TRUE,"I think it maybe helpful to understand what falls under the category of more power, influence etc. Is it more expertise and more money? Or is it just more popularity?"
 57e3c4a45c0b72af6912abd4e52fb928,718706,male,24,yes,TRUE,NA
+b4de90f05e9b36bcc31ef45424402586,377548,male,42,yes,TRUE,NA
+2dcfc3cd237d2a8570d91f3b2d3ffc0b,633559,female,28,yes,TRUE,NA
 a7ee19f7b4d854bc9592d06240bbfe96,810471,female,35,yes,TRUE,NA
+6a4751662a474cf1c6fdf031b3ea4048,181290,male,21,yes,TRUE,None
+d191cf0650a1095311e8b9ba1a8b3d81,786276,female,55,yes,TRUE,none
+9896f6aadfd6dbd26d15697f32059e3d,737849,female,43,yes,TRUE,NA
+ff49ed6ef3a164cd4779c82b3368152d,670350,female,60,yes,TRUE,NA
+fe87ad23013950a099c9f40e5d9b62a6,785452,male,26,yes,TRUE,NA
 9c002220630533281b9185e86754f004,418207,female,42,yes,TRUE,NA
+4a9b5c9e106b6051efc8e686825d2cb4,1459211,female,58,yes,TRUE,Thank you for the study and money.
+dc66c8373984b1fb88db834285db33a4,748245,male,30,yes,TRUE,no
+391d74e4620830de5ee0c8384eff5bf8,678389,female,28,yes,TRUE,NA
 5b74bce74dac144976b69f16130883df,454202,male,35,yes,TRUE,NA
+6a151c552b35f53437f3e82b3fe0476f,648000,male,62,yes,TRUE,none
+cdff0e237e604ae727cfe54d1638f6a2,2072857,male,63,yes,TRUE,NA
 1aa89344aa5da460debe7b32f29a1fcf,1000898,male,37,yes,TRUE,thanks
+a1e81b60359e84585e7a933f01a9791a,771288,abstain,46,yes,TRUE,No
+1df3665a5540f061ec96a1796b47ce8b,296365,male,32,yes,TRUE,NA
+453508050d4096687734219660436ba6,484732,male,24,yes,TRUE,NA
 76873c6fce10df407711a6050c6ad5ed,282927,nonconforming,32,yes,TRUE,NA
+b3ce84fb8d4d1fdf1c78e1320a813e3b,487358,male,32,yes,TRUE,NA
+476b1774184595ad3a0218eea1394490,334615,female,26,yes,TRUE,NA
+891673035db3329dde2face7e2c2ebd5,605382,female,36,yes,TRUE,NA
+f8f5256b585e2d47e6c5f808587060bd,520690,female,40,yes,TRUE,NA
+a378454d090e8a87538ea332f3a07dcf,746535,female,21,yes,TRUE,NA
+1847d5c55551dbadfeb920cf142ea708,965141,male,30,yes,TRUE,NA
+6a46819c1ef164d0dc3b5653118bfb51,1506906,male,35,yes,TRUE,NA
 344fba36a826578d6957894976bcc1af,591296,male,26,yes,TRUE,NA
+d9398977189367ee6d41ee4648ba7b18,1912588,male,35,yes,TRUE,NA
 237db2770aa77a5c4fa561310c774be7,433528,male,20,yes,TRUE,NA
+68211f76fcce71cf4bae9d15f24b3a9f,676662,male,21,yes,TRUE,NA
+b9ac7b1154a01f5cbf101b6f51c15c31,639524,male,43,yes,TRUE,NA
+0a5ce61a816260852bab2573205557ab,409830,female,26,yes,TRUE,NA
+7da4f604cf84ab15ee4875adf6380160,274627,nonconforming,21,yes,TRUE,NA
 238f960b544bf1df8ca567c3b076fb1c,949436,female,24,yes,TRUE,NA
 10c6c4080ce87ffba049688d1a6378c7,663406,male,25,yes,TRUE,NA
 320147a6f8aa9db637a52d1683821024,523429,female,41,yes,TRUE,NA
+2d74488c44b98b6252c3fe860d720079,470183,male,24,yes,TRUE,NA
+0e931a7955d778ae2a70c77998765686,671123,male,28,yes,TRUE,NA
 3978991a573ee578133ca9b7d86c71d4,636805,female,53,yes,TRUE,Everything seemed straight forward and understandable.
+9984567084714a31df243da8e37709e4,474832,female,22,yes,TRUE,NA
+ebba70d23cefde147ac35b19590fb4db,351619,male,26,yes,TRUE,NA
+2fbf3f415d9b7be9b65e5bab46023cd5,495172,male,51,yes,TRUE,None
 e810612e7ea94eeb1715595c4c90bcab,418199,male,51,yes,TRUE,NA
 5feec32de2a370635c8d2c1b4573921f,514726,female,27,yes,TRUE,NA
+3af5056423e9fbc8cf855cff59635c7a,865903,female,67,yes,TRUE,N/A
+bdbb8ea6dea9dd7616ee88f33781cedc,667719,female,44,yes,TRUE,NA
+fe25b63f336e21d8fb3cfda577da7e04,545393,female,30,yes,TRUE,NA
+cae2ab40e419d579092db497b49aa3b4,455854,female,31,yes,TRUE,NA
 23aa5c636d86d275cbbdb6073f8c3962,610631,male,20,yes,TRUE,NA
+cc5d6c37ee76e3769b6b9bc76e510294,406954,male,21,yes,TRUE,NA
+12e7b9c4e4c3a95c23726439ed3643b3,294885,male,23,yes,TRUE,NA
+172da52ab2ac521b3f74ecd76456b4d0,667657,male,32,yes,TRUE,NA
 34c4c2db930828a14514ac85d5aa26c3,1044817,male,23,yes,TRUE,nope
+55d24a1444fcc935e2c937520bb91315,512601,female,24,yes,TRUE,NA
 33504b00e34878df5b42a28f5d19fae4,744596,female,57,yes,TRUE,NA
 9beadd49d7e1ec4027adf0b0d36988da,287012,female,21,yes,TRUE,No
+da97917327ab62c0ebe2e446f73d7af6,252621,female,29,yes,TRUE,"None, thank you!"
 c33345f18263d32353bc10e703f11b77,506095,female,32,yes,TRUE,NA
+9fd4b50f142bbb007ee5d6edf642280d,592952,female,56,yes,TRUE,"Thank you! This was interesting, and the study worked perfectly and was easy to navigate, and that's VERY much appreciated, you have no idea!  :) Good luck to you!"
+3123725dccbe69c70811af4262cf182a,871591,female,36,yes,TRUE,NA
+9beb1b18ecde7cb0daec3d79609ba18c,2236031,male,32,yes,TRUE,NA
+0230f0d70fd1073b9b8c485ed9930431,416881,female,62,yes,TRUE,no
+da1dfe3ad1329e3675bb991ff60dca67,478110,nonconforming,35,yes,TRUE,NA
+59946288f7f9d0ee3f2ecc25bd207ae6,444698,male,20,yes,TRUE,Thank you!
+298d320b91f43231ec4f118741edc40f,381089,male,31,yes,TRUE,NA
 17049c95fe4012ec00a70b90733a3ec8,799552,female,58,yes,TRUE,N/A
+9b0c7e3303c99a2ad1519e055f87ebeb,2631814,male,20,yes,TRUE,NA
+6f1d372b865c8fdbe970cfe728df8963,696082,female,20,yes,TRUE,NA
+49991a1228226d5f35394e16e9945b3a,535629,female,34,yes,TRUE,NA
 ab35a1591ed4181b007bec41cbdc4a55,1572913,male,26,yes,TRUE,None
+c8b152e4dadb7e9c5d01f3874ceb1930,413949,female,36,yes,TRUE,NA
+13c68bea7d7df3aa2d653961a16e0a12,558388,male,21,yes,TRUE,NA
 3285ec30b1f11d94c43d6d89647a91e3,764947,male,30,yes,TRUE,NA
+3236ee7b420d55571599a1bbdd7123c4,331511,female,22,yes,TRUE,no!
+af9f4cacd95d63803af28935e036f8e9,1118078,female,50,yes,TRUE,NA
 e9554097b4e2f9cf748b21a82340303f,528788,female,62,yes,TRUE,Fun!
+64e3a8aa49cf9cec97a238ddce5c8fda,319858,female,22,yes,TRUE,NA
+cfc06dfc0a199103c14774b26d1d09a6,291776,female,23,yes,TRUE,NA
+a4f7cd509dae69a4f72778a72b14dd58,1376005,male,30,yes,TRUE,Keep up the good work!
+0b50953c779c491d41b6694177581b9c,1089981,female,21,yes,TRUE,NA
+5c9f3c3f199ab4a47f2f28c6c028b808,375814,male,25,yes,TRUE,NA
+80ec08df6dd9470673eb3699cef01f8f,396071,female,37,yes,TRUE,NA
 3b4b316f9efe5a975d6cb4a712d6130d,697856,female,33,yes,TRUE,NA
+d87be8f452cc9b5da2511293e6fd9aba,865988,female,51,yes,FALSE,not at this time
 7829b98f8cf46a3d8d67853ce79efba4,868950,female,26,yes,TRUE,NA
+7d8f60b16c2836ed82b7458ec697bd3c,288570,male,35,yes,TRUE,NA
 b293f305c2c042f756678bc2623de8e0,607539,female,41,yes,TRUE,NA
+cddd10e610e67b8c7085cd1dbe91ef22,710582,male,32,yes,TRUE,NA
 983906b967f0fda968d844f48548ad1d,1170017,female,37,yes,TRUE,Fun study!
 c0abc44b87d7a6da4a2abfdf053ef10c,622354,female,56,yes,TRUE,NA
+fd9748d7a3830ef8d1fec125570e4003,379593,female,22,yes,TRUE,N/A
 b4223cde08c9032f10e50018e4164177,477657,male,34,yes,TRUE,NA
+3583bc9f34ca2a894143273acdde3729,390216,female,41,yes,TRUE,NA
+b979042034b3515cdd60859f8ff8eda3,1013318,female,35,yes,TRUE,NA
+2274df0f8596c40d030b1319977f20e2,472456,male,43,yes,TRUE,NA
 c8384173276f7f0ab0b343e9f6021c85,661944,female,65,yes,TRUE,NA
 bf37011acc65593c7410d79cc2a4f966,454496,female,59,yes,TRUE,NA
+8048b99012413baf866358a6ea924bd6,518425,nonconforming,23,yes,TRUE,NA
 eabd5004e6bcd719e1f36f191bf3a0e2,360601,male,45,yes,TRUE,NA
+fa849ce7bfbc1db9117a9ba291b74247,653861,male,20,yes,TRUE,NA
 fbb794a0343f8bf151c8a267d7c70d20,775558,male,35,yes,TRUE,NA
+483532f9143785ba2ab600b199334476,301535,female,28,yes,FALSE,NA
+3ae1d5d09a83d3c0f48685d2fd051c3d,512670,female,38,yes,TRUE,Everything went well. Thank you!
 47cf87cceea83a168fe2fe9e56481eee,1815087,male,42,yes,FALSE,tyvm!!!
+fa6fc25d44a53875d405a251d362fb74,420727,male,24,yes,TRUE,NA
+2761d459d89f32c5b1bc5189397b7474,584320,female,23,yes,TRUE,NA
+2ce4def80c100c77814d2ffad9f8d2fa,708723,male,20,yes,TRUE,NA
+7edac04ddc08cf043d02c6e80f3bcd1e,2193334,male,30,yes,TRUE,NA
+c3a70b78ab215dc5b4943728d9292654,760572,male,21,yes,TRUE,No extra comments.
+ab56897de815c7b0bd7732cffef32bd4,2767709,male,51,yes,TRUE,NA
 7d068df206fb50705b04525f238be501,366663,female,34,yes,TRUE,NA
+ba1b1186c52b0c19233a75f9b6a6b5d7,736507,male,38,yes,TRUE,n/a
 0eb97f626ff066f53d7750697a35d4ad,194310,male,23,yes,TRUE,NA
+33519fcdab2a18965c9c6abe05a13803,483826,male,41,yes,TRUE,NA
+d2ca22fe4ec3e6ee76326a99c7d8eb14,470515,male,21,yes,TRUE,NA
+ec35b7858dfabab42840a6e6f8335d4d,3322287,male,28,yes,TRUE,NA
+b40b0a7ac19da85f71176c35a7ca5418,498212,male,24,yes,TRUE,NA
 bce264a16ddad527296f9670ad64e50f,544896,female,70,yes,TRUE,NA
 a5154c988ceb4ca1eb0f0ebf963f1848,644654,male,68,yes,TRUE,NA
+ac99f25c926a53b0e3522fbd7490a1e9,1614801,female,48,yes,TRUE,NA
+6b28c63b35462a8825a070da1a42279e,982142,male,27,yes,TRUE,NA
+91e04b0b36db45d8d8985b212746b318,359880,female,51,yes,TRUE,None
+4bd6c18e24bb858dfa2e3470064a194b,940824,male,35,yes,TRUE,NA
+2243fd400154f43848cd0721d35de14b,596981,male,32,yes,TRUE,Thank you for the opportunity.
 69178eeaccffeef90e6317f8a2dc4c9a,1002662,abstain,25,yes,TRUE,NA
+588467bb26e43318da9fa84382125db0,373562,female,49,yes,TRUE,NA
 8074e77641e03bfa784c6a5bd640591c,310471,male,43,yes,TRUE,NA
+2930eece8af802e9ef3f93cfab447bba,510709,male,25,yes,TRUE,NA
 48e4091fdb25abb97c6ff1ed9f08e574,2376275,female,49,yes,TRUE,NA
+25a6ba54802561a0d1658916710f7e19,1001688,male,40,yes,TRUE,NA
 c31ff72dd2646661408ef9cd17d96510,775963,female,31,yes,TRUE,NA
+54d4d8685e159f8a70bfb7ea7d5d85cb,381424,male,31,yes,TRUE,NA
+43e2bb2c676b7883dcf41bbf1df23463,531720,female,28,yes,TRUE,It wasn't clear whether we were assessing for balance between the relationship (give and take) or doing what is right (respecting those above you).
 7e6ceed03bfed7c5f051c3d0c61f1a6c,489043,female,43,yes,TRUE,NA
+1e47574593f6324423508ddd8fd721ac,608396,female,61,yes,TRUE,NA
+da3575f2a68826767ba42e75f9ad4eac,427243,male,19,yes,TRUE,NA
 da6f5618cf8b2ae791e19d947bd3f8a8,686039,male,49,yes,TRUE,None
+c1e5033b8711068649730d20f3794e95,814421,female,52,yes,TRUE,NA
+0e9dfd2718a4f32dc6522db878286efe,660579,female,52,yes,TRUE,NA
+2e18ac406da4354cc70a12739a712834,585188,female,61,yes,TRUE,NA
+eaf262588ceeabb8c519424f74e747ae,876696,male,18,yes,TRUE,NA
