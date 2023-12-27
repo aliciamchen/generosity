@@ -27,13 +27,15 @@ d <-
                                "asymmetric", "symmetric", "no_info")
   ) %>% # Then, normalize likert rating
   group_by(subject_id, story, relationship) %>%
-  mutate(total_rating = sum(likert_rating),
-         normalized_likert_rating = likert_rating / total_rating) %>%
+  mutate(
+    total_rating = sum(likert_rating),
+    normalized_likert_rating = likert_rating / total_rating
+  ) %>%
   select(-total_rating) 
 
 d.demographics <- read.csv(here('data/1a_demographics.csv'))
 d.demographics %>% count(gender)
-d.demographics %>% summarize(mean_age = mean(age), sd_age = sd(age))
+d.demographics %>% summarize(mean_age = mean(age), sd_age = sd(age), min_age = min(age), max_age = max(age))
 
 print(length(unique(d$subject_id)))
 
@@ -47,10 +49,12 @@ d.means.all <-
   group_by(relationship, next_interaction) %>%
   tidyboot_mean(likert_rating, na.rm = TRUE) %>%
   rename(likert_rating = empirical_stat) %>%
-  mutate(next_interaction = fct_relevel(next_interaction,
-                                        "repeating", "alternating", "none"), 
-         relationship = fct_relevel(relationship,
-                                    "asymmetric", "symmetric", "no_info")) 
+  mutate(
+    next_interaction = fct_relevel(next_interaction,
+                                   "repeating", "alternating", "none"),
+    relationship = fct_relevel(relationship,
+                               "asymmetric", "symmetric", "no_info")
+  )
 
 
 # Plot aggregated results on one plot
@@ -127,17 +131,19 @@ f = ggplot(data = d,
   scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
                      limits = c(0.8, 7.2)) +
   labs(x = "relationship", y = "how likely?", fill = "next interaction") +
-  theme(legend.position = "bottom") + 
-  facet_wrap(~story)
+  theme(legend.position = "bottom") +
+  facet_wrap( ~ story)
 
 
 f
 
 
-# Individual conditions (to go into paper) 
+# Individual conditions (to go into paper)
 
-f = ggplot(data = d %>% filter(relationship == "asymmetric"),
-           aes(x = relationship, y = likert_rating, fill = next_interaction)) +
+f = ggplot(
+  data = d %>% filter(relationship == "asymmetric"),
+  aes(x = relationship, y = likert_rating, fill = next_interaction)
+) +
   geom_violin(width = 1.16,
               bw = 0.43,
               position = position_dodge(width = 0.8)) +
@@ -168,13 +174,17 @@ f = ggplot(data = d %>% filter(relationship == "asymmetric"),
 f
 
 
-ggsave(here("figures/outputs/1a_violin_asym_cont.pdf"),
-       width = 6,
-       height = 7.5)
+ggsave(
+  here("figures/outputs/1a_violin_asym_cont.pdf"),
+  width = 6,
+  height = 7.5
+)
 
 
-f = ggplot(data = d %>% filter(relationship == "symmetric"),
-           aes(x = relationship, y = likert_rating, fill = next_interaction)) +
+f = ggplot(
+  data = d %>% filter(relationship == "symmetric"),
+  aes(x = relationship, y = likert_rating, fill = next_interaction)
+) +
   geom_violin(width = 1.16,
               bw = 0.43,
               position = position_dodge(width = 0.8)) +
@@ -205,14 +215,18 @@ f = ggplot(data = d %>% filter(relationship == "symmetric"),
 f
 
 
-ggsave(here("figures/outputs/1a_violin_sym_cont.pdf"),
-       width = 6,
-       height = 7.5)
+ggsave(
+  here("figures/outputs/1a_violin_sym_cont.pdf"),
+  width = 6,
+  height = 7.5
+)
 
 
 
-f = ggplot(data = d %>% filter(relationship == "no_info"),
-           aes(x = relationship, y = likert_rating, fill = next_interaction)) +
+f = ggplot(
+  data = d %>% filter(relationship == "no_info"),
+  aes(x = relationship, y = likert_rating, fill = next_interaction)
+) +
   geom_violin(width = 1.16,
               bw = 0.43,
               position = position_dodge(width = 0.8)) +
@@ -243,9 +257,11 @@ f = ggplot(data = d %>% filter(relationship == "no_info"),
 f
 
 
-ggsave(here("figures/outputs/1a_violin_noinfo_cont.pdf"),
-       width = 6,
-       height = 7.5)
+ggsave(
+  here("figures/outputs/1a_violin_noinfo_cont.pdf"),
+  width = 6,
+  height = 7.5
+)
 
 
 # Look at sample individual scenarios
@@ -253,8 +269,10 @@ ggsave(here("figures/outputs/1a_violin_noinfo_cont.pdf"),
 stories = c('concerts', 'restaurant', 'family meals', 'meeting location')
 
 for (s in stories) {
-  f = ggplot(data = d %>% filter(relationship == "asymmetric", story == s),
-             aes(x = relationship, y = likert_rating, fill = next_interaction)) +
+  f = ggplot(
+    data = d %>% filter(relationship == "asymmetric", story == s),
+    aes(x = relationship, y = likert_rating, fill = next_interaction)
+  ) +
     geom_violin(width = 1.16,
                 bw = 0.43,
                 position = position_dodge(width = 0.8)) +
@@ -279,20 +297,29 @@ for (s in stories) {
     ) +
     scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
                        limits = c(0.8, 7.2)) +
-    labs(x = "relationship", y = "how likely?", fill = "next interaction", title = s) +
+    labs(
+      x = "relationship",
+      y = "how likely?",
+      fill = "next interaction",
+      title = s
+    ) +
     theme(legend.position = "bottom")
   
   f
   
   
-  ggsave(here(glue("figures/outputs/1a_asymmetric_{s}.pdf")),
-         width = 6,
-         height = 7.5)
+  ggsave(here(glue(
+    "figures/outputs/1a_asymmetric_{s}.pdf"
+  )),
+  width = 6,
+  height = 7.5)
 }
 
 for (s in stories) {
-  f = ggplot(data = d %>% filter(relationship == "symmetric", story == s),
-             aes(x = relationship, y = likert_rating, fill = next_interaction)) +
+  f = ggplot(
+    data = d %>% filter(relationship == "symmetric", story == s),
+    aes(x = relationship, y = likert_rating, fill = next_interaction)
+  ) +
     geom_violin(width = 1.16,
                 bw = 0.43,
                 position = position_dodge(width = 0.8)) +
@@ -317,24 +344,33 @@ for (s in stories) {
     ) +
     scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
                        limits = c(0.8, 7.2)) +
-    labs(x = "relationship", y = "how likely?", fill = "next interaction", title = s) +
+    labs(
+      x = "relationship",
+      y = "how likely?",
+      fill = "next interaction",
+      title = s
+    ) +
     theme(legend.position = "bottom")
   
   f
   
   
-  ggsave(here(glue("figures/outputs/1a_symmetric_{s}.pdf")),
-         width = 6,
-         height = 7.5)
+  ggsave(here(glue(
+    "figures/outputs/1a_symmetric_{s}.pdf"
+  )),
+  width = 6,
+  height = 7.5)
 }
 
 
 ################## STATS
 
 # With all levels
-mod <- lmer(likert_rating ~ 1 + next_interaction * relationship + (1 |
-                                                                     story) + (1 | subject_id),
-            data = d)
+mod <-
+  lmer(likert_rating ~ 1 + next_interaction * relationship + (1 |
+                                                                story) + (1 |
+                                                                            subject_id),
+       data = d)
 
 summary(mod)
 
@@ -346,13 +382,14 @@ emm <- mod %>% emmeans(pairwise ~ relationship * next_interaction)
 emm
 
 # Interaction contrasts - compare `asymmetric` and `symmetric` to `no_info`
-contrast_test <- contrast(emm, interaction = c("pairwise", "pairwise"))
+contrast_test <-
+  contrast(emm, interaction = c("pairwise", "pairwise"))
 contrast_test
 
 # asymmetric - no_info   repeating - alternating     1.6302 0.145 3095  11.259  <.0001
 # symmetric - no_info    repeating - alternating    -0.4058 0.145 3095  -2.803  0.0051
 
-# Do people expect a continued social interaction, both with and without the relationship? 
+# Do people expect a continued social interaction, both with and without the relationship?
 emm <-
   mod %>% emmeans(pairwise ~ relationship * next_interaction) %>%
   add_grouping("interaction_present",
@@ -370,7 +407,8 @@ d_filtered <- d %>%
   filter(next_interaction != "none" & relationship != "no_info")
 
 mod <- lmer(likert_rating ~ next_interaction * relationship + (1 |
-                                                                 story) + (1 | subject_id),
+                                                                 story) + (1 |
+                                                                             subject_id),
             data = d_filtered)
 
 summary(mod)
@@ -380,9 +418,13 @@ summary(mod)
 ## Repeat all analyses with normalized values
 
 # With all levels
-mod <- lmer(normalized_likert_rating ~ 1 + next_interaction * relationship + (1 |
-                                                                     story) + (1 | subject_id),
-            data = d)
+mod <-
+  lmer(
+    normalized_likert_rating ~ 1 + next_interaction * relationship + (1 |
+                                                                        story) + (1 |
+                                                                                    subject_id),
+    data = d
+  )
 
 summary(mod)
 
@@ -392,10 +434,11 @@ emm <- mod %>% emmeans(pairwise ~ relationship * next_interaction)
 emm
 
 # Interaction contrasts - compare `asymmetric` and `symmetric` to `no_info`
-contrast_test <- contrast(emm, interaction = c("pairwise", "pairwise"))
+contrast_test <-
+  contrast(emm, interaction = c("pairwise", "pairwise"))
 contrast_test
 
-# Do people expect a continued social interaction, both with and without the relationship? 
+# Do people expect a continued social interaction, both with and without the relationship?
 emm <-
   mod %>% emmeans(pairwise ~ relationship * next_interaction) %>%
   add_grouping("interaction_present",
@@ -412,8 +455,12 @@ emmeans(emm, pairwise ~ interaction_present | relationship_present)
 d_filtered <- d %>%
   filter(next_interaction != "none" & relationship != "no_info")
 
-mod <- lmer(normalized_likert_rating ~ next_interaction * relationship + (1 |
-                                                                 story) + (1 | subject_id),
-            data = d_filtered)
+mod <-
+  lmer(
+    normalized_likert_rating ~ next_interaction * relationship + (1 |
+                                                                    story) + (1 |
+                                                                                subject_id),
+    data = d_filtered
+  )
 
 summary(mod)
