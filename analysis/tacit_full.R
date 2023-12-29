@@ -12,30 +12,34 @@ library(glue)
 theme_set(theme_classic(base_size = 16))
 options(contrasts = c(unordered = "contr.sum", ordered = "contr.poly"))
 
-# 
+#
 d <-
   read.csv(here('data/tacit_full_data.csv'))
 
 d <-
-  read.csv(here('data/tacit_full_data.csv')) %>% filter(understood == 'yes', story != 'attention') %>% 
-  mutate(strategy = case_when(stage == "second" & first_meeting == response ~ 'repeating',
-                              stage == "second" & first_meeting != response ~ 'alternating')) %>%
-  select(-response,-understood,-first_meeting,-pass_attention) %>%
-  mutate_all( ~ case_when(. == 'less' ~ 'lower',
-                          . == 'more' ~ 'higher',
-                          TRUE ~ .)) %>%
-  rename(first_actual_higher = altruistic_status, strategy_repeating = strategy) %>%
-  group_by(subject_id, story) %>% 
-  fill(strategy_repeating, .direction = "up") %>% 
-  ungroup() %>% 
+  read.csv(here('data/tacit_full_data.csv')) %>% filter(understood == 'yes', story != 'attention') %>%
+  mutate(
+    strategy = case_when(
+      stage == "second" & first_meeting == response ~ 'repeating',
+      stage == "second" &
+        first_meeting != response ~ 'alternating'
+    )
+  ) %>%
+  select(-response, -understood, -first_meeting, -pass_attention) %>%
+  mutate_all(~ case_when(. == 'less' ~ 'lower',
+                         . == 'more' ~ 'higher',
+                         TRUE ~ .)) %>%
+  rename(first_actual_higher = altruistic_status,
+         strategy_repeating = strategy) %>%
+  group_by(subject_id, story) %>%
+  fill(strategy_repeating, .direction = "up") %>%
+  ungroup() %>%
   pivot_wider(names_from = stage,
               values_from = response_status,
               names_prefix = "response_higher_") %>%
   rename(first_response_higher = response_higher_first,
          second_response_higher = response_higher_second) %>%
-  mutate(
-    symmetric = ifelse(first_actual_higher == "equal", "symmetric", "asymmetric")
-  )  
+  mutate(symmetric = ifelse(first_actual_higher == "equal", "symmetric", "asymmetric"))
 
 # Set levels for categorical variables
 d$first_actual_higher <-
@@ -44,7 +48,7 @@ d$first_response_higher <-
   factor(d$first_response_higher, levels = c("higher", "equal", "lower"))
 d$second_response_higher <-
   factor(d$second_response_higher, levels = c("higher", "equal", "lower"))
-d$strategy_repeating <- 
+d$strategy_repeating <-
   factor(d$strategy_repeating, levels = c("repeating", "alternating"))
 
 
@@ -60,13 +64,15 @@ print(length(unique(d$subject_id)))
 ## Stats
 
 
-# Main hypothesis: in asymmetric relationships, people’s expectations for what 
-# happens the second time are explained by (1) expectations of tacit coordination 
+# Main hypothesis: in asymmetric relationships, people’s expectations for what
+# happens the second time are explained by (1) expectations of tacit coordination
 # (what they thought would happen the first time), and (2) expectations of precedent.
 
-mod <- glmer(data = d %>% filter(symmetric == 'asymmetric'),
+mod <- glmer(
+  data = d %>% filter(symmetric == 'asymmetric'),
   second_response_higher ~ first_response_higher * first_actual_higher + (1 |
-                                                                            subject_id) + (1 | story),
+                                                                            subject_id) + (1 |
+                                                                                             story),
   family =  'binomial'
 )
 
@@ -74,13 +80,21 @@ summary(mod)
 
 # Plot
 
-h1.means <- d %>% 
+h1.means <- d %>%
   filter(symmetric == 'asymmetric') %>%
-  mutate(second_response_higher = recode(second_response_higher, "higher" = 1, "lower" = -1)) %>% 
-  group_by(first_response_higher, first_actual_higher) %>% 
+  mutate(second_response_higher = recode(
+    second_response_higher,
+    "higher" = 1,
+    "lower" = -1
+  )) %>%
+  group_by(first_response_higher, first_actual_higher) %>%
   tidyboot_mean(second_response_higher, na.rm = T)
 
-p1 <- ggplot(h1.means, aes(x = first_response_higher, y = empirical_stat, color = first_actual_higher)) +
+p1 <-
+  ggplot(
+    h1.means,
+    aes(x = first_response_higher, y = empirical_stat, color = first_actual_higher)
+  ) +
   geom_point(
     mapping = aes(x = first_response_higher, y = empirical_stat),
     size = 2.5,
@@ -95,30 +109,34 @@ p1 <- ggplot(h1.means, aes(x = first_response_higher, y = empirical_stat, color 
   ) +
   scale_y_continuous(limits = c(-1, 1)) +
   scale_color_brewer(type = "qual", palette = "Set1") +
-  geom_hline(yintercept = 0, linetype = "dashed", color = "red") +
-  labs(title = "second response asymmetric relationships", y = "second_response_higher") 
+  geom_hline(yintercept = 0,
+             linetype = "dashed",
+             color = "red") +
+  labs(title = "second response asymmetric relationships", y = "second_response_higher")
 
 p1
 ggsave(here("figures/sloan_talk/study3_main.pdf"),
        width = 6.2,
        height = 4)
-# first_response_higher = recode(first_response_higher, "higher" = 1, "lower" = 0), 
-# first_actual_higher = recode(first_actual_higher, "higher" = 1, "lower" = 0), 
+# first_response_higher = recode(first_response_higher, "higher" = 1, "lower" = 0),
+# first_actual_higher = recode(first_actual_higher, "higher" = 1, "lower" = 0),
 
 ## Secondary hypotheses
 
 # H2: People expect alternation when the relationship is symmetric, and repetition when the relationship is asymmetric.
 
-mod <- glmer(data = d, 
-             strategy_repeating ~ first_actual_higher + (1 | subject_id) + (1 | story),
-             family =  'binomial'
+mod <- glmer(
+  data = d,
+  strategy_repeating ~ first_actual_higher + (1 |
+                                                subject_id) + (1 | story),
+  family =  'binomial'
 )
 
 summary(mod)
 
 emmeans(mod, pairwise ~ first_actual_higher)
 
-emm <- mod %>% emmeans(pairwise ~ first_actual_higher) %>% 
+emm <- mod %>% emmeans(pairwise ~ first_actual_higher) %>%
   add_grouping("asymmetric",
                "first_actual_higher",
                c("yes", "no", "yes"))
@@ -129,14 +147,22 @@ emmeans(emm, pairwise ~ asymmetric)
 # Plot for H2
 
 
-h2.means <- d %>% 
-  mutate(strategy_repeating = recode(strategy_repeating, "repeating" = 1, "alternating" = -1)) %>% 
-  group_by(first_response_higher, first_actual_higher) %>% 
+h2.means <- d %>%
+  mutate(strategy_repeating = recode(
+    strategy_repeating,
+    "repeating" = 1,
+    "alternating" = -1
+  )) %>%
+  group_by(first_response_higher, first_actual_higher) %>%
   tidyboot_mean(strategy_repeating, na.rm = T)
 
 
 # This is the plot for the cogsci poster
-p2 <- ggplot(h2.means, aes(x = first_actual_higher, y = empirical_stat, color = first_response_higher)) +
+p2 <-
+  ggplot(
+    h2.means,
+    aes(x = first_actual_higher, y = empirical_stat, color = first_response_higher)
+  ) +
   geom_point(
     mapping = aes(x = first_actual_higher, y = empirical_stat),
     size = 2.5,
@@ -150,24 +176,32 @@ p2 <- ggplot(h2.means, aes(x = first_actual_higher, y = empirical_stat, color = 
     width = 0.12
   ) +
   scale_color_manual(
-    values = wes_palette(n = 3, name = "Cavalcanti1"), 
+    values = wes_palette(n = 3, name = "Cavalcanti1"),
     name = "first_response_higher",
-    breaks = c("higher", "lower", "equal")) +
+    breaks = c("higher", "lower", "equal")
+  ) +
   scale_y_continuous(limits = c(-1, 1)) +
   scale_x_discrete(limits = c("higher", "lower", "equal")) +
-  geom_hline(yintercept = 0, linetype = "dashed", color = "red") +
-  labs(title = "strategy (repeating vs alternating)", y = "strategy_repeating") 
+  geom_hline(yintercept = 0,
+             linetype = "dashed",
+             color = "red") +
+  labs(title = "strategy (repeating vs alternating)", y = "strategy_repeating")
 
 p2
 
 # ggsave(here("figures/tacit_cogsci_poster.pdf"), width = 7, height = 4)
 
-h2.means.asym <- d %>% 
-  mutate(strategy_repeating = recode(strategy_repeating, "repeating" = 1, "alternating" = -1)) %>% 
-  group_by(symmetric) %>% 
+h2.means.asym <- d %>%
+  mutate(strategy_repeating = recode(
+    strategy_repeating,
+    "repeating" = 1,
+    "alternating" = -1
+  )) %>%
+  group_by(symmetric) %>%
   tidyboot_mean(strategy_repeating, na.rm = T)
-  
-p3 <- ggplot(h2.means.asym, aes(x = symmetric, y = empirical_stat)) +
+
+p3 <-
+  ggplot(h2.means.asym, aes(x = symmetric, y = empirical_stat)) +
   geom_point(
     mapping = aes(x = symmetric, y = empirical_stat),
     size = 2.3,
@@ -181,18 +215,25 @@ p3 <- ggplot(h2.means.asym, aes(x = symmetric, y = empirical_stat)) +
     width = 0.09
   ) +
   scale_y_continuous(limits = c(-1, 1)) +
-  geom_hline(yintercept = 0, linetype = "dashed", color = "red") +
-  labs(title = "strategy marginalized over first responses", y = "strategy_repeating") 
+  geom_hline(yintercept = 0,
+             linetype = "dashed",
+             color = "red") +
+  labs(title = "strategy marginalized over first responses", y = "strategy_repeating")
 
 p3
 
 
-h2.means.asym <- d %>% 
-  mutate(strategy_repeating = recode(strategy_repeating, "repeating" = 1, "alternating" = -1)) %>% 
-  group_by(first_actual_higher) %>% 
+h2.means.asym <- d %>%
+  mutate(strategy_repeating = recode(
+    strategy_repeating,
+    "repeating" = 1,
+    "alternating" = -1
+  )) %>%
+  group_by(first_actual_higher) %>%
   tidyboot_mean(strategy_repeating, na.rm = T)
 
-p4 <- ggplot(h2.means.asym, aes(x = first_actual_higher, y = empirical_stat)) +
+p4 <-
+  ggplot(h2.means.asym, aes(x = first_actual_higher, y = empirical_stat)) +
   geom_point(
     mapping = aes(x = first_actual_higher, y = empirical_stat),
     size = 2.3,
@@ -206,14 +247,22 @@ p4 <- ggplot(h2.means.asym, aes(x = first_actual_higher, y = empirical_stat)) +
     width = 0.09
   ) +
   scale_y_continuous(limits = c(-1, 1)) +
-  geom_hline(yintercept = 0, linetype = "dashed", color = "red") +
-  labs(title = "strategy marginalized over first responses", y = "strategy_repeating") 
+  geom_hline(yintercept = 0,
+             linetype = "dashed",
+             color = "red") +
+  labs(title = "strategy marginalized over first responses", y = "strategy_repeating")
 
 p4 # Interesting ... the stats say that the only diff here is that higher is different from equal
 
-## H3: In asymmetric relationships, people have strong intuitions of tacit coordination. 
+## H3: In asymmetric relationships, people have strong intuitions of tacit coordination.
 
-mod <- glmer(data = d %>% filter(first_actual_higher != "equal"), first_response_higher ~ (1 | subject_id) + (1 | story), family = 'binomial')
+mod <-
+  glmer(
+    data = d %>% filter(first_actual_higher != "equal"),
+    first_response_higher ~ (1 |
+                               subject_id) + (1 | story),
+    family = 'binomial'
+  )
 
 summary(mod)
 
@@ -221,8 +270,12 @@ emm <- emmeans(mod, specs = ~ 1)
 summary(emm, null = 0, infer = c(TRUE, TRUE))
 
 stage.one.mean <-
-  d %>% filter(first_actual_higher != "equal") %>% 
-  mutate(first_response_higher = recode(first_response_higher, "higher" = 1, "lower" = -1)) %>% 
+  d %>% filter(first_actual_higher != "equal") %>%
+  mutate(first_response_higher = recode(
+    first_response_higher,
+    "higher" = 1,
+    "lower" = -1
+  )) %>%
   tidyboot_mean(first_response_higher, na.rm = TRUE)
 
 f = ggplot(data = stage.one.mean, aes(x = 'first time', y = 2)) +
@@ -241,65 +294,112 @@ f = ggplot(data = stage.one.mean, aes(x = 'first time', y = 2)) +
     width = 0.09
   ) +
   scale_y_continuous(limits = c(-1, 1)) +
-  geom_hline(yintercept = 0, linetype = "dashed", color = "red") +
-  labs(y = "expectations for high status", title = "asymmetric relationship first meeting") 
+  geom_hline(yintercept = 0,
+             linetype = "dashed",
+             color = "red") +
+  labs(y = "expectations for high status", title = "asymmetric relationship first meeting")
 
 
 f
 
 # H4: relative cost / benefit
 
-effort_diff <- read.csv(here("data/validation_effort_diff.csv")) %>% rename(effort_diff = diff) %>% select(c(story, effort_diff))
-benefit_diff <- read.csv(here("data/validation_benefit_diff.csv")) %>% rename(benefit_diff = diff) %>% select(c(story, benefit_diff))
+effort_diff <-
+  read.csv(here("data/validation_effort_diff.csv")) %>% rename(effort_diff = diff) %>% select(c(story, effort_diff))
+benefit_diff <-
+  read.csv(here("data/validation_benefit_diff.csv")) %>% rename(benefit_diff = diff) %>% select(c(story, benefit_diff))
 
-d.with.diffs <- d %>% group_by(story) %>% 
-  left_join(effort_diff, id = story) %>% 
+d.with.diffs <- d %>% group_by(story) %>%
+  left_join(effort_diff, id = story) %>%
   left_join(benefit_diff, id = story)
 
-mod <- glmer(data = d.with.diffs %>% filter(first_actual_higher != "equal"), first_response_higher ~ effort_diff + (1 | subject_id) + (1 | story), family = 'binomial')
+mod <-
+  glmer(
+    data = d.with.diffs %>% filter(first_actual_higher != "equal"),
+    first_response_higher ~ effort_diff + (1 |
+                                             subject_id) + (1 | story),
+    family = 'binomial'
+  )
 summary(mod)
 
-mod <- glmer(data = d.with.diffs %>% filter(first_actual_higher != "equal"), first_response_higher ~ benefit_diff + (1 | subject_id) + (1 | story), family = 'binomial')
+mod <-
+  glmer(
+    data = d.with.diffs %>% filter(first_actual_higher != "equal"),
+    first_response_higher ~ benefit_diff + (1 |
+                                              subject_id) + (1 | story),
+    family = 'binomial'
+  )
 summary(mod)
 
 
 # H4 plots
-stage.one.mean.story <- 
-  d.with.diffs %>% 
-  mutate(first_response_higher = recode(first_response_higher, "higher" = 1, "lower" = -1)) %>% 
-  group_by(story, effort_diff, benefit_diff) %>% 
-  tidyboot_mean(first_response_higher, na.rm = TRUE) 
+stage.one.mean.story <-
+  d.with.diffs %>%
+  mutate(first_response_higher = recode(
+    first_response_higher,
+    "higher" = 1,
+    "lower" = -1
+  )) %>%
+  group_by(story, effort_diff, benefit_diff) %>%
+  tidyboot_mean(first_response_higher, na.rm = TRUE)
 
 
-f <- ggplot(stage.one.mean.story, aes(x = effort_diff, y = empirical_stat)) + 
-  geom_point(size = 3.3, alpha = 0.7, color = "#00BFC4") + 
-  geom_errorbar(mapping = aes(x = effort_diff, ymin = ci_lower, ymax=ci_upper), size= 2.5, width = 0, alpha = 0.7, color = "#00BFC4") +
-  geom_hline(yintercept = 0, linetype = "dashed", color = "red") +
+f <-
+  ggplot(stage.one.mean.story, aes(x = effort_diff, y = empirical_stat)) +
+  geom_point(size = 3.3,
+             alpha = 0.7,
+             color = "#00BFC4") +
+  geom_errorbar(
+    mapping = aes(x = effort_diff, ymin = ci_lower, ymax = ci_upper),
+    size = 2.5,
+    width = 0,
+    alpha = 0.7,
+    color = "#00BFC4"
+  ) +
+  geom_hline(yintercept = 0,
+             linetype = "dashed",
+             color = "red") +
   scale_y_continuous(limits = c(-1, 1)) +
   labs(x = "perceived effort difference in scenario", y = "expectations for high status", title = "asymmetric relationships first meeting")
 
 f
 
-ggsave(here("figures/sloan_talk/study3_effort_corr.pdf"),
-       width = 6.2,
-       height = 4)
+ggsave(
+  here("figures/sloan_talk/study3_effort_corr.pdf"),
+  width = 6.2,
+  height = 4
+)
 
-f <- ggplot(stage.one.mean.story, aes(x = benefit_diff, y = empirical_stat)) + 
-  geom_point(size = 3.3, alpha = 0.7, color = "#F8766D") + 
-  geom_errorbar(mapping = aes(x = benefit_diff, ymin = ci_lower, ymax=ci_upper), size= 2.5, width = 0, alpha = 0.7, color = "#F8766D") +
-  geom_hline(yintercept = 0, linetype = "dashed", color = "red") +
+f <-
+  ggplot(stage.one.mean.story, aes(x = benefit_diff, y = empirical_stat)) +
+  geom_point(size = 3.3,
+             alpha = 0.7,
+             color = "#F8766D") +
+  geom_errorbar(
+    mapping = aes(x = benefit_diff, ymin = ci_lower, ymax = ci_upper),
+    size = 2.5,
+    width = 0,
+    alpha = 0.7,
+    color = "#F8766D"
+  ) +
+  geom_hline(yintercept = 0,
+             linetype = "dashed",
+             color = "red") +
   scale_y_continuous(limits = c(-1, 1)) +
   labs(x = "perceived benefit difference in scenario", y = "expectations for high status", title = "asymmetric relationships first meeting")
 
 
 f
 
-ggsave(here("figures/sloan_talk/study3_benefit_corr.pdf"),
-       width = 6.2,
-       height = 4)
+ggsave(
+  here("figures/sloan_talk/study3_benefit_corr.pdf"),
+  width = 6.2,
+  height = 4
+)
 
-f <- ggplot(stage.one.mean.story, aes(x = effort_diff, y = benefit_diff)) + 
-  geom_point(size = 3, alpha = 0.7) + 
+f <-
+  ggplot(stage.one.mean.story, aes(x = effort_diff, y = benefit_diff)) +
+  geom_point(size = 3, alpha = 0.7) +
   geom_smooth(method = lm) +
   labs(x = "perceived effort difference", y = "perceived benefit difference")
 
@@ -308,21 +408,23 @@ f
 
 
 
-#### new plots that rebecca asked for 
+#### new plots that rebecca asked for
 
 # Plot with scenario on x axis, implicit coordination on y axis, x axis ordered by y axis
-d.temp <- stage.one.mean.story %>% 
+d.temp <- stage.one.mean.story %>%
   arrange(desc(mean))
 
 levs <- unique(d.temp$story)
 
-stage.one.mean.story$story <- factor(stage.one.mean.story$story, levels=levs)
+stage.one.mean.story$story <-
+  factor(stage.one.mean.story$story, levels = levs)
 
-f <- ggplot(stage.one.mean.story, aes(x = story, y = empirical_stat)) + 
+f <-
+  ggplot(stage.one.mean.story, aes(x = story, y = empirical_stat)) +
   geom_point(
     data = stage.one.mean.story,
     aes(x = story, y = empirical_stat),
-    size = 1,
+    size = 2.4,
     alpha = 1,
     position = position_dodge(width = 0.4)
   ) +
@@ -330,110 +432,221 @@ f <- ggplot(stage.one.mean.story, aes(x = story, y = empirical_stat)) +
     data = stage.one.mean.story,
     aes(x = story, ymin = ci_lower, ymax = ci_upper),
     position = position_dodge(width = 0.4),
-    size = 1,
-    width = 0.2
+    size = 1.8,
+    width = 0.3
   ) +
-  geom_hline(yintercept = 0, linetype = "dashed", color = "red") +
+  geom_hline(yintercept = 0,
+             linetype = "dashed",
+             color = "red") +
   labs(x = "story", y = "expectation of higher", title = 'implicit coordination expectations') +
   theme(axis.text.x = element_text(angle = 30, hjust = 1))
 
 f
 
-ggsave(here("figures/sloan_talk/study3_effort_corr.pdf"),
-       width = 6.2,
-       height = 4)
+ggsave(
+  here("figures/outputs/1c_scenarios_ordered.pdf"),
+  width = 8,
+  height = 3.5 
+)
 
 # Implicit coordination based on effort/benefit?
 
-f <- ggplot(stage.one.mean.story, aes(x = effort_diff, y = empirical_stat)) + 
-  geom_point(size = 3.3, alpha = 0.7, color = "#00BFC4") + 
-  geom_errorbar(mapping = aes(x = effort_diff, ymin = ci_lower, ymax=ci_upper), size= 2.5, width = 0, alpha = 0.7, color = "#00BFC4") +
-  geom_hline(yintercept = 0, linetype = "dashed", color = "red") +
+f <-
+  ggplot(stage.one.mean.story, aes(x = effort_diff, y = empirical_stat)) +
+  geom_point(size = 3.3,
+             alpha = 0.7,
+             color = "#00BFC4", stroke = 0) +
+  geom_errorbar(
+    mapping = aes(x = effort_diff, ymin = ci_lower, ymax = ci_upper),
+    size = 2.5,
+    width = 0.1,
+    alpha = 0.7,
+    color = "#00BFC4"
+  ) +
+  geom_hline(yintercept = 0,
+             linetype = "dashed",
+             color = "gray") +
   scale_y_continuous(limits = c(-1, 1)) +
   labs(x = "perceived effort difference in scenario", y = "expectations for high status", title = "implicit coordination effort")
 
 f
 
-# ggsave(here("figures/sloan_talk/study3_effort_corr.pdf"),
-#        width = 6.2,
-#        height = 4)
+ggsave(here("figures/outputs/1c_effort_corr.pdf"),
+       width = 6.2,
+       height = 4)
 
-f <- ggplot(stage.one.mean.story, aes(x = benefit_diff, y = empirical_stat)) + 
-  geom_point(size = 3.3, alpha = 0.7, color = "#F8766D") + 
-  geom_errorbar(mapping = aes(x = benefit_diff, ymin = ci_lower, ymax=ci_upper), size= 2.5, width = 0, alpha = 0.7, color = "#F8766D") +
-  geom_hline(yintercept = 0, linetype = "dashed", color = "red") +
+f <-
+  ggplot(stage.one.mean.story, aes(x = benefit_diff, y = empirical_stat)) +
+  geom_point(size = 3.3,
+             alpha = 0.7,
+             color = "#F8766D", stroke = 0) +
+  geom_errorbar(
+    mapping = aes(x = benefit_diff, ymin = ci_lower, ymax = ci_upper),
+    size = 2.5,
+    width = 0.1,
+    alpha = 0.7,
+    color = "#F8766D"
+  ) +
+  geom_hline(yintercept = 0,
+             linetype = "dashed",
+             color = "gray") +
   scale_y_continuous(limits = c(-1, 1)) +
   labs(x = "perceived benefit difference in scenario", y = "expectations for high status", title = "implicit coordination benefit")
 
 
 f
 
-# First time on x axis, second time on y axis, colored by actual first 
-d.first.response <- 
-  d %>% filter(symmetric == "asymmetric") %>% 
-  mutate(first_response_higher = recode(first_response_higher, "higher" = 1, "lower" = -1), 
-         second_response_higher = recode(second_response_higher, "higher" = 1, "lower" = -1) 
-  ) %>% 
-  group_by(story, first_actual_higher) %>% 
-  tidyboot_mean(first_response_higher, na.rm = TRUE) 
+ggsave(here("figures/outputs/1c_benefit_corr.pdf"),
+       width = 6.2,
+       height = 4)
 
-d.second.response <- 
-  d %>% filter(symmetric == "asymmetric") %>% 
-  mutate(first_response_higher = recode(first_response_higher, "higher" = 1, "lower" = -1), 
-         second_response_higher = recode(second_response_higher, "higher" = 1, "lower" = -1) 
-  ) %>% 
-  group_by(story, first_actual_higher) %>% 
-  tidyboot_mean(second_response_higher, na.rm = TRUE) 
 
-d.first.second <- left_join(d.first.response, d.second.response, suffix = c("_first", "_second"), by=(c("story", "first_actual_higher")))
+# First time on x axis, second time on y axis, colored by actual first
+d.first.response <-
+  d %>% filter(symmetric == "asymmetric") %>%
+  mutate(
+    first_response_higher = recode(
+      first_response_higher,
+      "higher" = 1,
+      "lower" = -1
+    ),
+    second_response_higher = recode(
+      second_response_higher,
+      "higher" = 1,
+      "lower" = -1
+    )
+  ) %>%
+  group_by(story, first_actual_higher) %>%
+  tidyboot_mean(first_response_higher, na.rm = TRUE)
 
-f <- ggplot(d.first.second, aes(x = empirical_stat_first, y = empirical_stat_second, color = first_actual_higher)) + 
-  geom_point(size = 3.3, alpha = 0.7) + 
-  geom_errorbar(mapping = aes(x = empirical_stat_first, ymin = ci_lower_second, ymax=ci_upper_second), size= 1.5, width = 0.05, alpha = 0.7) +
-  geom_errorbarh(mapping = aes(y = empirical_stat_second, xmin = ci_lower_first, xmax=ci_upper_first), size= 1.5, height = 0.05, alpha = 0.7) +
-  geom_hline(yintercept = 0, linetype = "dashed", color = "red") +
-  geom_vline(xintercept = 0, linetype = "dashed", color = "red") +
+d.second.response <-
+  d %>% filter(symmetric == "asymmetric") %>%
+  mutate(
+    first_response_higher = recode(
+      first_response_higher,
+      "higher" = 1,
+      "lower" = -1
+    ),
+    second_response_higher = recode(
+      second_response_higher,
+      "higher" = 1,
+      "lower" = -1
+    )
+  ) %>%
+  group_by(story, first_actual_higher) %>%
+  tidyboot_mean(second_response_higher, na.rm = TRUE)
+
+d.first.second <-
+  left_join(
+    d.first.response,
+    d.second.response,
+    suffix = c("_first", "_second"),
+    by = (c("story", "first_actual_higher"))
+  )
+
+f <-
+  ggplot(
+    d.first.second,
+    aes(x = empirical_stat_first, y = empirical_stat_second, color = first_actual_higher)
+  ) +
+  geom_point(size = 3.3, alpha = 0.7, stroke = 0) +
+  geom_errorbar(
+    mapping = aes(x = empirical_stat_first, ymin = ci_lower_second, ymax = ci_upper_second),
+    size = 1.5,
+    width = 0.043,
+    alpha = 0.6
+  ) +
+  geom_errorbarh(
+    mapping = aes(y = empirical_stat_second, xmin = ci_lower_first, xmax = ci_upper_first),
+    size = 1.5,
+    height = 0.043,
+    alpha = 0.6
+  ) +
+  geom_hline(yintercept = 0,
+             linetype = "dashed",
+             color = "gray") +
+  geom_vline(xintercept = 0,
+             linetype = "dashed",
+             color = "gray") +
   scale_y_continuous(limits = c(-1, 1)) +
+  scale_color_manual(values = c("higher" = "#B87FFF", "lower" = "#35ACFF")) +
   labs(x = "first time higher", y = "second time higher")
 
 f
 
+ggsave(here("figures/outputs/1c_first_second.pdf"),
+       width = 6.2,
+       height = 4)
+
 ## Are the effects of scenario consistent between 1b and 1c
 
 # import study 1b data
-d.1b <- read.csv(here('data/1b_tidy_data.csv')) %>% 
-  filter(relationship != "equal", next_interaction != 'none') %>% 
+d.1b <- read.csv(here('data/1b_tidy_data.csv')) %>%
+  filter(relationship != "equal", next_interaction != 'none') %>%
   group_by(subject_id, story, relationship) %>%
-  mutate(total_rating = sum(likert_rating),
-         normalized_likert_rating = likert_rating / total_rating) %>%
-  select(-total_rating) %>% 
-  ungroup() %>% 
-  rename(observed_higher = relationship) %>% 
-  mutate(observed_higher = ifelse(observed_higher == 'less', 'lower', 'higher'), 
-         second_response_higher = case_when(next_interaction == 'repeating' ~ observed_higher,
-                                            next_interaction == 'alternating' ~ ifelse(observed_higher == "higher", "lower", "higher"), 
-                                            next_interaction == 'none' ~ 'none'))
+  mutate(
+    total_rating = sum(likert_rating),
+    normalized_likert_rating = likert_rating / total_rating
+  ) %>%
+  select(-total_rating) %>%
+  ungroup() %>%
+  rename(observed_higher = relationship) %>%
+  mutate(
+    observed_higher = ifelse(observed_higher == 'less', 'lower', 'higher'),
+    second_response_higher = case_when(
+      next_interaction == 'repeating' ~ observed_higher,
+      next_interaction == 'alternating' ~ ifelse(observed_higher == "higher", "lower", "higher"),
+      next_interaction == 'none' ~ 'none'
+    )
+  )
 
 
-d.1b.means <- d.1b %>% 
-  filter(second_response_higher == 'higher') %>% 
- group_by(story, observed_higher) %>% 
+d.1b.means <- d.1b %>%
+  filter(second_response_higher == 'higher') %>%
+  group_by(story, observed_higher) %>%
   tidyboot_mean(normalized_likert_rating, na.rm = T)
 
 
-d.1b.1c <- left_join(d.1b.means, d.second.response %>% rename(observed_higher = first_actual_higher), suffix = c("_1b", "_1c"), by=(c("story", "observed_higher")))
+d.1b.1c <-
+  left_join(
+    d.1b.means,
+    d.second.response %>% rename(observed_higher = first_actual_higher),
+    suffix = c("_1b", "_1c"),
+    by = (c("story", "observed_higher"))
+  )
 
-f <- ggplot(d.1b.1c, aes(x = empirical_stat_1c, y = empirical_stat_1b, color = observed_higher)) + 
-  geom_point(size = 3.3, alpha = 0.7) + 
-  geom_errorbar(mapping = aes(x = empirical_stat_1c, ymin = ci_lower_1b, ymax=ci_upper_1b), size= 1.5, width = 0.05, alpha = 0.7) +
-  geom_errorbarh(mapping = aes(y = empirical_stat_1b, xmin = ci_lower_1c, xmax=ci_upper_1c), size= 1.5, height = 0.05, alpha = 0.7) +
-  geom_hline(yintercept = 0.5, linetype = "dashed", color = "red") +
-  geom_vline(xintercept = 0, linetype = "dashed", color = "red") +
+f <-
+  ggplot(d.1b.1c,
+         aes(x = empirical_stat_1c, y = empirical_stat_1b, color = observed_higher)) +
+  geom_point(size = 3.3, alpha = 0.7, stroke = 0) +
+  geom_errorbar(
+    mapping = aes(x = empirical_stat_1c, ymin = ci_lower_1b, ymax = ci_upper_1b),
+    size = 1.5,
+    width = 0.043,
+    alpha = 0.6
+  ) +
+  geom_errorbarh(
+    mapping = aes(y = empirical_stat_1b, xmin = ci_lower_1c, xmax = ci_upper_1c),
+    size = 1.5,
+    height = 0.014,
+    alpha = 0.6
+  ) +
+  geom_hline(yintercept = 0.5,
+             linetype = "dashed",
+             color = "gray") +
+  geom_vline(xintercept = 0,
+             linetype = "dashed",
+             color = "gray") +
   scale_y_continuous(limits = c(0.2, 0.8)) +
   scale_x_continuous(limits = c(-1, 1)) +
+  scale_color_manual(values = c("higher" = "#B87FFF", "lower" = "#35ACFF")) +
   labs(x = "study 1c higher", y = "study 1b P(higher)")
 
 f
+
+ggsave(here("figures/outputs/1c_1b.pdf"),
+       width = 6.2,
+       height = 4)
 
 ###### BELOW IS OLD STUFF
 
@@ -442,13 +655,15 @@ f
 
 
 
-glmer(first_response_higher ~ benefit_diff + (1 | participant) + (1 | scenario), family = 'binomial')
+glmer(first_response_higher ~ benefit_diff + (1 |
+                                                participant) + (1 | scenario),
+      family = 'binomial')
 
 
-stage.one.mean.story <- 
-  stage.one %>% group_by(story) %>% 
-  tidyboot_mean(response_status_, na.rm = TRUE) %>% 
-  left_join(effort_diff, id = story) %>% 
+stage.one.mean.story <-
+  stage.one %>% group_by(story) %>%
+  tidyboot_mean(response_status_, na.rm = TRUE) %>%
+  left_join(effort_diff, id = story) %>%
   left_join(benefit_diff, id = story)
 
 f = ggplot(data = stage.one, aes(x = stage, y = 0)) +
@@ -467,9 +682,11 @@ f = ggplot(data = stage.one, aes(x = stage, y = 0)) +
     width = 0.09
   ) +
   scale_y_continuous(limits = c(0, 1)) +
-  geom_hline(yintercept = 0.5, linetype = "dashed", color = "red") +
-  facet_wrap(~story) + 
-  labs(y = "expectations for high status", title = "asymmetric relationship first meeting") 
+  geom_hline(yintercept = 0.5,
+             linetype = "dashed",
+             color = "red") +
+  facet_wrap( ~ story) +
+  labs(y = "expectations for high status", title = "asymmetric relationship first meeting")
 
 f
 
@@ -477,99 +694,184 @@ f
 # REBECCA SUGGESTED STUFF
 # todo: do for symmetric
 
-d.first.response <- 
-  d %>% filter(symmetric == "asymmetric") %>% 
-  mutate(first_response_higher = recode(first_response_higher, "higher" = 1, "lower" = -1), 
-         second_response_higher = recode(second_response_higher, "higher" = 1, "lower" = -1) 
-         ) %>% 
-  group_by(story) %>% 
-  tidyboot_mean(first_response_higher, na.rm = TRUE) 
+d.first.response <-
+  d %>% filter(symmetric == "asymmetric") %>%
+  mutate(
+    first_response_higher = recode(
+      first_response_higher,
+      "higher" = 1,
+      "lower" = -1
+    ),
+    second_response_higher = recode(
+      second_response_higher,
+      "higher" = 1,
+      "lower" = -1
+    )
+  ) %>%
+  group_by(story) %>%
+  tidyboot_mean(first_response_higher, na.rm = TRUE)
 
-d.second.response <- 
-  d %>% filter(symmetric == "asymmetric") %>% 
-  mutate(first_response_higher = recode(first_response_higher, "higher" = 1, "lower" = -1), 
-         second_response_higher = recode(second_response_higher, "higher" = 1, "lower" = -1) 
-  ) %>% 
-  group_by(story, first_actual_higher) %>% 
-  tidyboot_mean(second_response_higher, na.rm = TRUE) 
+d.second.response <-
+  d %>% filter(symmetric == "asymmetric") %>%
+  mutate(
+    first_response_higher = recode(
+      first_response_higher,
+      "higher" = 1,
+      "lower" = -1
+    ),
+    second_response_higher = recode(
+      second_response_higher,
+      "higher" = 1,
+      "lower" = -1
+    )
+  ) %>%
+  group_by(story, first_actual_higher) %>%
+  tidyboot_mean(second_response_higher, na.rm = TRUE)
 
 
 
 
-f <- ggplot(d.first.response, aes(x = 'first time', y = empirical_stat)) + 
-  geom_point(size = 3, alpha = 0.7) + 
-  geom_errorbar(mapping = aes(x = 'first time', ymin = ci_lower, ymax=ci_upper), size= 1.5, width = 0.09, alpha = 0.7) +
-  geom_hline(yintercept = 0, linetype = "dashed", color = "red") +
+f <-
+  ggplot(d.first.response, aes(x = 'first time', y = empirical_stat)) +
+  geom_point(size = 3, alpha = 0.7) +
+  geom_errorbar(
+    mapping = aes(x = 'first time', ymin = ci_lower, ymax = ci_upper),
+    size = 1.5,
+    width = 0.09,
+    alpha = 0.7
+  ) +
+  geom_hline(yintercept = 0,
+             linetype = "dashed",
+             color = "red") +
   labs(x = "", y = "expectations for high status", title = "asymmetric relationships first meeting") +
-  facet_wrap(~story)
+  facet_wrap( ~ story)
 
 f
 
 stories = c('concerts', 'restaurant', 'family meals', 'meeting location')
 for (s in stories) {
-  
-  f <- ggplot(d.first.response %>% filter(story == s), aes(x = 'first time', y = empirical_stat)) + 
-    geom_point(size = 3, alpha = 0.7) + 
-    geom_errorbar(mapping = aes(x = 'first time', ymin = ci_lower, ymax=ci_upper), size= 1.5, width = 0.09, alpha = 0.7) +
-    geom_hline(yintercept = 0, linetype = "dashed", color = "red") +
-    labs(x = "", y = "expectations for high status", title = glue("{s}")) + 
-    scale_y_continuous(limits = c(-1, 1)) 
+  f <-
+    ggplot(d.first.response %>% filter(story == s),
+           aes(x = 'first time', y = empirical_stat)) +
+    geom_point(size = 3, alpha = 0.7) +
+    geom_errorbar(
+      mapping = aes(x = 'first time', ymin = ci_lower, ymax = ci_upper),
+      size = 1.5,
+      width = 0.09,
+      alpha = 0.7
+    ) +
+    geom_hline(yintercept = 0,
+               linetype = "dashed",
+               color = "red") +
+    labs(x = "",
+         y = "expectations for high status",
+         title = glue("{s}")) +
+    scale_y_continuous(limits = c(-1, 1))
   
   f
   
-  ggsave(here(glue("figures/coglunch/1c_first_time_{s}.pdf")),
-         width = 2.5,
-         height = 4)
+  ggsave(here(glue(
+    "figures/coglunch/1c_first_time_{s}.pdf"
+  )),
+  width = 2.5,
+  height = 4)
   
 }
 
-f <- ggplot(d.second.response %>% filter(first_actual_higher == 'higher'), aes(x = 'first time', y = empirical_stat)) + 
-  geom_point(size = 3, alpha = 0.7) + 
-  geom_errorbar(mapping = aes(x = 'first time', ymin = ci_lower, ymax=ci_upper), size= 1.5, width = 0.09, alpha = 0.7) +
-  geom_hline(yintercept = 0, linetype = "dashed", color = "red") +
+f <-
+  ggplot(
+    d.second.response %>% filter(first_actual_higher == 'higher'),
+    aes(x = 'first time', y = empirical_stat)
+  ) +
+  geom_point(size = 3, alpha = 0.7) +
+  geom_errorbar(
+    mapping = aes(x = 'first time', ymin = ci_lower, ymax = ci_upper),
+    size = 1.5,
+    width = 0.09,
+    alpha = 0.7
+  ) +
+  geom_hline(yintercept = 0,
+             linetype = "dashed",
+             color = "red") +
   labs(x = "", y = "expectations for high status", title = "second meeting, first actual higher") +
-  facet_wrap(~story)
+  facet_wrap( ~ story)
 
 f
 
 for (s in stories) {
-  f <- ggplot(d.second.response %>% filter(first_actual_higher == 'higher', story == s), aes(x = 'first time', y = empirical_stat)) + 
-    geom_point(size = 3, alpha = 0.7) + 
-    geom_errorbar(mapping = aes(x = 'first time', ymin = ci_lower, ymax=ci_upper), size= 1.5, width = 0.09, alpha = 0.7) +
-    geom_hline(yintercept = 0, linetype = "dashed", color = "red") +
+  f <-
+    ggplot(
+      d.second.response %>% filter(first_actual_higher == 'higher', story == s),
+      aes(x = 'first time', y = empirical_stat)
+    ) +
+    geom_point(size = 3, alpha = 0.7) +
+    geom_errorbar(
+      mapping = aes(x = 'first time', ymin = ci_lower, ymax = ci_upper),
+      size = 1.5,
+      width = 0.09,
+      alpha = 0.7
+    ) +
+    geom_hline(yintercept = 0,
+               linetype = "dashed",
+               color = "red") +
     labs(x = "", y = "expectations for high status", title = s) +
-    scale_y_continuous(limits = c(-1, 1)) 
+    scale_y_continuous(limits = c(-1, 1))
   
   f
   
-  ggsave(here(glue("figures/coglunch/1c_second_time_higher_{s}.pdf")),
-         width = 2.5,
-         height = 4)
+  ggsave(here(glue(
+    "figures/coglunch/1c_second_time_higher_{s}.pdf"
+  )),
+  width = 2.5,
+  height = 4)
 }
 
-f <- ggplot(d.second.response %>% filter(first_actual_higher == 'lower'), aes(x = '', y = empirical_stat)) + 
-  geom_point(size = 3, alpha = 0.7) + 
-  geom_errorbar(mapping = aes(x = '', ymin = ci_lower, ymax=ci_upper), size= 1.5, width = 0.09, alpha = 0.7) +
-  geom_hline(yintercept = 0, linetype = "dashed", color = "red") +
+f <-
+  ggplot(
+    d.second.response %>% filter(first_actual_higher == 'lower'),
+    aes(x = '', y = empirical_stat)
+  ) +
+  geom_point(size = 3, alpha = 0.7) +
+  geom_errorbar(
+    mapping = aes(x = '', ymin = ci_lower, ymax = ci_upper),
+    size = 1.5,
+    width = 0.09,
+    alpha = 0.7
+  ) +
+  geom_hline(yintercept = 0,
+             linetype = "dashed",
+             color = "red") +
   labs(x = "", y = "expectations for high status", title = "second meeting, first actual lower") +
-  facet_wrap(~story)
+  facet_wrap( ~ story)
 
 f
 
 #plot w diff colors
 
-d.combined <- bind_rows(d.first.response %>% mutate(first_actual_higher = 'prior'), d.second.response)
-d.combined$first_actual_higher <- factor(d.combined$first_actual_higher, levels = c("prior", "higher", "lower"))
+d.combined <-
+  bind_rows(d.first.response %>% mutate(first_actual_higher = 'prior'),
+            d.second.response)
+d.combined$first_actual_higher <-
+  factor(d.combined$first_actual_higher,
+         levels = c("prior", "higher", "lower"))
 
-# ggplot(df, aes(x = category, y = value)) + 
+# ggplot(df, aes(x = category, y = value)) +
 
-f <- ggplot(d.combined, aes(x = first_actual_higher, y = empirical_stat)) + 
-  geom_point(size = 3, alpha = 0.7) + 
-  geom_errorbar(mapping = aes(x = first_actual_higher, ymin = ci_lower, ymax=ci_upper), size= 1.5, width = 0.09, alpha = 0.7) +
-  geom_hline(yintercept = 0, linetype = "dashed", color = "red") +
+f <-
+  ggplot(d.combined, aes(x = first_actual_higher, y = empirical_stat)) +
+  geom_point(size = 3, alpha = 0.7) +
+  geom_errorbar(
+    mapping = aes(x = first_actual_higher, ymin = ci_lower, ymax = ci_upper),
+    size = 1.5,
+    width = 0.09,
+    alpha = 0.7
+  ) +
+  geom_hline(yintercept = 0,
+             linetype = "dashed",
+             color = "red") +
   labs(x = "", y = "expectations for high status", title = "second meeting, first actual lower") +
   theme(axis.text.x = element_text(angle = 30, hjust = 1)) +
-  facet_wrap(~story)
+  facet_wrap( ~ story)
 
 f
 ggsave(here(glue("figures/coglunch/1c_implicit_all.pdf")),
@@ -577,88 +879,125 @@ ggsave(here(glue("figures/coglunch/1c_implicit_all.pdf")),
        height = 8)
 
 for (s in stories) {
-  f <- ggplot(d.second.response %>% filter(first_actual_higher == 'lower', story == s), aes(x = 'first time', y = empirical_stat)) + 
-    geom_point(size = 3, alpha = 0.7) + 
-    geom_errorbar(mapping = aes(x = 'first time', ymin = ci_lower, ymax=ci_upper), size= 1.5, width = 0.09, alpha = 0.7) +
-    geom_hline(yintercept = 0, linetype = "dashed", color = "red") +
+  f <-
+    ggplot(
+      d.second.response %>% filter(first_actual_higher == 'lower', story == s),
+      aes(x = 'first time', y = empirical_stat)
+    ) +
+    geom_point(size = 3, alpha = 0.7) +
+    geom_errorbar(
+      mapping = aes(x = 'first time', ymin = ci_lower, ymax = ci_upper),
+      size = 1.5,
+      width = 0.09,
+      alpha = 0.7
+    ) +
+    geom_hline(yintercept = 0,
+               linetype = "dashed",
+               color = "red") +
     labs(x = "", y = "expectations for high status", title = s) +
-    scale_y_continuous(limits = c(-1, 1)) 
+    scale_y_continuous(limits = c(-1, 1))
   
   f
   
-  ggsave(here(glue("figures/coglunch/1c_second_time_lower_{s}.pdf")),
-         width = 2.5,
-         height = 4)
+  ggsave(here(glue(
+    "figures/coglunch/1c_second_time_lower_{s}.pdf"
+  )),
+  width = 2.5,
+  height = 4)
 }
 
-# TODO: do for symmetric 
+# TODO: do for symmetric
 
 # correlation expectations for high status with relative cost for each scenario.
 
 
 
 
-f <- ggplot(stage.one.mean.story, aes(x = effort_diff, y = empirical_stat)) + 
-  geom_point(size = 3, alpha = 0.7) + 
-  geom_errorbar(mapping = aes(x = effort_diff, ymin = ci_lower, ymax=ci_upper), size= 1.5, width = 0.09, alpha = 0.7) +
-  geom_hline(yintercept = 0.5, linetype = "dashed", color = "red") +
+f <-
+  ggplot(stage.one.mean.story, aes(x = effort_diff, y = empirical_stat)) +
+  geom_point(size = 3, alpha = 0.7) +
+  geom_errorbar(
+    mapping = aes(x = effort_diff, ymin = ci_lower, ymax = ci_upper),
+    size = 1.5,
+    width = 0.09,
+    alpha = 0.7
+  ) +
+  geom_hline(yintercept = 0.5,
+             linetype = "dashed",
+             color = "red") +
   labs(x = "perceived effort difference in scenario", y = "expectations for high status", title = "asymmetric relationships first meeting")
-  
+
 f
 
-f <- ggplot(stage.one.mean.story, aes(x = benefit_diff, y = empirical_stat)) + 
-  geom_point(size = 3, alpha = 0.7) + 
-  geom_errorbar(mapping = aes(x = benefit_diff, ymin = ci_lower, ymax=ci_upper), size= 1.5, width = 0.09, alpha = 0.7) +
-  geom_hline(yintercept = 0.5, linetype = "dashed", color = "red") +
+f <-
+  ggplot(stage.one.mean.story, aes(x = benefit_diff, y = empirical_stat)) +
+  geom_point(size = 3, alpha = 0.7) +
+  geom_errorbar(
+    mapping = aes(x = benefit_diff, ymin = ci_lower, ymax = ci_upper),
+    size = 1.5,
+    width = 0.09,
+    alpha = 0.7
+  ) +
+  geom_hline(yintercept = 0.5,
+             linetype = "dashed",
+             color = "red") +
   labs(x = "perceived benefit difference in scenario", y = "expectations for high status", title = "asymmetric relationships first meeting")
 
 
 f
 
-f <- ggplot(stage.one.mean.story, aes(x = effort_diff, y = benefit_diff)) + 
-  geom_point(size = 3, alpha = 0.7) + 
+f <-
+  ggplot(stage.one.mean.story, aes(x = effort_diff, y = benefit_diff)) +
+  geom_point(size = 3, alpha = 0.7) +
   labs(x = "perceived effort difference", y = "perceived benefit difference")
 
 f
 
 # Stage 1 stats
-m <- glmer(data = d %>% filter(stage == "first"), factor(response_status) ~ symmetry + (1 | subject_id) + (1 | story), family = "binomial")
+m <-
+  glmer(
+    data = d %>% filter(stage == "first"),
+    factor(response_status) ~ symmetry + (1 |
+                                            subject_id) + (1 | story),
+    family = "binomial"
+  )
 emm <- emmeans(m, specs = ~ 1)
 summary(emm, null = 0, infer = c(TRUE, TRUE))
 # m <- lmer(data = stage.one, response_status_ ~ (1 | subject_id) + (1 | story))
 
 summary(m)
-# What happens in the second stage? 
+# What happens in the second stage?
 
 
 # d.temp <- d %>% pivot_wider(names_from = stage, values_from = c(first_meeting, response))
 
-d.temp <- d %>% 
-  mutate(correct_first_response = ifelse(stage == "first",
-                                         ifelse(first_meeting == response, "correct", "incorrect"),
-                                         NA)) %>% 
-  arrange(subject_id, story, stage) %>% 
-  group_by(subject_id, story) %>% 
+d.temp <- d %>%
+  mutate(correct_first_response = ifelse(
+    stage == "first",
+    ifelse(first_meeting == response, "correct", "incorrect"),
+    NA
+  )) %>%
+  arrange(subject_id, story, stage) %>%
+  group_by(subject_id, story) %>%
   fill(correct_first_response)
 
-d.second <- d.temp %>% filter(stage == "second") %>% 
-  mutate(strategy_ = ifelse(strategy == "repeating", 0, 1)) 
+d.second <- d.temp %>% filter(stage == "second") %>%
+  mutate(strategy_ = ifelse(strategy == "repeating", 0, 1))
 
 
-d.second.means <- d.second %>% 
-  group_by(symmetry, correct_first_response) %>% 
+d.second.means <- d.second %>%
+  group_by(symmetry, correct_first_response) %>%
   tidyboot_mean(strategy_, na.rm = T)
 
-d.second.scenarios <- d.second %>% 
-  group_by(story, symmetry, correct_first_response) %>% 
+d.second.scenarios <- d.second %>%
+  group_by(story, symmetry, correct_first_response) %>%
   tidyboot_mean(strategy_, na.rm = T)
 
-f = ggplot(data = d.second.means, aes(x = correct_first_response, y = empirical_stat, color = symmetry)) +
-  geom_point(
-    size = 2.3,
-    alpha = 1,
-    position = position_dodge(width = 0.8)
-  ) +
+f = ggplot(data = d.second.means,
+           aes(x = correct_first_response, y = empirical_stat, color = symmetry)) +
+  geom_point(size = 2.3,
+             alpha = 1,
+             position = position_dodge(width = 0.8)) +
   geom_errorbar(
     mapping = aes(x = correct_first_response, ymin = ci_lower, ymax = ci_upper),
     position = position_dodge(width = 0.8),
@@ -666,19 +1005,20 @@ f = ggplot(data = d.second.means, aes(x = correct_first_response, y = empirical_
     width = 0.09
   ) +
   scale_y_continuous(limits = c(0, 1)) +
-  geom_hline(yintercept = 0.5, linetype = "dashed", color = "red") +
-  labs(y = "expectation for alternating strategy", title = "second time") 
+  geom_hline(yintercept = 0.5,
+             linetype = "dashed",
+             color = "red") +
+  labs(y = "expectation for alternating strategy", title = "second time")
 
 
 
 f
 
-f = ggplot(data = d.second.scenarios, aes(x = correct_first_response, y = empirical_stat, color = symmetry)) +
-  geom_point(
-    size = 2.3,
-    alpha = 1,
-    position = position_dodge(width = 0.8)
-  ) +
+f = ggplot(data = d.second.scenarios,
+           aes(x = correct_first_response, y = empirical_stat, color = symmetry)) +
+  geom_point(size = 2.3,
+             alpha = 1,
+             position = position_dodge(width = 0.8)) +
   geom_errorbar(
     mapping = aes(x = correct_first_response, ymin = ci_lower, ymax = ci_upper),
     position = position_dodge(width = 0.8),
@@ -686,22 +1026,23 @@ f = ggplot(data = d.second.scenarios, aes(x = correct_first_response, y = empiri
     width = 0.3
   ) +
   scale_y_continuous(limits = c(0, 1)) +
-  geom_hline(yintercept = 0.5, linetype = "dashed", color = "red") +
+  geom_hline(yintercept = 0.5,
+             linetype = "dashed",
+             color = "red") +
   labs(y = "expectation for alternating strategy", title = "second time") +
-  facet_wrap(~story)
+  facet_wrap( ~ story)
 
 f
 
-d.second.means <- d.second %>% 
-  group_by(altruistic_status, correct_first_response) %>% 
+d.second.means <- d.second %>%
+  group_by(altruistic_status, correct_first_response) %>%
   tidyboot_mean(strategy_, na.rm = T)
 
-f = ggplot(data = d.second.means, aes(x = correct_first_response, y = empirical_stat, color = altruistic_status)) +
-  geom_point(
-    size = 2.3,
-    alpha = 1,
-    position = position_dodge(width = 0.8)
-  ) +
+f = ggplot(data = d.second.means,
+           aes(x = correct_first_response, y = empirical_stat, color = altruistic_status)) +
+  geom_point(size = 2.3,
+             alpha = 1,
+             position = position_dodge(width = 0.8)) +
   geom_errorbar(
     mapping = aes(x = correct_first_response, ymin = ci_lower, ymax = ci_upper),
     position = position_dodge(width = 0.8),
@@ -709,21 +1050,22 @@ f = ggplot(data = d.second.means, aes(x = correct_first_response, y = empirical_
     width = 0.09
   ) +
   scale_y_continuous(limits = c(0, 1)) +
-  geom_hline(yintercept = 0.5, linetype = "dashed", color = "red") +
-  labs(y = "expectation for alternating strategy", title = "second time") 
+  geom_hline(yintercept = 0.5,
+             linetype = "dashed",
+             color = "red") +
+  labs(y = "expectation for alternating strategy", title = "second time")
 
 f
 
-d.second.scenarios <- d.second %>% 
-  group_by(story, altruistic_status, correct_first_response) %>% 
+d.second.scenarios <- d.second %>%
+  group_by(story, altruistic_status, correct_first_response) %>%
   tidyboot_mean(strategy_, na.rm = T)
 
-f = ggplot(data = d.second.scenarios, aes(x = correct_first_response, y = empirical_stat, color = altruistic_status)) +
-  geom_point(
-    size = 2.3,
-    alpha = 1,
-    position = position_dodge(width = 0.8)
-  ) +
+f = ggplot(data = d.second.scenarios,
+           aes(x = correct_first_response, y = empirical_stat, color = altruistic_status)) +
+  geom_point(size = 2.3,
+             alpha = 1,
+             position = position_dodge(width = 0.8)) +
   geom_errorbar(
     mapping = aes(x = correct_first_response, ymin = ci_lower, ymax = ci_upper),
     position = position_dodge(width = 0.8),
@@ -731,9 +1073,11 @@ f = ggplot(data = d.second.scenarios, aes(x = correct_first_response, y = empiri
     width = 0.3
   ) +
   scale_y_continuous(limits = c(0, 1)) +
-  geom_hline(yintercept = 0.5, linetype = "dashed", color = "red") +
+  geom_hline(yintercept = 0.5,
+             linetype = "dashed",
+             color = "red") +
   labs(y = "expectation for alternating strategy", title = "second time") +
-  facet_wrap(~story)
+  facet_wrap( ~ story)
 
 f
 
@@ -788,15 +1132,18 @@ d_filtered <- d %>%
   filter(next_interaction != "none" & relationship != "no_info")
 
 mod <- lmer(likert_rating ~ next_interaction * relationship + (1 |
-                                                                 story) + (1 | subject_id),
+                                                                 story) + (1 |
+                                                                             subject_id),
             data = d_filtered)
 
 summary(mod)
 
 # With all levels
-mod <- lmer(likert_rating ~ 1 + next_interaction * relationship + (1 |
-                                                                     story) + (1 | subject_id),
-            data = d)
+mod <-
+  lmer(likert_rating ~ 1 + next_interaction * relationship + (1 |
+                                                                story) + (1 |
+                                                                            subject_id),
+       data = d)
 
 summary(mod)
 
@@ -838,7 +1185,7 @@ d <-
   read.csv(here('data/exp2_data.csv')) %>% filter(pass_attention == T, understood == 'yes') %>%
   mutate(newSum = select_if(., is.numeric) %>%
            reduce(`+`)) %>%
-  mutate_if(is.numeric, list( ~ . / newSum)) %>%
+  mutate_if(is.numeric, list(~ . / newSum)) %>%
   select(-newSum) %>%
   pivot_longer(
     cols = c("repeating", "alternating", "none"),
@@ -868,15 +1215,18 @@ d_filtered <- d %>%
   filter(next_interaction != "none" & relationship != "no_info")
 
 mod <- lmer(likert_rating ~ next_interaction * relationship + (1 |
-                                                                 story) + (1 | subject_id),
+                                                                 story) + (1 |
+                                                                             subject_id),
             data = d_filtered)
 
 summary(mod)
 
 # With all levels
-mod <- lmer(likert_rating ~ 1 + next_interaction * relationship + (1 |
-                                                                     story) + (1 | subject_id),
-            data = d)
+mod <-
+  lmer(likert_rating ~ 1 + next_interaction * relationship + (1 |
+                                                                story) + (1 |
+                                                                            subject_id),
+       data = d)
 
 summary(mod)
 
