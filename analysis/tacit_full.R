@@ -308,9 +308,132 @@ f
 
 
 
+#### new plots that rebecca asked for 
+
+# Plot with scenario on x axis, implicit coordination on y axis, x axis ordered by y axis
+d.temp <- stage.one.mean.story %>% 
+  arrange(desc(mean))
+
+levs <- unique(d.temp$story)
+
+stage.one.mean.story$story <- factor(stage.one.mean.story$story, levels=levs)
+
+f <- ggplot(stage.one.mean.story, aes(x = story, y = empirical_stat)) + 
+  geom_point(
+    data = stage.one.mean.story,
+    aes(x = story, y = empirical_stat),
+    size = 1,
+    alpha = 1,
+    position = position_dodge(width = 0.4)
+  ) +
+  geom_errorbar(
+    data = stage.one.mean.story,
+    aes(x = story, ymin = ci_lower, ymax = ci_upper),
+    position = position_dodge(width = 0.4),
+    size = 1,
+    width = 0.2
+  ) +
+  geom_hline(yintercept = 0, linetype = "dashed", color = "red") +
+  labs(x = "story", y = "expectation of higher", title = 'implicit coordination expectations') +
+  theme(axis.text.x = element_text(angle = 30, hjust = 1))
+
+f
+
+ggsave(here("figures/sloan_talk/study3_effort_corr.pdf"),
+       width = 6.2,
+       height = 4)
+
+# Implicit coordination based on effort/benefit?
+
+f <- ggplot(stage.one.mean.story, aes(x = effort_diff, y = empirical_stat)) + 
+  geom_point(size = 3.3, alpha = 0.7, color = "#00BFC4") + 
+  geom_errorbar(mapping = aes(x = effort_diff, ymin = ci_lower, ymax=ci_upper), size= 2.5, width = 0, alpha = 0.7, color = "#00BFC4") +
+  geom_hline(yintercept = 0, linetype = "dashed", color = "red") +
+  scale_y_continuous(limits = c(-1, 1)) +
+  labs(x = "perceived effort difference in scenario", y = "expectations for high status", title = "implicit coordination effort")
+
+f
+
+# ggsave(here("figures/sloan_talk/study3_effort_corr.pdf"),
+#        width = 6.2,
+#        height = 4)
+
+f <- ggplot(stage.one.mean.story, aes(x = benefit_diff, y = empirical_stat)) + 
+  geom_point(size = 3.3, alpha = 0.7, color = "#F8766D") + 
+  geom_errorbar(mapping = aes(x = benefit_diff, ymin = ci_lower, ymax=ci_upper), size= 2.5, width = 0, alpha = 0.7, color = "#F8766D") +
+  geom_hline(yintercept = 0, linetype = "dashed", color = "red") +
+  scale_y_continuous(limits = c(-1, 1)) +
+  labs(x = "perceived benefit difference in scenario", y = "expectations for high status", title = "implicit coordination benefit")
 
 
+f
 
+# First time on x axis, second time on y axis, colored by actual first 
+d.first.response <- 
+  d %>% filter(symmetric == "asymmetric") %>% 
+  mutate(first_response_higher = recode(first_response_higher, "higher" = 1, "lower" = -1), 
+         second_response_higher = recode(second_response_higher, "higher" = 1, "lower" = -1) 
+  ) %>% 
+  group_by(story, first_actual_higher) %>% 
+  tidyboot_mean(first_response_higher, na.rm = TRUE) 
+
+d.second.response <- 
+  d %>% filter(symmetric == "asymmetric") %>% 
+  mutate(first_response_higher = recode(first_response_higher, "higher" = 1, "lower" = -1), 
+         second_response_higher = recode(second_response_higher, "higher" = 1, "lower" = -1) 
+  ) %>% 
+  group_by(story, first_actual_higher) %>% 
+  tidyboot_mean(second_response_higher, na.rm = TRUE) 
+
+d.first.second <- left_join(d.first.response, d.second.response, suffix = c("_first", "_second"), by=(c("story", "first_actual_higher")))
+
+f <- ggplot(d.first.second, aes(x = empirical_stat_first, y = empirical_stat_second, color = first_actual_higher)) + 
+  geom_point(size = 3.3, alpha = 0.7) + 
+  geom_errorbar(mapping = aes(x = empirical_stat_first, ymin = ci_lower_second, ymax=ci_upper_second), size= 1.5, width = 0.05, alpha = 0.7) +
+  geom_errorbarh(mapping = aes(y = empirical_stat_second, xmin = ci_lower_first, xmax=ci_upper_first), size= 1.5, height = 0.05, alpha = 0.7) +
+  geom_hline(yintercept = 0, linetype = "dashed", color = "red") +
+  geom_vline(xintercept = 0, linetype = "dashed", color = "red") +
+  scale_y_continuous(limits = c(-1, 1)) +
+  labs(x = "first time higher", y = "second time higher")
+
+f
+
+## Are the effects of scenario consistent between 1b and 1c
+
+# import study 1b data
+d.1b <- read.csv(here('data/1b_tidy_data.csv')) %>% 
+  filter(relationship != "equal", next_interaction != 'none') %>% 
+  group_by(subject_id, story, relationship) %>%
+  mutate(total_rating = sum(likert_rating),
+         normalized_likert_rating = likert_rating / total_rating) %>%
+  select(-total_rating) %>% 
+  ungroup() %>% 
+  rename(observed_higher = relationship) %>% 
+  mutate(observed_higher = ifelse(observed_higher == 'less', 'lower', 'higher'), 
+         second_response_higher = case_when(next_interaction == 'repeating' ~ observed_higher,
+                                            next_interaction == 'alternating' ~ ifelse(observed_higher == "higher", "lower", "higher"), 
+                                            next_interaction == 'none' ~ 'none'))
+
+
+d.1b.means <- d.1b %>% 
+  filter(second_response_higher == 'higher') %>% 
+ group_by(story, observed_higher) %>% 
+  tidyboot_mean(normalized_likert_rating, na.rm = T)
+
+
+d.1b.1c <- left_join(d.1b.means, d.second.response %>% rename(observed_higher = first_actual_higher), suffix = c("_1b", "_1c"), by=(c("story", "observed_higher")))
+
+f <- ggplot(d.1b.1c, aes(x = empirical_stat_1c, y = empirical_stat_1b, color = observed_higher)) + 
+  geom_point(size = 3.3, alpha = 0.7) + 
+  geom_errorbar(mapping = aes(x = empirical_stat_1c, ymin = ci_lower_1b, ymax=ci_upper_1b), size= 1.5, width = 0.05, alpha = 0.7) +
+  geom_errorbarh(mapping = aes(y = empirical_stat_1b, xmin = ci_lower_1c, xmax=ci_upper_1c), size= 1.5, height = 0.05, alpha = 0.7) +
+  geom_hline(yintercept = 0.5, linetype = "dashed", color = "red") +
+  geom_vline(xintercept = 0, linetype = "dashed", color = "red") +
+  scale_y_continuous(limits = c(0.2, 0.8)) +
+  scale_x_continuous(limits = c(-1, 1)) +
+  labs(x = "study 1c higher", y = "study 1b P(higher)")
+
+f
 
 ###### BELOW IS OLD STUFF
 
