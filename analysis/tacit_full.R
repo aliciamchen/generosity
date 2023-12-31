@@ -12,12 +12,8 @@ library(glue)
 theme_set(theme_classic(base_size = 16))
 options(contrasts = c(unordered = "contr.sum", ordered = "contr.poly"))
 
-#
 d <-
-  read.csv(here('data/tacit_full_data.csv'))
-
-d <-
-  read.csv(here('data/tacit_full_data.csv')) %>% filter(understood == 'yes', story != 'attention') %>%
+  read.csv(here('data/1c_data.csv')) %>% filter(understood == 'yes', story != 'attention') %>%
   mutate(
     strategy = case_when(
       stage == "second" & first_meeting == response ~ 'repeating',
@@ -43,11 +39,11 @@ d <-
 
 # Set levels for categorical variables
 d$first_actual_higher <-
-  factor(d$first_actual_higher, levels = c("higher", "equal", "lower"))
+  factor(d$first_actual_higher, levels = c("lower", "higher", "equal"))
 d$first_response_higher <-
-  factor(d$first_response_higher, levels = c("higher", "equal", "lower"))
+  factor(d$first_response_higher, levels = c("lower", "higher", "equal"))
 d$second_response_higher <-
-  factor(d$second_response_higher, levels = c("higher", "equal", "lower"))
+  factor(d$second_response_higher, levels = c("higher", "lower", "equal"))
 d$strategy_repeating <-
   factor(d$strategy_repeating, levels = c("repeating", "alternating"))
 
@@ -161,23 +157,23 @@ h2.means <- d %>%
 p2 <-
   ggplot(
     h2.means,
-    aes(x = first_actual_higher, y = empirical_stat, color = first_response_higher)
+    aes(x = first_response_higher, y = empirical_stat, color = first_actual_higher)
   ) +
   geom_point(
-    mapping = aes(x = first_actual_higher, y = empirical_stat),
+    mapping = aes(x = first_response_higher, y = empirical_stat),
     size = 2.5,
     alpha = 1,
     position = position_dodge(width = 0.3)
   ) +
   geom_errorbar(
-    mapping = aes(x = first_actual_higher, ymin = ci_lower, ymax = ci_upper),
+    mapping = aes(x = first_response_higher, ymin = ci_lower, ymax = ci_upper),
     position = position_dodge(width = 0.3),
     size = 1.8,
     width = 0.12
   ) +
   scale_color_manual(
     values = wes_palette(n = 3, name = "Cavalcanti1"),
-    name = "first_response_higher",
+    name = "first_actual_higher",
     breaks = c("higher", "lower", "equal")
   ) +
   scale_y_continuous(limits = c(-1, 1)) +
@@ -438,6 +434,7 @@ f <-
   geom_hline(yintercept = 0,
              linetype = "dashed",
              color = "red") +
+  scale_y_continuous(limits = c(-1, 1)) +
   labs(x = "story", y = "expectation of higher", title = 'implicit coordination expectations') +
   theme(axis.text.x = element_text(angle = 30, hjust = 1))
 
@@ -453,13 +450,13 @@ ggsave(
 
 f <-
   ggplot(stage.one.mean.story, aes(x = effort_diff, y = empirical_stat)) +
-  geom_point(size = 3.3,
+  geom_point(size = 2.4,
              alpha = 0.7,
              color = "#00BFC4", stroke = 0) +
   geom_errorbar(
     mapping = aes(x = effort_diff, ymin = ci_lower, ymax = ci_upper),
-    size = 2.5,
-    width = 0.1,
+    size = 1.8,
+    width = 0.07,
     alpha = 0.7,
     color = "#00BFC4"
   ) +
@@ -472,18 +469,18 @@ f <-
 f
 
 ggsave(here("figures/outputs/1c_effort_corr.pdf"),
-       width = 6.2,
-       height = 4)
+       width = 8,
+       height = 2.8)
 
 f <-
   ggplot(stage.one.mean.story, aes(x = benefit_diff, y = empirical_stat)) +
-  geom_point(size = 3.3,
+  geom_point(size = 2.4,
              alpha = 0.7,
              color = "#F8766D", stroke = 0) +
   geom_errorbar(
     mapping = aes(x = benefit_diff, ymin = ci_lower, ymax = ci_upper),
-    size = 2.5,
-    width = 0.1,
+    size = 1.8,
+    width = 0.07,
     alpha = 0.7,
     color = "#F8766D"
   ) +
@@ -497,8 +494,8 @@ f <-
 f
 
 ggsave(here("figures/outputs/1c_benefit_corr.pdf"),
-       width = 6.2,
-       height = 4)
+       width = 8,
+       height = 2.8)
 
 
 # First time on x axis, second time on y axis, colored by actual first
@@ -516,7 +513,7 @@ d.first.response <-
       "lower" = -1
     )
   ) %>%
-  group_by(story, first_actual_higher) %>%
+  group_by(story) %>%
   tidyboot_mean(first_response_higher, na.rm = TRUE)
 
 d.second.response <-
@@ -541,13 +538,50 @@ d.first.second <-
     d.first.response,
     d.second.response,
     suffix = c("_first", "_second"),
-    by = (c("story", "first_actual_higher"))
+    by = (c("story"))
   )
 
 f <-
   ggplot(
     d.first.second,
     aes(x = empirical_stat_first, y = empirical_stat_second, color = first_actual_higher)
+  ) +
+  geom_smooth(method="lm", fill = "lightgray", linewidth = 1.3) +
+  geom_point(size = 3.3, alpha = 0.3, stroke = 0) +
+  geom_errorbar(
+    mapping = aes(x = empirical_stat_first, ymin = ci_lower_second, ymax = ci_upper_second),
+    size = 1.5,
+    width = 0.043,
+    alpha = 0.3
+  ) +
+  geom_errorbarh(
+    mapping = aes(y = empirical_stat_second, xmin = ci_lower_first, xmax = ci_upper_first),
+    size = 1.5,
+    height = 0.043,
+    alpha = 0.3
+  ) +
+  geom_hline(yintercept = 0,
+             linetype = "dashed",
+             color = "gray") +
+  geom_vline(xintercept = 0,
+             linetype = "dashed",
+             color = "gray") +
+  scale_y_continuous(limits = c(-1, 1)) +
+  scale_x_continuous(limits = c(-1, 1)) +
+  scale_color_manual(values = c("higher" = "#B87FFF", "lower" = "#35ACFF")) +
+  labs(x = "first time higher", y = "second time higher", color = "observed_higher")
+
+f
+
+ggsave(here("figures/outputs/1c_first_second.pdf"),
+       width = 6.75,
+       height = 4)
+
+# sanity check: color by scenario
+f <-
+  ggplot(
+    d.first.second,
+    aes(x = empirical_stat_first, y = empirical_stat_second, color = story)
   ) +
   geom_point(size = 3.3, alpha = 0.7, stroke = 0) +
   geom_errorbar(
@@ -569,14 +603,10 @@ f <-
              linetype = "dashed",
              color = "gray") +
   scale_y_continuous(limits = c(-1, 1)) +
-  scale_color_manual(values = c("higher" = "#B87FFF", "lower" = "#35ACFF")) +
+  # scale_color_manual(values = c("higher" = "#B87FFF", "lower" = "#35ACFF")) +
   labs(x = "first time higher", y = "second time higher")
 
 f
-
-ggsave(here("figures/outputs/1c_first_second.pdf"),
-       width = 6.2,
-       height = 4)
 
 ## Are the effects of scenario consistent between 1b and 1c
 
@@ -610,14 +640,50 @@ d.1b.means <- d.1b %>%
 d.1b.1c <-
   left_join(
     d.1b.means,
-    d.second.response %>% rename(observed_higher = first_actual_higher),
+    d.first.response,
     suffix = c("_1b", "_1c"),
-    by = (c("story", "observed_higher"))
+    by = (c("story"))
   )
 
 f <-
   ggplot(d.1b.1c,
          aes(x = empirical_stat_1c, y = empirical_stat_1b, color = observed_higher)) +
+  geom_point(size = 3.3, alpha = 0.3, stroke = 0) +
+  geom_smooth(method="lm", fill = "lightgray", linewidth = 1.3) +
+  geom_errorbar(
+    mapping = aes(x = empirical_stat_1c, ymin = ci_lower_1b, ymax = ci_upper_1b),
+    size = 1.5,
+    width = 0.043,
+    alpha = 0.3
+  ) +
+  geom_errorbarh(
+    mapping = aes(y = empirical_stat_1b, xmin = ci_lower_1c, xmax = ci_upper_1c),
+    size = 1.5,
+    height = 0.014,
+    alpha = 0.3
+  ) +
+  geom_hline(yintercept = 0.5,
+             linetype = "dashed",
+             color = "gray") +
+  geom_vline(xintercept = 0,
+             linetype = "dashed",
+             color = "gray") +
+  scale_y_continuous(limits = c(0.2, 0.8)) +
+  scale_x_continuous(limits = c(-1, 1)) +
+  scale_color_manual(values = c("higher" = "#B87FFF", "lower" = "#35ACFF")) +
+  labs(x = "study 1c first time higher", y = "study 1b P(higher)")
+
+f
+
+ggsave(here("figures/outputs/1c_1b.pdf"),
+       width = 6.6,
+       height = 4)
+
+
+# Sanity check: color by scenario
+f <-
+  ggplot(d.1b.1c,
+         aes(x = empirical_stat_1c, y = empirical_stat_1b, color = story)) +
   geom_point(size = 3.3, alpha = 0.7, stroke = 0) +
   geom_errorbar(
     mapping = aes(x = empirical_stat_1c, ymin = ci_lower_1b, ymax = ci_upper_1b),
@@ -639,14 +705,126 @@ f <-
              color = "gray") +
   scale_y_continuous(limits = c(0.2, 0.8)) +
   scale_x_continuous(limits = c(-1, 1)) +
-  scale_color_manual(values = c("higher" = "#B87FFF", "lower" = "#35ACFF")) +
+  # scale_color_manual(values = c("higher" = "#B87FFF", "lower" = "#35ACFF")) +
   labs(x = "study 1c higher", y = "study 1b P(higher)")
 
 f
 
-ggsave(here("figures/outputs/1c_1b.pdf"),
-       width = 6.2,
-       height = 4)
+# Oh, another Q: can you make these plots for the equal status conditions for 1b 
+# and 1c second time; with average first time predicted in 1c as the x-axis, 
+# and probability of repetition on the y axis? I wonder whether expectations of 
+# alternation in equal relationships are different in these different kinds of scenarios.
+
+# What happens in equal status condition? 
+
+# import study 1b data
+d.1b.equal <- read.csv(here('data/1b_tidy_data.csv')) %>%
+  filter(relationship == "equal", next_interaction != 'none') %>%
+  group_by(subject_id, story, relationship) %>%
+  mutate(
+    total_rating = sum(likert_rating),
+    normalized_likert_rating = likert_rating / total_rating
+  ) %>%
+  select(-total_rating) %>%
+  ungroup() %>%
+  rename(observed_higher = relationship)
+
+d.1c.equal.means <- d %>% 
+  filter(first_actual_higher == "equal") %>% 
+  mutate(strategy_repeating = recode(
+    strategy_repeating, 
+    "repeating" = 1, 
+    "alternating" = -1
+  )) %>% 
+  group_by(story) %>% 
+  tidyboot_mean(strategy_repeating, na.rm = T)
+
+
+d.1b.equal.means <- d.1b.equal %>%
+  filter(next_interaction == "repeating") %>% 
+  rename(strategy_repeating = next_interaction) %>% 
+  group_by(story) %>%
+  tidyboot_mean(normalized_likert_rating, na.rm = T)
+
+
+d.1b.1c.equal <-
+  left_join(
+    d.1b.equal.means,
+    d.first.response,
+    suffix = c("_1b", "_1c"),
+    by = (c("story"))
+  )
+
+d.1c.equal <-
+  left_join(
+    d.1c.equal.means,
+    d.first.response,
+    suffix = c("_2", "_1"),
+    by = (c("story"))
+  )
+
+
+# Plots
+
+f <-
+  ggplot(d.1c.equal,
+         aes(x = empirical_stat_1, y = empirical_stat_2)) +
+  geom_point(size = 3.3, alpha = 0.7, stroke = 0) +
+  geom_errorbar(
+    mapping = aes(x = empirical_stat_1, ymin = ci_lower_2, ymax = ci_upper_2),
+    size = 1.5,
+    width = 0.043,
+    alpha = 0.6
+  ) +
+  geom_errorbarh(
+    mapping = aes(y = empirical_stat_2, xmin = ci_lower_1, xmax = ci_upper_1),
+    size = 1.5,
+    height = 0.03,
+    alpha = 0.6
+  ) +
+  geom_hline(yintercept = 0,
+             linetype = "dashed",
+             color = "gray") +
+  geom_vline(xintercept = 0,
+             linetype = "dashed",
+             color = "gray") +
+  scale_y_continuous(limits = c(-1, 1)) +
+  scale_x_continuous(limits = c(-1, 1)) +
+  labs(x = "study 1c first time higher", y = "study 1c repeating expectation", title = "equal status")
+
+f
+
+f <-
+  ggplot(d.1b.1c.equal,
+         aes(x = empirical_stat_1c, y = empirical_stat_1b)) +
+  geom_point(size = 3.3, alpha = 0.7, stroke = 0) +
+  geom_errorbar(
+    mapping = aes(x = empirical_stat_1c, ymin = ci_lower_1b, ymax = ci_upper_1b),
+    size = 1.5,
+    width = 0.043,
+    alpha = 0.6
+  ) +
+  geom_errorbarh(
+    mapping = aes(y = empirical_stat_1b, xmin = ci_lower_1c, xmax = ci_upper_1c),
+    size = 1.5,
+    height = 0.014,
+    alpha = 0.6
+  ) +
+  geom_hline(yintercept = 0.5,
+             linetype = "dashed",
+             color = "gray") +
+  geom_vline(xintercept = 0,
+             linetype = "dashed",
+             color = "gray") +
+  scale_y_continuous(limits = c(0.2, 0.8)) +
+  scale_x_continuous(limits = c(-1, 1)) +
+  labs(x = "study 1c first time higher", y = "study 1b P(repeating)", title = "equal status")
+
+f
+
+
+
+
 
 ###### BELOW IS OLD STUFF
 
