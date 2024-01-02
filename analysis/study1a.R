@@ -28,14 +28,20 @@ d <-
   ) %>% # Then, normalize likert rating
   group_by(subject_id, story, relationship) %>%
   mutate(
-    total_rating = sum(likert_rating),
+    total_rating = sum(likert_rating, na.rm = T),
     normalized_likert_rating = likert_rating / total_rating
   ) %>%
-  select(-total_rating) 
+  select(-total_rating)
 
-d.demographics <- read.csv(here('data/1a_demographics.csv'))
+d.demographics <-
+  read.csv(here('data/1a_demographics.csv')) %>% filter(pass_attention == T, understood == "yes")
 d.demographics %>% count(gender)
-d.demographics %>% summarize(mean_age = mean(age), sd_age = sd(age), min_age = min(age), max_age = max(age))
+d.demographics %>% summarize(
+  mean_age = mean(age),
+  sd_age = sd(age),
+  min_age = min(age),
+  max_age = max(age)
+)
 
 print(length(unique(d$subject_id)))
 
@@ -132,7 +138,7 @@ f = ggplot(data = d,
                      limits = c(0.8, 7.2)) +
   labs(x = "relationship", y = "how likely?", fill = "next interaction") +
   theme(legend.position = "bottom") +
-  facet_wrap( ~ story)
+  facet_wrap(~ story)
 
 
 f

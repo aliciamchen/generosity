@@ -31,7 +31,7 @@ d <-
                                "more", "equal", "less")
   ) %>% 
   group_by(subject_id, story, relationship) %>%
-  mutate(total_rating = sum(likert_rating),
+  mutate(total_rating = sum(likert_rating, na.rm = T),
          normalized_likert_rating = likert_rating / total_rating) %>%
   select(-total_rating) %>% 
   left_join(validation.benefit %>% select(story, diff), by = "story") %>% 
@@ -40,7 +40,7 @@ d <-
   rename(effort_diff = diff) 
 
 
-d.demographics <- read.csv(here('data/1b_demographics.csv'))
+d.demographics <- read.csv(here('data/1b_demographics.csv')) %>% filter(pass_attention == T, understood == "yes")
 d.demographics %>% count(gender)
 d.demographics %>% summarize(mean_age = mean(age), sd_age = sd(age), min_age = min(age), max_age = max(age))
 
@@ -469,6 +469,8 @@ emm_options(pbkrtest.limit = 3179)
 # Pairwise contrasts
 emm <- mod %>% emmeans(pairwise ~ relationship * next_interaction)
 emm
+
+
 
 # Interaction contrasts - compare `asymmetric` and `symmetric` to `no_info`
 contrast_test <- contrast(emm, interaction = c("pairwise", "pairwise"))

@@ -35,7 +35,7 @@ d <-
     )
   ) %>% 
   group_by(subject_id, story, social_interaction) %>%
-  mutate(total_rating = sum(likert_rating),
+  mutate(total_rating = sum(likert_rating, na.rm = T),
          normalized_likert_rating = likert_rating / total_rating) %>%
   select(-total_rating) 
 
