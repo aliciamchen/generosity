@@ -11,8 +11,9 @@ library(glue)
 theme_set(theme_classic(base_size = 30))
 options(contrasts = c(unordered = "contr.sum", ordered = "contr.poly"))
 
+
 d <-
-  read.csv(here('data/3a_data.csv')) %>% filter(pass_attention == T, understood == 'yes') %>%
+  read.csv(here('data/3b_data.csv')) %>% filter(pass_attention == T, understood == 'yes') %>%
   rename(likert_rating = response) %>%
   mutate(likert_rating = likert_rating + 1) %>%
   select(-c("understood", "pass_attention")) %>%
@@ -35,28 +36,25 @@ d <-
     )
   )
 
+write.csv(d, here('data/3b_tidy_data.csv'), row.names = FALSE)
 
-write.csv(d, here('data/3a_tidy_data.csv'), row.names = FALSE)
-
-d.demographics <- read.csv(here('data/3a_demographics.csv'))
+d.demographics <- read.csv(here('data/3b_demographics.csv'))
 d.demographics %>% count(gender)
-d.demographics %>%
-  summarize(
-    mean_age = mean(age, na.rm = T),
-    sd_age = sd(age),
-    min_age = min(age),
-    max_age = max(age)
-  )
+d.demographics %>% summarize(
+  mean_age = mean(age),
+  sd_age = sd(age),
+  min_age = min(age),
+  max_age = max(age)
+)
 
 print(length(unique(d$subject_id)))
-
-###### PLOTS
 
 d.means.all <-
   d %>% drop_na() %>%
   group_by(strategy, altruistic_status_second) %>%
   tidyboot_mean(likert_rating, na.rm = TRUE) %>%
   rename(likert_rating = empirical_stat)
+
 
 f = ggplot(data = d,
            aes(x = strategy, y = likert_rating, fill = altruistic_status_second)) +
@@ -79,50 +77,75 @@ f = ggplot(data = d,
   ) +
   scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
                      limits = c(0.8, 7.2)) +
-  labs(x = "strategy", y = "how moral?") +
+  labs(x = "strategy", y = "how fair?") +
   theme(legend.position = "bottom")
 
 f
 
-# grouped by story
+# Compare with study 1c 
+# This needs d.first.response from the study 1c data
 
-d.means.all <-
+d.first.response <-
+  read.csv(here('data/1c_tidy_data.csv')) %>%
+  mutate(first_response_higher = recode(
+    first_response_higher,
+    "higher" = 1,
+    "lower" = -1
+  )) %>%
+  group_by(story, effort_diff, benefit_diff) %>%
+  tidyboot_mean(first_response_higher, na.rm = TRUE)
+
+d.fairness.story <-
   d %>% drop_na() %>%
-  group_by(story, strategy, altruistic_status_second) %>%
-  tidyboot_mean(likert_rating, na.rm = TRUE) %>%
-  rename(likert_rating = empirical_stat)
+  group_by(strategy, story, altruistic_status_second) %>%
+  tidyboot_mean(likert_rating, na.rm = TRUE)
+
+d.fairness.with.1c <-
+  left_join(
+    d.first.response,
+    d.fairness.story,
+    suffix = c("_1c", "_3"),
+    by = (c("story"))
+  )
 
 
-f = ggplot(data = d,
-           aes(x = altruistic_status_second, y = likert_rating, fill = strategy)) +
-  geom_violin(width = 1.16,
-              bw = 0.43,
-              position = position_dodge(width = 0.8)) +
-  geom_point(
-    d.means.all,
-    mapping = aes(x = altruistic_status_second, y = likert_rating),
-    size = 2.3,
-    alpha = 1,
-    position = position_dodge(width = 0.8)
+f <-
+  ggplot(
+    d.fairness.with.1c %>% filter(
+      altruistic_status_second != "equal" &
+        altruistic_status_second != "just_met"
+    ),
+    aes(x = empirical_stat_1c, y = empirical_stat_3, color = altruistic_status_second)
   ) +
+  geom_point(size = 3.3,
+             alpha = 0.7,
+             stroke = 0) +
   geom_errorbar(
-    d.means.all,
-    mapping = aes(x = altruistic_status_second, ymin = ci_lower, ymax = ci_upper),
-    position = position_dodge(width = 0.8),
+    mapping = aes(x = empirical_stat_1c, ymin = ci_lower_3, ymax = ci_upper_3),
     size = 1.5,
-    width = 0.09
+    width = 0.06,
+    alpha = 0.6
   ) +
+  geom_errorbarh(
+    mapping = aes(y = empirical_stat_3, xmin = ci_lower_1c, xmax = ci_upper_1c),
+    size = 1.5,
+    height = 0.1,
+    alpha = 0.6
+  ) +
+  geom_hline(yintercept = 4,
+             linetype = "dashed",
+             color = "gray") +
+  geom_vline(xintercept = 0,
+             linetype = "dashed",
+             color = "gray") +
   scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
                      limits = c(0.8, 7.2)) +
-  labs(x = "status of second time altruistic person", y = "how moral?") +
-  theme(legend.position = "bottom") +
-  facet_wrap( ~ story)
+  # scale_x_continuous(limits = c(-1, 1)) +
+  labs(x = "study 1c first time higher", y = "study 3 how fair", color = "who is generous")
 
 f
 
-
-# study 3a for presentation
-
+# 3b for presentation
 strategies = c("repeating", "alternating")
 
 for (strat in strategies) {
@@ -151,19 +174,20 @@ for (strat in strategies) {
                       name = "social relationship") +
     scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
                        limits = c(0.8, 7.2)) +
-    labs(x = "strategy", y = "how moral", fill = "social relationship") +
+    labs(x = "strategy", y = "how fair", fill = "social relationship") +
     theme(legend.position = "bottom")
   
-  f
+  print(f)
   
-  ggsave(here(glue("figures/outputs/3a_{strat}.pdf")),
+  ggsave(here(glue("figures/3b_{strat}.pdf")),
          width = 4.3,
          height = 7.5)
-  
+
 }
 
-############ STATS
 
+
+########## STATS
 
 # Main preregistered analysis: without "just met" condition 
 
@@ -181,26 +205,27 @@ summary(mod)
 emm <- emmeans(mod, pairwise ~ altruistic_status_second * strategy)
 emm
 
-# altruistic_status_second strategy    emmean     SE  df lower.CL upper.CL
-# higher                   repeating     4.21 0.0760 111     4.06     4.36
-# lower                    repeating     3.51 0.0760 111     3.36     3.66
-# equal                    repeating     3.69 0.0761 111     3.54     3.84
-# higher                   alternating   5.34 0.0760 111     5.19     5.49
-# lower                    alternating   5.08 0.0761 111     4.93     5.23
-# equal                    alternating   5.59 0.0760 111     5.44     5.74
-
+# altruistic_status_second strategy    emmean     SE   df lower.CL upper.CL
+# higher                   repeating     4.18 0.0865 92.5     4.00     4.35
+# lower                    repeating     3.19 0.0866 92.8     3.01     3.36
+# equal                    repeating     3.42 0.0865 92.5     3.25     3.59
+# higher                   alternating   6.16 0.0864 92.2     5.99     6.33
+# lower                    alternating   5.98 0.0864 92.2     5.81     6.15
+# equal                    alternating   6.55 0.0864 92.2     6.37     6.72
+# 
 # contrast                               estimate     SE   df t.ratio p.value
-# higher repeating - lower repeating        0.697 0.0848 1880   8.213  <.0001
-# higher alternating - lower alternating    0.260 0.0849 1880   3.059  0.0273
+# higher repeating - lower repeating        0.991 0.0928 1903  10.675  <.0001
+# higher alternating - lower alternating    0.179 0.0926 1902   1.930  0.3839
+
 
 # Interaction contrasts
 contrast_test <-
   contrast(emm, interaction = c("pairwise", "pairwise"))
 contrast_test
 
-# altruistic_status_second_pairwise strategy_pairwise       estimate   SE   df t.ratio p.value
-# higher - lower                    repeating - alternating    0.437 0.12 1881   3.640  0.0003
- 
+# altruistic_status_second_pairwise strategy_pairwise       estimate    SE   df t.ratio p.value
+# higher - lower                    repeating - alternating    0.812 0.131 1902   6.193  <.0001
+
 
 # Check asymmetric/symmetric expectations
 emm <-
@@ -212,22 +237,22 @@ emm <-
 emm <- emmeans(emm, pairwise ~ asymmetric * strategy)
 emm
 
-# asymmetric strategy    emmean     SE    df lower.CL upper.CL
-# no         repeating     3.69 0.0761 111.0     3.54     3.84
-# yes        repeating     3.86 0.0631  53.0     3.74     3.99
-# no         alternating   5.59 0.0760 111.0     5.44     5.74
-# yes        alternating   5.21 0.0631  53.1     5.08     5.34
-
+# asymmetric strategy    emmean     SE   df lower.CL upper.CL
+# no         repeating     3.42 0.0865 92.5     3.25     3.59
+# yes        repeating     3.68 0.0731 47.4     3.53     3.83
+# no         alternating   6.55 0.0864 92.2     6.37     6.72
+# yes        alternating   6.07 0.0730 47.2     5.92     6.22
+# 
 # contrast                         estimate     SE   df t.ratio p.value
-# no repeating - yes repeating       -0.170 0.0735 1881  -2.310  0.0960
-# no alternating - yes alternating    0.382 0.0735 1880   5.190  <.0001
+# no repeating - yes repeating       -0.259 0.0803 1902  -3.221  0.0071
+# no alternating - yes alternating    0.475 0.0802 1902   5.925  <.0001
 
 contrast_test <-
   contrast(emm, interaction = c("pairwise", "pairwise"))
 contrast_test
 
-
-
+# asymmetric_pairwise strategy_pairwise       estimate    SE   df t.ratio p.value
+# no - yes            repeating - alternating   -0.734 0.113 1902  -6.468  <.0001
 
 
 
