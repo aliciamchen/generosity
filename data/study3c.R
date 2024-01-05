@@ -102,8 +102,6 @@ f
 # 3c for presentation
 strategies = c("repeating", "alternating")
 
-# d.annoyed <- d %>% filter(response == "annoyed")
-# d.satisfied <- d %>% filter(response == "satisfied")
 
 # annoyed
 for (strat in strategies) {
@@ -186,7 +184,7 @@ for (strat in strategies) {
 
 ########## STATS
 
-######### ANNOYED RESPONSE (todo: add)
+######### ANNOYED RESPONSE
 
 # Main preregistered analysis: without "just met" condition 
 
@@ -198,6 +196,18 @@ mod <-
   )
 
 summary(mod)
+
+# Average of strategy
+emm <- emmeans(mod, "strategy")
+emm
+pairs(emm)
+
+# strategy    emmean   SE   df lower.CL upper.CL
+# repeating     3.01 0.12 22.4     2.76     3.26
+# alternating   1.49 0.12 22.4     1.24     1.74
+# 
+# contrast                estimate     SE   df t.ratio p.value
+# repeating - alternating     1.51 0.0561 1870  26.972  <.0001
 
 
 # Pairwise contrasts 
@@ -306,6 +316,11 @@ mod <-
   )
 
 summary(mod)
+
+# Average of strategy
+emm <- emmeans(mod, "strategy")
+emm
+pairs(emm)
 
 
 # Pairwise contrasts 
