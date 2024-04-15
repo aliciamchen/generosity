@@ -616,7 +616,17 @@ summary(mod)
 #   (Intr)
 # benefit_dff -0.883
 
+# Correlate 1c first time with 1b P(higher)
+d.1b.1c.all <- left_join(d.1b, d.first.response) %>% 
+  rename(expected.first.1c = empirical_stat, expected.next.1b = normalized_likert_rating) %>% 
+  filter(second_response_higher == "higher")
 
+mod <- lmer(
+  data = d.1b.1c.all,
+  expected.next.1b ~ expected.first.1c * observed_higher + (1 | subject_id) + (1 | story)
+)
+
+summary(mod)
 
 
 ######################## EXTRA PLOTS

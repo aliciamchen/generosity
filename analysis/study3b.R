@@ -217,6 +217,10 @@ emm
 # higher repeating - lower repeating        0.991 0.0928 1903  10.675  <.0001
 # higher alternating - lower alternating    0.179 0.0926 1902   1.930  0.3839
 
+# Check alternating > repeating
+emm <- emmeans(emm, pairwise ~ strategy | altruistic_status_second)
+emm
+
 
 # Interaction contrasts
 contrast_test <-
@@ -255,6 +259,9 @@ contrast_test
 # no - yes            repeating - alternating   -0.734 0.113 1902  -6.468  <.0001
 
 
+# check if alternating > repeating
+emm <- emmeans(emm, pairwise ~ strategy | asymmetric)
+emm
 
 # Repeat analyses with `just met` condition
 mod <-

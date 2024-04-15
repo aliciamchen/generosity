@@ -240,6 +240,10 @@ contrast_test
 # higher - lower                    repeating - alternating   0.0529 0.111 1911   0.478  0.6325
 
 
+# Check alternating > repeating
+emm <- emmeans(emm, pairwise ~ strategy | altruistic_status_second)
+emm
+
 # Check asymmetric/symmetric expectations
 emm <-
   mod %>% emmeans(pairwise ~ altruistic_status_second * strategy) %>%
@@ -361,6 +365,12 @@ contrast_test
 
 # altruistic_status_second_pairwise strategy_pairwise       estimate    SE   df t.ratio p.value
 # higher - lower                    repeating - alternating   -0.191 0.152 1912  -1.256  0.2094
+
+
+
+# Check alternating > repeating
+emm <- emmeans(emm, pairwise ~ strategy | altruistic_status_second)
+emm
 
 
 # Check asymmetric/symmetric expectations
