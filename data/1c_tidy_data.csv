@@ -719,24 +719,6 @@
 "8400baedb5d839da45455816eb482619","family meals","higher","repeating","higher","higher","asymmetric",3.59322033898305,2.24137931034483
 "8400baedb5d839da45455816eb482619","architects","equal","repeating","equal","equal","symmetric",1.71654003506721,1.19177253478524
 "8400baedb5d839da45455816eb482619","groceries","lower","repeating","lower","lower","asymmetric",1.83050847457627,2.93103448275862
-"a2b50a516639d365282bea8ce450cdbd","meeting location","equal","alternating","equal","equal","symmetric",1.16949152542373,0.38423645320197
-"a2b50a516639d365282bea8ce450cdbd","feedback","higher","alternating","higher","lower","asymmetric",0.288135593220339,1.31034482758621
-"a2b50a516639d365282bea8ce450cdbd","architects","lower","repeating","lower","lower","asymmetric",1.71654003506721,1.19177253478524
-"a2b50a516639d365282bea8ce450cdbd","babysitting","lower","repeating","lower","lower","asymmetric",2.66101694915254,3.24137931034483
-"a2b50a516639d365282bea8ce450cdbd","restaurant","equal","alternating","equal","equal","symmetric",0.457627118644068,2.56896551724138
-"a2b50a516639d365282bea8ce450cdbd","groceries","lower","repeating","lower","lower","asymmetric",1.83050847457627,2.93103448275862
-"a2b50a516639d365282bea8ce450cdbd","conversation","equal","repeating","equal","equal","symmetric",-0.11864406779661,0.879310344827586
-"a2b50a516639d365282bea8ce450cdbd","housemates","equal","repeating","equal","equal","symmetric",1.91525423728814,1.05263157894737
-"a2b50a516639d365282bea8ce450cdbd","meeting prep","higher","alternating","lower","lower","asymmetric",2.59322033898305,1.17241379310345
-"a2b50a516639d365282bea8ce450cdbd","fundraising","higher","repeating","higher","higher","asymmetric",2.6271186440678,0.925589836660617
-"a2b50a516639d365282bea8ce450cdbd","weekend","higher","alternating","lower","lower","asymmetric",1.80450029222677,1.81155474894132
-"a2b50a516639d365282bea8ce450cdbd","concerts","equal","alternating","equal","equal","symmetric",2.47457627118644,2.68288177339901
-"a2b50a516639d365282bea8ce450cdbd","group project","lower","alternating","lower","higher","asymmetric",1.79661016949153,0.172413793103448
-"a2b50a516639d365282bea8ce450cdbd","family meals","lower","repeating","higher","lower","asymmetric",3.59322033898305,2.24137931034483
-"a2b50a516639d365282bea8ce450cdbd","police","higher","repeating","higher","higher","asymmetric",2.71186440677966,3.17241379310345
-"a2b50a516639d365282bea8ce450cdbd","scheduling","equal","alternating","equal","equal","symmetric",1,2.12068965517241
-"a2b50a516639d365282bea8ce450cdbd","coffee","lower","repeating","higher","lower","asymmetric",2.08474576271186,2.03448275862069
-"a2b50a516639d365282bea8ce450cdbd","gifts","higher","repeating","lower","higher","asymmetric",3.64406779661017,3.29733817301875
 "659194d55d54e026daee377c7d4d25eb","family meals","higher","repeating","higher","higher","asymmetric",3.59322033898305,2.24137931034483
 "659194d55d54e026daee377c7d4d25eb","meeting location","lower","repeating","lower","lower","asymmetric",1.16949152542373,0.38423645320197
 "659194d55d54e026daee377c7d4d25eb","gifts","equal","alternating","equal","equal","symmetric",3.64406779661017,3.29733817301875
@@ -1025,24 +1007,6 @@
 "3593cf24d0802821623801c1e422f994","concerts","higher","repeating","higher","higher","asymmetric",2.47457627118644,2.68288177339901
 "3593cf24d0802821623801c1e422f994","fundraising","lower","repeating","higher","lower","asymmetric",2.6271186440678,0.925589836660617
 "3593cf24d0802821623801c1e422f994","conversation","lower","repeating","higher","lower","asymmetric",-0.11864406779661,0.879310344827586
-"698d1d25f1f5d1306743c4c015945f4a","meeting prep","lower","repeating","higher","lower","asymmetric",2.59322033898305,1.17241379310345
-"698d1d25f1f5d1306743c4c015945f4a","concerts","lower","repeating","higher","lower","asymmetric",2.47457627118644,2.68288177339901
-"698d1d25f1f5d1306743c4c015945f4a","group project","higher","repeating","higher","higher","asymmetric",1.79661016949153,0.172413793103448
-"698d1d25f1f5d1306743c4c015945f4a","housemates","higher","repeating","higher","higher","asymmetric",1.91525423728814,1.05263157894737
-"698d1d25f1f5d1306743c4c015945f4a","gifts","lower","repeating","higher","lower","asymmetric",3.64406779661017,3.29733817301875
-"698d1d25f1f5d1306743c4c015945f4a","scheduling","lower","alternating","higher","higher","asymmetric",1,2.12068965517241
-"698d1d25f1f5d1306743c4c015945f4a","coffee","lower","alternating","lower","higher","asymmetric",2.08474576271186,2.03448275862069
-"698d1d25f1f5d1306743c4c015945f4a","feedback","equal","alternating","equal","equal","symmetric",0.288135593220339,1.31034482758621
-"698d1d25f1f5d1306743c4c015945f4a","fundraising","equal","alternating","equal","equal","symmetric",2.6271186440678,0.925589836660617
-"698d1d25f1f5d1306743c4c015945f4a","architects","lower","repeating","higher","lower","asymmetric",1.71654003506721,1.19177253478524
-"698d1d25f1f5d1306743c4c015945f4a","babysitting","higher","repeating","higher","higher","asymmetric",2.66101694915254,3.24137931034483
-"698d1d25f1f5d1306743c4c015945f4a","meeting location","equal","alternating","equal","equal","symmetric",1.16949152542373,0.38423645320197
-"698d1d25f1f5d1306743c4c015945f4a","restaurant","equal","repeating","equal","equal","symmetric",0.457627118644068,2.56896551724138
-"698d1d25f1f5d1306743c4c015945f4a","groceries","higher","repeating","lower","higher","asymmetric",1.83050847457627,2.93103448275862
-"698d1d25f1f5d1306743c4c015945f4a","police","higher","alternating","lower","lower","asymmetric",2.71186440677966,3.17241379310345
-"698d1d25f1f5d1306743c4c015945f4a","family meals","equal","repeating","equal","equal","symmetric",3.59322033898305,2.24137931034483
-"698d1d25f1f5d1306743c4c015945f4a","weekend","higher","alternating","lower","lower","asymmetric",1.80450029222677,1.81155474894132
-"698d1d25f1f5d1306743c4c015945f4a","conversation","equal","alternating","equal","equal","symmetric",-0.11864406779661,0.879310344827586
 "5897917041413ecd624e4e2388e0d16a","police","equal","alternating","equal","equal","symmetric",2.71186440677966,3.17241379310345
 "5897917041413ecd624e4e2388e0d16a","weekend","equal","alternating","equal","equal","symmetric",1.80450029222677,1.81155474894132
 "5897917041413ecd624e4e2388e0d16a","gifts","higher","repeating","lower","higher","asymmetric",3.64406779661017,3.29733817301875
@@ -1313,24 +1277,6 @@
 "884b7ceba4743f50daa73dee60b69ff3","meeting location","lower","repeating","lower","lower","asymmetric",1.16949152542373,0.38423645320197
 "884b7ceba4743f50daa73dee60b69ff3","architects","equal","repeating","equal","equal","symmetric",1.71654003506721,1.19177253478524
 "884b7ceba4743f50daa73dee60b69ff3","police","lower","repeating","lower","lower","asymmetric",2.71186440677966,3.17241379310345
-"bfeb6c322c99419cbc40f38772e6281f","conversation","equal","alternating","equal","equal","symmetric",-0.11864406779661,0.879310344827586
-"bfeb6c322c99419cbc40f38772e6281f","gifts","higher","alternating","lower","lower","asymmetric",3.64406779661017,3.29733817301875
-"bfeb6c322c99419cbc40f38772e6281f","fundraising","higher","repeating","lower","higher","asymmetric",2.6271186440678,0.925589836660617
-"bfeb6c322c99419cbc40f38772e6281f","meeting prep","higher","alternating","lower","lower","asymmetric",2.59322033898305,1.17241379310345
-"bfeb6c322c99419cbc40f38772e6281f","meeting location","equal","repeating","equal","equal","symmetric",1.16949152542373,0.38423645320197
-"bfeb6c322c99419cbc40f38772e6281f","architects","lower","repeating","higher","lower","asymmetric",1.71654003506721,1.19177253478524
-"bfeb6c322c99419cbc40f38772e6281f","coffee","lower","repeating","lower","lower","asymmetric",2.08474576271186,2.03448275862069
-"bfeb6c322c99419cbc40f38772e6281f","babysitting","lower","repeating","higher","lower","asymmetric",2.66101694915254,3.24137931034483
-"bfeb6c322c99419cbc40f38772e6281f","housemates","equal","alternating","equal","equal","symmetric",1.91525423728814,1.05263157894737
-"bfeb6c322c99419cbc40f38772e6281f","police","higher","alternating","lower","lower","asymmetric",2.71186440677966,3.17241379310345
-"bfeb6c322c99419cbc40f38772e6281f","scheduling","equal","alternating","equal","equal","symmetric",1,2.12068965517241
-"bfeb6c322c99419cbc40f38772e6281f","family meals","lower","repeating","higher","lower","asymmetric",3.59322033898305,2.24137931034483
-"bfeb6c322c99419cbc40f38772e6281f","restaurant","equal","repeating","equal","equal","symmetric",0.457627118644068,2.56896551724138
-"bfeb6c322c99419cbc40f38772e6281f","feedback","higher","repeating","higher","higher","asymmetric",0.288135593220339,1.31034482758621
-"bfeb6c322c99419cbc40f38772e6281f","groceries","lower","alternating","lower","higher","asymmetric",1.83050847457627,2.93103448275862
-"bfeb6c322c99419cbc40f38772e6281f","group project","lower","alternating","higher","higher","asymmetric",1.79661016949153,0.172413793103448
-"bfeb6c322c99419cbc40f38772e6281f","weekend","higher","alternating","higher","lower","asymmetric",1.80450029222677,1.81155474894132
-"bfeb6c322c99419cbc40f38772e6281f","concerts","equal","alternating","equal","equal","symmetric",2.47457627118644,2.68288177339901
 "ab1a2c4b5292bc9e480519f2d17d44f4","family meals","higher","repeating","higher","higher","asymmetric",3.59322033898305,2.24137931034483
 "ab1a2c4b5292bc9e480519f2d17d44f4","restaurant","lower","alternating","lower","higher","asymmetric",0.457627118644068,2.56896551724138
 "ab1a2c4b5292bc9e480519f2d17d44f4","groceries","higher","alternating","lower","lower","asymmetric",1.83050847457627,2.93103448275862
@@ -1565,24 +1511,6 @@
 "767c8dbf4bd79bc23130b90f2bc967f5","feedback","equal","alternating","equal","equal","symmetric",0.288135593220339,1.31034482758621
 "767c8dbf4bd79bc23130b90f2bc967f5","fundraising","higher","repeating","higher","higher","asymmetric",2.6271186440678,0.925589836660617
 "767c8dbf4bd79bc23130b90f2bc967f5","coffee","lower","repeating","lower","lower","asymmetric",2.08474576271186,2.03448275862069
-"400623f8291d28e558060297ecb13b68","housemates","equal","alternating","equal","equal","symmetric",1.91525423728814,1.05263157894737
-"400623f8291d28e558060297ecb13b68","family meals","lower","alternating","higher","higher","asymmetric",3.59322033898305,2.24137931034483
-"400623f8291d28e558060297ecb13b68","gifts","higher","repeating","higher","higher","asymmetric",3.64406779661017,3.29733817301875
-"400623f8291d28e558060297ecb13b68","coffee","lower","alternating","higher","higher","asymmetric",2.08474576271186,2.03448275862069
-"400623f8291d28e558060297ecb13b68","restaurant","equal","alternating","equal","equal","symmetric",0.457627118644068,2.56896551724138
-"400623f8291d28e558060297ecb13b68","group project","higher","repeating","higher","higher","asymmetric",1.79661016949153,0.172413793103448
-"400623f8291d28e558060297ecb13b68","police","equal","alternating","equal","equal","symmetric",2.71186440677966,3.17241379310345
-"400623f8291d28e558060297ecb13b68","meeting prep","higher","repeating","higher","higher","asymmetric",2.59322033898305,1.17241379310345
-"400623f8291d28e558060297ecb13b68","scheduling","lower","repeating","lower","lower","asymmetric",1,2.12068965517241
-"400623f8291d28e558060297ecb13b68","meeting location","equal","alternating","equal","equal","symmetric",1.16949152542373,0.38423645320197
-"400623f8291d28e558060297ecb13b68","architects","higher","repeating","higher","higher","asymmetric",1.71654003506721,1.19177253478524
-"400623f8291d28e558060297ecb13b68","feedback","equal","alternating","equal","equal","symmetric",0.288135593220339,1.31034482758621
-"400623f8291d28e558060297ecb13b68","groceries","lower","alternating","higher","higher","asymmetric",1.83050847457627,2.93103448275862
-"400623f8291d28e558060297ecb13b68","conversation","lower","alternating","higher","higher","asymmetric",-0.11864406779661,0.879310344827586
-"400623f8291d28e558060297ecb13b68","fundraising","higher","repeating","higher","higher","asymmetric",2.6271186440678,0.925589836660617
-"400623f8291d28e558060297ecb13b68","babysitting","higher","alternating","lower","lower","asymmetric",2.66101694915254,3.24137931034483
-"400623f8291d28e558060297ecb13b68","concerts","equal","repeating","equal","equal","symmetric",2.47457627118644,2.68288177339901
-"400623f8291d28e558060297ecb13b68","weekend","lower","repeating","lower","lower","asymmetric",1.80450029222677,1.81155474894132
 "39ec9cd3c776cf282d2899900bbb035a","meeting location","higher","alternating","lower","lower","asymmetric",1.16949152542373,0.38423645320197
 "39ec9cd3c776cf282d2899900bbb035a","scheduling","higher","repeating","higher","higher","asymmetric",1,2.12068965517241
 "39ec9cd3c776cf282d2899900bbb035a","housemates","higher","repeating","higher","higher","asymmetric",1.91525423728814,1.05263157894737
@@ -1799,24 +1727,6 @@
 "55b8f79dc8e4c81da9b0b1d37fdd2c51","housemates","equal","alternating","equal","equal","symmetric",1.91525423728814,1.05263157894737
 "55b8f79dc8e4c81da9b0b1d37fdd2c51","group project","lower","alternating","higher","higher","asymmetric",1.79661016949153,0.172413793103448
 "55b8f79dc8e4c81da9b0b1d37fdd2c51","concerts","equal","repeating","equal","equal","symmetric",2.47457627118644,2.68288177339901
-"74ae4ccb0edf0a7f78d648245668a2f5","groceries","higher","repeating","lower","higher","asymmetric",1.83050847457627,2.93103448275862
-"74ae4ccb0edf0a7f78d648245668a2f5","restaurant","lower","repeating","lower","lower","asymmetric",0.457627118644068,2.56896551724138
-"74ae4ccb0edf0a7f78d648245668a2f5","meeting location","lower","repeating","lower","lower","asymmetric",1.16949152542373,0.38423645320197
-"74ae4ccb0edf0a7f78d648245668a2f5","conversation","lower","repeating","higher","lower","asymmetric",-0.11864406779661,0.879310344827586
-"74ae4ccb0edf0a7f78d648245668a2f5","gifts","equal","repeating","equal","equal","symmetric",3.64406779661017,3.29733817301875
-"74ae4ccb0edf0a7f78d648245668a2f5","group project","higher","repeating","higher","higher","asymmetric",1.79661016949153,0.172413793103448
-"74ae4ccb0edf0a7f78d648245668a2f5","housemates","lower","repeating","lower","lower","asymmetric",1.91525423728814,1.05263157894737
-"74ae4ccb0edf0a7f78d648245668a2f5","babysitting","higher","repeating","lower","higher","asymmetric",2.66101694915254,3.24137931034483
-"74ae4ccb0edf0a7f78d648245668a2f5","meeting prep","equal","repeating","equal","equal","symmetric",2.59322033898305,1.17241379310345
-"74ae4ccb0edf0a7f78d648245668a2f5","feedback","equal","repeating","equal","equal","symmetric",0.288135593220339,1.31034482758621
-"74ae4ccb0edf0a7f78d648245668a2f5","fundraising","equal","repeating","equal","equal","symmetric",2.6271186440678,0.925589836660617
-"74ae4ccb0edf0a7f78d648245668a2f5","weekend","equal","repeating","equal","equal","symmetric",1.80450029222677,1.81155474894132
-"74ae4ccb0edf0a7f78d648245668a2f5","police","equal","repeating","equal","equal","symmetric",2.71186440677966,3.17241379310345
-"74ae4ccb0edf0a7f78d648245668a2f5","concerts","lower","alternating","higher","higher","asymmetric",2.47457627118644,2.68288177339901
-"74ae4ccb0edf0a7f78d648245668a2f5","architects","higher","repeating","higher","higher","asymmetric",1.71654003506721,1.19177253478524
-"74ae4ccb0edf0a7f78d648245668a2f5","coffee","higher","repeating","higher","higher","asymmetric",2.08474576271186,2.03448275862069
-"74ae4ccb0edf0a7f78d648245668a2f5","family meals","higher","repeating","higher","higher","asymmetric",3.59322033898305,2.24137931034483
-"74ae4ccb0edf0a7f78d648245668a2f5","scheduling","lower","repeating","lower","lower","asymmetric",1,2.12068965517241
 "24a1bcb2c8d46ac9fbfdd21c1db07ecd","groceries","equal","repeating","equal","equal","symmetric",1.83050847457627,2.93103448275862
 "24a1bcb2c8d46ac9fbfdd21c1db07ecd","meeting location","lower","repeating","lower","lower","asymmetric",1.16949152542373,0.38423645320197
 "24a1bcb2c8d46ac9fbfdd21c1db07ecd","meeting prep","higher","repeating","higher","higher","asymmetric",2.59322033898305,1.17241379310345
@@ -2033,24 +1943,6 @@
 "1802e5fbe5ecdecc98c1fc229bd43a49","concerts","lower","alternating","lower","higher","asymmetric",2.47457627118644,2.68288177339901
 "1802e5fbe5ecdecc98c1fc229bd43a49","architects","higher","alternating","higher","lower","asymmetric",1.71654003506721,1.19177253478524
 "1802e5fbe5ecdecc98c1fc229bd43a49","conversation","lower","alternating","higher","higher","asymmetric",-0.11864406779661,0.879310344827586
-"a3d238759e1906432b06f006985dbccb","architects","equal","alternating","equal","equal","symmetric",1.71654003506721,1.19177253478524
-"a3d238759e1906432b06f006985dbccb","groceries","lower","repeating","lower","lower","asymmetric",1.83050847457627,2.93103448275862
-"a3d238759e1906432b06f006985dbccb","babysitting","lower","alternating","higher","higher","asymmetric",2.66101694915254,3.24137931034483
-"a3d238759e1906432b06f006985dbccb","group project","lower","alternating","higher","higher","asymmetric",1.79661016949153,0.172413793103448
-"a3d238759e1906432b06f006985dbccb","fundraising","higher","alternating","lower","lower","asymmetric",2.6271186440678,0.925589836660617
-"a3d238759e1906432b06f006985dbccb","family meals","higher","alternating","lower","lower","asymmetric",3.59322033898305,2.24137931034483
-"a3d238759e1906432b06f006985dbccb","coffee","equal","repeating","equal","equal","symmetric",2.08474576271186,2.03448275862069
-"a3d238759e1906432b06f006985dbccb","meeting prep","equal","alternating","equal","equal","symmetric",2.59322033898305,1.17241379310345
-"a3d238759e1906432b06f006985dbccb","housemates","lower","alternating","higher","higher","asymmetric",1.91525423728814,1.05263157894737
-"a3d238759e1906432b06f006985dbccb","concerts","equal","repeating","equal","equal","symmetric",2.47457627118644,2.68288177339901
-"a3d238759e1906432b06f006985dbccb","conversation","higher","repeating","lower","higher","asymmetric",-0.11864406779661,0.879310344827586
-"a3d238759e1906432b06f006985dbccb","gifts","equal","alternating","equal","equal","symmetric",3.64406779661017,3.29733817301875
-"a3d238759e1906432b06f006985dbccb","weekend","lower","repeating","higher","lower","asymmetric",1.80450029222677,1.81155474894132
-"a3d238759e1906432b06f006985dbccb","feedback","higher","repeating","lower","higher","asymmetric",0.288135593220339,1.31034482758621
-"a3d238759e1906432b06f006985dbccb","police","lower","repeating","lower","lower","asymmetric",2.71186440677966,3.17241379310345
-"a3d238759e1906432b06f006985dbccb","restaurant","higher","alternating","lower","lower","asymmetric",0.457627118644068,2.56896551724138
-"a3d238759e1906432b06f006985dbccb","scheduling","equal","alternating","equal","equal","symmetric",1,2.12068965517241
-"a3d238759e1906432b06f006985dbccb","meeting location","higher","alternating","lower","lower","asymmetric",1.16949152542373,0.38423645320197
 "0dd2df734e95e57a130d0c70b58bddf9","feedback","higher","alternating","higher","lower","asymmetric",0.288135593220339,1.31034482758621
 "0dd2df734e95e57a130d0c70b58bddf9","scheduling","equal","alternating","equal","equal","symmetric",1,2.12068965517241
 "0dd2df734e95e57a130d0c70b58bddf9","police","higher","alternating","higher","lower","asymmetric",2.71186440677966,3.17241379310345
@@ -2087,24 +1979,6 @@
 "83f84cb65948596bb605a018782365ed","family meals","equal","alternating","equal","equal","symmetric",3.59322033898305,2.24137931034483
 "83f84cb65948596bb605a018782365ed","restaurant","higher","alternating","lower","lower","asymmetric",0.457627118644068,2.56896551724138
 "83f84cb65948596bb605a018782365ed","meeting prep","lower","repeating","lower","lower","asymmetric",2.59322033898305,1.17241379310345
-"d3d13a3ee765bba322cecd73efe30a02","fundraising","lower","repeating","lower","lower","asymmetric",2.6271186440678,0.925589836660617
-"d3d13a3ee765bba322cecd73efe30a02","groceries","equal","repeating","equal","equal","symmetric",1.83050847457627,2.93103448275862
-"d3d13a3ee765bba322cecd73efe30a02","weekend","equal","repeating","equal","equal","symmetric",1.80450029222677,1.81155474894132
-"d3d13a3ee765bba322cecd73efe30a02","restaurant","higher","repeating","lower","higher","asymmetric",0.457627118644068,2.56896551724138
-"d3d13a3ee765bba322cecd73efe30a02","babysitting","lower","alternating","higher","higher","asymmetric",2.66101694915254,3.24137931034483
-"d3d13a3ee765bba322cecd73efe30a02","feedback","higher","alternating","lower","lower","asymmetric",0.288135593220339,1.31034482758621
-"d3d13a3ee765bba322cecd73efe30a02","housemates","higher","repeating","higher","higher","asymmetric",1.91525423728814,1.05263157894737
-"d3d13a3ee765bba322cecd73efe30a02","scheduling","equal","repeating","equal","equal","symmetric",1,2.12068965517241
-"d3d13a3ee765bba322cecd73efe30a02","police","higher","repeating","higher","higher","asymmetric",2.71186440677966,3.17241379310345
-"d3d13a3ee765bba322cecd73efe30a02","gifts","lower","alternating","higher","higher","asymmetric",3.64406779661017,3.29733817301875
-"d3d13a3ee765bba322cecd73efe30a02","family meals","equal","repeating","equal","equal","symmetric",3.59322033898305,2.24137931034483
-"d3d13a3ee765bba322cecd73efe30a02","meeting prep","lower","alternating","higher","higher","asymmetric",2.59322033898305,1.17241379310345
-"d3d13a3ee765bba322cecd73efe30a02","group project","lower","repeating","lower","lower","asymmetric",1.79661016949153,0.172413793103448
-"d3d13a3ee765bba322cecd73efe30a02","concerts","higher","repeating","higher","higher","asymmetric",2.47457627118644,2.68288177339901
-"d3d13a3ee765bba322cecd73efe30a02","architects","lower","repeating","higher","lower","asymmetric",1.71654003506721,1.19177253478524
-"d3d13a3ee765bba322cecd73efe30a02","meeting location","higher","repeating","lower","higher","asymmetric",1.16949152542373,0.38423645320197
-"d3d13a3ee765bba322cecd73efe30a02","conversation","equal","repeating","equal","equal","symmetric",-0.11864406779661,0.879310344827586
-"d3d13a3ee765bba322cecd73efe30a02","coffee","equal","repeating","equal","equal","symmetric",2.08474576271186,2.03448275862069
 "dd160f68f86a9db65a3b11723bfd515d","group project","higher","alternating","lower","lower","asymmetric",1.79661016949153,0.172413793103448
 "dd160f68f86a9db65a3b11723bfd515d","gifts","equal","alternating","equal","equal","symmetric",3.64406779661017,3.29733817301875
 "dd160f68f86a9db65a3b11723bfd515d","feedback","equal","alternating","equal","equal","symmetric",0.288135593220339,1.31034482758621

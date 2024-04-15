@@ -1,0 +1,119 @@
+subject_id,time_elapsed,gender,age,understood,pass_attention,comments
+dafe19470877d506bf0050f04120e8bd,1551702,male,63,yes,TRUE,NA
+01aea296ec904b25575143430e95360e,1255418,male,51,yes,TRUE,NA
+8333a7bf2a8fc4dcd3ba15ea648bc164,2272546,female,49,yes,TRUE,NA
+fa6461e25f345143b734d417559b6abf,895624,male,41,yes,TRUE,no comments
+832b1aaa0d0b20d49329c9064af44620,933964,female,59,yes,TRUE,None
+db3a61e7fd50db71e484911e3d9fdcf5,3630725,male,27,yes,TRUE,NA
+49c0f54a51717682a0b955ed4075c02b,1177305,female,51,yes,TRUE,NA
+19f00082899158b8ed6f74f64b4c3d3d,884377,male,41,yes,FALSE,NA
+bdedea341d963145a87d692e812c9366,434639,male,31,yes,TRUE,NA
+df1aa1394e3e348e9c0e2f0d4762dfd6,647301,female,36,yes,TRUE,NA
+e4b7413c88848985582bc647aa5d3436,2620307,male,35,yes,TRUE,NA
+04eab0baba33ed48112b41091c88dd8d,813023,female,35,yes,TRUE,NA
+b3bc5bf450bc224bf7db7fce93a18c40,916977,female,32,yes,TRUE,NA
+d0cf16843e634838643e3559aa978700,733994,female,40,yes,TRUE,NA
+d5689f801e786465d19d3ee0423d14d0,724830,male,74,yes,TRUE,NA
+41d21902b53cbd4a7a6a09b5545e20b7,1213542,male,37,yes,TRUE,NA
+534f1e5f6d77dc4d92c8ba5cac284b2a,903694,female,34,yes,TRUE,NA
+d2ccea0cfd033fb25c37f638e1faf39b,1292347,female,41,yes,TRUE,NA
+77404cb9a7174f540175e2681ef73607,1068591,female,24,yes,TRUE,NA
+92057922419271877bb4df85f25d8bba,771956,male,28,yes,TRUE,NA
+cf15bc52ea00bb3ea93aee786a335824,493169,male,43,yes,TRUE,NA
+addb4a38ef0434de0323d3d96d4c2625,1152356,male,29,yes,TRUE,NA
+91ecc06d4637ad3a37f0c768f9a51b25,3980772,female,43,yes,TRUE,NA
+f01695c167714302289b2268c77f215a,493127,male,34,yes,TRUE,NA
+6b729ba26a657d91a89dda2486145aa3,877236,male,58,yes,TRUE,NA
+c4e6ac06b62da0d557e9fcdbe0a8910f,4034406,female,25,yes,TRUE,NA
+6580d5504779a74b18a6207fd0d639e0,1199075,male,38,yes,TRUE,NA
+103c5dac42b8c9577de131be3831eada,867111,male,28,yes,TRUE,NA
+cf12433f0eafc8d13cabb53d74afcc92,1349380,female,53,yes,TRUE,Everything worked well! I enjoyed reading and reflecting on each scenario. I felt the instructions and scenarios were clear. Thank you!
+4b184bae622411204d536792a86e9713,667193,female,34,yes,TRUE,NA
+6358fa878c134cfe7fe0ffe9dcfe738c,711711,female,26,yes,TRUE,NA
+49065109e102779c72cd51e555eb7e17,980642,female,52,yes,TRUE,Thank you!
+591336196cda9e09944e26019a24622b,917143,male,32,yes,TRUE,NA
+aba64adc8f5b0c38bdd5029be152d30c,3519725,female,48,yes,TRUE,NA
+d6a0957378c6e5de9a741f1b0b51dcd4,712937,female,25,yes,TRUE,NA
+c6f981aa2a094a7ac2d8a4c02a450870,977805,male,55,yes,TRUE,NA
+92b316060107696e4308e8faf4db73fd,935818,female,38,yes,TRUE,NA
+307b3155405bde976a6f32d04e4c7bd8,1103814,male,24,yes,TRUE,NA
+c3b2ae8e8f5a244bb324d63503baa236,767775,female,28,yes,TRUE,NA
+61d5b1ab345de5cf5713fc537e3439e6,1052356,female,31,yes,TRUE,NA
+407e1aa2209edd32303594902d8f4dc9,730670,male,37,yes,TRUE,NA
+8fdce9fd19f26cc1f914e6326715fad5,1128740,female,24,yes,TRUE,NA
+d4143352644ec8d3e10305588c9a974b,1096960,male,23,yes,FALSE,NA
+eb628c2528db04010e0788156f021697,1450630,female,41,yes,TRUE,NA
+aa62d5921adf2c049f4855579b837325,672390,male,46,yes,TRUE,None -- thanks
+1391b4bafd4a42bcd1c3b7f42e1e4b72,824336,female,25,yes,TRUE,NA
+ad8c0a9a32ea3d9d0cf49d4ce8387e98,953097,female,35,yes,TRUE,NA
+96cabe5a2659bbc4c09f4f84e2e6b2c2,1078592,male,56,yes,TRUE,NA
+9de0e43587569909946170a069e4b801,531021,female,44,yes,TRUE,NA
+74ae6e9740f9b29d9da5ec684d1932f6,745752,male,32,yes,TRUE,NA
+1f5c5ec033ecc067724eee4d654f841f,1638706,male,30,yes,TRUE,The study is really educative
+3bb2cc1c57132da0e58fc58640dd6685,1113441,female,37,yes,TRUE,NA
+6d09c27450557ebe31ce1a5e5013d731,840176,male,35,yes,TRUE,NA
+9c38065f538f8147e01c703bbc16069f,1743919,female,44,yes,TRUE,NA
+f717cf03225ba0e46f55f5d733ef18dd,1113182,male,36,yes,TRUE,I have no comments or suggestions.
+946539f68fe73b60bd59b584c65712a9,1384449,male,30,yes,TRUE,NA
+558b0e4a2667f9efc7e3588f6eeb0140,1138874,male,48,yes,TRUE,NA
+6cb99cca63ffe7c2eadfe649c831945f,2520376,male,21,yes,TRUE,NA
+81348213b2736c806db685b73a03f392,288892,male,34,yes,TRUE,NA
+fa2759f9dcbbb2fd6cef76c0935361e8,1691820,male,49,yes,TRUE,NA
+7bf548893bc2859f8d16ee74b3d49837,955588,female,48,yes,TRUE,NA
+92a7caee207b4a7c24054f3061a823de,680013,female,27,yes,TRUE,NA
+bd89a5b6ea87b13413cb52a8a5552201,721323,male,36,yes,TRUE,The study was enjoyable and an engaging exercise.
+8a602d109e3f6055d1f90daf5014d22a,755214,female,26,yes,TRUE,NA
+9b03d31c402e415ce4921175795e0ea5,3505120,female,27,yes,TRUE,NA
+090fe546a73cb700ca6793faac6dff08,779142,female,26,yes,TRUE,NA
+b06a083b15576d590c8a5479f7733def,1220614,female,22,yes,TRUE,N/A
+1f59b76d76b3f0e58b6247a5993808d0,382645,female,22,yes,TRUE,NA
+09b2e11377c16a76647773e6866ec6af,723186,female,32,yes,TRUE,n/a
+8430bab381f98763e398b6645e514ac3,1481505,nonconforming,39,yes,TRUE,NA
+847037263576aa78af34ef4237bdb302,807443,female,23,yes,TRUE,NA
+d6b36f151f17be564eb2cb5f4c88492d,1247147,female,30,yes,TRUE,I think it would be a smart idea to have a definition of hierarchial at the beginning of the study.
+0690344d2b1f13c2e309f2d19caaf56c,1175396,female,27,yes,TRUE,NA
+a071a448159b174231461bc6b7f302a1,701476,male,44,yes,TRUE,NA
+ee1e60c09bc9bba754ad801b81ce93cc,625735,female,25,yes,TRUE,NA
+f03c9cf496e1adfdad51b86a28b8aa7a,726326,male,36,yes,TRUE,Good Study
+c25d61cc48af8cd6c6580bbfe884e327,1308984,female,48,yes,TRUE,NA
+86d22196e5671efeb0d0b7a2f720f47a,316094,male,20,yes,TRUE,NA
+6a2be8c955b8ab2fb9561b850ed9ee3c,662376,male,23,yes,TRUE,NA
+fced88cb87ad00aa9a6c9231acd640a7,785097,female,35,yes,TRUE,NA
+91aa6bb5d4e71a3e7b29a30958fc8791,1885986,male,31,yes,TRUE,NA
+d2cd5dde9dbae714cb8740e643e27390,807068,male,31,yes,TRUE,NA
+5562effd885bc0c9fe5a1e91149ac6d0,824099,male,30,yes,TRUE,NA
+69890e5ce865e0528a42a88f69fa7aa2,655844,male,26,yes,TRUE,NA
+cdf014b813011e261d0e1a4fd1d2dd65,944252,male,51,yes,TRUE,none
+fb39821029015156b80dc3f82f00ba82,3812670,male,31,yes,TRUE,NA
+09c26cf65996fd22cd95270a6d53636f,621789,male,31,yes,TRUE,NA
+84a66c55e6c1d83a8645b5a3b6954d4a,449157,male,33,yes,TRUE,no
+3f755c019b91e64f4d133be1f4ed0f26,1113205,nonconforming,26,yes,TRUE,NA
+7c2472bcb6994d60ee86948f8db0fcec,377924,male,22,yes,TRUE,N/A
+9a471d8cd309fb771b4a0073ea16a9d7,1689111,female,70,yes,TRUE,NA
+c223ffcbc671354a6a06a144852b7b5c,760137,male,24,yes,TRUE,n/a
+e79ed1d881cf6d9e088044155df1cef7,1965763,male,33,yes,TRUE,NA
+2cb058ed2efc2d1eadbafbae71122a86,356774,male,34,no,FALSE,NA
+6d4981c4eaa3ebef90d542b40f17b89b,737812,female,21,yes,TRUE,NA
+2cef1acc08a50964e1327c204c89af96,2740291,male,55,yes,TRUE,n/a
+c79d75582d83b73be9be10878fc870f2,1152143,male,30,yes,TRUE,N/A Thank You
+0e049f472e26488e84b94ac6afd84c99,1055313,male,49,yes,TRUE,NA
+344f6f8c661bcd6e323ef58d4794eb19,1201958,female,56,yes,TRUE,NA
+de424f45008fb785a7797acb3a0377ef,794434,female,20,yes,TRUE,NA
+466a78e46d13d9b7aafe6686b9bd32f1,1283100,female,24,yes,TRUE,NA
+4227de200997fa675123603716256065,712986,female,50,yes,TRUE,NA
+a3d36352c430c201a459b134dea0a2da,1678996,male,61,yes,FALSE,NA
+6bce4731c7a2588ada0c273e55481b42,649199,male,29,yes,TRUE,NA
+82b4f82cee1c80333f825123bb0bd3a4,429469,male,26,yes,TRUE,NA
+c8702598f146ee1b7267154daba8fe00,532077,male,45,yes,TRUE,NA
+d213f0edfc0990415a7bd38eb170e341,2207025,female,58,yes,TRUE,NA
+ff5f11f72793382ecd55995e656843bf,1162780,female,48,yes,TRUE,"This was very interesting, thanks!"
+d0adf3b2a74e3dc7dc6883589961f0de,1043613,female,52,yes,TRUE,"The question worded ""make sure X's benefits are as high as their own"" seemed a bit vague, and I wavered a bit for the first few questions on how I actually should interpret it. I ended up deciding I should read it as ""as high or higher"" rather than ""equal to their own,"" but it would have been very helpful to have that clear in the question's wording."
+1fb211a0cddc600c96c33dff464cd3d1,2822702,male,39,yes,TRUE,:)
+fb03eb1a136cf6b0ecfa776ee185a12a,1543175,female,27,yes,TRUE,Elaborate on what a hierarchal relationship exactly means?
+a4248452f8352661b4b49b6c84097b31,1993224,female,25,yes,TRUE,NA
+2f679b03ad3731cb7681628f73aa58e6,826660,male,30,yes,TRUE,NA
+18afb11afb7ad054bbd7d6c9efb308c6,1141808,male,24,yes,TRUE,NA
+871f42cfffd06ccf0ceaa95434b4137e,731234,female,23,yes,TRUE,No
+a22b3a092512967a349c4953196c9ff4,720759,female,27,yes,TRUE,NA
+f65ee47b97310e9cb1657568414913be,1572849,female,27,yes,TRUE,NA
+2f3faa9bac905875a162ec21f9092f37,1050979,male,71,yes,TRUE,NO
