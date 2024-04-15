@@ -97,6 +97,8 @@ levs <- unique(d.temp$story)
 d.first.response$story <-
   factor(d.first.response$story, levels = levs)
 
+# save d first response csv
+write.csv(d.first.response, here('data/1c_implicit.csv'), row.names = FALSE)
 
 
 f <-

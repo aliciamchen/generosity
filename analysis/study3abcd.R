@@ -12,7 +12,7 @@ theme_set(theme_classic(base_size = 30))
 options(contrasts = c(unordered = "contr.sum", ordered = "contr.poly"))
 
 d <-
-  read.csv(here('data/study4a_data.csv')) %>% filter(pass_attention == T, understood == 'yes') %>%
+  read.csv(here('data/3a_data.csv')) %>% filter(pass_attention == T, understood == 'yes') %>%
   rename(likert_rating = response) %>% 
   mutate(likert_rating = likert_rating + 1) %>%
   select(-c("understood", "pass_attention")) %>% 
@@ -23,16 +23,17 @@ d <-
   )) %>% 
   mutate(
     strategy = fct_relevel(strategy,
-                                   "repeating", "alternating"),
+                           "repeating", "alternating"),
     altruistic_status_second = fct_relevel(altruistic_status_second,
-                               "higher", "lower", "equal", "just_met")
-  )
+                                           "higher", "lower", "equal", "just_met")
+  ) 
 
-write.csv(d, here('data/study4a_tidy_data.csv'), row.names=FALSE)
 
-d.demographics <- read.csv(here('data/study4a_demographics.csv'))
+write.csv(d, here('data/3a_tidy_data.csv'), row.names=FALSE)
+
+d.demographics <- read.csv(here('data/3a_demographics.csv'))
 d.demographics %>% count(gender)
-d.demographics %>% summarize(mean_age = mean(age), sd_age = sd(age))
+d.demographics %>% summarize(mean_age = mean(age), sd_age = sd(age), min_age = min(age), max_age = max(age))
 
 print(length(unique(d$subject_id)))
 
@@ -41,33 +42,6 @@ d.means.all <-
   group_by(strategy, altruistic_status_second) %>%
   tidyboot_mean(likert_rating, na.rm = TRUE) %>%
   rename(likert_rating = empirical_stat) 
-
-
-f = ggplot(data = d,
-           aes(x = altruistic_status_second, y = likert_rating, fill = strategy)) +
-  geom_violin(width = 1.16,
-              bw = 0.43,
-              position = position_dodge(width = 0.8)) +
-  geom_point(
-    d.means.all,
-    mapping = aes(x = altruistic_status_second, y = likert_rating),
-    size = 2.3,
-    alpha = 1,
-    position = position_dodge(width = 0.8)
-  ) +
-  geom_errorbar(
-    d.means.all,
-    mapping = aes(x = altruistic_status_second, ymin = ci_lower, ymax = ci_upper),
-    position = position_dodge(width = 0.8),
-    size = 1.5,
-    width = 0.09
-  ) +
-  scale_y_continuous(breaks = c(1, 2, 3, 4, 5, 6, 7),
-                     limits = c(0.8, 7.2)) +
-  labs(x = "status of second time altruistic person", y = "how moral?") +
-  theme(legend.position = "bottom")
-
-f
 
 # switch axes to see if it visualizes data better
 f = ggplot(data = d,
