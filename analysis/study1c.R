@@ -4,13 +4,21 @@ library(tidyboot)
 library(ggthemes)
 library(lme4)
 library(lmerTest)
-library(wesanderson)
 library(forcats)
 library(emmeans)
 library(glue)
+library(wesanderson)
+
+
+# Options -----------------------------------------------------------------
+
 
 theme_set(theme_classic(base_size = 16))
 options(contrasts = c(unordered = "contr.sum", ordered = "contr.poly"))
+
+
+# Load and tidy data ------------------------------------------------------
+
 
 effort_diff <-
   read.csv(here("data/validation_effort_diff.csv")) %>% rename(effort_diff = diff) %>% select(c(story, effort_diff))
@@ -42,8 +50,8 @@ d <-
          second_response_higher = response_higher_second) %>%
   mutate(symmetric = ifelse(first_actual_higher == "equal", "symmetric", "asymmetric")) %>%
   group_by(story) %>%
-  left_join(effort_diff, id = story) %>%
-  left_join(benefit_diff, id = story)
+  left_join(effort_diff) %>%
+  left_join(benefit_diff)
 
 # Set levels for categorical variables
 d$first_actual_higher <-
@@ -55,11 +63,12 @@ d$second_response_higher <-
 d$strategy_repeating <-
   factor(d$strategy_repeating, levels = c("alternating", "repeating"))
 
-
-
 write.csv(d, here('data/1c_tidy_data.csv'), row.names = FALSE)
 
-# Deal with demographics csv
+
+# Display demographics ----------------------------------------------------
+
+
 d.demographics <- read.csv(here('data/1c_demographics.csv')) %>% filter(pass_attention == T, understood == "yes")
 d.demographics %>% count(gender)
 d.demographics %>% summarize(
@@ -69,11 +78,11 @@ d.demographics %>% summarize(
   max_age = max(age)
 )
 
-
 print(length(unique(d$subject_id)))
 
 
-################## PLOTS
+
+# Plots -------------------------------------------------------------------
 
 
 ### Plot with scenario on x axis, implicit coordination on y axis, x axis ordered by y axis
@@ -131,64 +140,6 @@ ggsave(
   width = 8,
   height = 3.5
 )
-
-
-## Is implicit coordination based on effort/benefit?
-
-f <-
-  ggplot(d.first.response, aes(x = effort_diff, y = empirical_stat)) +
-  geom_point(
-    size = 2.4,
-    alpha = 0.7,
-    color = "#00BFC4",
-    stroke = 0
-  ) +
-  geom_errorbar(
-    mapping = aes(x = effort_diff, ymin = ci_lower, ymax = ci_upper),
-    size = 1.8,
-    width = 0.07,
-    alpha = 0.7,
-    color = "#00BFC4"
-  ) +
-  geom_hline(yintercept = 0,
-             linetype = "dashed",
-             color = "gray") +
-  scale_y_continuous(limits = c(-1, 1)) +
-  labs(x = "perceived effort difference in scenario", y = "expectations for high status", title = "implicit coordination effort")
-
-f
-
-ggsave(here("figures/outputs/1c_effort_corr.pdf"),
-       width = 8,
-       height = 2.8)
-
-f <-
-  ggplot(d.first.response, aes(x = benefit_diff, y = empirical_stat)) +
-  geom_point(
-    size = 2.4,
-    alpha = 0.7,
-    color = "#F8766D",
-    stroke = 0
-  ) +
-  geom_errorbar(
-    mapping = aes(x = benefit_diff, ymin = ci_lower, ymax = ci_upper),
-    size = 1.8,
-    width = 0.07,
-    alpha = 0.7,
-    color = "#F8766D"
-  ) +
-  geom_hline(yintercept = 0,
-             linetype = "dashed",
-             color = "gray") +
-  scale_y_continuous(limits = c(-1, 1)) +
-  labs(x = "perceived benefit difference in scenario", y = "expectations for high status", title = "implicit coordination benefit")
-
-
-f
-
-ggsave(here("figures/outputs/1c_benefit_corr.pdf"),
-       width = 8,
-       height = 2.8)
 
 
 ## First time on x axis, second time on y axis, colored by actual first
@@ -326,222 +277,10 @@ ggsave(here("figures/outputs/1c_1b.pdf"),
        height = 4)
 
 
-######################## STATS
+# Stats -------------------------------------------------------------------
 
-# Main preregistered hypothesis: in asymmetric relationships, people’s expectations for what
-# happens the second time are explained by (1) expectations of tacit coordination
-# (what they thought would happen the first time), and (2) expectations of precedent.
-
-# check factors are done correctly
-d.h1 <- d %>% filter(symmetric == 'asymmetric')
-d.h1$first_response_higher <- factor(d.h1$first_response_higher, levels = c("higher", "lower"))
-d.h1$first_actual_higher <- factor(d.h1$first_actual_higher, levels = c("higher", "lower"))
-d.h1$second_response_higher <- factor(d.h1$second_response_higher, levels = c("lower", "higher"))
-
-mod <- glmer(
-  data = d.h1,
-  second_response_higher ~ first_response_higher * first_actual_higher + (1 |
-                                                                            subject_id) + (1 |
-                                                                                             story),
-  family =  'binomial'
-)
-
-summary(mod)
-
-# Generalized linear mixed model fit by maximum likelihood (Laplace Approximation) ['glmerMod']
-# Family: binomial  ( logit )
-# Formula: second_response_higher ~ first_response_higher * first_actual_higher +      (1 | subject_id) + (1 | story)
-# Data: d.h1
-# 
-# AIC      BIC   logLik deviance df.resid 
-# 1759.0   1790.3   -873.5   1747.0     1350 
-# 
-# Scaled residuals: 
-#   Min      1Q  Median      3Q     Max 
-# -1.6317 -0.8472 -0.5692  0.8955  1.8471 
-# 
-# Random effects:
-#   Groups     Name        Variance Std.Dev.
-# subject_id (Intercept) 0.00000  0.0000  
-# story      (Intercept) 0.06231  0.2496  
-# Number of obs: 1356, groups:  subject_id, 113; story, 18
-# 
-# Fixed effects:
-#   Estimate Std. Error z value Pr(>|z|)    
-# (Intercept)                                 -0.10279    0.08232  -1.249    0.212    
-# first_response_higher1                       0.50654    0.06370   7.952 1.84e-15 ***
-#   first_actual_higher1                         0.29489    0.05757   5.122 3.02e-07 ***
-#   first_response_higher1:first_actual_higher1  0.02998    0.05771   0.520    0.603    
-# ---
-#   Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
-# 
-# Correlation of Fixed Effects:
-#   (Intr) frst_r_1 frst_c_1
-# frst_rspn_1 -0.011                  
-# frst_ctl_h1 -0.006  0.052           
-# frst__1:__1  0.047 -0.011   -0.027  
-# optimizer (Nelder_Mead) convergence code: 0 (OK)
-# boundary (singular) fit: see help('isSingular')
-
-
-
-# H2: People expect alternation when the relationship is symmetric, and repetition when the relationship is asymmetric.
-
-mod <- glmer(
-  data = d,
-  strategy_repeating ~ first_actual_higher + (1 |
-                                                subject_id) + (1 |
-                                                                 story),
-  family =  'binomial'
-)
-
-summary(mod)
-
-emmeans(mod, pairwise ~ first_actual_higher)
-
-# $emmeans
-# first_actual_higher emmean    SE  df asymp.LCL asymp.UCL
-# higher               0.228 0.207 Inf   -0.1774     0.634
-# lower                0.467 0.207 Inf    0.0606     0.874
-# equal               -1.395 0.214 Inf   -1.8138    -0.976
-# 
-# Results are given on the logit (not the response) scale. 
-# Confidence level used: 0.95 
-# 
-# $contrasts
-# contrast       estimate    SE  df z.ratio p.value
-# higher - lower   -0.239 0.125 Inf  -1.915  0.1345
-# higher - equal    1.623 0.136 Inf  11.915  <.0001
-# lower - equal     1.862 0.138 Inf  13.479  <.0001
-# 
-# Results are given on the log odds ratio (not the response) scale. 
-# P value adjustment: tukey method for comparing a family of 3 estimates 
-
-emm <- mod %>% emmeans(pairwise ~ first_actual_higher) %>%
-  add_grouping("asymmetric",
-               "first_actual_higher",
-               c("yes", "yes", "no"))
-
-emmeans(emm, pairwise ~ asymmetric)
-
-# $emmeans
-# asymmetric emmean    SE  df asymp.LCL asymp.UCL
-# no         -1.395 0.214 Inf   -1.8138    -0.976
-# yes         0.348 0.198 Inf   -0.0396     0.735
-# 
-# Results are averaged over the levels of: first_actual_higher 
-# Results are given on the logit (not the response) scale. 
-# Confidence level used: 0.95 
-# 
-# $contrasts
-# contrast estimate    SE  df z.ratio p.value
-# no - yes    -1.74 0.122 Inf -14.263  <.0001
-# 
-# Results are averaged over the levels of: first_actual_higher 
-# Results are given on the log odds ratio (not the response) scale. 
-
-
-## H3: In asymmetric relationships, people have strong intuitions of tacit coordination.
-
-mod <-
-  glmer(
-    data = d %>% filter(first_actual_higher != "equal"),
-    first_response_higher ~ (1 |
-                               subject_id) + (1 | story),
-    family = 'binomial'
-  )
-
-summary(mod)
-
-emm <- emmeans(mod, specs = ~ 1)
-summary(emm, null = 0, infer = c(TRUE, TRUE))
-
-# across scenarios, they average out
-# 1       emmean    SE  df asymp.LCL asymp.UCL z.ratio p.value
-# overall -0.015 0.275 Inf    -0.554     0.524  -0.055  0.9565
-# 
-# Results are given on the logit (not the response) scale. 
-# Confidence level used: 0.95 
-
-# Can tacit coordination response be explained by relative cost/benefit? (not preregistered I think)
-
-mod <-
-  glmer(
-    data = d %>% filter(first_actual_higher != "equal"),
-    first_response_higher ~ effort_diff + (1 |
-                               subject_id) + (1 | story),
-    family = 'binomial'
-  )
-
-summary(mod)
-
-# Generalized linear mixed model fit by maximum likelihood (Laplace Approximation) ['glmerMod']
-# Family: binomial  ( logit )
-# Formula: first_response_higher ~ effort_diff + (1 | subject_id) + (1 |      story)
-# Data: d %>% filter(first_actual_higher != "equal")
-# 
-# AIC      BIC   logLik deviance df.resid 
-# 1615.6   1636.5   -803.8   1607.6     1352 
-# 
-# Scaled residuals: 
-#   Min      1Q  Median      3Q     Max 
-# -2.4675 -0.6880 -0.3489  0.6741  2.6581 
-# 
-# Random effects:
-#   Groups     Name        Variance Std.Dev.
-# subject_id (Intercept) 0.1799   0.4242  
-# story      (Intercept) 1.2496   1.1179  
-# Number of obs: 1356, groups:  subject_id, 113; story, 18
-# 
-# Fixed effects:
-#   Estimate Std. Error z value Pr(>|z|)
-# (Intercept)   0.2019     0.5760   0.351    0.726
-# effort_diff  -0.1139     0.2661  -0.428    0.669
-# 
-# Correlation of Fixed Effects:
-#   (Intr)
-# effort_diff -0.880
-
-
-mod <-
-  glmer(
-    data = d %>% filter(first_actual_higher != "equal"),
-    first_response_higher ~ benefit_diff + (1 |
-                                             subject_id) + (1 | story),
-    family = 'binomial'
-  )
-
-summary(mod)
-
-# Generalized linear mixed model fit by maximum likelihood (Laplace Approximation) ['glmerMod']
-# Family: binomial  ( logit )
-# Formula: first_response_higher ~ benefit_diff + (1 | subject_id) + (1 |      story)
-# Data: d %>% filter(first_actual_higher != "equal")
-# 
-# AIC      BIC   logLik deviance df.resid 
-# 1613.9   1634.7   -802.9   1605.9     1352 
-# 
-# Scaled residuals: 
-#   Min      1Q  Median      3Q     Max 
-# -2.3929 -0.6972 -0.3419  0.6716  2.7132 
-# 
-# Random effects:
-#   Groups     Name        Variance Std.Dev.
-# subject_id (Intercept) 0.1808   0.4252  
-# story      (Intercept) 1.1271   1.0617  
-# Number of obs: 1356, groups:  subject_id, 113; story, 18
-# 
-# Fixed effects:
-#   Estimate Std. Error z value Pr(>|z|)
-# (Intercept)   -0.7140     0.5571  -1.282    0.200
-# benefit_diff   0.3785     0.2664   1.421    0.155
-# 
-# Correlation of Fixed Effects:
-#   (Intr)
-# benefit_dff -0.883
-
-# H4: can people's expectations be predicted by relative cost / benefit?
-
+# What happened the first time people interacted? 
+# Can their expectations be explained by relative cost/benefit?
 mod <-
   glmer(
     data = d %>% filter(first_actual_higher != "equal"),
@@ -616,6 +355,150 @@ summary(mod)
 #   (Intr)
 # benefit_dff -0.883
 
+
+
+# Next, replicate findings from studies 1a and 1b 
+
+
+# People expect alternation when the relationship is symmetric, and repetition when the relationship is asymmetric.
+
+mod <- glmer(
+  data = d,
+  strategy_repeating ~ first_actual_higher + (1 |
+                                                subject_id) + (1 |
+                                                                 story),
+  family =  'binomial'
+)
+
+summary(mod)
+
+
+emm <- mod %>% emmeans(pairwise ~ first_actual_higher) %>%
+  add_grouping("asymmetric",
+               "first_actual_higher",
+               c("yes", "yes", "no"))
+emm
+emmeans(emm, pairwise ~ asymmetric) 
+
+# $emmeans
+# asymmetric emmean    SE  df asymp.LCL asymp.UCL
+# no         -1.395 0.214 Inf   -1.8138    -0.976
+# yes         0.348 0.198 Inf   -0.0396     0.735
+# 
+# Results are averaged over the levels of: first_actual_higher 
+# Results are given on the logit (not the response) scale. 
+# Confidence level used: 0.95 
+# 
+# $contrasts
+# contrast estimate    SE  df z.ratio p.value
+# no - yes    -1.74 0.122 Inf -14.263  <.0001
+# 
+# Results are averaged over the levels of: first_actual_higher 
+# Results are given on the log odds ratio (not the response) scale. 
+
+
+emmeans(mod, pairwise ~ first_actual_higher) %>% summary(infer = T)
+
+# $emmeans
+# first_actual_higher emmean    SE  df asymp.LCL asymp.UCL
+# higher               0.228 0.207 Inf   -0.1774     0.634
+# lower                0.467 0.207 Inf    0.0606     0.874
+# equal               -1.395 0.214 Inf   -1.8138    -0.976
+# 
+# Results are given on the logit (not the response) scale. 
+# Confidence level used: 0.95 
+# 
+# $contrasts
+# contrast       estimate    SE  df z.ratio p.value
+# higher - lower   -0.239 0.125 Inf  -1.915  0.1345
+# higher - equal    1.623 0.136 Inf  11.915  <.0001
+# lower - equal     1.862 0.138 Inf  13.479  <.0001
+# 
+# Results are given on the log odds ratio (not the response) scale. 
+# P value adjustment: tukey method for comparing a family of 3 estimates 
+
+
+# Main preregistered hypothesis: in asymmetric relationships, people’s expectations for what
+# happens the second time are explained by (1) expectations of tacit coordination
+# (what they thought would happen the first time), and (2) expectations of precedent.
+
+
+d.h1 <- d %>% filter(symmetric == 'asymmetric')
+d.h1$first_response_higher <- factor(d.h1$first_response_higher, levels = c("higher", "lower"))
+d.h1$first_actual_higher <- factor(d.h1$first_actual_higher, levels = c("higher", "lower"))
+d.h1$second_response_higher <- factor(d.h1$second_response_higher, levels = c("lower", "higher"))
+
+mod <- glmer(
+  data = d.h1,
+  second_response_higher ~ first_response_higher * first_actual_higher + (1 |
+                                                                            subject_id) + (1 |
+                                                                                             story),
+  family =  'binomial'
+)
+
+summary(mod)
+
+# Generalized linear mixed model fit by maximum likelihood (Laplace Approximation) ['glmerMod']
+# Family: binomial  ( logit )
+# Formula: second_response_higher ~ first_response_higher * first_actual_higher +      (1 | subject_id) + (1 | story)
+# Data: d.h1
+# 
+# AIC      BIC   logLik deviance df.resid 
+# 1759.0   1790.3   -873.5   1747.0     1350 
+# 
+# Scaled residuals: 
+#   Min      1Q  Median      3Q     Max 
+# -1.6317 -0.8472 -0.5692  0.8955  1.8471 
+# 
+# Random effects:
+#   Groups     Name        Variance Std.Dev.
+# subject_id (Intercept) 0.00000  0.0000  
+# story      (Intercept) 0.06231  0.2496  
+# Number of obs: 1356, groups:  subject_id, 113; story, 18
+# 
+# Fixed effects:
+#   Estimate Std. Error z value Pr(>|z|)    
+# (Intercept)                                 -0.10279    0.08232  -1.249    0.212    
+# first_response_higher1                       0.50654    0.06370   7.952 1.84e-15 ***
+#   first_actual_higher1                         0.29489    0.05757   5.122 3.02e-07 ***
+#   first_response_higher1:first_actual_higher1  0.02998    0.05771   0.520    0.603    
+# ---
+#   Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+# 
+# Correlation of Fixed Effects:
+#   (Intr) frst_r_1 frst_c_1
+# frst_rspn_1 -0.011                  
+# frst_ctl_h1 -0.006  0.052           
+# frst__1:__1  0.047 -0.011   -0.027  
+# optimizer (Nelder_Mead) convergence code: 0 (OK)
+# boundary (singular) fit: see help('isSingular')
+
+
+
+##  In asymmetric relationships, people have strong intuitions of tacit coordination.
+
+mod <-
+  glmer(
+    data = d %>% filter(first_actual_higher != "equal"),
+    first_response_higher ~ (1 |
+                               subject_id) + (1 | story),
+    family = 'binomial'
+  )
+
+summary(mod)
+
+emm <- emmeans(mod, specs = ~ 1)
+summary(emm, null = 0, infer = c(TRUE, TRUE))
+
+# across scenarios, they average out
+# 1       emmean    SE  df asymp.LCL asymp.UCL z.ratio p.value
+# overall -0.015 0.275 Inf    -0.554     0.524  -0.055  0.9565
+# 
+# Results are given on the logit (not the response) scale. 
+# Confidence level used: 0.95 
+
+
+
 # Correlate 1c first time with 1b P(higher)
 d.1b.1c.all <- left_join(d.1b, d.first.response) %>% 
   rename(expected.first.1c = empirical_stat, expected.next.1b = normalized_likert_rating) %>% 
@@ -628,8 +511,102 @@ mod <- lmer(
 
 summary(mod)
 
+# Linear mixed model fit by REML. t-tests use Satterthwaite's method ['lmerModLmerTest']
+# Formula: expected.next.1b ~ expected.first.1c * observed_higher + (1 |      subject_id) + (1 | story)
+#    Data: d.1b.1c.all
+# 
+# REML criterion at convergence: -717
+# 
+# Scaled residuals: 
+#     Min      1Q  Median      3Q     Max 
+# -2.8221 -0.6753  0.0397  0.5820  3.3085 
+# 
+# Random effects:
+#  Groups     Name        Variance Std.Dev.
+#  subject_id (Intercept) 0.00000  0.00000 
+#  story      (Intercept) 0.00019  0.01378 
+#  Residual               0.02010  0.14177 
+# Number of obs: 701, groups:  subject_id, 59; story, 18
+# 
+# Fixed effects:
+#                                     Estimate Std. Error        df t value Pr(>|t|)    
+# (Intercept)                        5.001e-01  6.264e-03 1.601e+01  79.837  < 2e-16 ***
+# expected.first.1c                  1.243e-01  1.314e-02 1.618e+01   9.456 5.39e-08 ***
+# observed_higher1                   4.772e-02  5.358e-03 6.850e+02   8.907  < 2e-16 ***
+# expected.first.1c:observed_higher1 4.607e-02  1.125e-02 6.856e+02   4.094 4.75e-05 ***
+# ---
+# Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+# 
+# Correlation of Fixed Effects:
+#             (Intr) exp..1 obsr_1
+# expctd.fr.1 -0.005              
+# obsrvd_hgh1 -0.006  0.000       
+# expct..1:_1  0.000 -0.018 -0.005
+# optimizer (nloptwrap) convergence code: 0 (OK)
+# boundary (singular) fit: see help('isSingular')
 
-######################## EXTRA PLOTS
+
+# Extra plots -------------------------------------------------------------
+
+
+
+## Is implicit coordination based on effort/benefit?
+
+f <-
+  ggplot(d.first.response, aes(x = effort_diff, y = empirical_stat)) +
+  geom_point(
+    size = 2.4,
+    alpha = 0.7,
+    color = "#00BFC4",
+    stroke = 0
+  ) +
+  geom_errorbar(
+    mapping = aes(x = effort_diff, ymin = ci_lower, ymax = ci_upper),
+    size = 1.8,
+    width = 0.07,
+    alpha = 0.7,
+    color = "#00BFC4"
+  ) +
+  geom_hline(yintercept = 0,
+             linetype = "dashed",
+             color = "gray") +
+  scale_y_continuous(limits = c(-1, 1)) +
+  labs(x = "perceived effort difference in scenario", y = "expectations for high status", title = "implicit coordination effort")
+
+f
+
+ggsave(here("figures/outputs/1c_effort_corr.pdf"),
+       width = 8,
+       height = 2.8)
+
+f <-
+  ggplot(d.first.response, aes(x = benefit_diff, y = empirical_stat)) +
+  geom_point(
+    size = 2.4,
+    alpha = 0.7,
+    color = "#F8766D",
+    stroke = 0
+  ) +
+  geom_errorbar(
+    mapping = aes(x = benefit_diff, ymin = ci_lower, ymax = ci_upper),
+    size = 1.8,
+    width = 0.07,
+    alpha = 0.7,
+    color = "#F8766D"
+  ) +
+  geom_hline(yintercept = 0,
+             linetype = "dashed",
+             color = "gray") +
+  scale_y_continuous(limits = c(-1, 1)) +
+  labs(x = "perceived benefit difference in scenario", y = "expectations for high status", title = "implicit coordination benefit")
+
+
+f
+
+ggsave(here("figures/outputs/1c_benefit_corr.pdf"),
+       width = 8,
+       height = 2.8)
+
 
 # Plot showing main hypothesis
 
