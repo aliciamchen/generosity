@@ -321,6 +321,9 @@ mod <- lmer(likert_rating ~ next_interaction * relationship + (1 |
 
 summary(mod)
 
+emmeans(mod, revpairwise ~ next_interaction | relationship) %>% 
+  summary(infer = T)
+
 
 # Repeat with normalized values -------------------------------------------
 

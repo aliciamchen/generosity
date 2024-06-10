@@ -522,6 +522,17 @@ emmeans(mod,  ~ response | strategy * generous_status_second, at = list(strategy
 # P value adjustment: tukey method for comparing a family of 5 estimates 
 
 
+
+# Are communicative motives were generally rated lower for following a precedent, than for alternation? 
+emm_alt <-
+  emmeans(mod, ~ strategy * response) %>%
+  add_grouping("is_communicative",
+               "response",
+               c("yes", "yes", "no", "no", "no"))
+
+emmeans(emm_alt, pairwise ~ strategy | is_communicative) %>% 
+  summary(infer = T)
+
 # And for a character who is repeatedly generous?
 emmeans(mod,  ~ response | strategy * generous_status_second, at = list(strategy = "repeating")) %>% 
   pairs(simple = "response") %>% 
@@ -596,8 +607,12 @@ result <- d %>% filter(strategy == "alternating") %>%
   # Count the frequency of each response
   count(response)
 
-
 print(result)
+
+sum(result$n)
+chisq.test(x = result$n)
+
+# Display all proportions -------------------------------------------------
 
 result_with_proportions <- result %>%
   mutate(total = sum(n)) %>%
