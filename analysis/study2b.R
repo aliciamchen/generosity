@@ -55,6 +55,8 @@ write.csv(d, here('data/2b_tidy_data.csv'), row.names=FALSE)
 # Demographics ------------------------------------------------------------
 
 d.demographics <- read.csv(here('data/2b_demographics.csv'))
+print(length(unique(d.demographics$subject_id)))
+
 d.demographics %>% count(gender)
 d.demographics %>% summarize(mean_age = mean(age), sd_age = sd(age), min_age = min(age), max_age = max(age))
 

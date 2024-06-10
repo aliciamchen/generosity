@@ -50,6 +50,8 @@ d <-
 # Demographics ------------------------------------------------------------
 
 d.demographics <- read.csv(here('data/4_demographics.csv'))
+print(length(unique(d.demographics$subject_id)))
+
 d.demographics %>% count(gender)
 d.demographics %>% summarize(
   mean_age = mean(age),
@@ -59,7 +61,6 @@ d.demographics %>% summarize(
 )
 
 print(length(unique(d$subject_id)))
-
 
 
 # Plots -------------------------------------------------------------------

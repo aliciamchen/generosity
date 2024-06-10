@@ -46,7 +46,7 @@ d <-
 # Demographic info --------------------------------------------------------
 
 d.demographics <-
-  read.csv(here('data/1a_demographics.csv')) %>% filter(pass_attention == T, understood == "yes")
+  read.csv(here('data/1a_demographics.csv'))
 d.demographics %>% count(gender)
 d.demographics %>% summarize(
   mean_age = mean(age),
@@ -309,7 +309,8 @@ emmeans(emm, revpairwise ~ interaction_present | relationship_present) %>%
 
 
 
-# Without control levels - main preregistered analysis --------------------
+# Repeat analyses without control levels ----------------------------------
+
 
 d_filtered <- d %>%
   filter(next_interaction != "none" & relationship != "no_info")
@@ -323,6 +324,12 @@ summary(mod)
 
 emmeans(mod, revpairwise ~ next_interaction | relationship) %>% 
   summary(infer = T)
+
+# Interaction contrasts - compare `asymmetric` and `symmetric` to `no_info`
+contrast(emmeans(mod, ~ next_interaction * relationship), interaction = c("pairwise", "pairwise")) %>% 
+  summary(infer = T)
+
+
 
 
 # Repeat with normalized values -------------------------------------------

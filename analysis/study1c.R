@@ -67,7 +67,7 @@ write.csv(d, here('data/1c_tidy_data.csv'), row.names = FALSE)
 # Display demographics ----------------------------------------------------
 
 
-d.demographics <- read.csv(here('data/1c_demographics.csv')) %>% filter(pass_attention == T, understood == "yes")
+d.demographics <- read.csv(here('data/1c_demographics.csv'))
 d.demographics %>% count(gender)
 d.demographics %>% summarize(
   mean_age = mean(age),

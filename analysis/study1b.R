@@ -65,7 +65,7 @@ d.benefit.effort <- d %>% filter(relationship != "equal", next_interaction != "n
 # Demographic info --------------------------------------------------------
 
 
-d.demographics <- read.csv(here('data/1b_demographics.csv')) %>% filter(pass_attention == T, understood == "yes")
+d.demographics <- read.csv(here('data/1b_demographics.csv')) 
 d.demographics %>% count(gender)
 d.demographics %>% summarize(mean_age = mean(age), sd_age = sd(age), min_age = min(age), max_age = max(age))
 

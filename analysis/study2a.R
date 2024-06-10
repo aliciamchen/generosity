@@ -7,7 +7,6 @@ library(lmerTest)
 library(afex)
 library(forcats)
 library(emmeans)
-library(wesanderson)
 
 
 # Options -----------------------------------------------------------------
@@ -63,8 +62,9 @@ write.csv(d, here('data/2a_tidy_data.csv'), row.names = FALSE)
 
 # Demographics ------------------------------------------------------------
 
-d.demographics <- read.csv(here('data/2a_demographics.csv')) %>%
-  filter(pass_attention == T, understood == "yes")
+d.demographics <- read.csv(here('data/2a_demographics.csv')) 
+
+print(length(unique(d.demographics$subject_id)))
 
 d.demographics %>% count(gender)
 d.demographics %>% summarize(
@@ -300,7 +300,9 @@ contrast(
 # Confidence level used: 0.95
 
 
-# Without all levels
+
+# Repeat analyses without all levels --------------------------------------
+
 d_filtered <- d %>%
   filter(social_interaction != "no_interaction" &
            relationship != "none")
@@ -311,6 +313,17 @@ mod <- lmer(likert_rating ~ social_interaction * relationship + (1 |
             data = d_filtered)
 
 summary(mod)
+
+# Pairwise contrasts
+emmeans(mod, revpairwise ~ relationship | social_interaction) %>%
+  summary(infer = T)
+
+# Interaction contrasts - compare `asymmetric` and `symmetric` to `no_info`
+contrast(
+  emmeans(mod, ~ relationship * social_interaction),
+  interaction = c("pairwise", "pairwise")
+) %>%
+  summary(infer = T)
 
 
 
