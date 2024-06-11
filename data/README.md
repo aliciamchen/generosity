@@ -8,7 +8,7 @@ The below entries correspond to the non-processed wide-form data (tidy data with
 
 ### Study 1
 
-- `1a_data.csv`
+- `1a_data.csv` collected Jan 30, 2023 by Alicia Chen
     - `subject_id`: anonymized participant ID
     -  `story`: label for each of the 18 scenarios
     - `relationship`: what relationship are the two characters in? (either `no_info`, `asymmetric`, or `symmetric`)
@@ -18,7 +18,7 @@ The below entries correspond to the non-processed wide-form data (tidy data with
         - `none`: likelihood of no future interaction
     - `understood`: did the participant indicate that they understood the instructions?
     - `pass_attention`: did the participant pass the attention check?
-- `1b_data.csv`
+- `1b_data.csv` collected Apr 12, 2023 by Alicia Chen
     - `subject_id`: anonymized participant ID
     -  `story`: label for each of the 18 scenarios
     - `relationship`: what relationship are the two characters in? (corresponds to relative status of generous character: `more`, `equal`, or `less`)
@@ -28,7 +28,7 @@ The below entries correspond to the non-processed wide-form data (tidy data with
         - `none`: likelihood of no future interaction
     - `understood`: did the participant indicate that they understood the instructions?
     - `pass_attention`: did the participant pass the attention check?
-- `1c_data.csv`
+- `1c_data.csv` collected Aug 5, 2023 by Alicia Chen
     - `subject_id`: anonymized participant ID
     -  `story`: label for each of the 18 scenarios
     - `altruistic_status`: what relationship are the two characters in? (corresponds to relative status of first-time experimenter-manipulated generous character: `more`, `equal`, or `less`); this corresponds to 'observed first time' in the manuscript
@@ -42,7 +42,7 @@ The below entries correspond to the non-processed wide-form data (tidy data with
 
 ### Study 2
 
-- `2a_data.csv`
+- `2a_data.csv` collected Jan 30, 2023 by Alicia Chen
     - `subject_id`: anonymized participant ID
     -  `story`: label for each of the 18 scenarios
     - `social_interaction`: did the two participants in the scenario alternate (`reciprocity`) or repeat (`precedent`) generous acts, or did they not interact (`no_interaction`)?
@@ -52,7 +52,7 @@ The below entries correspond to the non-processed wide-form data (tidy data with
         - `no_relationship`: likelihood of the two people not being in any relationship
     - `understood`: did the participant indicate that they understood the instructions?
     - `pass_attention`: did the participant pass the attention check?
-- `2b_data.csv`
+- `2b_data.csv` collected Apr 12, 2023 by Alicia Chen
     - `subject_id`: anonymized participant ID
     -  `story`: label for each of the 18 scenarios
     - `social_interaction`: did the two participants in the scenario alternate (`reciprocity`) or repeat (`precedent`) generous acts, or did they not interact (`no_interaction`)?
@@ -65,7 +65,7 @@ The below entries correspond to the non-processed wide-form data (tidy data with
 
 ### Study 3
 
-- `3a_data.csv`
+- `3a_data.csv` collected Aug 15, 2023 by Alicia Chen
     - `subject_id`: anonymized participant ID
     -  `story`: label for each of the 18 scenarios
     - `altruistic_status_second`: who was generous the second time the two characters interacted?
@@ -73,7 +73,7 @@ The below entries correspond to the non-processed wide-form data (tidy data with
     - `response`: how moral? (0-indexed, on a 7 point Likert scale)
     - `understood`: did the participant indicate that they understood the instructions?
     - `pass_attention`: did the participant pass the attention check?
-- `3b_data.csv`
+- `3b_data.csv` collected Aug 24, 2023 by Alicia Chen
     - `subject_id`: anonymized participant ID
     -  `story`: label for each of the 16 scenarios
     - `altruistic_status_second`: who was generous the second time the two characters interacted?
@@ -81,7 +81,7 @@ The below entries correspond to the non-processed wide-form data (tidy data with
     - `response`: how fair? (0-indexed, on a 7 point Likert scale)
     - `understood`: did the participant indicate that they understood the instructions?
     - `pass_attention`: did the participant pass the attention check?
-- `3c_data.csv`
+- `3c_data.csv` collected Aug 15, 2023 by Alicia Chen
     - `subject_id`: anonymized participant ID
     -  `story`: label for each of the 16 scenarios
     - `altruistic_status_second`: who was generous the second time the two characters interacted?
@@ -91,7 +91,7 @@ The below entries correspond to the non-processed wide-form data (tidy data with
         - `satisfied`: how satisfied was the generous character? (0-indexed, on a 7 point Likert scale)
     - `understood`: did the participant indicate that they understood the instructions?
     - `pass_attention`: did the participant pass the attention check?
-- `3d_data.csv`
+- `3d_data.csv` collected Aug 15, 2023 by Alicia Chen
     - `subject_id`: anonymized participant ID
     -  `story`: label for each of the 16 scenarios
     - `altruistic_status_second`: who was generous the second time the two characters interacted?
@@ -104,7 +104,7 @@ The below entries correspond to the non-processed wide-form data (tidy data with
 
 ### Study 4
 
-- `4_data.csv`
+- `4_data.csv` collected Jan 26, 2024 by Alicia Chen
     - `subject_id`: anonymized participant ID
     -  `story`: label for each of the 16 scenarios
     - `generous_status_second`: who was generous the second time the two characters interacted?
@@ -120,7 +120,7 @@ The below entries correspond to the non-processed wide-form data (tidy data with
 
 ### Pilot
 
-- `validation_benefit_data.csv`
+- `validation_benefit_data.csv` collected May 24 and July 11, 2023 by Alicia Chen
     - `subject_id`: anonymized participant ID
     -  `story`: label for each of the 16 scenarios
     - participant responses (0-indexed, on a 7 point Likert scale)
@@ -129,7 +129,7 @@ The below entries correspond to the non-processed wide-form data (tidy data with
     - `understood`: did the participant indicate that they understood the instructions?
     - `pass_attention`: did the participant pass the attention check?
 
-- `validation_effort_data.csv`
+- `validation_effort_data.csv` collected July 12, 2023 by Alicia Chen
     - `subject_id`: anonymized participant ID
     -  `story`: label for each of the 16 scenarios
     - participant responses (0-indexed, on a 7 point Likert scale)
