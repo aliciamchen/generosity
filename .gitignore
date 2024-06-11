@@ -20,3 +20,6 @@ non_anonymized/
 model
 analysis/old
 figures/outputs/old
+analysis/preprocess
+figures/old_stuff
+writing
