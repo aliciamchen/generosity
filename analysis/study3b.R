@@ -1,6 +1,7 @@
 library(here)
 library(tidyverse)
 library(tidyboot)
+library(emmeans)
 library(ggthemes)
 library(lme4)
 library(lmerTest)
@@ -9,6 +10,7 @@ library(forcats)
 library(glue)
 
 # Options -----------------------------------------------------------------
+options(warn = -1)
 
 theme_set(theme_classic(base_size = 30))
 options(contrasts = c(unordered = "contr.sum", ordered = "contr.poly"))
@@ -22,7 +24,7 @@ relationship.colors <- c("#B87FFF", "#35ACFF", "#00A08A", "#D6D6D6")
 
 d <-
   read.csv(here('data/3b_data.csv')) %>% filter(pass_attention == T, understood == 'yes') %>%
-  rename(likert_rating = response, 
+  rename(likert_rating = response,
          generous_status_second = altruistic_status_second) %>%
   mutate(likert_rating = likert_rating + 1) %>%
   select(-c("understood", "pass_attention")) %>%
@@ -109,9 +111,9 @@ for (strat in strategies) {
                        limits = c(0.8, 7.2)) +
     labs(x = "strategy", y = "how fair", fill = "social relationship") +
     theme(legend.position = "bottom")
-  
+
   print(f)
-  
+
   ggsave(here(glue("figures/3b_{strat}.pdf")),
          width = 4.3,
          height = 7.5)
@@ -134,7 +136,7 @@ summary(mod)
 anova(mod, type = "III")
 
 # Type III Analysis of Variance Table with Satterthwaite's method
-#                                 Sum Sq Mean Sq NumDF  DenDF  F value    Pr(>F)    
+#                                 Sum Sq Mean Sq NumDF  DenDF  F value    Pr(>F)
 # strategy                        5308.9  5308.9     1 2599.9 3665.395 < 2.2e-16 ***
 # generous_status_second           126.7    42.2     3 2599.9   29.155 < 2.2e-16 ***
 # strategy:generous_status_second  152.1    50.7     3 2599.7   35.010 < 2.2e-16 ***
@@ -144,7 +146,7 @@ anova(mod, type = "III")
 
 
 # Alternating > repeating in every social relationship
-emmeans(mod, pairwise ~ strategy | generous_status_second) %>% 
+emmeans(mod, pairwise ~ strategy | generous_status_second) %>%
   summary(infer = T)
 
 # $emmeans
@@ -152,48 +154,48 @@ emmeans(mod, pairwise ~ strategy | generous_status_second) %>%
 #   strategy    emmean     SE   df lower.CL upper.CL t.ratio p.value
 # repeating     4.18 0.0883 84.3     4.00     4.35  47.272  <.0001
 # alternating   6.16 0.0883 84.0     5.98     6.34  69.779  <.0001
-# 
+#
 # generous_status_second = lower:
 #   strategy    emmean     SE   df lower.CL upper.CL t.ratio p.value
 # repeating     3.19 0.0884 84.5     3.01     3.36  36.043  <.0001
 # alternating   5.98 0.0883 84.0     5.80     6.16  67.754  <.0001
-# 
+#
 # generous_status_second = equal:
 #   strategy    emmean     SE   df lower.CL upper.CL t.ratio p.value
 # repeating     3.42 0.0883 84.3     3.25     3.60  38.730  <.0001
 # alternating   6.54 0.0883 84.0     6.37     6.72  74.143  <.0001
-# 
+#
 # generous_status_second = just_met:
 #   strategy    emmean     SE   df lower.CL upper.CL t.ratio p.value
 # repeating     3.28 0.0883 84.0     3.11     3.46  37.199  <.0001
 # alternating   6.41 0.0883 84.0     6.24     6.59  72.622  <.0001
-# 
-# Degrees-of-freedom method: kenward-roger 
-# Confidence level used: 0.95 
-# 
+#
+# Degrees-of-freedom method: kenward-roger
+# Confidence level used: 0.95
+#
 # $contrasts
 # generous_status_second = higher:
 #   contrast                estimate     SE   df lower.CL upper.CL t.ratio p.value
 # repeating - alternating    -1.98 0.0911 2600    -2.16    -1.80 -21.782  <.0001
-# 
+#
 # generous_status_second = lower:
 #   contrast                estimate     SE   df lower.CL upper.CL t.ratio p.value
 # repeating - alternating    -2.79 0.0911 2600    -2.97    -2.62 -30.652  <.0001
-# 
+#
 # generous_status_second = equal:
 #   contrast                estimate     SE   df lower.CL upper.CL t.ratio p.value
 # repeating - alternating    -3.12 0.0911 2600    -3.30    -2.94 -34.297  <.0001
-# 
+#
 # generous_status_second = just_met:
 #   contrast                estimate     SE   df lower.CL upper.CL t.ratio p.value
 # repeating - alternating    -3.13 0.0910 2600    -3.31    -2.95 -34.364  <.0001
-# 
-# Degrees-of-freedom method: kenward-roger 
-# Confidence level used: 0.95 
+#
+# Degrees-of-freedom method: kenward-roger
+# Confidence level used: 0.95
 
 
 # Interaction contrasts
-contrast(emmeans(mod, ~ strategy * generous_status_second), interaction = c("pairwise", "pairwise")) %>% 
+contrast(emmeans(mod, ~ strategy * generous_status_second), interaction = c("pairwise", "pairwise")) %>%
   summary(infer = T)
 
 # strategy_pairwise       generous_status_second_pairwise estimate    SE   df lower.CL upper.CL t.ratio p.value
@@ -203,9 +205,9 @@ contrast(emmeans(mod, ~ strategy * generous_status_second), interaction = c("pai
 # repeating - alternating lower - equal                    0.32935 0.129 2600   0.0768    0.582   2.557  0.0106
 # repeating - alternating lower - just_met                 0.33371 0.129 2600   0.0812    0.586   2.591  0.0096
 # repeating - alternating equal - just_met                 0.00436 0.129 2600  -0.2481    0.257   0.034  0.9730
-# 
-# Degrees-of-freedom method: kenward-roger 
-# Confidence level used: 0.95 
+#
+# Degrees-of-freedom method: kenward-roger
+# Confidence level used: 0.95
 
 
 # Check asymmetric/symmetric expectations
@@ -215,7 +217,7 @@ emm <-
                "generous_status_second",
                c("yes", "yes", "no", "NA"))
 
-emmeans(emm, pairwise ~ asymmetric * strategy) %>% 
+emmeans(emm, pairwise ~ asymmetric * strategy) %>%
   summary(infer = T)
 
 # $emmeans
@@ -226,11 +228,11 @@ emmeans(emm, pairwise ~ asymmetric * strategy) %>%
 # NA         alternating   6.41 0.0883 84.0     6.24     6.59  72.622  <.0001
 # no         alternating   6.54 0.0883 84.0     6.37     6.72  74.143  <.0001
 # yes        alternating   6.07 0.0756 45.5     5.92     6.22  80.249  <.0001
-# 
-# Results are averaged over the levels of: generous_status_second 
-# Degrees-of-freedom method: kenward-roger 
-# Confidence level used: 0.95 
-# 
+#
+# Results are averaged over the levels of: generous_status_second
+# Degrees-of-freedom method: kenward-roger
+# Confidence level used: 0.95
+#
 # $contrasts
 # contrast                         estimate     SE   df lower.CL upper.CL t.ratio p.value
 # NA repeating - no repeating        -0.138 0.0911 2600   -0.398   0.1218  -1.514  0.6551
@@ -248,26 +250,26 @@ emmeans(emm, pairwise ~ asymmetric * strategy) %>%
 # NA alternating - no alternating    -0.134 0.0910 2600   -0.393   0.1260  -1.467  0.6853
 # NA alternating - yes alternating    0.341 0.0788 2600    0.116   0.5657   4.325  0.0002
 # no alternating - yes alternating    0.474 0.0788 2600    0.250   0.6992   6.020  <.0001
-# 
-# Results are averaged over the levels of: generous_status_second 
-# Degrees-of-freedom method: kenward-roger 
-# Confidence level used: 0.95 
-# Conf-level adjustment: tukey method for comparing a family of 6 estimates 
-# P value adjustment: tukey method for comparing a family of 6 estimates 
+#
+# Results are averaged over the levels of: generous_status_second
+# Degrees-of-freedom method: kenward-roger
+# Confidence level used: 0.95
+# Conf-level adjustment: tukey method for comparing a family of 6 estimates
+# P value adjustment: tukey method for comparing a family of 6 estimates
 
 
 
-contrast(emmeans(emm, ~ asymmetric * strategy), interaction = c("pairwise", "pairwise")) %>% 
+contrast(emmeans(emm, ~ asymmetric * strategy), interaction = c("pairwise", "pairwise")) %>%
   summary(infer = T)
 
 # asymmetric_pairwise strategy_pairwise       estimate    SE   df lower.CL upper.CL t.ratio p.value
 # NA - no             repeating - alternating -0.00436 0.129 2600   -0.257    0.248  -0.034  0.9730
 # NA - yes            repeating - alternating -0.73886 0.112 2600   -0.958   -0.520  -6.626  <.0001
 # no - yes            repeating - alternating -0.73450 0.112 2599   -0.953   -0.516  -6.586  <.0001
-# 
-# Results are averaged over the levels of: generous_status_second 
-# Degrees-of-freedom method: kenward-roger 
-# Confidence level used: 0.95 
+#
+# Results are averaged over the levels of: generous_status_second
+# Degrees-of-freedom method: kenward-roger
+# Confidence level used: 0.95
 
 
 
@@ -286,12 +288,12 @@ summary(mod)
 anova(mod, type = "III")
 
 # Alternating > repeating in every social relationship
-emmeans(mod, pairwise ~ strategy | generous_status_second) %>% 
+emmeans(mod, pairwise ~ strategy | generous_status_second) %>%
   summary(infer = T)
 
 
 # Interaction contrasts
-contrast(emmeans(mod, ~ strategy * generous_status_second), interaction = c("pairwise", "pairwise")) %>% 
+contrast(emmeans(mod, ~ strategy * generous_status_second), interaction = c("pairwise", "pairwise")) %>%
   summary(infer = T)
 
 
@@ -302,11 +304,11 @@ emm <-
                "generous_status_second",
                c("yes", "yes", "no", "NA"))
 
-emmeans(emm, pairwise ~ asymmetric * strategy) %>% 
+emmeans(emm, pairwise ~ asymmetric * strategy) %>%
   summary(infer = T)
 
 
-contrast(emmeans(emm, ~ asymmetric * strategy), interaction = c("pairwise", "pairwise")) %>% 
+contrast(emmeans(emm, ~ asymmetric * strategy), interaction = c("pairwise", "pairwise")) %>%
   summary(infer = T)
 
 
@@ -342,7 +344,7 @@ f = ggplot(data = d,
 
 f
 
-# Compare with study 1c 
+# Compare with study 1c
 # This needs d.first.response from the study 1c data
 
 d.first.response <-

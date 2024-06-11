@@ -11,6 +11,8 @@ library(emmeans)
 
 # Options -----------------------------------------------------------------
 
+options(warn = -1)
+
 options(contrasts = c(unordered = "contr.sum", ordered = "contr.poly"))
 theme_set(theme_classic(base_size = 30))
 
@@ -62,7 +64,7 @@ write.csv(d, here('data/2a_tidy_data.csv'), row.names = FALSE)
 
 # Demographics ------------------------------------------------------------
 
-d.demographics <- read.csv(here('data/2a_demographics.csv')) 
+d.demographics <- read.csv(here('data/2a_demographics.csv'))
 
 print(length(unique(d.demographics$subject_id)))
 

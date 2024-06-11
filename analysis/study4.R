@@ -129,7 +129,7 @@ f = ggplot(data = d,
 f
 
 ggsave(
-  here("figures/outputs/motives_averaged.pdf"),
+  here("figures/outputs/4_averaged.pdf"),
   width = 6,
   height = 6.5
 )
@@ -178,11 +178,11 @@ for (relationship in relationships) {
     labs(title = "", x = "reason", y = "how motivated?") +
     theme(legend.position = "bottom") +
     theme(axis.text.x = element_text(angle = 40, hjust = 1))
-  
+
   print(f)
-  
+
   ggsave(here(
-    glue("figures/outputs/motives_{relationship}_comm_equal.pdf")
+    glue("figures/outputs/4_{relationship}_comm_equal.pdf")
   ),
   width = 2,
   height = 6.5)
@@ -207,14 +207,14 @@ summary(mod)
 anova(mod)
 
 # Type III Analysis of Variance Table with Satterthwaite's method
-#                                          Sum Sq Mean Sq NumDF  DenDF  F value    Pr(>F)    
+#                                          Sum Sq Mean Sq NumDF  DenDF  F value    Pr(>F)
 # strategy                                  687.9  687.92     1 8910.4 249.9898 < 2.2e-16 ***
-# generous_status_second                     28.3    9.42     3 8909.3   3.4246  0.016417 *  
+# generous_status_second                     28.3    9.42     3 8909.3   3.4246  0.016417 *
 # response                                 3240.1  810.03     4 8903.1 294.3656 < 2.2e-16 ***
-# strategy:generous_status_second            40.5   13.49     3 8913.1   4.9036  0.002092 ** 
+# strategy:generous_status_second            40.5   13.49     3 8913.1   4.9036  0.002092 **
 # strategy:response                        4550.1 1137.52     4 8903.0 413.3769 < 2.2e-16 ***
 # generous_status_second:response           205.7   17.14    12 8903.0   6.2278 4.639e-11 ***
-# strategy:generous_status_second:response   86.8    7.23    12 8903.1   2.6290  0.001646 ** 
+# strategy:generous_status_second:response   86.8    7.23    12 8903.1   2.6290  0.001646 **
 # ---
 # Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
@@ -230,8 +230,8 @@ emm_alt <-
                "generous_status_second",
                c("yes", "yes", "no", "NA"))
 
-# Alternating: Communicate equality equal > communicate equality hierarchical 
-emmeans(emm_alt, pairwise ~ strategy * response * asymmetric) %>% 
+# Alternating: Communicate equality equal > communicate equality hierarchical
+emmeans(emm_alt, pairwise ~ strategy * response * asymmetric) %>%
   summary(infer = T)
 
 # $emmeans
@@ -239,22 +239,22 @@ emmeans(emm_alt, pairwise ~ strategy * response * asymmetric) %>%
 # alternating communicate_equal NA           5.93 0.127 Inf      5.68      6.17  46.782  <.0001
 # alternating communicate_equal no           5.99 0.127 Inf      5.74      6.23  47.177  <.0001
 # alternating communicate_equal yes          5.27 0.100 Inf      5.08      5.47  52.616  <.0001
-# 
-# Results are averaged over the levels of: generous_status_second 
-# Degrees-of-freedom method: asymptotic 
-# Confidence level used: 0.95 
-# 
+#
+# Results are averaged over the levels of: generous_status_second
+# Degrees-of-freedom method: asymptotic
+# Confidence level used: 0.95
+#
 # $contrasts
 # contrast                                                             estimate    SE  df asymp.LCL asymp.UCL z.ratio p.value
 # alternating communicate_equal NA - alternating communicate_equal no   -0.0598 0.156 Inf    -0.424     0.305  -0.384  0.9218
 # alternating communicate_equal NA - alternating communicate_equal yes   0.6545 0.135 Inf     0.339     0.970   4.860  <.0001
 # alternating communicate_equal no - alternating communicate_equal yes   0.7142 0.135 Inf     0.398     1.030   5.296  <.0001
-# 
-# Results are averaged over the levels of: generous_status_second 
-# Degrees-of-freedom method: asymptotic 
-# Confidence level used: 0.95 
-# Conf-level adjustment: tukey method for comparing a family of 3 estimates 
-# P value adjustment: tukey method for comparing a family of 3 estimates 
+#
+# Results are averaged over the levels of: generous_status_second
+# Degrees-of-freedom method: asymptotic
+# Confidence level used: 0.95
+# Conf-level adjustment: tukey method for comparing a family of 3 estimates
+# P value adjustment: tukey method for comparing a family of 3 estimates
 
 
 
@@ -264,8 +264,8 @@ emmeans(emm_alt, pairwise ~ strategy * response * asymmetric) %>%
 
 
 # communicate equal > communicate hierarchy, averaged across relationship
-emmeans(mod, ~ response * strategy, at = list(strategy = "alternating")) %>% 
-  pairs() %>% 
+emmeans(mod, ~ response * strategy, at = list(strategy = "alternating")) %>%
+  pairs() %>%
   summary(infer = T)
 
 # contrast                                                          estimate     SE  df asymp.LCL asymp.UCL z.ratio p.value
@@ -279,16 +279,16 @@ emmeans(mod, ~ response * strategy, at = list(strategy = "alternating")) %>%
 # inequity_aversion alternating - other_benefit alternating            0.594 0.0780 Inf    0.3813     0.807   7.617  <.0001
 # inequity_aversion alternating - own_benefit alternating              0.892 0.0781 Inf    0.6794     1.105  11.432  <.0001
 # other_benefit alternating - own_benefit alternating                  0.298 0.0779 Inf    0.0859     0.511   3.830  0.0012
-# 
-# Results are averaged over the levels of: generous_status_second 
-# Degrees-of-freedom method: asymptotic 
-# Confidence level used: 0.95 
-# Conf-level adjustment: tukey method for comparing a family of 5 estimates 
-# P value adjustment: tukey method for comparing a family of 5 estimates 
+#
+# Results are averaged over the levels of: generous_status_second
+# Degrees-of-freedom method: asymptotic
+# Confidence level used: 0.95
+# Conf-level adjustment: tukey method for comparing a family of 5 estimates
+# P value adjustment: tukey method for comparing a family of 5 estimates
 
 # communicate equal > communicate hierarchy, for each relationship considered separately
-emmeans(mod, ~ response * strategy | generous_status_second, at = list(strategy = "alternating")) %>% 
-  pairs() %>% 
+emmeans(mod, ~ response * strategy | generous_status_second, at = list(strategy = "alternating")) %>%
+  pairs() %>%
   summary(infer = T)
 
 # generous_status_second = higher:
@@ -303,7 +303,7 @@ emmeans(mod, ~ response * strategy | generous_status_second, at = list(strategy 
 # inequity_aversion alternating - other_benefit alternating            0.374 0.156 Inf   -0.0516     0.799   2.397  0.1161
 # inequity_aversion alternating - own_benefit alternating              0.987 0.156 Inf    0.5609     1.412   6.322  <.0001
 # other_benefit alternating - own_benefit alternating                  0.613 0.156 Inf    0.1878     1.038   3.932  0.0008
-# 
+#
 # generous_status_second = lower:
 #   contrast                                                          estimate    SE  df asymp.LCL asymp.UCL z.ratio p.value
 # communicate_equal alternating - communicate_hierarchy alternating    3.307 0.155 Inf    2.8832     3.731  21.285  <.0001
@@ -316,7 +316,7 @@ emmeans(mod, ~ response * strategy | generous_status_second, at = list(strategy 
 # inequity_aversion alternating - other_benefit alternating            0.435 0.156 Inf    0.0107     0.860   2.797  0.0413
 # inequity_aversion alternating - own_benefit alternating              0.201 0.156 Inf   -0.2247     0.626   1.287  0.6996
 # other_benefit alternating - own_benefit alternating                 -0.235 0.156 Inf   -0.6592     0.189  -1.510  0.5557
-# 
+#
 # generous_status_second = equal:
 #   contrast                                                          estimate    SE  df asymp.LCL asymp.UCL z.ratio p.value
 # communicate_equal alternating - communicate_hierarchy alternating    4.313 0.156 Inf    3.8885     4.737  27.728  <.0001
@@ -329,7 +329,7 @@ emmeans(mod, ~ response * strategy | generous_status_second, at = list(strategy 
 # inequity_aversion alternating - other_benefit alternating            0.973 0.156 Inf    0.5472     1.400   6.230  <.0001
 # inequity_aversion alternating - own_benefit alternating              1.305 0.156 Inf    0.8788     1.730   8.359  <.0001
 # other_benefit alternating - own_benefit alternating                  0.331 0.156 Inf   -0.0941     0.756   2.124  0.2098
-# 
+#
 # generous_status_second = just_met:
 #   contrast                                                          estimate    SE  df asymp.LCL asymp.UCL z.ratio p.value
 # communicate_equal alternating - communicate_hierarchy alternating    4.031 0.155 Inf    3.6069     4.455  25.943  <.0001
@@ -342,18 +342,18 @@ emmeans(mod, ~ response * strategy | generous_status_second, at = list(strategy 
 # inequity_aversion alternating - other_benefit alternating            0.593 0.156 Inf    0.1678     1.019   3.803  0.0013
 # inequity_aversion alternating - own_benefit alternating              1.077 0.156 Inf    0.6508     1.504   6.889  <.0001
 # other_benefit alternating - own_benefit alternating                  0.484 0.156 Inf    0.0593     0.909   3.108  0.0161
-# 
-# Degrees-of-freedom method: asymptotic 
-# Confidence level used: 0.95 
-# Conf-level adjustment: tukey method for comparing a family of 5 estimates 
-# P value adjustment: tukey method for comparing a family of 5 estimates 
+#
+# Degrees-of-freedom method: asymptotic
+# Confidence level used: 0.95
+# Conf-level adjustment: tukey method for comparing a family of 5 estimates
+# P value adjustment: tukey method for comparing a family of 5 estimates
 
 
 # Is this diff from repeatedly generous? ----------------------------------
 
 
 # Interaction contrast across all relationship conditions
-contrast(emmeans(mod, ~ strategy * response), interaction = c("pairwise", "pairwise")) %>% 
+contrast(emmeans(mod, ~ strategy * response), interaction = c("pairwise", "pairwise")) %>%
   summary(infer = T)
 
 # strategy_pairwise       response_pairwise                         estimate   SE  df asymp.LCL asymp.UCL z.ratio p.value
@@ -367,15 +367,15 @@ contrast(emmeans(mod, ~ strategy * response), interaction = c("pairwise", "pairw
 # repeating - alternating inequity_aversion - other_benefit           -1.205 0.11 Inf    -1.422    -0.989 -10.931  <.0001
 # repeating - alternating inequity_aversion - own_benefit             -1.316 0.11 Inf    -1.532    -1.100 -11.936  <.0001
 # repeating - alternating other_benefit - own_benefit                 -0.111 0.11 Inf    -0.327     0.105  -1.006  0.3144
-# 
-# Results are averaged over the levels of: generous_status_second 
-# Degrees-of-freedom method: asymptotic 
-# Confidence level used: 0.95 
+#
+# Results are averaged over the levels of: generous_status_second
+# Degrees-of-freedom method: asymptotic
+# Confidence level used: 0.95
 
 # interaction contrasts for each relationship considered separately
 contrast(emmeans(mod, ~ strategy * response | generous_status_second),
          interaction = c("pairwise", "pairwise"),
-         by = "generous_status_second") %>% 
+         by = "generous_status_second") %>%
   summary(infer = T)
 
 # generous_status_second = higher:
@@ -390,7 +390,7 @@ contrast(emmeans(mod, ~ strategy * response | generous_status_second),
 # repeating - alternating inequity_aversion - other_benefit          -0.7709 0.220 Inf    -1.203    -0.339  -3.497  0.0005
 # repeating - alternating inequity_aversion - own_benefit            -1.1608 0.220 Inf    -1.593    -0.729  -5.269  <.0001
 # repeating - alternating other_benefit - own_benefit                -0.3899 0.220 Inf    -0.822     0.042  -1.770  0.0768
-# 
+#
 # generous_status_second = lower:
 #   strategy_pairwise       response_pairwise                         estimate    SE  df asymp.LCL asymp.UCL z.ratio p.value
 # repeating - alternating communicate_equal - communicate_hierarchy  -3.8296 0.220 Inf    -4.261    -3.398 -17.400  <.0001
@@ -403,7 +403,7 @@ contrast(emmeans(mod, ~ strategy * response | generous_status_second),
 # repeating - alternating inequity_aversion - other_benefit          -1.1342 0.220 Inf    -1.566    -0.702  -5.148  <.0001
 # repeating - alternating inequity_aversion - own_benefit            -0.9994 0.221 Inf    -1.432    -0.567  -4.531  <.0001
 # repeating - alternating other_benefit - own_benefit                 0.1348 0.220 Inf    -0.297     0.566   0.612  0.5405
-# 
+#
 # generous_status_second = equal:
 #   strategy_pairwise       response_pairwise                         estimate    SE  df asymp.LCL asymp.UCL z.ratio p.value
 # repeating - alternating communicate_equal - communicate_hierarchy  -4.5566 0.220 Inf    -4.988    -4.125 -20.715  <.0001
@@ -416,7 +416,7 @@ contrast(emmeans(mod, ~ strategy * response | generous_status_second),
 # repeating - alternating inequity_aversion - other_benefit          -1.4221 0.221 Inf    -1.855    -0.990  -6.443  <.0001
 # repeating - alternating inequity_aversion - own_benefit            -1.6275 0.221 Inf    -2.060    -1.195  -7.378  <.0001
 # repeating - alternating other_benefit - own_benefit                -0.2054 0.220 Inf    -0.637     0.226  -0.932  0.3512
-# 
+#
 # generous_status_second = just_met:
 #   strategy_pairwise       response_pairwise                         estimate    SE  df asymp.LCL asymp.UCL z.ratio p.value
 # repeating - alternating communicate_equal - communicate_hierarchy  -4.8014 0.220 Inf    -5.232    -4.371 -21.840  <.0001
@@ -429,16 +429,16 @@ contrast(emmeans(mod, ~ strategy * response | generous_status_second),
 # repeating - alternating inequity_aversion - other_benefit          -1.4946 0.221 Inf    -1.927    -1.062  -6.772  <.0001
 # repeating - alternating inequity_aversion - own_benefit            -1.4774 0.221 Inf    -1.910    -1.045  -6.694  <.0001
 # repeating - alternating other_benefit - own_benefit                 0.0172 0.220 Inf    -0.414     0.449   0.078  0.9376
-# 
-# Degrees-of-freedom method: asymptotic 
-# Confidence level used: 0.95 
+#
+# Degrees-of-freedom method: asymptotic
+# Confidence level used: 0.95
 
 
 # Compare motives for specific actions ------------------------------------
 
 # Communicate equality relative to the other 4 motivations?
-emmeans(mod, ~ response | strategy, at = list(strategy = "alternating")) %>% 
-  pairs() %>% 
+emmeans(mod, ~ response | strategy, at = list(strategy = "alternating")) %>%
+  pairs() %>%
   summary(infer = T)
 
 # strategy = alternating:
@@ -453,16 +453,16 @@ emmeans(mod, ~ response | strategy, at = list(strategy = "alternating")) %>%
 # inequity_aversion - other_benefit            0.594 0.0780 Inf    0.3813     0.807   7.617  <.0001
 # inequity_aversion - own_benefit              0.892 0.0781 Inf    0.6794     1.105  11.432  <.0001
 # other_benefit - own_benefit                  0.298 0.0779 Inf    0.0859     0.511   3.830  0.0012
-# 
-# Results are averaged over the levels of: generous_status_second 
-# Degrees-of-freedom method: asymptotic 
-# Confidence level used: 0.95 
-# Conf-level adjustment: tukey method for comparing a family of 5 estimates 
-# P value adjustment: tukey method for comparing a family of 5 estimates 
+#
+# Results are averaged over the levels of: generous_status_second
+# Degrees-of-freedom method: asymptotic
+# Confidence level used: 0.95
+# Conf-level adjustment: tukey method for comparing a family of 5 estimates
+# P value adjustment: tukey method for comparing a family of 5 estimates
 
 # And for each relationship considered separately
-emmeans(mod,  ~ response | strategy * generous_status_second, at = list(strategy = "alternating")) %>% 
-  pairs(simple = "response") %>% 
+emmeans(mod,  ~ response | strategy * generous_status_second, at = list(strategy = "alternating")) %>%
+  pairs(simple = "response") %>%
   summary(infer = T)
 
 # strategy = alternating, generous_status_second = higher:
@@ -477,7 +477,7 @@ emmeans(mod,  ~ response | strategy * generous_status_second, at = list(strategy
 # inequity_aversion - other_benefit            0.374 0.156 Inf   -0.0516     0.799   2.397  0.1161
 # inequity_aversion - own_benefit              0.987 0.156 Inf    0.5609     1.412   6.322  <.0001
 # other_benefit - own_benefit                  0.613 0.156 Inf    0.1878     1.038   3.932  0.0008
-# 
+#
 # strategy = alternating, generous_status_second = lower:
 #   contrast                                  estimate    SE  df asymp.LCL asymp.UCL z.ratio p.value
 # communicate_equal - communicate_hierarchy    3.307 0.155 Inf    2.8832     3.731  21.285  <.0001
@@ -490,7 +490,7 @@ emmeans(mod,  ~ response | strategy * generous_status_second, at = list(strategy
 # inequity_aversion - other_benefit            0.435 0.156 Inf    0.0107     0.860   2.797  0.0413
 # inequity_aversion - own_benefit              0.201 0.156 Inf   -0.2247     0.626   1.287  0.6996
 # other_benefit - own_benefit                 -0.235 0.156 Inf   -0.6592     0.189  -1.510  0.5557
-# 
+#
 # strategy = alternating, generous_status_second = equal:
 #   contrast                                  estimate    SE  df asymp.LCL asymp.UCL z.ratio p.value
 # communicate_equal - communicate_hierarchy    4.313 0.156 Inf    3.8885     4.737  27.728  <.0001
@@ -503,7 +503,7 @@ emmeans(mod,  ~ response | strategy * generous_status_second, at = list(strategy
 # inequity_aversion - other_benefit            0.973 0.156 Inf    0.5472     1.400   6.230  <.0001
 # inequity_aversion - own_benefit              1.305 0.156 Inf    0.8788     1.730   8.359  <.0001
 # other_benefit - own_benefit                  0.331 0.156 Inf   -0.0941     0.756   2.124  0.2098
-# 
+#
 # strategy = alternating, generous_status_second = just_met:
 #   contrast                                  estimate    SE  df asymp.LCL asymp.UCL z.ratio p.value
 # communicate_equal - communicate_hierarchy    4.031 0.155 Inf    3.6069     4.455  25.943  <.0001
@@ -516,27 +516,27 @@ emmeans(mod,  ~ response | strategy * generous_status_second, at = list(strategy
 # inequity_aversion - other_benefit            0.593 0.156 Inf    0.1678     1.019   3.803  0.0013
 # inequity_aversion - own_benefit              1.077 0.156 Inf    0.6508     1.504   6.889  <.0001
 # other_benefit - own_benefit                  0.484 0.156 Inf    0.0593     0.909   3.108  0.0161
-# 
-# Degrees-of-freedom method: asymptotic 
-# Confidence level used: 0.95 
-# Conf-level adjustment: tukey method for comparing a family of 5 estimates 
-# P value adjustment: tukey method for comparing a family of 5 estimates 
+#
+# Degrees-of-freedom method: asymptotic
+# Confidence level used: 0.95
+# Conf-level adjustment: tukey method for comparing a family of 5 estimates
+# P value adjustment: tukey method for comparing a family of 5 estimates
 
 
 
-# Are communicative motives were generally rated lower for following a precedent, than for alternation? 
+# Are communicative motives were generally rated lower for following a precedent, than for alternation?
 emm_alt <-
   emmeans(mod, ~ strategy * response) %>%
   add_grouping("is_communicative",
                "response",
                c("yes", "yes", "no", "no", "no"))
 
-emmeans(emm_alt, pairwise ~ strategy | is_communicative) %>% 
+emmeans(emm_alt, pairwise ~ strategy | is_communicative) %>%
   summary(infer = T)
 
 # And for a character who is repeatedly generous?
-emmeans(mod,  ~ response | strategy * generous_status_second, at = list(strategy = "repeating")) %>% 
-  pairs(simple = "response") %>% 
+emmeans(mod,  ~ response | strategy * generous_status_second, at = list(strategy = "repeating")) %>%
+  pairs(simple = "response") %>%
   summary(infer = T)
 
 # strategy = repeating, generous_status_second = higher:
@@ -551,7 +551,7 @@ emmeans(mod,  ~ response | strategy * generous_status_second, at = list(strategy
 # inequity_aversion - other_benefit          -0.3973 0.156 Inf   -0.8225    0.0279  -2.549  0.0802
 # inequity_aversion - own_benefit            -0.1742 0.156 Inf   -0.5985    0.2501  -1.120  0.7961
 # other_benefit - own_benefit                 0.2231 0.156 Inf   -0.2016    0.6479   1.433  0.6064
-# 
+#
 # strategy = repeating, generous_status_second = lower:
 #   contrast                                  estimate    SE  df asymp.LCL asymp.UCL z.ratio p.value
 # communicate_equal - communicate_hierarchy  -0.5226 0.156 Inf   -0.9478   -0.0974  -3.353  0.0072
@@ -564,7 +564,7 @@ emmeans(mod,  ~ response | strategy * generous_status_second, at = list(strategy
 # inequity_aversion - other_benefit          -0.6988 0.156 Inf   -1.1240   -0.2735  -4.483  0.0001
 # inequity_aversion - own_benefit            -0.7989 0.156 Inf   -1.2246   -0.3732  -5.119  <.0001
 # other_benefit - own_benefit                -0.1001 0.156 Inf   -0.5253    0.3251  -0.642  0.9681
-# 
+#
 # strategy = repeating, generous_status_second = equal:
 #   contrast                                  estimate    SE  df asymp.LCL asymp.UCL z.ratio p.value
 # communicate_equal - communicate_hierarchy  -0.2438 0.156 Inf   -0.6681    0.1805  -1.568  0.5184
@@ -577,7 +577,7 @@ emmeans(mod,  ~ response | strategy * generous_status_second, at = list(strategy
 # inequity_aversion - other_benefit          -0.4487 0.156 Inf   -0.8739   -0.0234  -2.878  0.0326
 # inequity_aversion - own_benefit            -0.3230 0.156 Inf   -0.7482    0.1022  -2.072  0.2323
 # other_benefit - own_benefit                 0.1257 0.156 Inf   -0.2991    0.5504   0.807  0.9285
-# 
+#
 # strategy = repeating, generous_status_second = just_met:
 #   contrast                                  estimate    SE  df asymp.LCL asymp.UCL z.ratio p.value
 # communicate_equal - communicate_hierarchy  -0.7707 0.156 Inf   -1.1950   -0.3464  -4.955  <.0001
@@ -590,10 +590,10 @@ emmeans(mod,  ~ response | strategy * generous_status_second, at = list(strategy
 # inequity_aversion - other_benefit          -0.9011 0.156 Inf   -1.3268   -0.4754  -5.774  <.0001
 # inequity_aversion - own_benefit            -0.3999 0.156 Inf   -0.8246    0.0249  -2.568  0.0763
 # other_benefit - own_benefit                 0.5012 0.156 Inf    0.0765    0.9260   3.219  0.0113
-# 
-# Degrees-of-freedom method: asymptotic 
-# Confidence level used: 0.95 
-# Conf-level adjustment: tukey method for comparing a family of 5 estimates 
+#
+# Degrees-of-freedom method: asymptotic
+# Confidence level used: 0.95
+# Conf-level adjustment: tukey method for comparing a family of 5 estimates
 # P value adjustment: tukey method for comparing a family of 5 estimates
 
 
@@ -720,13 +720,13 @@ for (relationship in relationships) {
     labs(title = "", x = "reason", y = "how motivated?") +
     theme(legend.position = "bottom") +
     theme(axis.text.x = element_text(angle = 40, hjust = 1))
-  
+
   print(f)
-  
-  ggsave(here(glue(
-    "figures/outputs/motives_{relationship}.pdf"
-  )),
-  width = 4,
-  height = 6)
+
+  # ggsave(here(glue(
+  #   "figures/outputs/4_{relationship}.pdf"
+  # )),
+  # width = 4,
+  # height = 6)
 }
 

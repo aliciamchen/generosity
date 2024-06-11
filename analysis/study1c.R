@@ -12,6 +12,7 @@ library(wesanderson)
 
 # Options -----------------------------------------------------------------
 
+options(warn = -1)
 
 options(contrasts = c(unordered = "contr.sum", ordered = "contr.poly"))
 theme_set(theme_classic(base_size = 16))

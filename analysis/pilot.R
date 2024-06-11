@@ -5,7 +5,6 @@ library(ggthemes)
 library(lme4)
 library(lmerTest)
 library(afex)
-library(brms)
 library(forcats)
 library(emmeans)
 library(wesanderson)
@@ -33,7 +32,6 @@ d.demographics %>% count(gender)
 d.demographics %>% summarize(mean_age = mean(age), sd_age = sd(age))
 
 print(length(unique(d$subject_id)))
-
 
 
 ### 

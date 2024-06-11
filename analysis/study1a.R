@@ -11,6 +11,8 @@ library(emmeans)
 
 # Options -----------------------------------------------------------------
 
+options(warn = -1)
+
 theme_set(theme_classic(base_size = 30))
 options(contrasts = c(unordered = "contr.sum", ordered = "contr.poly"))
 
@@ -197,7 +199,7 @@ ggsave(
 
 
 mod <-
-  lmer(likert_rating ~ 1 + next_interaction * relationship 
+  lmer(likert_rating ~ 1 + next_interaction * relationship
        + (1 | story) + (1 | subject_id),
        data = d)
 
@@ -206,9 +208,9 @@ summary(mod)
 anova(mod, type="III")
 
 # Type III Analysis of Variance Table with Satterthwaite's method
-#                               Sum Sq Mean Sq NumDF  DenDF  F value Pr(>F)    
+#                               Sum Sq Mean Sq NumDF  DenDF  F value Pr(>F)
 # next_interaction              3529.5 1764.74     2 3095.1 952.5011 <2e-16 ***
-# relationship                    12.3    6.14     2 3104.8   3.3166 0.0364 *  
+# relationship                    12.3    6.14     2 3104.8   3.3166 0.0364 *
 # next_interaction:relationship  468.2  117.05     4 3095.1  63.1770 <2e-16 ***
 # ---
 # Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
@@ -222,49 +224,49 @@ emmeans(mod, revpairwise ~ next_interaction | relationship) %>% summary(infer = 
 # repeating          5.25 0.0898 159     5.07     5.43  58.455  <.0001
 # alternating        3.48 0.0896 158     3.30     3.65  38.799  <.0001
 # none               2.57 0.0897 158     2.39     2.75  28.667  <.0001
-# 
+#
 # relationship = symmetric:
 #   next_interaction emmean     SE  df lower.CL upper.CL t.ratio p.value
 # repeating          4.49 0.0897 158     4.31     4.67  50.044  <.0001
 # alternating        4.75 0.0897 158     4.58     4.93  52.992  <.0001
 # none               2.16 0.0897 158     1.98     2.33  24.045  <.0001
-# 
+#
 # relationship = no_info:
 #   next_interaction emmean     SE  df lower.CL upper.CL t.ratio p.value
 # repeating          4.75 0.0896 158     4.57     4.93  52.983  <.0001
 # alternating        4.61 0.0896 158     4.43     4.78  51.407  <.0001
 # none               2.38 0.0897 158     2.20     2.56  26.529  <.0001
-# 
-# Degrees-of-freedom method: kenward-roger 
-# Confidence level used: 0.95 
-# 
+#
+# Degrees-of-freedom method: kenward-roger
+# Confidence level used: 0.95
+#
 # $contrasts
 # relationship = asymmetric:
 #   contrast                estimate    SE   df lower.CL upper.CL t.ratio p.value
 # alternating - repeating   -1.771 0.102 3095  -2.0117  -1.5312 -17.290  <.0001
 # none - repeating          -2.677 0.103 3095  -2.9174  -2.4366 -26.109  <.0001
 # none - alternating        -0.906 0.102 3095  -1.1456  -0.6654  -8.844  <.0001
-# 
+#
 # relationship = symmetric:
 #   contrast                estimate    SE   df lower.CL upper.CL t.ratio p.value
 # alternating - repeating    0.265 0.102 3095   0.0243   0.5048   2.582  0.0267
 # none - repeating          -2.332 0.102 3095  -2.5725  -2.0920 -22.763  <.0001
 # none - alternating        -2.597 0.102 3095  -2.8371  -2.3566 -25.346  <.0001
-# 
+#
 # relationship = no_info:
 #   contrast                estimate    SE   df lower.CL upper.CL t.ratio p.value
 # alternating - repeating   -0.141 0.102 3095  -0.3811   0.0987  -1.381  0.3512
 # none - repeating          -2.369 0.102 3095  -2.6087  -2.1286 -23.135  <.0001
 # none - alternating        -2.227 0.102 3095  -2.4675  -1.9873 -21.755  <.0001
-# 
-# Degrees-of-freedom method: kenward-roger 
-# Confidence level used: 0.95 
-# Conf-level adjustment: tukey method for comparing a family of 3 estimates 
-# P value adjustment: tukey method for comparing a family of 3 estimates 
+#
+# Degrees-of-freedom method: kenward-roger
+# Confidence level used: 0.95
+# Conf-level adjustment: tukey method for comparing a family of 3 estimates
+# P value adjustment: tukey method for comparing a family of 3 estimates
 
 
 # Interaction contrasts - compare `asymmetric` and `symmetric` to `no_info`
-contrast(emmeans(mod, ~ next_interaction * relationship), interaction = c("pairwise", "pairwise")) %>% 
+contrast(emmeans(mod, ~ next_interaction * relationship), interaction = c("pairwise", "pairwise")) %>%
   summary(infer = T)
 
 # next_interaction_pairwise relationship_pairwise  estimate    SE   df lower.CL upper.CL t.ratio p.value
@@ -277,9 +279,9 @@ contrast(emmeans(mod, ~ next_interaction * relationship), interaction = c("pairw
 # repeating - alternating   symmetric - no_info     -0.4058 0.145 3095  -0.6897   -0.122  -2.803  0.0051
 # repeating - none          symmetric - no_info     -0.0364 0.145 3095  -0.3204    0.248  -0.251  0.8017
 # alternating - none        symmetric - no_info      0.3694 0.145 3095   0.0854    0.653   2.551  0.0108
-# 
-# Degrees-of-freedom method: kenward-roger 
-# Confidence level used: 0.95 
+#
+# Degrees-of-freedom method: kenward-roger
+# Confidence level used: 0.95
 
 
 # Do people expect a continued social interaction, both with and without the relationship?
@@ -291,21 +293,21 @@ emm <-
   add_grouping("relationship_present", "relationship", c("yes", "yes", "no"))
 
 
-emmeans(emm, revpairwise ~ interaction_present | relationship_present) %>% 
+emmeans(emm, revpairwise ~ interaction_present | relationship_present) %>%
   summary(infer = T)
 
 # $contrasts
 # relationship_present = no:
 #   contrast estimate     SE   df lower.CL upper.CL t.ratio p.value
 # yes - no     2.30 0.0887 3095     2.12     2.47  25.911  <.0001
-# 
+#
 # relationship_present = yes:
 #   contrast estimate     SE   df lower.CL upper.CL t.ratio p.value
 # yes - no     2.13 0.0627 3095     2.00     2.25  33.915  <.0001
-# 
-# Results are averaged over the levels of: relationship, next_interaction 
-# Degrees-of-freedom method: kenward-roger 
-# Confidence level used: 0.95 
+#
+# Results are averaged over the levels of: relationship, next_interaction
+# Degrees-of-freedom method: kenward-roger
+# Confidence level used: 0.95
 
 
 
@@ -322,11 +324,11 @@ mod <- lmer(likert_rating ~ next_interaction * relationship + (1 |
 
 summary(mod)
 
-emmeans(mod, revpairwise ~ next_interaction | relationship) %>% 
+emmeans(mod, revpairwise ~ next_interaction | relationship) %>%
   summary(infer = T)
 
 # Interaction contrasts - compare `asymmetric` and `symmetric` to `no_info`
-contrast(emmeans(mod, ~ next_interaction * relationship), interaction = c("pairwise", "pairwise")) %>% 
+contrast(emmeans(mod, ~ next_interaction * relationship), interaction = c("pairwise", "pairwise")) %>%
   summary(infer = T)
 
 
@@ -352,7 +354,7 @@ emmeans(mod, revpairwise ~ next_interaction | relationship) %>% summary(infer = 
 
 
 # Interaction contrasts - compare `asymmetric` and `symmetric` to `no_info`
-contrast(emmeans(mod, ~ next_interaction * relationship), interaction = c("pairwise", "pairwise")) %>% 
+contrast(emmeans(mod, ~ next_interaction * relationship), interaction = c("pairwise", "pairwise")) %>%
   summary(infer = T)
 
 # Do people expect a continued social interaction, both with and without the relationship?
@@ -364,7 +366,7 @@ emm <-
   add_grouping("relationship_present", "relationship", c("yes", "yes", "no"))
 
 
-emmeans(emm, revpairwise ~ interaction_present | relationship_present) %>% 
+emmeans(emm, revpairwise ~ interaction_present | relationship_present) %>%
   summary(infer = T)
 
 # Without control levels
