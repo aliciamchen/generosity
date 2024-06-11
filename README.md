@@ -23,7 +23,7 @@ Preprint: https://osf.io/preprints/psyarxiv/6kfwr
 ## This repository
 
 - `experiments` contains the code for each experiment. Stimuli for each experiment are in `json/stimuli.json` under each experiment folder. You can access each experiment by visiting the `index.html` files (i.e on your server of choice). Between-participant condition assignment (for randomization) is handled using `php/participant_id_allocator.php`.
-- `data` contains the anonymized data and demographics files for each experiment. Each data file is accompanied by its corresponding codebook.
+- `data` contains the anonymized data and demographics files for each experiment, accompanied by a codebook.
 - `analysis` contains scripts for reproducing the analyses and figures reported in the paper.
     - To reproduce all analyses and figures at once, run `analysis/run_analyses.sh`. The outputs of the R scripts will be saved in `analysis/outputs`, and figures will be saved in `figures/outputs`.
     - In each script, the numerical analyses are reported in the same order as they appear in the manuscript.
