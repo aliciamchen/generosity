@@ -1,0 +1,672 @@
+[1] 180
+         gender  n
+1        female 85
+2          male 87
+3 nonconforming  8
+  mean_age   sd_age min_age max_age
+1 33.52222 11.64246      19      75
+[1] 176
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [
+lmerModLmerTest]
+Formula: 
+likert_rating ~ strategy * generous_status_second + (1 | subject_id) +  
+    (1 | story)
+   Data: d %>% filter(response == "satisfied")
+
+REML criterion at convergence: 10320.2
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-3.7516 -0.4414  0.1743  0.6499  2.9042 
+
+Random effects:
+ Groups     Name        Variance Std.Dev.
+ subject_id (Intercept) 0.5986   0.7737  
+ story      (Intercept) 0.2690   0.5186  
+ Residual               2.0210   1.4216  
+Number of obs: 2806, groups:  subject_id, 176; story, 16
+
+Fixed effects:
+                                    Estimate Std. Error         df t value
+(Intercept)                          5.43097    0.14468   21.28588  37.537
+strategy1                           -0.40406    0.02685 2607.99897 -15.049
+generous_status_second1             -0.08252    0.04647 2607.92289  -1.776
+generous_status_second2             -0.15858    0.04650 2608.04205  -3.410
+generous_status_second3              0.17540    0.04648 2608.00638   3.774
+strategy1:generous_status_second1    0.00206    0.04647 2607.93072   0.044
+strategy1:generous_status_second2    0.09773    0.04650 2608.06336   2.102
+strategy1:generous_status_second3   -0.07655    0.04646 2607.87173  -1.648
+                                  Pr(>|t|)    
+(Intercept)                        < 2e-16 ***
+strategy1                          < 2e-16 ***
+generous_status_second1           0.075882 .  
+generous_status_second2           0.000659 ***
+generous_status_second3           0.000164 ***
+strategy1:generous_status_second1 0.964643    
+strategy1:generous_status_second2 0.035646 *  
+strategy1:generous_status_second3 0.099552 .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) strtg1 gnr__1 gnr__2 gnr__3 s1:__1 s1:__2
+strategy1    0.000                                          
+gnrs_stts_1  0.000  0.000                                   
+gnrs_stts_2  0.000 -0.002 -0.333                            
+gnrs_stts_3  0.000 -0.001 -0.332 -0.333                     
+strtgy1:__1  0.000 -0.001  0.001  0.001  0.000              
+strtgy1:__2  0.000  0.000  0.001 -0.002  0.002 -0.333       
+strtgy1:__3  0.000 -0.001  0.000  0.002 -0.001 -0.332 -0.333
+Type III Analysis of Variance Table with Satterthwaite's method
+                                Sum Sq Mean Sq NumDF  DenDF  F value    Pr(>F)
+strategy                        457.72  457.72     1 2608.0 226.4777 < 2.2e-16
+generous_status_second           47.04   15.68     3 2608.1   7.7578 3.713e-05
+strategy:generous_status_second  11.20    3.73     3 2608.1   1.8467    0.1365
+                                   
+strategy                        ***
+generous_status_second          ***
+strategy:generous_status_second    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+$emmeans
+generous_status_second = higher:
+ strategy    emmean    SE   df lower.CL upper.CL t.ratio p.value
+ repeating     4.95 0.161 32.8     4.62     5.27  30.692  <.0001
+ alternating   5.75 0.161 32.7     5.42     6.08  35.692  <.0001
+
+generous_status_second = lower:
+ strategy    emmean    SE   df lower.CL upper.CL t.ratio p.value
+ repeating     4.97 0.161 32.7     4.64     5.29  30.823  <.0001
+ alternating   5.58 0.161 32.8     5.25     5.91  34.602  <.0001
+
+generous_status_second = equal:
+ strategy    emmean    SE   df lower.CL upper.CL t.ratio p.value
+ repeating     5.13 0.161 32.7     4.80     5.45  31.815  <.0001
+ alternating   6.09 0.161 32.8     5.76     6.41  37.768  <.0001
+
+generous_status_second = just_met:
+ strategy    emmean    SE   df lower.CL upper.CL t.ratio p.value
+ repeating     5.07 0.161 32.9     4.74     5.40  31.411  <.0001
+ alternating   5.92 0.161 32.8     5.60     6.25  36.756  <.0001
+
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+
+$contrasts
+generous_status_second = higher:
+ contrast                estimate    SE   df lower.CL upper.CL t.ratio p.value
+ repeating - alternating   -0.804 0.107 2608   -1.014   -0.594  -7.495  <.0001
+
+generous_status_second = lower:
+ contrast                estimate    SE   df lower.CL upper.CL t.ratio p.value
+ repeating - alternating   -0.613 0.107 2608   -0.823   -0.402  -5.706  <.0001
+
+generous_status_second = equal:
+ contrast                estimate    SE   df lower.CL upper.CL t.ratio p.value
+ repeating - alternating   -0.961 0.107 2608   -1.172   -0.751  -8.961  <.0001
+
+generous_status_second = just_met:
+ contrast                estimate    SE   df lower.CL upper.CL t.ratio p.value
+ repeating - alternating   -0.855 0.108 2609   -1.066   -0.643  -7.936  <.0001
+
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+
+ strategy_pairwise       generous_status_second_pairwise estimate    SE   df
+ repeating - alternating higher - lower                   -0.1913 0.152 2608
+ repeating - alternating higher - equal                    0.1572 0.152 2608
+ repeating - alternating higher - just_met                 0.0506 0.152 2609
+ repeating - alternating lower - equal                     0.3486 0.152 2608
+ repeating - alternating lower - just_met                  0.2419 0.152 2609
+ repeating - alternating equal - just_met                 -0.1066 0.152 2608
+ lower.CL upper.CL t.ratio p.value
+  -0.4890    0.106  -1.261  0.2075
+  -0.1402    0.455   1.037  0.3000
+  -0.2475    0.349   0.333  0.7393
+   0.0510    0.646   2.297  0.0217
+  -0.0562    0.540   1.591  0.1117
+  -0.4047    0.191  -0.701  0.4831
+
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+$emmeans
+ asymmetric strategy    emmean    SE   df lower.CL upper.CL t.ratio p.value
+ NA         repeating     5.07 0.161 32.9     4.74     5.40  31.411  <.0001
+ no         repeating     5.13 0.161 32.7     4.80     5.45  31.815  <.0001
+ yes        repeating     4.96 0.152 25.9     4.64     5.27  32.618  <.0001
+ NA         alternating   5.92 0.161 32.8     5.60     6.25  36.756  <.0001
+ no         alternating   6.09 0.161 32.8     5.76     6.41  37.768  <.0001
+ yes        alternating   5.66 0.152 25.9     5.35     5.98  37.275  <.0001
+
+Results are averaged over the levels of: generous_status_second 
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+
+$contrasts
+ contrast                         estimate     SE   df lower.CL upper.CL
+ NA repeating - no repeating       -0.0564 0.1076 2609  -0.3633    0.250
+ NA repeating - yes repeating       0.1131 0.0933 2609  -0.1531    0.379
+ NA repeating - NA alternating     -0.8546 0.1077 2609  -1.1617   -0.547
+ NA repeating - no alternating     -1.0176 0.1077 2609  -1.3247   -0.710
+ NA repeating - yes alternating    -0.5952 0.0934 2609  -0.8615   -0.329
+ no repeating - yes repeating       0.1695 0.0928 2608  -0.0953    0.434
+ no repeating - NA alternating     -0.7982 0.1073 2608  -1.1041   -0.492
+ no repeating - no alternating     -0.9612 0.1073 2608  -1.2671   -0.655
+ no repeating - yes alternating    -0.5388 0.0929 2608  -0.8037   -0.274
+ yes repeating - NA alternating    -0.9677 0.0929 2608  -1.2328   -0.703
+ yes repeating - no alternating    -1.1307 0.0930 2608  -1.3958   -0.866
+ yes repeating - yes alternating   -0.7083 0.0759 2608  -0.9247   -0.492
+ NA alternating - no alternating   -0.1630 0.1074 2608  -0.4692    0.143
+ NA alternating - yes alternating   0.2594 0.0930 2608  -0.0058    0.525
+ no alternating - yes alternating   0.4224 0.0930 2608   0.1572    0.688
+ t.ratio p.value
+  -0.524  0.9952
+   1.212  0.8312
+  -7.936  <.0001
+  -9.449  <.0001
+  -6.375  <.0001
+   1.826  0.4493
+  -7.441  <.0001
+  -8.961  <.0001
+  -5.801  <.0001
+ -10.411  <.0001
+ -12.164  <.0001
+  -9.334  <.0001
+  -1.518  0.6526
+   2.789  0.0594
+   4.543  0.0001
+
+Results are averaged over the levels of: generous_status_second 
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+Conf-level adjustment: tukey method for comparing a family of 6 estimates 
+P value adjustment: tukey method for comparing a family of 6 estimates 
+
+ asymmetric_pairwise strategy_pairwise       estimate    SE   df lower.CL
+ NA - no             repeating - alternating    0.107 0.152 2608   -0.191
+ NA - yes            repeating - alternating   -0.146 0.132 2609   -0.405
+ no - yes            repeating - alternating   -0.253 0.131 2608   -0.511
+ upper.CL t.ratio p.value
+  0.40470   0.701  0.4831
+  0.11207  -1.110  0.2670
+  0.00472  -1.925  0.0543
+
+Results are averaged over the levels of: generous_status_second 
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [
+lmerModLmerTest]
+Formula: 
+likert_rating ~ strategy * generous_status_second + (1 | subject_id) +  
+    (1 | story)
+   Data: d %>% filter(response == "satisfied", generous_status_second !=  
+    "just_met")
+
+REML criterion at convergence: 7811.5
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-3.6611 -0.4639  0.1717  0.6457  2.8538 
+
+Random effects:
+ Groups     Name        Variance Std.Dev.
+ subject_id (Intercept) 0.6160   0.7849  
+ story      (Intercept) 0.2288   0.4784  
+ Residual               2.0349   1.4265  
+Number of obs: 2108, groups:  subject_id, 176; story, 16
+
+Fixed effects:
+                                    Estimate Std. Error         df t value
+(Intercept)                        5.409e+00  1.370e-01  2.242e+01  39.482
+strategy1                         -3.956e-01  3.109e-02  1.912e+03 -12.726
+generous_status_second1           -6.132e-02  4.396e-02  1.912e+03  -1.395
+generous_status_second2           -1.364e-01  4.398e-02  1.912e+03  -3.102
+strategy1:generous_status_second1 -5.667e-03  4.395e-02  1.912e+03  -0.129
+strategy1:generous_status_second2  8.996e-02  4.398e-02  1.912e+03   2.046
+                                  Pr(>|t|)    
+(Intercept)                        < 2e-16 ***
+strategy1                          < 2e-16 ***
+generous_status_second1            0.16317    
+generous_status_second2            0.00195 ** 
+strategy1:generous_status_second1  0.89743    
+strategy1:generous_status_second2  0.04093 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) strtg1 gnr__1 gnr__2 s1:__1
+strategy1    0.000                            
+gnrs_stts_1  0.000  0.002                     
+gnrs_stts_2  0.000 -0.001 -0.500              
+strtgy1:__1  0.000  0.000  0.000  0.000       
+strtgy1:__2  0.000  0.001  0.000 -0.002 -0.500
+Type III Analysis of Variance Table with Satterthwaite's method
+                                Sum Sq Mean Sq NumDF  DenDF  F value    Pr(>F)
+strategy                        329.55  329.55     1 1912.1 161.9450 < 2.2e-16
+generous_status_second           43.14   21.57     2 1912.2  10.5996 2.642e-05
+strategy:generous_status_second  10.69    5.34     2 1912.0   2.6262   0.07261
+                                   
+strategy                        ***
+generous_status_second          ***
+strategy:generous_status_second .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+$emmeans
+generous_status_second = higher:
+ strategy    emmean    SE   df lower.CL upper.CL t.ratio p.value
+ repeating     4.95 0.154 35.5     4.63     5.26  32.195  <.0001
+ alternating   5.75 0.154 35.4     5.44     6.06  37.431  <.0001
+
+generous_status_second = lower:
+ strategy    emmean    SE   df lower.CL upper.CL t.ratio p.value
+ repeating     4.97 0.154 35.4     4.66     5.28  32.339  <.0001
+ alternating   5.58 0.154 35.5     5.27     5.89  36.291  <.0001
+
+generous_status_second = equal:
+ strategy    emmean    SE   df lower.CL upper.CL t.ratio p.value
+ repeating     5.13 0.154 35.4     4.82     5.44  33.382  <.0001
+ alternating   6.09 0.154 35.5     5.77     6.40  39.615  <.0001
+
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+
+$contrasts
+generous_status_second = higher:
+ contrast                estimate    SE   df lower.CL upper.CL t.ratio p.value
+ repeating - alternating   -0.803 0.108 1912   -1.014   -0.591  -7.455  <.0001
+
+generous_status_second = lower:
+ contrast                estimate    SE   df lower.CL upper.CL t.ratio p.value
+ repeating - alternating   -0.611 0.108 1913   -0.823   -0.400  -5.673  <.0001
+
+generous_status_second = equal:
+ contrast                estimate    SE   df lower.CL upper.CL t.ratio p.value
+ repeating - alternating   -0.960 0.108 1912   -1.171   -0.749  -8.917  <.0001
+
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+
+ strategy_pairwise       generous_status_second_pairwise estimate    SE   df
+ repeating - alternating higher - lower                    -0.191 0.152 1912
+ repeating - alternating higher - equal                     0.157 0.152 1912
+ repeating - alternating lower - equal                      0.349 0.152 1912
+ lower.CL upper.CL t.ratio p.value
+  -0.4900    0.107  -1.256  0.2094
+  -0.1413    0.456   1.033  0.3017
+   0.0498    0.647   2.288  0.0222
+
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+$emmeans
+ asymmetric strategy    emmean    SE   df lower.CL upper.CL t.ratio p.value
+ no         repeating     5.13 0.154 35.4     4.82     5.44  33.382  <.0001
+ yes        repeating     4.96 0.144 27.3     4.66     5.25  34.452  <.0001
+ no         alternating   6.09 0.154 35.5     5.77     6.40  39.615  <.0001
+ yes        alternating   5.66 0.144 27.3     5.37     5.96  39.360  <.0001
+
+Results are averaged over the levels of: generous_status_second 
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+
+$contrasts
+ contrast                         estimate     SE   df lower.CL upper.CL
+ no repeating - yes repeating        0.170 0.0932 1912  -0.0694    0.410
+ no repeating - no alternating      -0.960 0.1076 1912  -1.2366   -0.683
+ no repeating - yes alternating     -0.537 0.0932 1912  -0.7765   -0.297
+ yes repeating - no alternating     -1.130 0.0933 1913  -1.3699   -0.890
+ yes repeating - yes alternating    -0.707 0.0762 1912  -0.9028   -0.511
+ no alternating - yes alternating    0.423 0.0933 1913   0.1831    0.663
+ t.ratio p.value
+   1.826  0.2612
+  -8.917  <.0001
+  -5.759  <.0001
+ -12.112  <.0001
+  -9.283  <.0001
+   4.534  <.0001
+
+Results are averaged over the levels of: generous_status_second 
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+Conf-level adjustment: tukey method for comparing a family of 4 estimates 
+P value adjustment: tukey method for comparing a family of 4 estimates 
+
+ asymmetric_pairwise strategy_pairwise       estimate    SE   df lower.CL
+ no - yes            repeating - alternating   -0.253 0.132 1912   -0.511
+ upper.CL t.ratio p.value
+  0.00568  -1.918  0.0552
+
+Results are averaged over the levels of: generous_status_second 
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [
+lmerModLmerTest]
+Formula: 
+likert_rating ~ strategy * generous_status_second + (1 | subject_id) +  
+    (1 | story)
+   Data: d %>% filter(response == "annoyed")
+
+REML criterion at convergence: 8388.5
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-2.4283 -0.5671 -0.2098  0.2414  5.1161 
+
+Random effects:
+ Groups     Name        Variance Std.Dev.
+ subject_id (Intercept) 0.2597   0.5096  
+ story      (Intercept) 0.1270   0.3564  
+ Residual               1.0193   1.0096  
+Number of obs: 2808, groups:  subject_id, 176; story, 16
+
+Fixed effects:
+                                    Estimate Std. Error         df t value
+(Intercept)                        1.597e+00  9.887e-02  2.072e+01  16.152
+strategy1                          2.700e-01  1.906e-02  2.611e+03  14.163
+generous_status_second1            3.498e-02  3.303e-02  2.610e+03   1.059
+generous_status_second2            1.090e-01  3.304e-02  2.611e+03   3.299
+generous_status_second3           -9.727e-02  3.298e-02  2.610e+03  -2.949
+strategy1:generous_status_second1  2.516e-02  3.303e-02  2.611e+03   0.762
+strategy1:generous_status_second2 -1.458e-03  3.303e-02  2.610e+03  -0.044
+strategy1:generous_status_second3 -7.051e-03  3.298e-02  2.610e+03  -0.214
+                                  Pr(>|t|)    
+(Intercept)                       3.25e-13 ***
+strategy1                          < 2e-16 ***
+generous_status_second1           0.289703    
+generous_status_second2           0.000982 ***
+generous_status_second3           0.003215 ** 
+strategy1:generous_status_second1 0.446278    
+strategy1:generous_status_second2 0.964794    
+strategy1:generous_status_second3 0.830716    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) strtg1 gnr__1 gnr__2 gnr__3 s1:__1 s1:__2
+strategy1    0.001                                          
+gnrs_stts_1  0.000  0.001                                   
+gnrs_stts_2  0.000  0.001 -0.334                            
+gnrs_stts_3  0.000 -0.002 -0.333 -0.333                     
+strtgy1:__1  0.000  0.001  0.004 -0.002  0.000              
+strtgy1:__2  0.000  0.001 -0.002  0.004  0.000 -0.334       
+strtgy1:__3  0.000 -0.002  0.000  0.000  0.001 -0.333 -0.333
+Type III Analysis of Variance Table with Satterthwaite's method
+                                 Sum Sq Mean Sq NumDF  DenDF  F value    Pr(>F)
+strategy                        204.476 204.476     1 2610.6 200.5971 < 2.2e-16
+generous_status_second           17.361   5.787     3 2610.5   5.6773 0.0007135
+strategy:generous_status_second   0.674   0.225     3 2610.5   0.2205 0.8822193
+                                   
+strategy                        ***
+generous_status_second          ***
+strategy:generous_status_second    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+$emmeans
+generous_status_second = higher:
+ strategy    emmean    SE   df lower.CL upper.CL t.ratio p.value
+ repeating     1.93 0.111 33.0     1.70     2.15  17.350  <.0001
+ alternating   1.34 0.111 32.8     1.11     1.56  12.048  <.0001
+
+generous_status_second = lower:
+ strategy    emmean    SE   df lower.CL upper.CL t.ratio p.value
+ repeating     1.97 0.111 33.0     1.75     2.20  17.777  <.0001
+ alternating   1.44 0.111 32.9     1.21     1.66  12.955  <.0001
+
+generous_status_second = equal:
+ strategy    emmean    SE   df lower.CL upper.CL t.ratio p.value
+ repeating     1.76 0.111 32.8     1.54     1.99  15.887  <.0001
+ alternating   1.24 0.111 32.9     1.01     1.46  11.147  <.0001
+
+generous_status_second = just_met:
+ strategy    emmean    SE   df lower.CL upper.CL t.ratio p.value
+ repeating     1.80 0.111 32.9     1.58     2.03  16.244  <.0001
+ alternating   1.30 0.111 32.9     1.07     1.52  11.689  <.0001
+
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+
+$contrasts
+generous_status_second = higher:
+ contrast                estimate     SE   df lower.CL upper.CL t.ratio p.value
+ repeating - alternating    0.590 0.0763 2610    0.441    0.740   7.736  <.0001
+
+generous_status_second = lower:
+ contrast                estimate     SE   df lower.CL upper.CL t.ratio p.value
+ repeating - alternating    0.537 0.0763 2610    0.387    0.687   7.038  <.0001
+
+generous_status_second = equal:
+ contrast                estimate     SE   df lower.CL upper.CL t.ratio p.value
+ repeating - alternating    0.526 0.0761 2610    0.377    0.675   6.908  <.0001
+
+generous_status_second = just_met:
+ contrast                estimate     SE   df lower.CL upper.CL t.ratio p.value
+ repeating - alternating    0.507 0.0763 2610    0.357    0.656   6.644  <.0001
+
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+
+ strategy_pairwise       generous_status_second_pairwise estimate    SE   df
+ repeating - alternating higher - lower                    0.0532 0.108 2610
+ repeating - alternating higher - equal                    0.0644 0.108 2610
+ repeating - alternating higher - just_met                 0.0836 0.108 2611
+ repeating - alternating lower - equal                     0.0112 0.108 2610
+ repeating - alternating lower - just_met                  0.0304 0.108 2610
+ repeating - alternating equal - just_met                  0.0192 0.108 2610
+ lower.CL upper.CL t.ratio p.value
+   -0.158    0.265   0.493  0.6218
+   -0.147    0.276   0.598  0.5500
+   -0.128    0.295   0.775  0.4383
+   -0.200    0.223   0.104  0.9174
+   -0.181    0.242   0.282  0.7782
+   -0.192    0.230   0.178  0.8586
+
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+$emmeans
+ asymmetric strategy    emmean    SE   df lower.CL upper.CL t.ratio p.value
+ NA         repeating     1.80 0.111 32.9     1.58     2.03  16.244  <.0001
+ no         repeating     1.76 0.111 32.8     1.54     1.99  15.887  <.0001
+ yes        repeating     1.95 0.104 25.6     1.74     2.17  18.707  <.0001
+ NA         alternating   1.30 0.111 32.9     1.07     1.52  11.689  <.0001
+ no         alternating   1.24 0.111 32.9     1.01     1.46  11.147  <.0001
+ yes        alternating   1.39 0.104 25.6     1.17     1.60  13.310  <.0001
+
+Results are averaged over the levels of: generous_status_second 
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+
+$contrasts
+ contrast                         estimate     SE   df lower.CL upper.CL
+ NA repeating - no repeating        0.0410 0.0762 2610   -0.176 0.258393
+ NA repeating - yes repeating      -0.1472 0.0662 2611   -0.336 0.041486
+ NA repeating - NA alternating      0.5066 0.0763 2610    0.289 0.724105
+ NA repeating - no alternating      0.5668 0.0762 2610    0.349 0.784262
+ NA repeating - yes alternating     0.4164 0.0661 2610    0.228 0.604868
+ no repeating - yes repeating      -0.1882 0.0660 2610   -0.376 0.000105
+ no repeating - NA alternating      0.4657 0.0761 2610    0.249 0.682791
+ no repeating - no alternating      0.5259 0.0761 2610    0.309 0.742934
+ no repeating - yes alternating     0.3755 0.0659 2610    0.187 0.563510
+ yes repeating - NA alternating     0.6539 0.0660 2610    0.466 0.842166
+ yes repeating - no alternating     0.7140 0.0660 2610    0.526 0.902341
+ yes repeating - yes alternating    0.5637 0.0540 2611    0.410 0.717533
+ NA alternating - no alternating    0.0602 0.0761 2610   -0.157 0.277323
+ NA alternating - yes alternating  -0.0902 0.0659 2610   -0.278 0.097854
+ no alternating - yes alternating  -0.1504 0.0659 2610   -0.338 0.037669
+ t.ratio p.value
+   0.537  0.9946
+  -2.225  0.2266
+   6.644  <.0001
+   7.434  <.0001
+   6.303  <.0001
+  -2.850  0.0502
+   6.117  <.0001
+   6.908  <.0001
+   5.695  <.0001
+   9.902  <.0001
+  10.813  <.0001
+  10.446  <.0001
+   0.790  0.9693
+  -1.368  0.7464
+  -2.281  0.2023
+
+Results are averaged over the levels of: generous_status_second 
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+Conf-level adjustment: tukey method for comparing a family of 6 estimates 
+P value adjustment: tukey method for comparing a family of 6 estimates 
+
+ asymmetric_pairwise strategy_pairwise       estimate     SE   df lower.CL
+ NA - no             repeating - alternating  -0.0192 0.1078 2610   -0.230
+ NA - yes            repeating - alternating  -0.0570 0.0934 2610   -0.240
+ no - yes            repeating - alternating  -0.0378 0.0933 2610   -0.221
+ upper.CL t.ratio p.value
+    0.192  -0.178  0.8586
+    0.126  -0.610  0.5417
+    0.145  -0.405  0.6854
+
+Results are averaged over the levels of: generous_status_second 
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [
+lmerModLmerTest]
+Formula: 
+likert_rating ~ strategy * generous_status_second + (1 | subject_id) +  
+    (1 | story)
+   Data: d %>% filter(response == "annoyed", generous_status_second !=  
+    "just_met")
+
+REML criterion at convergence: 6425.3
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-2.0366 -0.5719 -0.2106  0.2225  4.9232 
+
+Random effects:
+ Groups     Name        Variance Std.Dev.
+ subject_id (Intercept) 0.2639   0.5137  
+ story      (Intercept) 0.1230   0.3506  
+ Residual               1.0690   1.0339  
+Number of obs: 2106, groups:  subject_id, 176; story, 16
+
+Fixed effects:
+                                    Estimate Std. Error         df t value
+(Intercept)                          1.61279    0.09845   20.82459  16.382
+strategy1                            0.27526    0.02254 1910.61290  12.209
+generous_status_second1              0.01949    0.03189 1910.47750   0.611
+generous_status_second2              0.09370    0.03190 1910.66079   2.937
+strategy1:generous_status_second1    0.01947    0.03189 1910.36445   0.611
+strategy1:generous_status_second2   -0.00696    0.03189 1910.44615  -0.218
+                                  Pr(>|t|)    
+(Intercept)                       2.26e-13 ***
+strategy1                          < 2e-16 ***
+generous_status_second1            0.54123    
+generous_status_second2            0.00335 ** 
+strategy1:generous_status_second1  0.54149    
+strategy1:generous_status_second2  0.82728    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) strtg1 gnr__1 gnr__2 s1:__1
+strategy1    0.001                            
+gnrs_stts_1  0.000  0.001                     
+gnrs_stts_2  0.000  0.001 -0.501              
+strtgy1:__1  0.000  0.001  0.004 -0.003       
+strtgy1:__2  0.000  0.001 -0.003  0.004 -0.501
+Type III Analysis of Variance Table with Satterthwaite's method
+                                 Sum Sq Mean Sq NumDF  DenDF  F value    Pr(>F)
+strategy                        159.339 159.339     1 1910.6 149.0607 < 2.2e-16
+generous_status_second           15.419   7.710     2 1910.5   7.2123 0.0007577
+strategy:generous_status_second   0.410   0.205     2 1910.3   0.1916 0.8256370
+                                   
+strategy                        ***
+generous_status_second          ***
+strategy:generous_status_second    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+$emmeans
+generous_status_second = higher:
+ strategy    emmean    SE   df lower.CL upper.CL t.ratio p.value
+ repeating     1.93 0.111 33.3     1.70     2.15  17.410  <.0001
+ alternating   1.34 0.111 33.1     1.11     1.56  12.098  <.0001
+
+generous_status_second = lower:
+ strategy    emmean    SE   df lower.CL upper.CL t.ratio p.value
+ repeating     1.97 0.111 33.3     1.75     2.20  17.841  <.0001
+ alternating   1.44 0.111 33.1     1.21     1.66  13.008  <.0001
+
+generous_status_second = equal:
+ strategy    emmean    SE   df lower.CL upper.CL t.ratio p.value
+ repeating     1.76 0.111 33.1     1.54     1.99  15.941  <.0001
+ alternating   1.24 0.111 33.1     1.01     1.46  11.187  <.0001
+
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+
+$contrasts
+generous_status_second = higher:
+ contrast                estimate     SE   df lower.CL upper.CL t.ratio p.value
+ repeating - alternating    0.589 0.0782 1911    0.436    0.743   7.543  <.0001
+
+generous_status_second = lower:
+ contrast                estimate     SE   df lower.CL upper.CL t.ratio p.value
+ repeating - alternating    0.537 0.0782 1911    0.383    0.690   6.866  <.0001
+
+generous_status_second = equal:
+ contrast                estimate     SE   df lower.CL upper.CL t.ratio p.value
+ repeating - alternating    0.525 0.0780 1910    0.373    0.678   6.741  <.0001
+
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+
+ strategy_pairwise       generous_status_second_pairwise estimate    SE   df
+ repeating - alternating higher - lower                    0.0529 0.111 1911
+ repeating - alternating higher - equal                    0.0640 0.110 1910
+ repeating - alternating lower - equal                     0.0111 0.110 1910
+ lower.CL upper.CL t.ratio p.value
+   -0.164    0.270   0.478  0.6325
+   -0.152    0.280   0.580  0.5622
+   -0.205    0.228   0.101  0.9199
+
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+$emmeans
+ asymmetric strategy    emmean    SE   df lower.CL upper.CL t.ratio p.value
+ no         repeating     1.76 0.111 33.1     1.54     1.99  15.941  <.0001
+ yes        repeating     1.95 0.104 25.5     1.74     2.16  18.845  <.0001
+ no         alternating   1.24 0.111 33.1     1.01     1.46  11.187  <.0001
+ yes        alternating   1.39 0.103 25.4     1.17     1.60  13.415  <.0001
+
+Results are averaged over the levels of: generous_status_second 
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+
+$contrasts
+ contrast                         estimate     SE   df lower.CL upper.CL
+ no repeating - yes repeating       -0.189 0.0676 1910   -0.362  -0.0147
+ no repeating - no alternating       0.525 0.0780 1910    0.325   0.7259
+ no repeating - yes alternating      0.374 0.0675 1910    0.201   0.5481
+ yes repeating - no alternating      0.714 0.0676 1911    0.540   0.8880
+ yes repeating - yes alternating     0.563 0.0553 1911    0.421   0.7051
+ no alternating - yes alternating   -0.151 0.0675 1910   -0.325   0.0226
+ t.ratio p.value
+  -2.789  0.0274
+   6.741  <.0001
+   5.546  <.0001
+  10.557  <.0001
+  10.188  <.0001
+  -2.236  0.1139
+
+Results are averaged over the levels of: generous_status_second 
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+Conf-level adjustment: tukey method for comparing a family of 4 estimates 
+P value adjustment: tukey method for comparing a family of 4 estimates 
+
+ asymmetric_pairwise strategy_pairwise       estimate     SE   df lower.CL
+ no - yes            repeating - alternating  -0.0375 0.0955 1910   -0.225
+ upper.CL t.ratio p.value
+     0.15  -0.393  0.6945
+
+Results are averaged over the levels of: generous_status_second 
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 

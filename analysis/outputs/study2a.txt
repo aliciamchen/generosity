@@ -1,0 +1,391 @@
+[1] 59
+         gender  n
+1        female 27
+2          male 30
+3 nonconforming  2
+  mean_age   sd_age min_age max_age
+1 33.98305 12.58693      19      72
+[1] 56
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [
+lmerModLmerTest]
+Formula: likert_rating ~ 1 + social_interaction * relationship + (1 |  
+    story) + (1 | subject_id)
+   Data: d
+
+REML criterion at convergence: 10760.2
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-3.6147 -0.6916 -0.0741  0.5981  3.4495 
+
+Random effects:
+ Groups     Name        Variance Std.Dev.
+ subject_id (Intercept) 0.1211   0.3481  
+ story      (Intercept) 0.0000   0.0000  
+ Residual               2.0821   1.4430  
+Number of obs: 2982, groups:  subject_id, 56; story, 18
+
+Fixed effects:
+                                    Estimate Std. Error         df t value
+(Intercept)                          3.70514    0.05357   52.58955  69.160
+social_interaction1                 -0.07417    0.03737 2915.76079  -1.985
+social_interaction2                 -0.20156    0.03736 2915.74565  -5.395
+relationship1                       -0.17980    0.03739 2915.94348  -4.809
+relationship2                        0.80937    0.03735 2917.27428  21.670
+social_interaction1:relationship1    1.75706    0.05287 2923.88413  33.235
+social_interaction2:relationship1   -1.06101    0.05290 2917.81059 -20.058
+social_interaction1:relationship2   -1.20743    0.05286 2918.72558 -22.843
+social_interaction2:relationship2    1.71468    0.05280 2922.33809  32.477
+                                  Pr(>|t|)    
+(Intercept)                        < 2e-16 ***
+social_interaction1                 0.0473 *  
+social_interaction2               7.41e-08 ***
+relationship1                     1.60e-06 ***
+relationship2                      < 2e-16 ***
+social_interaction1:relationship1  < 2e-16 ***
+social_interaction2:relationship1  < 2e-16 ***
+social_interaction1:relationship2  < 2e-16 ***
+social_interaction2:relationship2  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) scl_n1 scl_n2 rltns1 rltns2 sc_1:1 sc_2:1 sc_1:2
+scl_ntrctn1  0.000                                                 
+scl_ntrctn2  0.000 -0.500                                          
+relatinshp1  0.001 -0.005  0.001                                   
+relatinshp2 -0.002  0.002 -0.003 -0.500                            
+scl_ntrc1:1 -0.005 -0.002  0.002 -0.004  0.003                     
+scl_ntrc2:1  0.002  0.002  0.002  0.000  0.001 -0.499              
+scl_ntrc1:2  0.002 -0.001  0.002  0.002  0.001 -0.499  0.247       
+scl_ntrc2:2 -0.004  0.002 -0.005  0.001 -0.002  0.249 -0.499 -0.500
+optimizer (nloptwrap) convergence code: 0 (OK)
+boundary (singular) fit: see help('isSingular')
+
+Type III Analysis of Variance Table with Satterthwaite's method
+                                Sum Sq Mean Sq NumDF  DenDF F value    Pr(>F)
+social_interaction               121.4   60.69     2 2915.8  29.146  2.93e-13
+relationship                    1078.3  539.13     2 2916.6 258.934 < 2.2e-16
+social_interaction:relationship 3824.6  956.16     4 2919.1 459.224 < 2.2e-16
+                                   
+social_interaction              ***
+relationship                    ***
+social_interaction:relationship ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+$emmeans
+social_interaction = repeating:
+ relationship emmean     SE  df lower.CL upper.CL t.ratio p.value
+ asymmetric     5.21 0.0917 376     5.03     5.39  56.820  <.0001
+ symmetric      3.23 0.0920 380     3.05     3.41  35.126  <.0001
+ none           2.45 0.0923 383     2.27     2.63  26.569  <.0001
+
+social_interaction = alternating:
+ relationship emmean     SE  df lower.CL upper.CL t.ratio p.value
+ asymmetric     2.26 0.0922 381     2.08     2.44  24.548  <.0001
+ symmetric      6.03 0.0916 374     5.85     6.21  65.833  <.0001
+ none           2.22 0.0922 381     2.04     2.40  24.088  <.0001
+
+social_interaction = no_interaction:
+ relationship emmean     SE  df lower.CL upper.CL t.ratio p.value
+ asymmetric     3.11 0.0924 385     2.92     3.29  33.609  <.0001
+ symmetric      4.28 0.0920 380     4.10     4.46  46.548  <.0001
+ none           4.55 0.0917 376     4.37     4.73  49.685  <.0001
+
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+
+$contrasts
+social_interaction = repeating:
+ contrast               estimate    SE   df lower.CL upper.CL t.ratio p.value
+ symmetric - asymmetric  -1.9753 0.112 2904 -2.23784   -1.713 -17.644  <.0001
+ none - asymmetric       -2.7565 0.112 2905 -3.01944   -2.493 -24.579  <.0001
+ none - symmetric        -0.7811 0.112 2901 -1.04456   -0.518  -6.953  <.0001
+
+social_interaction = alternating:
+ contrast               estimate    SE   df lower.CL upper.CL t.ratio p.value
+ symmetric - asymmetric   3.7649 0.112 2907  3.50222    4.028  33.613  <.0001
+ none - asymmetric       -0.0424 0.112 2901 -0.30584    0.221  -0.378  0.9244
+ none - symmetric        -3.8073 0.112 2907 -4.06993   -3.545 -33.992  <.0001
+
+social_interaction = no_interaction:
+ contrast               estimate    SE   df lower.CL upper.CL t.ratio p.value
+ symmetric - asymmetric   1.1780 0.112 2902  0.91431    1.442  10.477  <.0001
+ none - asymmetric        1.4496 0.112 2904  1.18647    1.713  12.918  <.0001
+ none - symmetric         0.2716 0.112 2902  0.00918    0.534   2.427  0.0405
+
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+Conf-level adjustment: tukey method for comparing a family of 3 estimates 
+P value adjustment: tukey method for comparing a family of 3 estimates 
+
+ relationship_pairwise  social_interaction_pairwise  estimate    SE   df
+ asymmetric - symmetric repeating - alternating          5.74 0.158 2909
+ asymmetric - none      repeating - alternating          2.71 0.159 2903
+ symmetric - none       repeating - alternating         -3.03 0.159 2903
+ asymmetric - symmetric repeating - no_interaction       3.15 0.159 2904
+ asymmetric - none      repeating - no_interaction       4.21 0.159 2908
+ symmetric - none       repeating - no_interaction       1.05 0.159 2902
+ asymmetric - symmetric alternating - no_interaction    -2.59 0.159 2903
+ asymmetric - none      alternating - no_interaction     1.49 0.159 2903
+ symmetric - none       alternating - no_interaction     4.08 0.158 2906
+ lower.CL upper.CL t.ratio p.value
+    5.430     6.05  36.228  <.0001
+    2.403     3.03  17.098  <.0001
+   -3.337    -2.72 -19.079  <.0001
+    2.842     3.46  19.870  <.0001
+    3.895     4.52  26.501  <.0001
+    0.742     1.36   6.639  <.0001
+   -2.898    -2.28 -16.305  <.0001
+    1.181     1.80   9.397  <.0001
+    3.768     4.39  25.754  <.0001
+
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [
+lmerModLmerTest]
+Formula: likert_rating ~ social_interaction * relationship + (1 | story) +  
+    (1 | subject_id)
+   Data: d_filtered
+
+REML criterion at convergence: 4480.5
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-3.8741 -0.7830 -0.1519  0.6167  3.6741 
+
+Random effects:
+ Groups     Name        Variance Std.Dev.
+ subject_id (Intercept) 0.004152 0.06444 
+ story      (Intercept) 0.000000 0.00000 
+ Residual               1.676975 1.29498 
+Number of obs: 1330, groups:  subject_id, 56; story, 18
+
+Fixed effects:
+                                    Estimate Std. Error         df t value
+(Intercept)                          4.17737    0.03654   52.03035 114.313
+social_interaction1                  0.03794    0.03551 1268.53287   1.069
+relationship1                       -0.44804    0.03551 1268.86819 -12.617
+social_interaction1:relationship1    1.43937    0.03551 1276.67989  40.531
+                                  Pr(>|t|)    
+(Intercept)                         <2e-16 ***
+social_interaction1                  0.285    
+relationship1                       <2e-16 ***
+social_interaction1:relationship1   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) scl_n1 rltns1
+scl_ntrctn1  0.000              
+relatinshp1  0.002 -0.006       
+scl_ntrc1:1 -0.006  0.002  0.000
+optimizer (nloptwrap) convergence code: 0 (OK)
+boundary (singular) fit: see help('isSingular')
+
+$emmeans
+social_interaction = repeating:
+ relationship emmean     SE  df lower.CL upper.CL t.ratio p.value
+ asymmetric     5.21 0.0714 194     5.07     5.35  72.891  <.0001
+ symmetric      3.22 0.0718 197     3.08     3.37  44.932  <.0001
+
+social_interaction = alternating:
+ relationship emmean     SE  df lower.CL upper.CL t.ratio p.value
+ asymmetric     2.25 0.0719 197     2.11     2.39  31.335  <.0001
+ symmetric      6.03 0.0713 192     5.89     6.17  84.495  <.0001
+
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+
+$contrasts
+social_interaction = repeating:
+ contrast               estimate  SE   df lower.CL upper.CL t.ratio p.value
+ symmetric - asymmetric    -1.98 0.1 1258    -2.18    -1.79 -19.739  <.0001
+
+social_interaction = alternating:
+ contrast               estimate  SE   df lower.CL upper.CL t.ratio p.value
+ symmetric - asymmetric     3.77 0.1 1261     3.58     3.97  37.579  <.0001
+
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+
+ relationship_pairwise  social_interaction_pairwise estimate    SE   df
+ asymmetric - symmetric repeating - alternating         5.76 0.142 1263
+ lower.CL upper.CL t.ratio p.value
+     5.48     6.04  40.528  <.0001
+
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [
+lmerModLmerTest]
+Formula: normalized_likert_rating ~ 1 + social_interaction * relationship +  
+    (1 | story) + (1 | subject_id)
+   Data: d
+
+REML criterion at convergence: -3515.9
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-3.7326 -0.6820 -0.0397  0.5800  4.3059 
+
+Random effects:
+ Groups     Name        Variance Std.Dev.
+ subject_id (Intercept) 0.003337 0.05777 
+ story      (Intercept) 0.000000 0.00000 
+ Residual               0.016778 0.12953 
+Number of obs: 2982, groups:  subject_id, 56; story, 18
+
+Fixed effects:
+                                    Estimate Std. Error         df t value
+(Intercept)                        3.421e-01  8.082e-03  3.923e+01  42.331
+social_interaction1                7.323e-05  3.355e-03  2.896e+03   0.022
+social_interaction2               -8.359e-04  3.354e-03  2.896e+03  -0.249
+relationship1                     -1.289e-02  3.356e-03  2.896e+03  -3.839
+relationship2                      8.329e-02  3.353e-03  2.897e+03  24.840
+social_interaction1:relationship1  1.674e-01  4.748e-03  2.902e+03  35.246
+social_interaction2:relationship1 -1.066e-01  4.749e-03  2.898e+03 -22.439
+social_interaction1:relationship2 -1.160e-01  4.746e-03  2.898e+03 -24.433
+social_interaction2:relationship2  1.718e-01  4.741e-03  2.901e+03  36.235
+                                  Pr(>|t|)    
+(Intercept)                        < 2e-16 ***
+social_interaction1               0.982586    
+social_interaction2               0.803200    
+relationship1                     0.000126 ***
+relationship2                      < 2e-16 ***
+social_interaction1:relationship1  < 2e-16 ***
+social_interaction2:relationship1  < 2e-16 ***
+social_interaction1:relationship2  < 2e-16 ***
+social_interaction2:relationship2  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) scl_n1 scl_n2 rltns1 rltns2 sc_1:1 sc_2:1 sc_1:2
+scl_ntrctn1  0.000                                                 
+scl_ntrctn2  0.000 -0.500                                          
+relatinshp1  0.001 -0.005  0.001                                   
+relatinshp2 -0.002  0.002 -0.003 -0.500                            
+scl_ntrc1:1 -0.004 -0.002  0.002 -0.004  0.004                     
+scl_ntrc2:1  0.002  0.002  0.002  0.001  0.001 -0.499              
+scl_ntrc1:2  0.002 -0.001  0.002  0.002  0.001 -0.499  0.248       
+scl_ntrc2:2 -0.003  0.002 -0.005  0.001 -0.002  0.250 -0.499 -0.500
+optimizer (nloptwrap) convergence code: 0 (OK)
+boundary (singular) fit: see help('isSingular')
+
+Type III Analysis of Variance Table with Satterthwaite's method
+                                Sum Sq Mean Sq NumDF  DenDF  F value Pr(>F)    
+social_interaction               0.001  0.0006     2 2896.1   0.0381 0.9626    
+relationship                    11.995  5.9976     2 2896.7 357.4774 <2e-16 ***
+social_interaction:relationship 36.310  9.0776     4 2898.7 541.0509 <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+$emmeans
+social_interaction = repeating:
+ relationship emmean     SE  df lower.CL upper.CL t.ratio p.value
+ asymmetric    0.497 0.0105 151    0.476    0.517  47.385  <.0001
+ symmetric     0.310 0.0105 152    0.289    0.330  29.450  <.0001
+ none          0.220 0.0105 153    0.200    0.241  20.933  <.0001
+
+social_interaction = alternating:
+ relationship emmean     SE  df lower.CL upper.CL t.ratio p.value
+ asymmetric    0.222 0.0105 153    0.201    0.243  21.085  <.0001
+ symmetric     0.596 0.0105 150    0.576    0.617  56.939  <.0001
+ none          0.206 0.0105 153    0.185    0.226  19.545  <.0001
+
+social_interaction = no_interaction:
+ relationship emmean     SE  df lower.CL upper.CL t.ratio p.value
+ asymmetric    0.269 0.0105 154    0.248    0.290  25.551  <.0001
+ symmetric     0.370 0.0105 152    0.350    0.391  35.243  <.0001
+ none          0.389 0.0105 151    0.368    0.410  37.123  <.0001
+
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+
+$contrasts
+social_interaction = repeating:
+ contrast               estimate     SE   df lower.CL upper.CL t.ratio p.value
+ symmetric - asymmetric  -0.1871 0.0101 2903 -0.21071 -0.16357 -18.618  <.0001
+ none - asymmetric       -0.2763 0.0101 2904 -0.29990 -0.25267 -27.437  <.0001
+ none - symmetric        -0.0891 0.0101 2901 -0.11279 -0.06550  -8.840  <.0001
+
+social_interaction = alternating:
+ contrast               estimate     SE   df lower.CL upper.CL t.ratio p.value
+ symmetric - asymmetric   0.3745 0.0101 2905  0.35096  0.39813  37.238  <.0001
+ none - asymmetric       -0.0162 0.0101 2901 -0.03984  0.00745  -1.606  0.2431
+ none - symmetric        -0.3907 0.0101 2905 -0.41433 -0.36716 -38.848  <.0001
+
+social_interaction = no_interaction:
+ contrast               estimate     SE   df lower.CL upper.CL t.ratio p.value
+ symmetric - asymmetric   0.1011 0.0101 2902  0.07745  0.12478  10.018  <.0001
+ none - asymmetric        0.1199 0.0101 2903  0.09630  0.14355  11.904  <.0001
+ none - symmetric         0.0188 0.0100 2902 -0.00475  0.04237   1.872  0.1470
+
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+Conf-level adjustment: tukey method for comparing a family of 3 estimates 
+P value adjustment: tukey method for comparing a family of 3 estimates 
+
+ relationship_pairwise  social_interaction_pairwise  estimate     SE   df
+ asymmetric - symmetric repeating - alternating         0.562 0.0142 2906
+ asymmetric - none      repeating - alternating         0.260 0.0143 2902
+ symmetric - none       repeating - alternating        -0.302 0.0142 2902
+ asymmetric - symmetric repeating - no_interaction      0.288 0.0142 2903
+ asymmetric - none      repeating - no_interaction      0.396 0.0143 2905
+ symmetric - none       repeating - no_interaction      0.108 0.0142 2902
+ asymmetric - symmetric alternating - no_interaction   -0.273 0.0142 2902
+ asymmetric - none      alternating - no_interaction    0.136 0.0143 2902
+ symmetric - none       alternating - no_interaction    0.410 0.0142 2904
+ lower.CL upper.CL t.ratio p.value
+    0.534    0.590  39.469  <.0001
+    0.232    0.288  18.251  <.0001
+   -0.330   -0.274 -21.180  <.0001
+    0.260    0.316  20.231  <.0001
+    0.368    0.424  27.797  <.0001
+    0.080    0.136   7.583  <.0001
+   -0.301   -0.246 -19.197  <.0001
+    0.108    0.164   9.550  <.0001
+    0.382    0.437  28.797  <.0001
+
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+Linear mixed model fit by REML. t-tests use Satterthwaite's method [
+lmerModLmerTest]
+Formula: likert_rating ~ social_interaction * relationship + (1 | story) +  
+    (1 | subject_id)
+   Data: d_filtered
+
+REML criterion at convergence: 4480.5
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-3.8741 -0.7830 -0.1519  0.6167  3.6741 
+
+Random effects:
+ Groups     Name        Variance Std.Dev.
+ subject_id (Intercept) 0.004152 0.06444 
+ story      (Intercept) 0.000000 0.00000 
+ Residual               1.676975 1.29498 
+Number of obs: 1330, groups:  subject_id, 56; story, 18
+
+Fixed effects:
+                                    Estimate Std. Error         df t value
+(Intercept)                          4.17737    0.03654   52.03035 114.313
+social_interaction1                  0.03794    0.03551 1268.53287   1.069
+relationship1                       -0.44804    0.03551 1268.86819 -12.617
+social_interaction1:relationship1    1.43937    0.03551 1276.67989  40.531
+                                  Pr(>|t|)    
+(Intercept)                         <2e-16 ***
+social_interaction1                  0.285    
+relationship1                       <2e-16 ***
+social_interaction1:relationship1   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) scl_n1 rltns1
+scl_ntrctn1  0.000              
+relatinshp1  0.002 -0.006       
+scl_ntrc1:1 -0.006  0.002  0.000
+optimizer (nloptwrap) convergence code: 0 (OK)
+boundary (singular) fit: see help('isSingular')
+
