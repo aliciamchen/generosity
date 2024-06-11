@@ -114,7 +114,7 @@ for (strat in strategies) {
 
   print(f)
 
-  ggsave(here(glue("figures/3b_{strat}.pdf")),
+  ggsave(here(glue("figures/outputs/3b_{strat}.pdf")),
          width = 4.3,
          height = 7.5)
 
