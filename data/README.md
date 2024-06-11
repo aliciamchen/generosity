@@ -40,6 +40,8 @@ The below entries correspond to the non-processed wide-form data (tidy data with
     - `understood`: did the participant indicate that they understood the instructions?
     - `pass_attention`: did the participant pass the attention check?
 
+`1c_implicit.csv` contains computed mean implicit coordination expectations for each scenario.
+
 ### Study 2
 
 - `2a_data.csv` collected Jan 30, 2023 by Alicia Chen
