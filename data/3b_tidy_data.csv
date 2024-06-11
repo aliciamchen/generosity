@@ -1,4 +1,4 @@
-"subject_id","story","likert_rating","strategy","altruistic_status_second"
+"subject_id","story","likert_rating","strategy","generous_status_second"
 "75008e4129a37cf9e874dbf7c07f72f8","feedback",5,"repeating","higher"
 "75008e4129a37cf9e874dbf7c07f72f8","groceries",7,"alternating","higher"
 "75008e4129a37cf9e874dbf7c07f72f8","gifts",1,"repeating","lower"

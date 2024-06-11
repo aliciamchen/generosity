@@ -1,4 +1,4 @@
-"subject_id","story","likert_rating","strategy","altruistic_status_second"
+"subject_id","story","likert_rating","strategy","generous_status_second"
 "1a641fd69aa34d39a35388d23717b83d","meeting prep",5,"alternating","lower"
 "1a641fd69aa34d39a35388d23717b83d","weekend",4,"repeating","lower"
 "1a641fd69aa34d39a35388d23717b83d","babysitting",3,"repeating","just_met"
