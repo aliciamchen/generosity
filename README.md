@@ -18,7 +18,7 @@ Preprint: https://osf.io/preprints/psyarxiv/6kfwr
     - Study 3b: https://osf.io/c9t8g
 - Study 4: https://osf.io/6qr39
 
-*Note that we have changed the number of the studies from in the preregistrations.*
+*Note that we have changed the numbering of the studies from in the preregistrations.*
 
 ## This repository
 
