@@ -298,7 +298,7 @@ emm <-
   mod %>% emmeans(pairwise ~ generous_status_second * strategy) %>%
   add_grouping("asymmetric",
                "generous_status_second",
-               c("yes", "yes", "no", "NA"))
+               c("yes", "yes", "no"))
 
 emmeans(emm, pairwise ~ asymmetric * strategy) %>%
   summary(infer = T)
